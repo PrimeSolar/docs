@@ -20,6 +20,7 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Create secg.md
 * [ ] Create secg.html
 * [ ] Add annotation
+* [ ] Add glossary
 * [ ] Add basic security concepts
 * [ ] Add user roles
 * [ ] Add operations available according to roles
@@ -30,5 +31,42 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Create intmodag.md
 * [ ] Create intmodag.html
 * [ ] Add annotation
+* [ ] Add glossary
+* [ ] Add how it works
+* [ ] Add functionality
+* [ ] Add external services
+* [ ] Add command syntax overview
+* [ ] Add module installation preconditions
+* [ ] Add module installation
+* [ ] Add integration installation
+* [ ] Add troubleshooting
+* [ ] Add technical support
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

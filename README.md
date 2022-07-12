@@ -41,32 +41,20 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add integration installation
 * [ ] Add troubleshooting
 * [ ] Add technical support
+### Selection Module Manager Guide
+* [ ] Create selmodmg.md
+* [ ] Create selmodmg.html
+* [ ] Add annotation
+* [ ] Add glossary
+* [ ] Add how it works
+* [ ] Add Real&Mate concept
+* [ ] Add functionality
+* [ ] Add external services
+* [ ] Add authorization
+* [ ] Add module structure
+* [ ] Add technique creation
+* [ ] Add technique version info receiving
+* [ ] Add version creation
+* [ ] Add version points editing
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

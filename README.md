@@ -56,5 +56,19 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add technique version info receiving
 * [ ] Add version creation
 * [ ] Add version points editing
+* [ ] Add point addition
+* [ ] Add point editing
+* [ ] Add point creation
+* [ ] Add rule display
+* [ ] Add rule creation
+* [ ] Add rule editing
+* [ ] Add rule removal
+* [ ] Add rule sorting
+* [ ] Add point compilation
+* [ ] Add node removal
+* [ ] Add node priority
+* [ ] Add disabled nodes
+* [ ] Add version copying
+* [ ] Add version status
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)

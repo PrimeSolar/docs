@@ -70,5 +70,15 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add disabled nodes
 * [ ] Add version copying
 * [ ] Add version status
+* [ ] Add version removal
+* [ ] Add version filtration
+* [ ] Add version sorting
+* [ ] Add technique test creation
+* [ ] Add test detail editing
+* [ ] Add test parameter creation
+* [ ] Add test parameter editing
+* [ ] Add test parameter removal
+* [ ] Add test parameter sorting
+* [ ] Add test status editing
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)

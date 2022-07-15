@@ -40,7 +40,7 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add module installation
 * [ ] Add integration installation
 * [ ] Add troubleshooting
-* [ ] Add technical support
+* [ ] Add technical support info
 ### Selection Module Manager Guide
 * [ ] Create selmodmg.md
 * [ ] Create selmodmg.html
@@ -79,6 +79,11 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add test parameter editing
 * [ ] Add test parameter removal
 * [ ] Add test parameter sorting
-* [ ] Add test status editing
+* [ ] Add A/B and Shadow test status editing
+* [ ] Add Retro test editing
+* [ ] Add test report receiving
+* [ ] Add test filtration
+* [ ] Add test sorting
+* [ ] Add technical support info
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)

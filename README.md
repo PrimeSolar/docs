@@ -2,7 +2,7 @@
 This open-source repository contains the documentation sample code files that I have developed by myself.
 
 ---
-## Real&Mate Software
+## Real&Mate
 
 <img align="right" width="200" height="200" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg">
 

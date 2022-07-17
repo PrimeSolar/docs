@@ -3,9 +3,13 @@ This open-source repository contains the documentation sample code files that I 
 
 ---
 ## Real&Mate Software
+
 <img align="right" width="200" height="200" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg">
+
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.<br clear="right"/>
+
 ### Features:
+
 * Automation of real estate offers provision to the client by several agencies.
 * Additional services provision of several service organizations to one client under one agreement.
 * Several agreements support for one client.

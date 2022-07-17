@@ -1,5 +1,16 @@
 # docs
-This open-source repository contains the documentation sample code files that I have developed by myself. All brands and related information mentioned are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.
+This open-source repository contains the documentation sample code files that I have developed by myself.
+---
+<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg">
+Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
+<br clear="right"/>
+Real&Mate distinctive features:
+* Automation of real estate offers provision to the client by several agencies.
+* Additional services provision of several service organizations to one client under one agreement.
+* Several agreements support for one client.
+* Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
+
+
 ## Roadmap
 ### Common
 * [ ] Create components.js with reusable content
@@ -87,3 +98,4 @@ This open-source repository contains the documentation sample code files that I 
 * [ ] Add technical support info
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+> All brands and related information mentioned are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.

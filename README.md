@@ -10,7 +10,9 @@ Real&Mate distinctive features:
   * Several agreements support for one client.
   * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 <br clear="right"/>
-
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
 
 ## Roadmap
 ### Common

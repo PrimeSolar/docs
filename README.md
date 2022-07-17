@@ -2,23 +2,18 @@
 This open-source repository contains the documentation sample code files that I have developed by myself.
 
 ---
+## Real&Mate Software
 <img align="right" width="200" height="200" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg">
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
-Real&Mate distinctive features:
-  * Automation of real estate offers provision to the client by several agencies.
-  * Additional services provision of several service organizations to one client under one agreement.
-  * Several agreements support for one client.
-  * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
+### Features:
+* Automation of real estate offers provision to the client by several agencies.
+* Additional services provision of several service organizations to one client under one agreement.
+* Several agreements support for one client.
+* Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 <br clear="right"/>
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
 
-## Roadmap
-### Common
-- George Washington
-- John Adams
-- Thomas Jefferson
+### Roadmap
+#### Common
 * [ ] Create components.js with reusable content
 * [ ] Create CSS-file
 * [ ] Add footer
@@ -27,13 +22,13 @@ Real&Mate distinctive features:
 * [ ] Add contacts
 * [ ] Add more reusable content to components.js
 * [ ] Improve style
-### Glossary
+#### Glossary
 * [ ] Create gloss.md
 * [ ] Create gloss.html
 * [ ] Add title part
 * [ ] Add annotation
 * [ ] Add terms
-### Security Guide
+#### Security Guide
 * [ ] Create secg.md
 * [ ] Create secg.html
 * [ ] Add annotation
@@ -44,7 +39,7 @@ Real&Mate distinctive features:
 * [ ] Add event logging info
 * [ ] Add algorithm for getting records from the log
 * [ ] Add operations in the log info
-### Intergration Module Admin Guide
+#### Intergration Module Admin Guide
 * [ ] Create intmodag.md
 * [ ] Create intmodag.html
 * [ ] Add annotation
@@ -102,6 +97,6 @@ Real&Mate distinctive features:
 * [ ] Add test filtration
 * [ ] Add test sorting
 * [ ] Add technical support info
-## License
+### License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 > All brands and related information mentioned are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.

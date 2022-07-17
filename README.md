@@ -16,6 +16,9 @@ Real&Mate distinctive features:
 
 ## Roadmap
 ### Common
+- George Washington
+- John Adams
+- Thomas Jefferson
 * [ ] Create components.js with reusable content
 * [ ] Create CSS-file
 * [ ] Add footer

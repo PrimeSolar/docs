@@ -15,6 +15,13 @@ Real&Mate software is designed for prompt implementation and support of real est
 * Several agreements support for one client.
 * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.<br clear="right"/>
 
+### How It Works
+Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between coftware components is as follows:
+1. The manager, using the Control Unit, sets up the client assessment method in the Assessment Unit.
+2. To create an application, the client manually fills out the form in Client Unit. Personal data are passed from the Client Unit to the Assessment Unit.
+3. Assessment Unit sends data to the Integration Unit in JSON format using SQL request to get data from a specific external service. When requested, a record with client's application information is generated in the database with primary key which includes application ID and session IDs of connected external services. Sessions of connected external services are generated automatically when application is created. The database genType column specifies methods that form a queue of requests to external services. If there are no specified methods in the column, all available methods will be called. Parameters in requests to different external services may vary.
+
+
 ### Roadmap
 #### Common
 * [ ] Create components.js with reusable content
@@ -42,7 +49,7 @@ Real&Mate software is designed for prompt implementation and support of real est
 * [ ] Add event logging info
 * [ ] Add algorithm for getting records from the log
 * [ ] Add operations in the log info
-#### Intergration Module Admin Guide
+#### Intergration Unit Admin Guide
 * [ ] Create intmodag.md
 * [ ] Create intmodag.html
 * [ ] Add annotation
@@ -51,12 +58,12 @@ Real&Mate software is designed for prompt implementation and support of real est
 * [ ] Add functionality
 * [ ] Add external services
 * [ ] Add command syntax overview
-* [ ] Add module installation preconditions
-* [ ] Add module installation
+* [ ] Add unit installation preconditions
+* [ ] Add unit installation
 * [ ] Add integration installation
 * [ ] Add troubleshooting
 * [ ] Add technical support info
-### Selection Module Manager Guide
+### Selection Unit Manager Guide
 * [ ] Create selmodmg.md
 * [ ] Create selmodmg.html
 * [ ] Add annotation
@@ -66,9 +73,9 @@ Real&Mate software is designed for prompt implementation and support of real est
 * [ ] Add functionality
 * [ ] Add external services
 * [ ] Add authorization
-* [ ] Add module structure
-* [ ] Add technique creation
-* [ ] Add technique version info receiving
+* [ ] Add unit structure
+* [ ] Add method creation
+* [ ] Add method version info receiving
 * [ ] Add version creation
 * [ ] Add version points editing
 * [ ] Add point addition
@@ -88,7 +95,7 @@ Real&Mate software is designed for prompt implementation and support of real est
 * [ ] Add version removal
 * [ ] Add version filtration
 * [ ] Add version sorting
-* [ ] Add technique test creation
+* [ ] Add method test creation
 * [ ] Add test detail editing
 * [ ] Add test parameter creation
 * [ ] Add test parameter editing

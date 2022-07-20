@@ -30,7 +30,9 @@ Real&Mate is designed to automatically process an application for a purchase, sa
     * Parameter names from external service must match with parameter names used by Assessment Unit.
     
     If at least one of the criteria is not met:
+    
     5.1. The presence of handler for this external service is checked.
+    
     5.2. If there is a handler, it's called and data is converted.
 
     <img align="left" width="20" height="20" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.

@@ -23,6 +23,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 <img align="left" width="20" height="20" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg"/>If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
 <br clear="left"/>
+
 4. Integration Unit sends request to the external service. The further interaction can be done using technologies such as HTTPS, REST API, SOAP and SQL-queries to the database.
 5. External service processing received request and sends a response to the Integration Unit. Before further sending, the Integration Unit checks received data according to two criteria:
     * Data must be in JSON format.
@@ -30,8 +31,10 @@ Real&Mate is designed to automatically process an application for a purchase, sa
     If at least one of the criteria is not met:
     5.1. The presence of handler for this external service is checked.
     5.2. If there is a handler, it's called and data is converted.
+
     <img align="left" width="20" height="20" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg"/>Conversion procedures are individual for the handlers of each external service and are configured by developer.
     <br clear="left"/>
+    
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
 7. Assessment Unit sends response with processed data to Control Unit.
 

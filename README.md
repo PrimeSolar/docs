@@ -4,7 +4,7 @@ This open-source repository contains the documentation sample code files that I 
 ---
 ## Real&Mate
 
-<img align="right" width="200" height="200" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg">
+<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg"/>
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
@@ -13,14 +13,25 @@ Real&Mate software is designed for prompt implementation and support of real est
 * Automation of real estate offers provision to the client by several agencies.
 * Additional services provision of several service organizations to one client under one agreement.
 * Several agreements support for one client.
-* Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.<br clear="right"/>
+* Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 
 ### How It Works
-Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between coftware components is as follows:
-1. The manager, using the Control Unit, sets up the client assessment method in the Assessment Unit.
+Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
+1. The manager, using the Control Unit, sets up the client assessment methods in the Assessment Unit.
 2. To create an application, the client manually fills out the form in Client Unit. Personal data are passed from the Client Unit to the Assessment Unit.
 3. Assessment Unit sends data to the Integration Unit in JSON format using SQL request to get data from a specific external service. When requested, a record with client's application information is generated in the database with primary key which includes application ID and session IDs of connected external services. Sessions of connected external services are generated automatically when application is created. The database genType column specifies methods that form a queue of requests to external services. If there are no specified methods in the column, all available methods will be called. Parameters in requests to different external services may vary.
-
+<img align="left" width="50" height="50" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg"/> If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
+<br clear="left"/>
+4. Integration Unit sends request to the external service. The further interaction can be done using technologies such as HTTPS, REST API, SOAP and SQL-queries to the database.
+5. External service processing received request and sends a response to the Integration Unit. Before further sending, the Integration Unit checks received data according to two criteria:
+    * Data must be in JSON format.
+    * Parameter names from external service must match with parameter names used by Assessment Unit.
+    If at least one of the criteria is not met:
+    5.1. The presence of handler for this external service is checked.
+    5.2. If there is a handler, it's called and data is converted.
+    <img width="50" height="50" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
+6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
+7. Assessment Unit sends response with processed data to Control Unit.
 
 ### Roadmap
 #### Common

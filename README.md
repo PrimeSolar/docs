@@ -28,6 +28,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 5. External service processing received request and sends a response to the Integration Unit. Before further sending, the Integration Unit checks received data according to two criteria:
     * Data must be in JSON format.
     * Parameter names from external service must match with parameter names used by Assessment Unit.
+    
     If at least one of the criteria is not met:
     5.1. The presence of handler for this external service is checked.
     5.2. If there is a handler, it's called and data is converted.

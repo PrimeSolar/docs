@@ -39,7 +39,8 @@ Real&Mate is designed to automatically process an application for a purchase, sa
     <br clear="left"/>
     
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
-7. Assessment Unit sends response with processed data to Control Unit.
+7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
+8. After processing an application for purchase, sale or lease of real estate Control Unit sends to Client Unit the response to the client's request with deal options.
 
 ### Roadmap
 #### Common

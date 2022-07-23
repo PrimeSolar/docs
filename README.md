@@ -1,19 +1,34 @@
 # docs
 This open-source repository contains the documentation sample code files that I have developed by myself.
 
----
+⭐ Star me on GitHub — it motivates me a lot!
+
+## Table of Contents
+
+* [Real&Mate](#real&mate)
+   * [Features](#features)
+   * [How It Works](#how-it-works)
+   * [Road Map](#road-map)
+* [License](#license)
+
+<a name="real&mate"/>
+
 ## Real&Mate
 
 <img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg"/>
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
+<a name="features"/>
+
 ### Features
 
-* Automation of real estate offers provision to the client by several agencies.
+* Automation of providing the client with real estate offers from several agencies.
 * Additional services provision of several service organizations to one client under one agreement.
 * Several agreements support for one client.
 * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
+
+<a name="how-it-works"/>
 
 ### How It Works
 Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
@@ -42,7 +57,9 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
 8. After processing an application for purchase, sale or lease of real estate Control Unit sends to Client Unit the response to the client's request with deal options.
 
-### Roadmap
+<a name="road-map"/>
+
+### Road Map
 #### Common
 * [ ] Create components.js with reusable content
 * [ ] Create CSS-file
@@ -127,6 +144,9 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 * [ ] Add test filtration
 * [ ] Add test sorting
 * [ ] Add technical support info
-### License
+
+<a name="license"/>
+
+## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 > All brands and related information mentioned are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.

@@ -8,6 +8,7 @@ This open-source repository contains the documentation sample code files that I 
 * [Real&Mate](#real&mate)
    * [Features](#features)
    * [How It Works](#how-it-works)
+   * [External Services](#external-services)
    * [Road Map](#road-map)
 * [License](#license)
 
@@ -56,6 +57,20 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
 7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
 8. After processing an application for purchase, sale or lease of real estate Control Unit sends to Client Unit the response to the client's request with deal options.
+
+<a name="external-services"/>
+
+### External Services
+
+|     Application     | Description  |       Plugin       |
+|:-------------------:|:------------:|:------------------:|
+|   AH Real Estate    | File manager |    ah-real&mate    |
+| Cushmaw & Wakefielg | File manager | Natively supported |
+|        Essev        | Text editor  |  real&mate.essev   | 
+|        GSRE         | Text editor  |   real&mate.gsre   | 
+|       Notiuv        | File manager | Natively supported | 
+
+
 
 <a name="road-map"/>
 

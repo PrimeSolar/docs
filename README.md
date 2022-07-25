@@ -11,6 +11,7 @@ This open-source repository contains the documentation sample code files that I 
    * [External Services](#external-services)
    * [Road Map](#road-map)
 * [License](#license)
+* [Contact Me](#contact-me)
 
 <a name="real&mate"/>
 
@@ -58,6 +59,8 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
 8. After processing an application for purchase, sale or lease of real estate Control Unit sends to Client Unit the response to the client's request with deal options.
 
+> All brands and related information mentioned in repository are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.
+
 <a name="external-services"/>
 
 ### External Services
@@ -69,8 +72,6 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 |        Essev        | Text editor  |  real&mate.essev   | 
 |        GSRE         | Text editor  |   real&mate.gsre   | 
 |       Notiuv        | File manager | Natively supported | 
-
-
 
 <a name="road-map"/>
 
@@ -164,4 +165,9 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
-> All brands and related information mentioned are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.
+
+<a name="contact-me"/>
+
+## Contact Me
+Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@vladislav-kazantsev](https://www.linkedin.com/in/vladislav-kazantsev/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
+

@@ -11,7 +11,9 @@ This open-source repository contains the documentation sample code files that I 
    * [External Services](#external-services)
    * [Road Map](#road-map)
 * [License](#license)
-* [Contact Me](#contact-me)
+* [Support](#support)
+   * [Create a bug report](#create-a-bug-report)
+   * [Contact Me](#contact-me)
 
 <a name="real&mate"/>
 
@@ -26,8 +28,8 @@ Real&Mate software is designed for prompt implementation and support of real est
 ### Features
 
 * Automation of providing the client with real estate offers from several agencies.
-* Additional services provision of several service organizations to one client under one agreement.
-* Several agreements support for one client.
+* Provision of additional services by several service organizations to one client under one contract.
+* Several contracts support for one client.
 * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 
 <a name="how-it-works"/>
@@ -166,8 +168,17 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
+## Support
+
+<a name="create-a-bug-report"/>
+
+### Create a bug report
+
+If you run into an issue, please [create bug report](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all docs users.
+
 <a name="contact-me"/>
 
-## Contact Me
-Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@vladislav-kazantsev](https://www.linkedin.com/in/vladislav-kazantsev/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
+### Contact Me
+
+Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
 

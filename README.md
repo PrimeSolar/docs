@@ -12,7 +12,8 @@ This open-source repository contains the documentation sample code files that I 
    * [Road Map](#road-map)
 * [License](#license)
 * [Support](#support)
-   * [Create a bug report](#create-a-bug-report)
+   * [Create a Bug Report](#create-a-bug-report)
+   * [Submit a Feature Request](#submit-a-feature-request)
    * [Contact Me](#contact-me)
 
 <a name="real&mate"/>
@@ -172,9 +173,17 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 <a name="create-a-bug-report"/>
 
-### Create a bug report
+### Create a Bug Report
 
 If you run into an issue, please [create bug report](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all docs users.
+
+<a name="submit-a-feature-request"/>
+
+### Submit a Feature Request
+
+If you have an idea, or you're missing an information that would make docs easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
+
+If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly :)
 
 <a name="contact-me"/>
 

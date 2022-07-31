@@ -9,3 +9,12 @@ You can ask questions and discuss docs-related topics by [contacting me](https:/
 ## Found a bug?
 
 If you found a bug in the source code, you can help me by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=) to my GitHub Repository. Even better, you can submit a Pull Request with a fix.
+
+## Missing a feature?
+
+You can request a new feature by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=) to my GitHub Repository.
+
+If you'd like to implement a new feature, it's always good to be in touch with me before you invest time and effort.
+
+* For a Major Feature, first open an issue and outline your proposal. This will let me coordinate efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated into the project.
+* Small Features can be crafted and directly submitted as a Pull Request.

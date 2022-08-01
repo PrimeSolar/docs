@@ -18,3 +18,19 @@ If you'd like to implement a new feature, it's always good to be in touch with m
 
 * For a Major Feature, first open an issue and outline your proposal. This will let me coordinate efforts, prevent duplication of work, and help you craft the change so that it's successfully integrated into the project.
 * Small Features can be crafted and directly submitted as a Pull Request.
+
+## What do you need to know to help?
+
+If you want to help out with a code contribution, my project uses the following stack:
+
+### Server-side
+
+- [Node.JS](https://nodejs.org/)
+- [JavaScript](https://javascript.info)
+- [TypeScript](https://www.typescriptlang.org/docs)
+- [PostgreSQL](https://www.postgresql.org/about/)
+- [Jest](https://docs.nestjs.com/fundamentals/testing) (for testing)
+
+### Client-side
+
+[React](https://reactjs.org/docs/getting-started.html)

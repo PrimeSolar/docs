@@ -25,12 +25,18 @@ If you want to help out with a code contribution, my project uses the following 
 
 ### Server-side
 
-- [Node.JS](https://nodejs.org/)
-- [JavaScript](https://javascript.info)
-- [TypeScript](https://www.typescriptlang.org/docs)
-- [PostgreSQL](https://www.postgresql.org/about/)
-- [Jest](https://docs.nestjs.com/fundamentals/testing) (for testing)
+* [Node.JS](https://nodejs.org/)
+* [JavaScript](https://javascript.info)
+* [TypeScript](https://www.typescriptlang.org/docs)
+* [PostgreSQL](https://www.postgresql.org/about/)
+* [Jest](https://docs.nestjs.com/fundamentals/testing) (for testing)
 
 ### Client-side
 
-[React](https://reactjs.org/docs/getting-started.html)
+* [React](https://reactjs.org/docs/getting-started.html)
+* [JavaScript](https://javascript.info)
+* [TypeScript](https://www.typescriptlang.org/docs)
+
+If you don't feel ready to make a code contribution yet, no problem!
+
+You can also check out the [documentation issues](https://github.com/FirstSolar/docs/labels/documentation).

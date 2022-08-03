@@ -8,7 +8,9 @@ You can ask questions and discuss docs-related topics by [contacting me](https:/
 
 ## Found a bug?
 
-If you found a bug in the source code, you can help me by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=) to my GitHub Repository. Even better, you can submit a Pull Request with a fix.
+If you found a bug in the source code, you can help me by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=) to my GitHub Repository.
+
+Even better, you can [submit a Pull Request](#submit-pr) with a fix.
 
 ## Missing a feature?
 
@@ -37,6 +39,23 @@ If you want to help out with a code contribution, my project uses the following 
 * [JavaScript](https://javascript.info)
 * [TypeScript](https://www.typescriptlang.org/docs)
 
-If you don't feel ready to make a code contribution yet, no problem!
+If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/FirstSolar/docs/labels/documentation).
 
-You can also check out the [documentation issues](https://github.com/FirstSolar/docs/labels/documentation).
+<a name="submit-pr"/>
+
+# How do I make a code contribution?
+
+Are you new to open source contribution? Wondering how contributions work in our project? Here's a quick rundown.
+
+Find an issue that you're interested in addressing, or a feature that you'd like to add.
+You can use [this view](https://github.com/FirstSolar/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into our project.
+
+## Step 1: Make a fork
+
+Fork the docs repository to your GitHub organization. This means that you'll have a copy of the repository under *your-GitHub-username/repository-name*.
+
+## Step 2: Clone the repository to your local machine
+
+```
+git clone https://github.com/{your-GitHub-username}/docs.git
+```

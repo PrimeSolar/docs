@@ -79,3 +79,19 @@ Stage the changes that are ready to be committed:
 ```
 git add .
 ```
+
+### Step 6: Commit the changes (Git)
+
+Commit the changes with a short message. <!-- (See below for more details on how we structure our commit messages) -->
+
+```
+git commit -m "<type>(<package>): <subject>"
+```
+
+### Step 7: Push the changes to the remote repository
+
+Push the changes to the remote repository using:
+
+```
+git push origin branch-name-here
+```

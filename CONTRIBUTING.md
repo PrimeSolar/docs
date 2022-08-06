@@ -82,7 +82,7 @@ git add .
 
 ### Step 6: Commit the changes (Git)
 
-Commit the changes with a short message. <!-- (See below for more details on how we structure our commit messages) -->
+Commit the changes with a short message. <!-- (See below for more details on how to structure commit messages) -->
 
 ```
 git commit -m "<type>(<package>): <subject>"
@@ -95,3 +95,17 @@ Push the changes to the remote repository using:
 ```
 git push origin branch-name-here
 ```
+
+### Step 8: Create Pull Request
+
+In GitHub, do the following to submit a pull request to the upstream repository:
+
+1.  Give the pull request a title and a short description of the changes made. Include also the issue or bug number associated with your change. Explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer.
+
+Remember, it's okay if your pull request is not quiet perfect. The reviewer will be able to help you fix any problems and improve it!
+
+2.  Wait for the pull request to be reviewed by a maintainer.
+
+3.  Make changes to the pull request if the reviewing maintainer recommends them.
+
+Celebrate your success after your pull request is merged 🙂

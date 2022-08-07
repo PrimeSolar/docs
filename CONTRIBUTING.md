@@ -109,3 +109,22 @@ Remember, it's okay if your pull request is not quiet perfect. The reviewer will
 3.  Make changes to the pull request if the reviewing maintainer recommends them.
 
 Celebrate your success after your pull request is merged 🙂
+
+## Git Commit Messages
+
+We structure our commit messages like this:
+
+```
+<type>(<document>): <subject>
+```
+
+Example
+
+```
+fix(glossary): missing GUI description
+```
+
+### Types:
+
+* **feat**: A new feature
+* **fix**: A bug fix

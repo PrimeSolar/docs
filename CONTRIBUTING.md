@@ -82,8 +82,7 @@ git add .
 
 ### Step 6: Commit the changes (Git)
 
-Commit the changes with a short message. <!-- (See below for more details on how to structure commit messages) -->
-
+Commit the changes with a short message (see below for more details on how we structure our [commit messages](#commit-messages)):
 ```
 git commit -m "<type>(<package>): <subject>"
 ```
@@ -109,6 +108,8 @@ Remember, it's okay if your pull request is not quiet perfect. The reviewer will
 3.  Make changes to the pull request if the reviewing maintainer recommends them.
 
 Celebrate your success after your pull request is merged 🙂
+
+<a name="commit-messages"/>
 
 ## Git Commit Messages
 

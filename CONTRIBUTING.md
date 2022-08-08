@@ -122,7 +122,7 @@ We structure our commit messages like this:
 Example:
 
 ```
-fix(glossary): missing GUI description
+content(glossary): missing GUI description
 ```
 
 ### Types:

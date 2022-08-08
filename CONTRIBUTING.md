@@ -45,10 +45,10 @@ If you don't feel ready to make a code contribution yet, no problem! You can als
 
 ## How do I make a code contribution?
 
-Are you new to open source contribution? Wondering how contributions work in our project? Here's a quick rundown.
+Are you new to open source contribution? Wondering how contributions work in my project? Here's a quick rundown.
 
 Find an issue that you're interested in addressing, or a feature that you'd like to add.
-You can use [this view](https://github.com/FirstSolar/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into our project.
+You can use [this view](https://github.com/FirstSolar/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into my project.
 
 ### Step 1: Make a fork
 
@@ -118,7 +118,7 @@ We structure our commit messages like this:
 <type>(<document>): <subject>
 ```
 
-Example
+Example:
 
 ```
 fix(glossary): missing GUI description
@@ -128,3 +128,16 @@ fix(glossary): missing GUI description
 
 * **feat**: A new feature
 * **fix**: A bug fix
+* **content**: Adding missing or correcting existing content
+* **style**: A code change that affects the appearance (formatting, white-space etc.)
+* **refactor**: A code change that improves code structure and does not affect the functionality
+* **perf**: A code change that improves performance
+* **chore**: A code change to the build process or auxiliary tools and libraries such as documentation generation
+* **test**: Adding missing or correcting existing tests
+
+### Documents:
+
+* **glossary**
+* **security-guide**
+* **integration-unit-admin-guide**
+* **selection-unit-manager-guide**

@@ -141,4 +141,10 @@ content(glossary): missing GUI description
 * **glossary**
 * **security-guide**
 * **integration-unit-admin-guide**
-* **selection-unit-manager-guide**
+* **selection-unit-manager-guide**\
+
+## Code of Conduct
+
+Please note that this project is released with a [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+Our Code of Conduct means that you need to treat everyone on the project with respect and politeness.

@@ -13,6 +13,7 @@ This open-source repository contains the documentation sample code files that I 
 * [License](#license)
 * [Contributing](#contributing)
 * [Support](#support)
+   * [Ask a question about docs](#ask-a-question-about-docs)
    * [Create a Bug Report](#create-a-bug-report)
    * [Submit a Feature Request](#submit-a-feature-request)
    * [Contact Me](#contact-me)
@@ -180,7 +181,13 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Support
 
+<a name="ask-a-question-about-docs"/>
+
+### Ask a question about docs
+
 <a name="create-a-bug-report"/>
+
+You can ask questions and participate in discussions about docs-related topics in the [docs Discord channel](https://discord.gg/9JJAhsP8).
 
 ### Create a Bug Report
 
@@ -199,4 +206,3 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 ### Contact Me
 
 Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
-

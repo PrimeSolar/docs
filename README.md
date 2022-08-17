@@ -22,7 +22,7 @@ This open-source repository contains the documentation sample code files that I 
 
 ## Real&Mate
 
-<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/main/logo_transparent.jpg"/>
+<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logo_transparent.jpg"/>
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
@@ -43,7 +43,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 2. To create an application, the client manually fills out the form in Client Unit. Personal data are passed from the Client Unit to the Assessment Unit.
 3. Assessment Unit sends data to the Integration Unit in JSON format using SQL request to get data from a specific external service. When requested, a record with client's application information is generated in the database with primary key which includes application ID and session IDs of connected external services. Sessions of connected external services are generated automatically when application is created. The database genType column specifies methods that form a queue of requests to external services. If there are no specified methods in the column, all available methods will be called. Parameters in requests to different external services may vary.
 
-<img align="left" width="20" height="20" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg" style="padding: 0; margin: 0;"/> If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
+<img align="left" width="20" height="20" alt="Note: " title="Note" src="pics/note.svg" style="padding: 0; margin: 0;"/> If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
 <br clear="left"/>
 
 4. Integration Unit sends request to the external service. The further interaction can be done using technologies such as HTTPS, REST API, SOAP and SQL-queries to the database.
@@ -57,7 +57,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
     
     5.2. If there is a handler, it's called and data is converted.
 
-    <img align="left" width="20" height="20" alt="Note: " title="Note" src="https://raw.githubusercontent.com/Vladislav-Kazantsev/docs/69cf4c1b8774b02bc887ad9b664d98370450a94d/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
+    <img align="left" width="20" height="20" alt="Note: " title="Note" src="pics/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
     <br clear="left"/>
     
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
@@ -187,7 +187,9 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 <a name="create-a-bug-report"/>
 
-You can ask questions and participate in discussions about docs-related topics in the [docs Discord channel](https://discord.gg/9JJAhsP8).
+You can ask questions and participate in discussions about docs-related topics in the docs Discord channel.
+
+<a href="https://discord.gg/9JJAhsP8" target="_blank"><img alt="Discord channel " title="Discord channel" src="pics/discord.svg" style="padding: 0; margin: 0;"/></a>
 
 ### Create a Bug Report
 

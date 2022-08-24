@@ -180,7 +180,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 docs is an open-source project. I am committed to a fully transparent development process of the project and appreciate highly any contributions. Whether you are helping me fix bugs, proposing new features or spreading the word &mdash; I would love to have you as part of the docs community.
 
-Please refer to our [Contribution Guidelines](https://github.com/FirstSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md).
+Please refer to our [Contribution Guidelines](https://github.com/FirstSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md) if you're interested in helping.
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 

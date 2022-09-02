@@ -2,6 +2,7 @@
 <p align="center">
 <img alt="Latest release: 1.0" src="pics/latest-release.svg" style="padding: 0; margin: 0;"/>
 <img alt="Solution: ES12" src="pics/solution-es12.svg" style="padding: 0; margin: 0;"/>
+<img alt="Solution: Linux | Windows" src="pics/os-linux-windows.svg" style="padding: 0; margin: 0;"/>
 <img alt="Contributions: welcome" src="pics/contributions-welcome.svg" style="padding: 0; margin: 0;"/>
 <img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
 </p>

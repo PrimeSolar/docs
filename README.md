@@ -30,7 +30,7 @@ This open-source repository contains the documentation sample code files that I 
 
 ## Real&Mate
 
-<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logo_transparent.jpg"/>
+<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logotype.jpg"/>
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
@@ -99,9 +99,8 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 * [ ] Add more reusable content to components.js
 * [ ] Improve style
 #### Glossary
-* [ ] Create gloss.md
-* [ ] Create gloss.html
-* [ ] Add title part
+* [x] Create glossary.html
+* [x] Add title part
 * [ ] Add annotation
 * [ ] Add terms
 #### Security Guide

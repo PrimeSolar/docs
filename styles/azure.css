@@ -9,11 +9,14 @@ body {
 
 footer {
   background: linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -moz-linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -ms-linear-gradient(#007FFF 25%, #318CE7 100%);
   background: -o-linear-gradient(#007FFF 25%, #318CE7 100%);
   background: -webkit-linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -webkit-gradient(#007FFF 25%, #318CE7 100%);
   /* background: linear-gradient(90deg, #fff 5%, #007FFF 30%, #007FFF 70%, #fff 95%); */
   color: #fff;
-  left: 0%;
+  left: 0;
   margin: 0;
   padding: 1em 0;
   position: absolute;
@@ -39,7 +42,6 @@ html {
 #footerContainer {
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 #header {

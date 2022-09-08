@@ -90,13 +90,14 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 ### Road Map
 #### Common
-* [ ] Create components.js with reusable content
-* [ ] Create CSS-file
-* [ ] Add footer
+* [ ] Create scripts with reusable content
+* [x] Create style file
+* [ ] Create theme switch
+* [x] Add footer
 * [ ] Add common info about technical support
 * [ ] Add requirements for contacting technical support
 * [ ] Add contacts
-* [ ] Add more reusable content to components.js
+* [ ] Add more reusable content to elements.js
 * [ ] Improve style
 #### Glossary
 * [x] Create glossary.html

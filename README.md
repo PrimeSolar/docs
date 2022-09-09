@@ -90,6 +90,7 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 ### Road Map
 #### Common
+* [x] Create main page (index.html)
 * [ ] Create scripts with reusable content
 * [x] Create style file
 * [ ] Create theme switch
@@ -216,3 +217,5 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 ### Contact Me
 
 Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
+
+![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+sommelier;Passionate+environmentalist)

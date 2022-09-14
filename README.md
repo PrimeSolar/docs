@@ -218,4 +218,4 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 
 Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
 
-![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+sommelier;Passionate+environmentalist)
+![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+sommelier;Passionate+environmentalist;Human)

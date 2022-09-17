@@ -6,7 +6,7 @@
 <img alt="Contributions: welcome" src="pics/contributions-welcome.svg" style="padding: 0; margin: 0;"/>
 <img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
 </p>
-    
+
 This open-source repository contains the documentation sample code files that I have developed by myself.
 
 ⭐ Star me on GitHub — it motivates me a lot!
@@ -196,9 +196,17 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 <a name="create-a-bug-report"/>
 
-You can ask questions and participate in discussions about docs-related topics in the docs Discord channel.
+You can ask questions and participate in discussions about docs-related topics:
 
-<a href="https://discord.gg/9JJAhsP8" target="_blank"><img alt="Discord channel " title="Discord channel" src="pics/discord.svg" style="padding: 0; margin: 0;"/></a>
+* on the docs Discord channel.
+
+<a href="https://discord.gg/f6Vk2kDe" target="_blank"><img alt="Discord channel " title="Discord channel" src="pics/discord.svg" style="padding: 0; margin: 0;"/></a>
+
+* on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">docs Matrix channel</a>.
+
+* on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-docs` tag.
+
+Remember to search for existing questions before creating a new one.
 
 ### Create a Bug Report
 

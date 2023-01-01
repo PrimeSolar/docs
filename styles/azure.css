@@ -71,8 +71,9 @@ html {
   border: 0;
   display: block;
   height: 30px;
-  margin-left: auto;
-  width: 80px;
+  margin: 0 0 1em auto;
+  position: relative;
+  width: 500px;
 }
 
 #amp {
@@ -113,4 +114,16 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+#w3c-text {
+  color: #318CE7;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(24.7%);
+}
+
+#w3c-img {
+  position: absolute;
+  transform: translate(473%, -0.45vw);
 }

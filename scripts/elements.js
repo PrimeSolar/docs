@@ -4,7 +4,7 @@ function footerContainerF(footerContainer) {
   if (footerContainer != null) {
     footerContainer.innerHTML += `
 <footer>
-Copyright © Real&Mate 2022
+Copyright © Real&Mate 2023
 </footer>
       `
   }

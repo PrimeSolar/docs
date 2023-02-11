@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 body {
   color: #373737;
   font-family: Verdana, sans-serif;
@@ -71,7 +75,7 @@ html {
   border: 0;
   display: block;
   height: 30px;
-  margin: 0 0 1em auto;
+  margin: 1em 0 1em auto;
   position: relative;
   width: 500px;
 }
@@ -111,7 +115,7 @@ html {
   max-width: 100%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 52.5%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -126,4 +130,237 @@ html {
 #w3c-img {
   position: absolute;
   transform: translate(473%, -0.45vw);
+}
+
+/* dark theme */
+#switchy {
+  position: relative;
+  display: block;
+  width: 64px;
+  height: 32px;
+  border-radius: 32px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-style: none;
+  z-index: 1;
+  top: 5%;
+  left: 50%;
+}
+
+#switchy .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+#switchy.active .indicator {
+  left: 32px;
+}
+
+/* automatic/manual light theme */
+:root, :root.light {
+  --a-color: #000;
+  /* --a-visited-color: #000; */
+  /* --a-hover-color: #3bacb6; */
+  --body-color: #222;
+  --code-background: #fff;
+  --code-color: #222;
+  --code-span-fu-color: #06287e;
+  --data-type-box-shadow: 0 0.5px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  --details-summary-background-color: #fefefe;
+  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --html-background-color: #fff;
+  --hr-background: #1a1a1a;
+  --input-type-checkbox-filter: invert(0) hue-rotate(0) brightness(1);
+  --td-border-bottom: 1px solid #ddd;
+  --th-border-left: 0.1px solid #fff;
+  --th-border-bottom: 1px solid #ddd;
+  --class-center-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --class-no-shadow-hover-box-shadow: unset;
+  --sourceCode-json-background-color: #fefefe;
+  --switchy-background: #fff;
+  --switchy-box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    0 2px 60px rgba(0, 0, 0, 0.1),
+    0 -4px 8px rgba(0, 0, 0, 0.05);
+  --switchy-indicator-background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+  --switchy-indicator-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(255, 255, 255, 1),
+    inset 0 -4px 4px rgba(255, 255, 255, 1);
+}
+
+/* automatic dark theme */
+/* sync this with the manual dark theme below! */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --a-color: #fff;
+    --a-visited-color: #fff;
+    /* --a-hover-color: #3bacb6; */
+    --body-color: #fff;
+    --code-background: #333;
+    --code-color: #fff;
+    --code-span-fu-color: #6CB4EE;
+    --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
+    --details-summary-background-color: #333;
+    --details-summary-hover-box-shadow: 0 2px 4px 0 rgba(256, 256, 256, 0.2), 0 2px 10px 0 rgba(256, 256, 256, 0.19);
+    --html-background-color: #222;
+    --hr-background: #555;
+    --input-type-checkbox-filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+    --td-border-bottom: 1px solid #555;
+    --th-border-left: 0.1px solid #222;
+    --th-border-bottom: 1px solid #555;
+    --class-center-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+    --class-no-shadow-hover-box-shadow: unset;
+    --sourceCode-json-background-color: #333;
+    --switchy-background: #222;
+    --switchy-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1),
+      inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    --switchy-indicator-background: linear-gradient(to bottom, #444, #222);
+    --switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+      inset 0 4px 4px rgba(255, 255, 255, 0.2),
+      inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* manual dark theme */
+/* sync this with the automatic dark theme above! */
+:root.dark {
+  --a-color: #fff;
+  --a-visited-color: #fff;
+  /* --a-hover-color: #6CB4EE; */
+  --body-color: #fff;
+  --code-background: #333;
+  --code-color: #fff;
+  --code-span-fu-color: aero;
+  --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
+  --details-summary-background-color: #333;
+  --details-summary-hover-box-shadow: 0 2px 4px 0 rgba(256, 256, 256, 0.2), 0 2px 10px 0 rgba(256, 256, 256, 0.19);
+  --html-background-color: #222;
+  --hr-background: #555;
+  --input-type-checkbox-filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+  --td-border-bottom: 1px solid #555;
+  --th-border-left: 0.1px solid #222;
+  --th-border-bottom: 1px solid #555;
+  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --class-no-shadow-hover-box-shadow: unset;
+  --sourceCode-json-background-color: #333;
+  --switchy-background: #222;
+  --switchy-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --switchy-indicator-background: linear-gradient(to bottom, #444, #222);
+  --switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* variables */
+a {
+  color: var(--a-color);
+}
+
+a:visited {
+  color: var(--a-visited-color);
+}
+
+a:hover {
+  color: var(--a-hover-color);
+}
+
+body {
+  color: var(--body-color);
+}
+
+code {
+  background: var(--code-background);
+  color: var(--code-color);
+}
+
+code span.fu {
+  color: var(--code-span-fu-color);
+}
+
+dataType {
+  box-shadow: var(--data-type-box-shadow);
+}
+
+details > summary {
+  background-color: var(--details-summary-background-color);
+}
+
+details > summary:hover {
+  box-shadow: var(--details-summary-hover-box-shadow);
+}
+
+.doc-list-item {
+  transition: 0.5s;
+}
+
+.doc-list-item:hover {
+  box-shadow: var(--class-center-hover-box-shadow);
+  transition: 0.5s;
+}
+
+html {
+  background-color: var(--html-background-color);
+  transition: 0.5s;
+}
+
+hr {
+  background: var(--hr-background);
+}
+
+input[type="checkbox"] {
+  filter: var(--input-type-checkbox-filter);
+}
+
+th {
+  border-bottom: var(--th-border-bottom);
+  border-left: var(--th-border-left);
+}
+
+tr {
+  border-bottom: var(--th-border)
+}
+
+.center:hover {
+  box-shadow: var(--class-center-hover-box-shadow);
+}
+
+.no-shadow:hover {
+  box-shadow: var(--class-no-shadow-hover-box-shadow);
+}
+
+.sourceCode {
+  background-color: var(--sourceCode-json-background-color);
+}
+
+.sourceCode.json {
+  background-color: var(--sourceCode-json-background-color);
+}
+
+#switchy {
+  background: var(--switchy-background);
+  box-shadow: var(--switchy-box-shadow);
+}
+
+#switchy .indicator {
+  background: var(--switchy-indicator-background);
+  box-shadow: var(--switchy-indicator-box-shadow);
+}
+
+#switchyContainerRelative {
+  position: relative;
+  width: 100%;
+}
+
+#switchyContainerAbsolute {
+  position: absolute;
+  top: 25px;
+  right: -50px;
 }

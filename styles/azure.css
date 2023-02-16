@@ -171,6 +171,43 @@ html {
   left: 35px;
 }
 
+#edit-doc {
+  position: absolute;
+  top: 80px;
+  right: -100px;
+  display: block;
+  transition: 0.5s;
+}
+
+#editor-mode {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 35px;
+  border-radius: 35px;
+  transition: 0.5s;
+  cursor: pointer;
+  border-style: none;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+}
+
+#editor-mode .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+#editor-mode.editIsActive .indicator {
+  left: 35px;
+}
+
 /* automatic/manual light theme */
 :root, :root.light {
   --a-color: #000;
@@ -229,8 +266,16 @@ html {
     --switchy-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
       inset 0 8px 8px rgba(0, 0, 0, 0.1),
       inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    --editor-mode-background: #222;
+    --editor-mode-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1),
+      inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     --switchy-indicator-background: linear-gradient(to bottom, #444, #222);
     --switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+      inset 0 4px 4px rgba(255, 255, 255, 0.2),
+      inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    --editor-mode-indicator-background: linear-gradient(to bottom, #444, #222);
+    --editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
       inset 0 4px 4px rgba(255, 255, 255, 0.2),
       inset 0 -4px 4px rgba(255, 255, 255, 0.2);
   }
@@ -262,8 +307,16 @@ html {
   --switchy-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
     inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --editor-mode-background: #222;
+  --editor-mode-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --switchy-indicator-background: linear-gradient(to bottom, #444, #222);
   --switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  --editor-mode-indicator-background: linear-gradient(to bottom, #444, #222);
+  --editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 4px 4px rgba(255, 255, 255, 0.2),
     inset 0 -4px 4px rgba(255, 255, 255, 0.2);
 }
@@ -358,7 +411,17 @@ tr {
   box-shadow: var(--switchy-box-shadow);
 }
 
+#editor-mode {
+  background: var(--switchy-background);
+  box-shadow: var(--switchy-box-shadow);
+}
+
 #switchy .indicator {
+  background: var(--switchy-indicator-background);
+  box-shadow: var(--switchy-indicator-box-shadow);
+}
+
+#editor-mode .indicator {
   background: var(--switchy-indicator-background);
   box-shadow: var(--switchy-indicator-box-shadow);
 }
@@ -371,6 +434,12 @@ tr {
 
 #switchyContainerAbsolute {
   position: absolute;
-  top: 25px;
+  top: 30px;
+  right: -50px;
+}
+
+#editorModeContainerAbsolute {
+  position: absolute;
+  top: 105px;
   right: -50px;
 }

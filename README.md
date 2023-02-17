@@ -30,7 +30,7 @@ This open-source repository contains the documentation sample code files that I 
 
 ## Real&Mate
 
-<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logotype.jpg"/>
+<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logo-transparent.jpg"/>
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 

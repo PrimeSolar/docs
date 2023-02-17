@@ -34,6 +34,8 @@ This open-source repository contains the documentation sample code files that I 
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
+**To view the documentation, please visit [Real&Mate Docs](https://firstsolar.github.io/docs/) website.**
+
 <a name="features"/>
 
 ### Features
@@ -224,6 +226,6 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 
 ### Contact Me
 
-Telegram [@ASMLHolding](https://t.me/ASMLHolding) · LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs) · Strava [@telegram](https://www.strava.com/athletes/telegram)
+LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs)
 
-![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+sommelier;Passionate+environmentalist;Human)
+![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+developer;Internet+sommelier;Passionate+athlete;Caring+environmentalist;Human)

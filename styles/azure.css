@@ -120,6 +120,10 @@ html {
   width: 100%;
 }
 
+#logo {
+   zoom: 35%;
+}
+
 #w3c-text {
   color: #318CE7;
   position: absolute;

@@ -60,9 +60,13 @@ Fork the docs repository to your GitHub organization. This means that you'll hav
 git clone https://github.com/{your-GitHub-username}/docs.git
 ```
 
-### Step 3: Create a branch
+Change the directory to a new one:
 
-Create a new branch for your fix.
+```
+cd <repo-name>
+```
+
+### Step 3: Create a branch
 
 ```
 git checkout -b branch-name-here

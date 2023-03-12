@@ -34,6 +34,8 @@ This open-source repository contains the documentation sample code files that I 
 
 Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
+<!--Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
+
 **To view the documentation, please visit [Real&Mate Docs](https://firstsolar.github.io/docs/) website.**
 
 <a name="features"/>

@@ -36,7 +36,7 @@ Real&Mate software is designed for prompt implementation and support of real est
 
 <!--Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
 
-**To view the documentation, please visit [Real&Mate Docs](https://firstsolar.github.io/docs/) website.**
+**To view the documentation, please visit <a href="https://firstsolar.github.io/docs/" target="_blank">Real&Mate Docs</a> website.**
 
 <a name="features"/>
 

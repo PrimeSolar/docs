@@ -575,10 +575,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
     inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-editor-mode-indicator-background-image: -moz-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-editor-mode-indicator-background-image: -ms-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-editor-mode-indicator-background-image: -o-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-editor-mode-indicator-background-image: -webkit-linear-gradient(to bottom, #eaeaea, #f9f9f9);
   --id-editor-mode-indicator-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
@@ -587,10 +583,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
     inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --id-switchy-indicator-background-image: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-switchy-indicator-background-image: -moz-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-switchy-indicator-background-image: -ms-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-switchy-indicator-background-image: -o-linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-switchy-indicator-background-image: -webkit-linear-gradient(to bottom, #eaeaea, #f9f9f9);
   --id-switchy-indicator-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
@@ -627,10 +619,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
       inset 0 8px 8px rgba(0, 0, 0, 0.1),
       inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #444, #222);
-    --id-editor-mode-indicator-background-image: -moz-linear-gradient(to bottom, #444, #222);
-    --id-editor-mode-indicator-background-image: -ms-linear-gradient(to bottom, #444, #222);
-    --id-editor-mode-indicator-background-image: -o-linear-gradient(to bottom, #444, #222);
-    --id-editor-mode-indicator-background-image: -webkit-linear-gradient(to bottom, #444, #222);
     --id-editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
       inset 0 4px 4px rgba(255, 255, 255, 0.2),
       inset 0 -4px 4px rgba(255, 255, 255, 0.2);
@@ -639,10 +627,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
       inset 0 8px 8px rgba(0, 0, 0, 0.1),
       inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     --id-switchy-indicator-background-image: linear-gradient(to bottom, #444, #222);
-    --id-switchy-indicator-background-image: -moz-linear-gradient(to bottom, #444, #222);
-    --id-switchy-indicator-background-image: -ms-linear-gradient(to bottom, #444, #222);
-    --id-switchy-indicator-background-image: -o-linear-gradient(to bottom, #444, #222);
-    --id-switchy-indicator-background-image: -webkit-linear-gradient(to bottom, #444, #222);
     --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
       inset 0 4px 4px rgba(255, 255, 255, 0.2),
       inset 0 -4px 4px rgba(255, 255, 255, 0.2);
@@ -679,10 +663,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
     inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #444, #222);
-  --id-editor-mode-indicator-background-image: -moz-linear-gradient(to bottom, #444, #222);
-  --id-editor-mode-indicator-background-image: -ms-linear-gradient(to bottom, #444, #222);
-  --id-editor-mode-indicator-background-image: -o-linear-gradient(to bottom, #444, #222);
-  --id-editor-mode-indicator-background-image: -webkit-linear-gradient(to bottom, #444, #222);
   --id-editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 4px 4px rgba(255, 255, 255, 0.2),
     inset 0 -4px 4px rgba(255, 255, 255, 0.2);
@@ -691,10 +671,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
     inset 0 -4px 4px rgba(0, 0, 0, 0.1);
   --id-switchy-indicator-background-image: linear-gradient(to bottom, #444, #222);
-  --id-switchy-indicator-background-image: -moz-linear-gradient(to bottom, #444, #222);
-  --id-switchy-indicator-background-image: -ms-linear-gradient(to bottom, #444, #222);
-  --id-switchy-indicator-background-image: -o-linear-gradient(to bottom, #444, #222);
-  --id-switchy-indicator-background-image: -webkit-linear-gradient(to bottom, #444, #222);
   --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 4px 4px rgba(255, 255, 255, 0.2),
     inset 0 -4px 4px rgba(255, 255, 255, 0.2);

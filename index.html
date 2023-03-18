@@ -5,22 +5,14 @@
   <title>Real&Mate Docs</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
   <link rel="stylesheet" type="text/css" href="styles/azure.css" />
 </head>
 
 <body id="body">
 
   <div id="container">
-    <div id="switchyContainerRelative">
-      <div id="theme">
-        Theme
-      </div>
-      <div id="switchyContainerAbsolute">
-        <button id="switchy" onClick="switchyDarkTheme()">
-          <i class="indicator"></i>
-        </button>
-      </div>
-    </div>
+    <theme-button/>
     <div id="header-index">
       <h1><span class="title">Welcome to Real<span id="amp">&</span>Mate&nbsp;Docs!</span></h1>
       <img id="logo" alt="Real&Mate Logotype" src="pics/logo-transparent.jpg" class="center no-shadow" />
@@ -47,6 +39,7 @@
 
   <div id="footerContainer"/>
 
+  <script src="scripts/elements-title.js"></script>
   <script src="scripts/dark-theme.js"></script>
   <script src="scripts/elements.js"></script>
 

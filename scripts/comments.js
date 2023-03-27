@@ -1,10 +1,10 @@
 //Comment
 
-var createCommentary = document.getElementsByTagName('a-comment');
-var commentaryTag = "<comment-tag onclick='displayCommentary(this)'/>";
+const createCommentary = document.getElementsByTagName('a-comment');
+const commentaryTag = "<comment-tag onclick='displayCommentary(this)'/>";
 var b = 0;
-for (let a = 0; a < createCommentary.length; a++) {
-  createCommentary[a].insertAdjacentHTML("beforebegin", commentaryTag);
+for (let a of createCommentary) {
+  a.insertAdjacentHTML("beforebegin", commentaryTag);
 }
 
 function displayCommentary(element) {
@@ -24,4 +24,5 @@ function displayCommentary(element) {
     element.nextSibling.style.transform = "translate(-25px, 30px)";
   } else {}
 }
+
 console.log("comments.js is completed");

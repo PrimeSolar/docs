@@ -7,7 +7,7 @@
 <img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
 </p>
 
-This open-source repository contains the documentation sample code files that I have developed by myself.
+This open-source repository contains the documentation sample code files that I have developed from scratch.
 
 ⭐ Star me on GitHub — it motivates me a lot!
 

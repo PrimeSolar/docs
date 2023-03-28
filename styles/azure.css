@@ -179,6 +179,15 @@ indent {
   padding-left: 22px;
 }
 
+li {
+  margin-top: 10px;
+}
+
+li:first-of-type {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 li>a:hover {
   color: #318CE7;
   text-decoration: none;
@@ -401,6 +410,10 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
 
 #container {
   height: 100%;
+  position: relative;
+}
+
+#container-button {
   position: relative;
 }
 

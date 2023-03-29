@@ -7,7 +7,7 @@ class themeButton extends HTMLElement {
     <div id="switchyContainerRelative">
       <div id="theme">Theme</div>
       <div id="switchyContainerAbsolute">
-        <button id="switchy" onClick="switchyDarkTheme()" title="Theme">
+        <button id="switchy" onClick="switchyDarkTheme()" value="Theme">
           <i class="indicator"/>
         </button>
       </div>
@@ -24,7 +24,7 @@ class editorButton extends HTMLElement {
     <div id="toggleContainerRelative">
       <div id="edit-doc">Editor Mode</div>
       <div id="editorModeContainerAbsolute">
-        <button id="editor-mode" onclick="editorMode()" title="Editor Mode">
+        <button id="editor-mode" onclick="editorMode()" value="Editor Mode">
           <i class="indicator"></i>
         </button>
       </div>

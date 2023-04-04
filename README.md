@@ -228,6 +228,6 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 
 ### Contact Me
 
-LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/) · Mail [cloudyskyweb@gmail.com](mailto:cloudyskyweb@gmail.com?subject=GitHub+docs)
+LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/)
 
 ![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+developer;Internet+sommelier;Passionate+athlete;Caring+environmentalist;Human)

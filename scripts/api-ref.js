@@ -1,5 +1,13 @@
 // Terms
 
+// capitalizedResourceName
+class capitalizedResourceName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += document.getElementById("capitalizedResourceName").innerHTML;
+  }
+}
+customElements.define("capitalized-resource-name", capitalizedResourceName);
+
 // id
 class DtId extends HTMLElement {
   connectedCallback() {
@@ -13,11 +21,57 @@ customElements.define("dt-id", DtId);
 class DdId extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The unique identifier of the resource you want to retrieve information about.
+    The unique identifier of the <resource-name></resource-name>.
     `
   }
 }
 customElements.define("dd-id", DdId);
+
+// name
+class DtName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    name
+    `
+  }
+}
+customElements.define("dt-name", DtName);
+// +
+class DdName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A word or set of words by which a <resource-name></resource-name> is known, addressed and referred to.
+    `
+  }
+}
+customElements.define("dd-name", DdName);
+
+// resourceName
+class resourceName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += document.getElementById("resourceName").innerHTML;
+  }
+}
+customElements.define("resource-name", resourceName);
+
+// version
+class DtVersion extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    version
+    `
+  }
+}
+customElements.define("dt-version", DtVersion);
+// +
+class DdVersion extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A serial number of the <resource-name></resource-name> particular form differing in certain respects from an earlier form of it.
+    `
+  }
+}
+customElements.define("dd-version", DdVersion);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,3 +267,5 @@ class ScDescription extends HTMLElement {
   }
 }
 customElements.define("sc-desc", ScDescription);
+
+console.log("api-ref.js is completed")

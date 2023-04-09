@@ -1,5 +1,24 @@
 // Terms
 
+// description
+class DtDescription extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    description
+    `
+  }
+}
+customElements.define("dt-description", DtDescription);
+// +
+class DdDescription extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The informational representation of the <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-description", DdDescription);
+
 // capitalizedResourceName
 class capitalizedResourceName extends HTMLElement {
   connectedCallback() {
@@ -27,6 +46,14 @@ class DdId extends HTMLElement {
 }
 customElements.define("dd-id", DdId);
 
+// mainResourceName
+class mainResourceName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += document.getElementById("mainResourceName").innerHTML;
+  }
+}
+customElements.define("main-resource-name", mainResourceName);
+
 // name
 class DtName extends HTMLElement {
   connectedCallback() {
@@ -53,6 +80,44 @@ class resourceName extends HTMLElement {
   }
 }
 customElements.define("resource-name", resourceName);
+
+// password
+class DtPassword extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    password
+    `
+  }
+}
+customElements.define("dt-password", DtPassword);
+// +
+class DdPassword extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A secret character combination that must be used to gain admission to <main-resource-name></main-resource-name>.
+    `
+  }
+}
+customElements.define("dd-password", DdPassword);
+
+// username
+class DtUsername extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    username
+    `
+  }
+}
+customElements.define("dt-username", DtUsername);
+// +
+class DdUsername extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An identificator used by a person with access to a <main-resource-name></main-resource-name>.
+    `
+  }
+}
+customElements.define("dd-username", DdUsername);
 
 // version
 class DtVersion extends HTMLElement {
@@ -86,17 +151,37 @@ class TRequestHeaders extends HTMLElement {
     `
   }
 }
-customElements.define("t-request-h", TRequestHeaders);
+customElements.define("t-request-headers", TRequestHeaders);
+
+// Request body
+class TRequestBody extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Request body
+    `
+  }
+}
+customElements.define("t-request-body", TRequestBody);
 
 // Response body
-class TResponse extends HTMLElement {
+class TResponseBody extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     Response body
     `
   }
 }
-customElements.define("t-response", TResponse);
+customElements.define("t-response-body", TResponseBody);
+
+// Response codes
+class TResponseCodes extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Response codes
+    `
+  }
+}
+customElements.define("t-response-codes", TResponseCodes);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

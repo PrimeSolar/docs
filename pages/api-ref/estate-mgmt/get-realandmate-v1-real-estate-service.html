@@ -16,9 +16,13 @@
     <editor-button />
   </div>
 
+  <span id="mainResourceName">Real Estate Service</span>
+  <span id="resourceName">Real Estate Service</span>
+  <span id="capitalizedResourceName">Real&Mate Application</span>
+
   <h1>GET /realandmate/v1/RealEstateService</h1>
   <p>
-    <indent></indent>Returns information about the Real Estate service parameters.
+    <indent></indent>Returns information about the Real Estate Service parameters.
   </p>
   <hr />
   <!--<ul>
@@ -47,9 +51,9 @@
     </dd>
   </dl>-->
   <p><a name="response"></a></p>
-  <p><strong>
-      <t-response></t-response>
-    </strong></p>
+  <h2>
+    <t-response></t-response>
+  </h2>
   <div class="sourceCode" id="cb2">
     <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
     <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
@@ -62,6 +66,7 @@
     <span class="fu">}</span>
 <span class="fu">}</span></code></pre>
   </div>
+
   <dl class="dl-root">
     <dt>
       <dt-id></dt-id>
@@ -69,7 +74,46 @@
     <dd>
       <dd-id></dd-id>
     </dd>
+    <dt>
+      <dt-name></dt-name>
+    </dt>
+    <dd>
+      <dd-name></dd-name>
+    </dd>
+    <dt>
+      <dt-description></dt-description>
+    </dt>
+    <dd>
+      <dd-description></dd-description>
+    </dd>
   </dl>
+
+  <p><a name="t-response-codes"></a></p>
+  <h2>
+    <t-response-codes></t-response-codes>
+  </h2>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Code
+        </th>
+        <th>
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="cell-center-bold">
+          200
+        </td>
+        <td class="cell-center">
+          <sc-200></sc-200>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <div id="footerContainer"></div>
 

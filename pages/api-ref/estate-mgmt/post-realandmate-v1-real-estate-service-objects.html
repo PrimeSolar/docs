@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>POST /realandmate/v1/RealEstateService/RealEstateObjects | Create Real Estate object</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
+</head>
+
+<body id="body">
+
+  <div id="container-button">
+    <theme-button />
+    <editor-button />
+  </div>
+
+  <span id="mainResourceName">Real Estate Service</span>
+  <span id="resourceName">Real Estate object</span>
+  <span id="capitalizedResourceName">Real Estate object</span>
+
+  <h1>POST /realandmate/v1/RealEstateService/RealEstateObjects</h1>
+  <p>
+    <indent></indent>Creates Real Estate object.
+  </p>
+  <hr />
+  <!--<ul>
+    <li><a href="#request-b"><t-request-h></t-request-h></a></li>
+    <li><a href="#response"><t-response></t-response></a></li>
+  </ul>
+  <p><a name="request-h"></a></p>
+  <h2><t-request-h></t-request-h></h2>
+  <div class="sourceCode">
+    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+      <span class="dt">&quot;&quot;</span><span class="fu">:</span> <span class="er">string</span>
+<span class="fu">}</span></code></pre>
+  </div>
+  <dl class="dl-root">
+    <dt>
+      <dt-session-id></dt-session-id>
+    </dt>
+    <dd>
+      <dd-session-id></dd-session-id>
+    </dd>
+  </dl>-->
+
+  <p><a name="t-request-body"></a></p>
+  <h2>
+    <t-request-body></t-request-body>
+  </h2>
+  <div class="sourceCode" id="cb2">
+    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+    <span class="dt">&quot;username&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;password&quot;</span><span class="fu">:</span> <span class="er">string</span>
+<span class="fu">}</span></code></pre>
+  </div>
+
+  <!-- response headers -->
+
+  <dl class="dl-root">
+    <dt>
+      <dt-username></dt-username>
+    </dt>
+    <dd>
+      <dd-username></dd-username>
+    </dd>
+    <dt>
+      <dt-password></dt-password>
+    </dt>
+    <dd>
+      <dd-password></dd-password>
+    </dd>
+  </dl>
+
+  <p><a name="t-response-body"></a></p>
+  <h2>
+    <t-response-body></t-response-body>
+  </h2>
+  <div class="sourceCode" id="cb2">
+    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+    <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="er">string</span>
+    <span class="dt">&quot;date_created&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
+    <span class="dt">&quot;date_modified&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
+    <span class="dt">&quot;owner&quot;</span><span class="fu">:{</span>
+      <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="fu">},</span>
+    <span class="dt">&quot;tenant&quot;</span><span class="fu">:{</span>
+      <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="fu">},</span>
+    <span class="dt">&quot;property_type&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;property_address&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;property_size&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;occupancy&quot;</span><span class="fu">:</span> <span class="er">number</span><span class="fu">,</span>
+    <span class="dt">&quot;rentable_area&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;lease_term&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;rental_price&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;maintenance_schedule&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;utilities&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;amenities&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;lease_agreement_details&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;security_deposit&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">array</span>
+<span class="fu">}</span></code></pre>
+  </div>
+
+  <dl class="dl-root">
+    <dt>
+      <dt-id></dt-id>
+    </dt>
+    <dd>
+      <dd-id></dd-id>
+    </dd>
+    <dt>
+      <dt-name></dt-name>
+    </dt>
+    <dd>
+      <dd-name></dd-name>
+    </dd>
+    <dt>
+      <dt-description></dt-description>
+    </dt>
+    <dd>
+      <dd-description></dd-description>
+    </dd>
+  </dl>
+
+  <p><a name="t-response-codes"></a></p>
+  <h2>
+    <t-response-codes></t-response-codes>
+  </h2>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Code
+        </th>
+        <th>
+          Description
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="cell-center-bold">
+          200
+        </td>
+        <td class="cell-center">
+          <sc-200></sc-200>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="footerContainer"></div>
+
+  <script src="../../../scripts/elements-title.js"></script>
+  <script src="../../../scripts/api-ref.js"></script>
+  <script src="../../../scripts/dark-theme.js"></script>
+  <script src="../../../scripts/editor-mode.js"></script>
+  <script src="../../../scripts/elements.js"></script>
+</body>
+
+</html>

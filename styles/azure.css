@@ -184,6 +184,10 @@ html {
   transition: 0.5s;
 }
 
+img {
+  font-size: 50px;
+}
+
 indent {
   padding-left: 22px;
 }
@@ -268,7 +272,12 @@ optionalityDegreeU:before {
 }
 
 p {
-  margin: 10px 0px;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 paramType {
@@ -368,6 +377,20 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   text-align: center;
   text-decoration: none;
   padding: 25px;
+}
+
+.list-link {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.list-link:hover {
+  color: #318CE7;
 }
 
 .sourceCode {
@@ -601,6 +624,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   /* class variables */
   --class-center-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --class-list-link-color: #000;
   --class-no-shadow-hover-box-shadow: unset;
   --class-sourceCode-json-background-color: #fefefe;
   /* id variables */
@@ -645,6 +669,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     /* class variables */
     --class-center-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
     --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+    --class-list-link-color: #fff;
     --class-no-shadow-hover-box-shadow: unset;
     --class-sourceCode-json-background-color: #333;
     /* id variables */
@@ -689,6 +714,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   /* class variables */
   --class-center-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
   --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+  --class-list-link-color: #fff;
   --class-no-shadow-hover-box-shadow: unset;
   --class-sourceCode-json-background-color: #333;
   /* id variables */
@@ -776,6 +802,10 @@ th {
 
 .doc-list-item:hover {
   box-shadow: var(--class-doc-list-item-hover-box-shadow);
+}
+
+.list-link {
+  color: var(--class-list-link-color);
 }
 
 .no-shadow:hover {

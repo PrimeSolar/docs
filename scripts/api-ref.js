@@ -1,5 +1,24 @@
 // Terms
 
+// date_created
+class DtDateCreated extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    date_created
+    `
+  }
+}
+customElements.define("dt-date-created", DtDateCreated);
+// +
+class DdDateCreated extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The date the <resource-name></resource-name> was initially made.
+    `
+  }
+}
+customElements.define("dd-date-created", DdDateCreated);
+
 // description
 class DtDescription extends HTMLElement {
   connectedCallback() {

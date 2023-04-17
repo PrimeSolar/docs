@@ -19,6 +19,25 @@ class DdDateCreated extends HTMLElement {
 }
 customElements.define("dd-date-created", DdDateCreated);
 
+// date_modified
+class DtDateModified extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    date_modified
+    `
+  }
+}
+customElements.define("dt-date-modified", DtDateModified);
+// +
+class DdDateModified extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The date the <resource-name></resource-name> was last changed and saved.
+    `
+  }
+}
+customElements.define("dd-date-modified", DdDateModified);
+
 // description
 class DtDescription extends HTMLElement {
   connectedCallback() {

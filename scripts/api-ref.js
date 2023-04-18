@@ -111,6 +111,25 @@ class DdName extends HTMLElement {
 }
 customElements.define("dd-name", DdName);
 
+// owner
+class DtOwner extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    owner
+    `
+  }
+}
+customElements.define("dt-owner", DtOwner);
+// +
+class DdOwner extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The person or company that owns <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-owner", DdOwner);
+
 // resourceName
 class resourceName extends HTMLElement {
   connectedCallback() {

@@ -1,5 +1,24 @@
 // Terms
 
+// app_category
+class DtAppCategory extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    app_category
+    `
+  }
+}
+customElements.define("dt-app-category", DtAppCategory);
+// +
+class DdAppCategory extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The high-level family of the application.
+    `
+  }
+}
+customElements.define("dd-app-category", DdAppCategory);
+
 // date_created
 class DtDateCreated extends HTMLElement {
   connectedCallback() {

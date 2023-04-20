@@ -176,6 +176,25 @@ class DdPassword extends HTMLElement {
 }
 customElements.define("dd-password", DdPassword);
 
+// tags
+class DtTags extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    tags
+    `
+  }
+}
+customElements.define("dt-tags", DtTags);
+// +
+class DdTags extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Labels attached to the <resource-name></resource-name> for the purpose of identification or to add an extra level of description.
+    `
+  }
+}
+customElements.define("dd-tags", DdTags);
+
 // username
 class DtUsername extends HTMLElement {
   connectedCallback() {

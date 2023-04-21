@@ -19,6 +19,14 @@ class DdAppCategory extends HTMLElement {
 }
 customElements.define("dd-app-category", DdAppCategory);
 
+// capitalizedResourceName
+class capitalizedResourceName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += document.getElementById("capitalizedResourceName").innerHTML;
+  }
+}
+customElements.define("capitalized-resource-name", capitalizedResourceName);
+
 // date_created
 class DtDateCreated extends HTMLElement {
   connectedCallback() {
@@ -76,13 +84,24 @@ class DdDescription extends HTMLElement {
 }
 customElements.define("dd-description", DdDescription);
 
-// capitalizedResourceName
-class capitalizedResourceName extends HTMLElement {
+// documentation_url
+class DtDocumentationUrl extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += document.getElementById("capitalizedResourceName").innerHTML;
+    this.innerHTML += `
+    documentation_url
+    `
   }
 }
-customElements.define("capitalized-resource-name", capitalizedResourceName);
+customElements.define("dt-documentation-url", DtDocumentationUrl);
+// +
+class DdDocumentationUrl extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The base URL for the <resource-name></resource-name> documentation.
+    `
+  }
+}
+customElements.define("dd-documentation-url", DdDocumentationUrl);
 
 // id
 class DtId extends HTMLElement {

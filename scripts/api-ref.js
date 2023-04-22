@@ -122,6 +122,25 @@ class DdId extends HTMLElement {
 }
 customElements.define("dd-id", DdId);
 
+// license
+class DtLicense extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    license
+    `
+  }
+}
+customElements.define("dt-license", DtLicense);
+// +
+class DdLicense extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The permit from an authority to own or use <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-license", DdLicense);
+
 // mainResourceName
 class mainResourceName extends HTMLElement {
   connectedCallback() {

@@ -214,6 +214,30 @@ class DdPassword extends HTMLElement {
 }
 customElements.define("dd-password", DdPassword);
 
+// service_enabled
+class DtServiceEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    service_enabled
+    `
+  }
+}
+customElements.define("dt-service-enabled", DtServiceEnabled);
+// +
+class DdServiceEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether the <resource-name></resource-name> is enabled:
+      <ul>
+        <li><b>0</b>: the service is disabled.</li>
+        <li><b>1</b>: the service is enabled.</li>
+      </ul>
+    Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.
+    `
+  }
+}
+customElements.define("dd-service-enabled", DdServiceEnabled);
+
 // tags
 class DtTags extends HTMLElement {
   connectedCallback() {

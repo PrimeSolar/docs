@@ -214,6 +214,30 @@ class DdPassword extends HTMLElement {
 }
 customElements.define("dd-password", DdPassword);
 
+// processing_timeout
+class DtProcessingTimeout extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    processing_timeout
+    `
+  }
+}
+customElements.define("dt-processing-timeout", DtProcessingTimeout);
+// +
+class DdProcessingTimeout extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether the processing timeout is set:
+      <ul>
+        <li><b>true</b>: the processing timeout is set.</li>
+        <li><b>false</b>: the processing timeout is not set.</li>
+      </ul>
+    Default processing timeout: 30 seconds.
+    `
+  }
+}
+customElements.define("dd-processing-timeout", DdProcessingTimeout);
+
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {
@@ -229,8 +253,8 @@ class DdServiceEnabled extends HTMLElement {
     this.innerHTML += `
     An indication of whether the <resource-name></resource-name> is enabled:
       <ul>
-        <li><b>0</b>: the service is disabled.</li>
-        <li><b>1</b>: the service is enabled.</li>
+        <li><b>true</b>: the service is enabled.</li>
+        <li><b>false</b>: the service is disabled.</li>
       </ul>
     Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.
     `

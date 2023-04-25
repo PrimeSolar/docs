@@ -208,7 +208,7 @@ customElements.define("dt-password", DtPassword);
 class DdPassword extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    A secret character combination that must be used to gain admission to <main-resource-name></main-resource-name>.
+    A secret character combination that must be used to gain admission to the <main-resource-name></main-resource-name>.
     `
   }
 }
@@ -237,6 +237,25 @@ class DdProcessingTimeout extends HTMLElement {
   }
 }
 customElements.define("dd-processing-timeout", DdProcessingTimeout);
+
+// real_estate_objects
+class DtRealEstateObjects extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    real_estate_objects
+    `
+  }
+}
+customElements.define("dt-real-estate-objects", DtRealEstateObjects);
+// +
+class DdRealEstateObjects extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A collection of references to real estate objects.
+    `
+  }
+}
+customElements.define("dd-real-estate-objects", DdRealEstateObjects);
 
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
@@ -294,7 +313,7 @@ customElements.define("dt-username", DtUsername);
 class DdUsername extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    An identificator used by a person with access to a <main-resource-name></main-resource-name>.
+    An identifier used by a person with access to the <main-resource-name></main-resource-name>.
     `
   }
 }

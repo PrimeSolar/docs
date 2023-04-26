@@ -300,6 +300,25 @@ class DdTags extends HTMLElement {
 }
 customElements.define("dd-tags", DdTags);
 
+// url
+class DtUrl extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    url
+    `
+  }
+}
+customElements.define("dt-url", DtUrl);
+// +
+class DdUrl extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Resource URL.
+    `
+  }
+}
+customElements.define("dd-url", DdUrl);
+
 // username
 class DtUsername extends HTMLElement {
   connectedCallback() {

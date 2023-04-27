@@ -149,6 +149,25 @@ class mainResourceName extends HTMLElement {
 }
 customElements.define("main-resource-name", mainResourceName);
 
+// members
+class DtMembers extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    members
+    `
+  }
+}
+customElements.define("dt-members", DtMembers);
+// +
+class DdMembers extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Collection members.
+    `
+  }
+}
+customElements.define("dd-members", DdMembers);
+
 // name
 class DtName extends HTMLElement {
   connectedCallback() {

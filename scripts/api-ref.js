@@ -122,6 +122,44 @@ class DdId extends HTMLElement {
 }
 customElements.define("dd-id", DdId);
 
+// items
+class DtItems extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    items
+    `
+  }
+}
+customElements.define("dt-items", DtItems);
+// +
+class DdItems extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Collection items.
+    `
+  }
+}
+customElements.define("dd-items", DdItems);
+
+// items_count
+class DtItemsCount extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    items_count
+    `
+  }
+}
+customElements.define("dt-items-count", DtItemsCount);
+// +
+class DdItemsCount extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The number of items in the collection.
+    `
+  }
+}
+customElements.define("dd-items-count", DdItemsCount);
+
 // license
 class DtLicense extends HTMLElement {
   connectedCallback() {
@@ -148,25 +186,6 @@ class mainResourceName extends HTMLElement {
   }
 }
 customElements.define("main-resource-name", mainResourceName);
-
-// members
-class DtMembers extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML += `
-    members
-    `
-  }
-}
-customElements.define("dt-members", DtMembers);
-// +
-class DdMembers extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML += `
-    Collection members.
-    `
-  }
-}
-customElements.define("dd-members", DdMembers);
 
 // name
 class DtName extends HTMLElement {

@@ -206,6 +206,25 @@ class DdName extends HTMLElement {
 }
 customElements.define("dd-name", DdName);
 
+// name-2
+class DtName2 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    name
+    `
+  }
+}
+customElements.define("dt-name-2", DtName2);
+// +
+class DdName2 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A word or set of words by which an owner is known, addressed and referred to.
+    `
+  }
+}
+customElements.define("dd-name-2", DdName2);
+
 // owner
 class DtOwner extends HTMLElement {
   connectedCallback() {

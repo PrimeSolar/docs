@@ -271,6 +271,25 @@ class DdPassword extends HTMLElement {
 }
 customElements.define("dd-password", DdPassword);
 
+// phone
+class DtPhone extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    phone
+    `
+  }
+}
+customElements.define("dt-phone", DtPhone);
+// +
+class DdPhone extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A phone number.
+    `
+  }
+}
+customElements.define("dd-phone", DdPhone);
+
 // processing_timeout
 class DtProcessingTimeout extends HTMLElement {
   connectedCallback() {

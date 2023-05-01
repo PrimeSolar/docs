@@ -103,6 +103,25 @@ class DdDocumentationUrl extends HTMLElement {
 }
 customElements.define("dd-documentation-url", DdDocumentationUrl);
 
+// email
+class DtEmail extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    email
+    `
+  }
+}
+customElements.define("dt-email", DtEmail);
+// +
+class DdEmail extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An email address.
+    `
+  }
+}
+customElements.define("dd-email", DdEmail);
+
 // id
 class DtId extends HTMLElement {
   connectedCallback() {

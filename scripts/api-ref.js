@@ -238,7 +238,7 @@ customElements.define("dt-name-2", DtName2);
 class DdName2 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    A word or set of words by which an owner is known, addressed and referred to.
+    A name of a person.
     `
   }
 }
@@ -257,7 +257,7 @@ customElements.define("dt-owner", DtOwner);
 class DdOwner extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The person or company that owns <resource-name></resource-name>.
+    A person or company that owns <resource-name></resource-name>.
     `
   }
 }
@@ -394,6 +394,25 @@ class DdTags extends HTMLElement {
   }
 }
 customElements.define("dd-tags", DdTags);
+
+// tenant
+class DtTenant extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    tenant
+    `
+  }
+}
+customElements.define("dt-tenant", DtTenant);
+// +
+class DdTenant extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A person who rents a property from a landlord.
+    `
+  }
+}
+customElements.define("dd-tenant", DdTenant);
 
 // url
 class DtUrl extends HTMLElement {

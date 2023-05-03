@@ -333,6 +333,25 @@ class DdProcessingTimeout extends HTMLElement {
 }
 customElements.define("dd-processing-timeout", DdProcessingTimeout);
 
+// property_type
+class DtPropertyType extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    property_type
+    `
+  }
+}
+customElements.define("dt-property-type", DtPropertyType);
+// +
+class DdPropertyType extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The type of this property.
+    `
+  }
+}
+customElements.define("dd-property-type", DdPropertyType);
+
 // real_estate_objects
 class DtRealEstateObjects extends HTMLElement {
   connectedCallback() {

@@ -352,6 +352,25 @@ class DdPropertyAddress extends HTMLElement {
 }
 customElements.define("dd-property-address", DdPropertyAddress);
 
+// property_size
+class DtPropertySize extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    property_size
+    `
+  }
+}
+customElements.define("dt-property-size", DtPropertySize);
+// +
+class DdPropertySize extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The size of this property.
+    `
+  }
+}
+customElements.define("dd-property-size", DdPropertySize);
+
 // property_type
 class DtPropertyType extends HTMLElement {
   connectedCallback() {

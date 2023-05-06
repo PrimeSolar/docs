@@ -244,6 +244,25 @@ class DdName2 extends HTMLElement {
 }
 customElements.define("dd-name-2", DdName2);
 
+// occupancy
+class DtOccupancy extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    occupancy
+    `
+  }
+}
+customElements.define("dt-occupancy", DtOccupancy);
+// +
+class DdOccupancy extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The fact of occupying a <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-occupancy", DdOccupancy);
+
 // owner
 class DtOwner extends HTMLElement {
   connectedCallback() {

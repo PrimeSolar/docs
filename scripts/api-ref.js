@@ -428,6 +428,25 @@ class DdRealEstateObjects extends HTMLElement {
 }
 customElements.define("dd-real-estate-objects", DdRealEstateObjects);
 
+// rentable_area
+class DtRentableArea extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    rentable_area
+    `
+  }
+}
+customElements.define("dt-rentable-area", DtRentableArea);
+// +
+class DdRentableArea extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The amount of space that is allocated to a tenant.<br/>It can be used to calculate the total rent owed by the tenant to the landlord.
+    `
+  }
+}
+customElements.define("dd-rentable-area", DdRentableArea);
+
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {

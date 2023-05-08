@@ -179,6 +179,25 @@ class DdItemsCount extends HTMLElement {
 }
 customElements.define("dd-items-count", DdItemsCount);
 
+// lease_term
+class DtLeaseTerm extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    lease_term
+    `
+  }
+}
+customElements.define("dt-lease-term", DtLeaseTerm);
+// +
+class DdLeaseTerm extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The period of the lease.
+    `
+  }
+}
+customElements.define("dd-lease-term", DdLeaseTerm);
+
 // license
 class DtLicense extends HTMLElement {
   connectedCallback() {

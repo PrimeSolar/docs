@@ -466,6 +466,25 @@ class DdRentableArea extends HTMLElement {
 }
 customElements.define("dd-rentable-area", DdRentableArea);
 
+// rental_price
+class DtRentalPrice extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    rental_price
+    `
+  }
+}
+customElements.define("dt-rental-price", DtRentalPrice);
+// +
+class DdRentalPrice extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A rental price of the <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-rental-price", DdRentalPrice);
+
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {

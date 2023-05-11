@@ -225,6 +225,25 @@ class mainResourceName extends HTMLElement {
 }
 customElements.define("main-resource-name", mainResourceName);
 
+// maintenance_schedule
+class DtMaintenanceSchedule extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    maintenance_schedule
+    `
+  }
+}
+customElements.define("dt-maintenance-schedule", DtMaintenanceSchedule);
+// +
+class DdMaintenanceSchedule extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of all the expected maintenance plans.
+    `
+  }
+}
+customElements.define("dd-maintenance-schedule", DdMaintenanceSchedule);
+
 // name
 class DtName extends HTMLElement {
   connectedCallback() {

@@ -604,6 +604,32 @@ class DdUsername extends HTMLElement {
 }
 customElements.define("dd-username", DdUsername);
 
+// utilities
+class DtUtilities extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    utilities
+    `
+  }
+}
+customElements.define("dt-utilities", DtUtilities);
+// +
+class DdUtilities extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of available utilities:
+    <ul>
+      <li><b>Electric power</b>.</li>
+      <li><b>Natural gas</b>.</li>
+      <li><b>Sewerage</b>.</li>
+      <li><b>Cold water</b>.</li>
+      <li><b>Hot water</b>.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-utilities", DdUtilities);
+
 // version
 class DtVersion extends HTMLElement {
   connectedCallback() {

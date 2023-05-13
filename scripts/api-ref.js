@@ -1,5 +1,24 @@
 // Terms
 
+// amenities
+class DtAmenities extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    amenities
+    `
+  }
+}
+customElements.define("dt-amenities", DtAmenities);
+// +
+class DdAmenities extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of available useful features and facilities of the <resource-name></resource-name>.
+    `
+  }
+}
+customElements.define("dd-amenities", DdAmenities);
+
 // app_category
 class DtAppCategory extends HTMLElement {
   connectedCallback() {

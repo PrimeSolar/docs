@@ -198,6 +198,25 @@ class DdItemsCount extends HTMLElement {
 }
 customElements.define("dd-items-count", DdItemsCount);
 
+// lease_agreement_details
+class DtLeaseAgreementDetails extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    lease_agreement_details
+    `
+  }
+}
+customElements.define("dt-lease-agreement-details", DtLeaseAgreementDetails);
+// +
+class DdLeaseAgreementDetails extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The terms and conditions under which the property is leased.
+    `
+  }
+}
+customElements.define("dd-lease-agreement-details", DdLeaseAgreementDetails);
+
 // lease_term
 class DtLeaseTerm extends HTMLElement {
   connectedCallback() {

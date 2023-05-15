@@ -542,6 +542,25 @@ class DdRentalPrice extends HTMLElement {
 }
 customElements.define("dd-rental-price", DdRentalPrice);
 
+// license
+class DtSecurityDeposit extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    security_deposit
+    `
+  }
+}
+customElements.define("dt-security-deposit", DtSecurityDeposit);
+// +
+class DdSecurityDeposit extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A sum of money held in trust.
+    `
+  }
+}
+customElements.define("dd-security-deposit", DdSecurityDeposit);
+
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {

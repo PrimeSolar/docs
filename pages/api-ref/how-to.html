@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>How to Use Our REST API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../../styles/azure.css" />
+</head>
+
+<body id="body">
+
+  <div id="container-button">
+    <theme-button />
+    <editor-button />
+  </div>
+
+  <h1>How to Use Our REST API</h1>
+
+  <h2>What is a REST API, anyway?</h2>
+
+  <p>
+    API is an abbreviation for "Application Programming Interface". An API is a set of rules that lets programs talk to each other, exposing data and functionality across the Internet in a consistent format.
+  </p>
+  <p>
+    REST stands for "<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank">Representational State Transfer</a>". This is an architectural pattern that describes how distributed systems can expose a
+    consistent interface. When people use the term "REST API", they are generally referring to an API accessed using the HTTP protocol at a predefined set of URLs.
+  </p>
+  <p>
+    These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them over HTTP, like
+    GET, POST, PUT, and DELETE. The action represented by the first and last of these is clear, but POST and PUT have specific meanings. How they are defined is confusing, but the general rule is: use POST to create resources, and PUT to update
+    resources.
+  </p>
+  <p>
+    Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its own API, and at
+    the same time you will work with each of them in roughly the same way, directly over HTTP.
+  </p>
+
+  <script src="../../scripts/check-browser.js"></script>
+  <script src="../../scripts/elements-title.js"></script>
+  <script src="../../scripts/dark-theme.js"></script>
+  <script src="../../scripts/editor-mode.js"></script>
+  <script src="../../scripts/elements.js"></script>
+
+</body>
+
+</html>

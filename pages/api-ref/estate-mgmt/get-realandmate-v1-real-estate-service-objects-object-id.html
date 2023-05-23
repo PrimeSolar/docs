@@ -74,12 +74,12 @@
     <span class="dt">&quot;owner&quot;</span><span class="fu">:{</span>
       <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
       <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span>
     <span class="fu">},</span>
     <span class="dt">&quot;tenant&quot;</span><span class="fu">:{</span>
       <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
       <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span>
     <span class="fu">},</span>
     <span class="dt">&quot;property_type&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
     <span class="dt">&quot;property_address&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
@@ -88,12 +88,12 @@
     <span class="dt">&quot;rentable_area&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
     <span class="dt">&quot;lease_term&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
     <span class="dt">&quot;rental_price&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;maintenance_schedule&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;utilities&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;amenities&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
+    <span class="dt">&quot;maintenance_schedule&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
+    <span class="dt">&quot;utilities&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
+    <span class="dt">&quot;amenities&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
     <span class="dt">&quot;lease_agreement_details&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
     <span class="dt">&quot;security_deposit&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">array</span>
+    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">[string]</span>
 <span class="fu">}</span></code></pre>
   </div>
   <dl class="dl-root">
@@ -114,6 +114,148 @@
     </dt>
     <dd>
       <dd-description></dd-description>
+    </dd>
+    <dt>
+      <dt-date-created></dt-date-created>
+    </dt>
+    <dd>
+      <dd-date-created></dd-date-created>
+    </dd>
+    <dt>
+      <dt-date-modified></dt-date-modified>
+    </dt>
+    <dd>
+      <dd-date-modified></dd-date-modified>
+    </dd>
+    <dt>
+      <dt-owner></dt-owner>
+    </dt>
+    <dd>
+      <dd-owner></dd-owner>
+      <dl>
+        <dt>
+          <dt-name-2></dt-name-2>
+        </dt>
+        <dd>
+          <dd-name-2></dd-name-2>
+        </dd>
+        <dt>
+          <dt-phone></dt-phone>
+        </dt>
+        <dd>
+          <dd-phone></dd-phone>
+        </dd>
+        <dt>
+          <dt-email></dt-email>
+        </dt>
+        <dd>
+          <dd-email></dd-email>
+        </dd>
+      </dl>
+    </dd>
+    <dt>
+      <dt-tenant></dt-tenant>
+    </dt>
+    <dd>
+      <dd-tenant></dd-tenant>
+      <dl>
+        <dt>
+          <dt-name-2></dt-name-2>
+        </dt>
+        <dd>
+          <dd-name-2></dd-name-2>
+        </dd>
+        <dt>
+          <dt-phone></dt-phone>
+        </dt>
+        <dd>
+          <dd-phone></dd-phone>
+        </dd>
+        <dt>
+          <dt-email></dt-email>
+        </dt>
+        <dd>
+          <dd-email></dd-email>
+        </dd>
+      </dl>
+    </dd>
+    <dt>
+      <dt-property-type></dt-property-type>
+    </dt>
+    <dd>
+      <dd-property-type></dd-property-type>
+    </dd>
+    <dt>
+      <dt-property-address></dt-property-address>
+    </dt>
+    <dd>
+      <dd-property-address></dd-property-address>
+    </dd>
+    <dt>
+      <dt-property-size></dt-property-size>
+    </dt>
+    <dd>
+      <dd-property-size></dd-property-size>
+    </dd>
+    <dt>
+      <dt-occupancy></dt-occupancy>
+    </dt>
+    <dd>
+      <dd-occupancy></dd-occupancy>
+    </dd>
+    <dt>
+      <dt-rentable-area></dt-rentable-area>
+    </dt>
+    <dd>
+      <dd-rentable-area></dd-rentable-area>
+    </dd>
+    <dt>
+      <dt-lease-term></dt-lease-term>
+    </dt>
+    <dd>
+      <dd-lease-term></dd-lease-term>
+    </dd>
+    <dt>
+      <dt-rental-price></dt-rental-price>
+    </dt>
+    <dd>
+      <dd-rental-price></dd-rental-price>
+    </dd>
+    <dt>
+      <dt-maintenance-schedule></dt-maintenance-schedule>
+    </dt>
+    <dd>
+      <dd-maintenance-schedule></dd-maintenance-schedule>
+    </dd>
+    <dt>
+      <dt-utilities></dt-utilities>
+    </dt>
+    <dd>
+      <dd-utilities></dd-utilities>
+    </dd>
+    <dt>
+      <dt-amenities></dt-amenities>
+    </dt>
+    <dd>
+      <dd-amenities></dd-amenities>
+    </dd>
+    <dt>
+      <dt-lease-agreement-details></dt-lease-agreement-details>
+    </dt>
+    <dd>
+      <dd-lease-agreement-details></dd-lease-agreement-details>
+    </dd>
+    <dt>
+      <dt-security-deposit></dt-security-deposit>
+    </dt>
+    <dd>
+      <dd-security-deposit></dd-security-deposit>
+    </dd>
+    <dt>
+      <dt-tags></dt-tags>
+    </dt>
+    <dd>
+      <dd-tags></dd-tags>
     </dd>
   </dl>
 

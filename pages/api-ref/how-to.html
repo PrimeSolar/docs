@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>How to Use Our REST API</title>
+  <title>How to Use Real&Mate's REST API</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
@@ -16,7 +16,7 @@
     <editor-button />
   </div>
 
-  <h1>How to Use Our REST API</h1>
+  <h1>How to Use Real&Mate's REST API</h1>
 
   <h2>What is a REST API, anyway?</h2>
 
@@ -36,6 +36,27 @@
     Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its own API, and at
     the same time you will work with each of them in roughly the same way, directly over HTTP.
   </p>
+
+  <h2>Authenticate with HTTP</h2>
+
+  <p>
+    Real&Mate supports <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic authentication</a>. This allows you to protect the URLs on your web server so that only you and Real&Mate can access them. In order
+    to authenticate with HTTP, you may provide a username and password with the following URL format:
+  </p>
+  <div class="sourceCode">
+    <pre class="sourceCode json"><code class="sourceCode json">
+      <span class="dt">https://username:password@api.realandmate.com/yyyy-mm-dd/your_desired_path</span>
+      </code></pre>
+  </div>
+  <p>
+    For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
+  </p>
+  <div class="sourceCode">
+    <pre class="sourceCode json"><code class="sourceCode json">
+      <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
+      <span class="dt">  -u '&lt;YOUR_ACCOUNT_ID&gt;:&lt;YOUR_AUTH_TOKEN&gt;'</span>
+      </code></pre>
+  </div>
 
   <script src="../../scripts/check-browser.js"></script>
   <script src="../../scripts/elements-title.js"></script>

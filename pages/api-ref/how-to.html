@@ -46,7 +46,7 @@
   <div class="sourceCode">
     <pre class="sourceCode json"><code class="sourceCode json">
       <span class="dt">https://username:password@api.realandmate.com/yyyy-mm-dd/your_desired_path</span>
-      </code></pre>
+    </code></pre>
   </div>
   <p>
     For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
@@ -55,7 +55,16 @@
     <pre class="sourceCode json"><code class="sourceCode json">
       <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
       <span class="dt">  -u '&lt;YOUR_ACCOUNT_ID&gt;:&lt;YOUR_AUTH_TOKEN&gt;'</span>
-      </code></pre>
+    </code></pre>
+  </div>
+  <p>
+    If you want to use API keys to authenticate instead of your Real&Mate account ID and auth token, then use the API key as your username and your API key’s Secret as your password:
+  </p>
+  <div class="sourceCode">
+    <pre class="sourceCode json"><code class="sourceCode json">
+      <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
+      <span class="dt">  -u '&lt;YOUR_API_KEY&gt;:&lt;YOUR_API_KEY_SECRET&gt;'</span>
+    </code></pre>
   </div>
 
   <script src="../../scripts/check-browser.js"></script>

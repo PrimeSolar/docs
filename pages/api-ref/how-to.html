@@ -16,69 +16,73 @@
     <editor-button />
   </div>
 
-  <h1>How to Use Real&Mate's REST API</h1>
+  <header>
+    <h1>How to Use Real&Mate's REST API</h1>
+  </header>
 
-  <h2>What is a REST API, anyway?</h2>
+  <main>
+    <h2>What is a REST API, anyway?</h2>
+    <p>
+      API is an abbreviation for "Application Programming Interface". An API is a set of rules that lets programs talk to each other, exposing data and functionality across the Internet in a consistent format.
+    </p>
+    <p>
+      REST stands for "<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank">Representational State Transfer</a>". This is an architectural pattern that describes how distributed systems can expose a
+      consistent interface. When people use the term "REST API", they are generally referring to an API accessed using the HTTP protocol at a predefined set of URLs.
+    </p>
+    <p>
+      These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them over HTTP, like
+      GET, POST, PUT, and DELETE. The action represented by the first and last of these is clear, but POST and PUT have specific meanings. How they are defined is confusing, but the general rule is: use POST to create resources, and PUT to update
+      resources.
+    </p>
+    <p>
+      Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its own API, and at
+      the same time you will work with each of them in roughly the same way, directly over HTTP.
+    </p>
+    <h2>Authenticate with HTTP</h2>
+    <p>
+      Real&Mate supports <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic authentication</a>. This allows you to protect the URLs on your web server so that only you and Real&Mate can access them. In
+      order
+      to authenticate with HTTP, you may provide a username and password with the following URL format:
+    </p>
+    <div class="sourceCode">
+      <pre class="sourceCode json"><code class="sourceCode json">
+        <span class="dt">https://username:password@api.realandmate.com/yyyy-mm-dd/your_desired_path</span>
+      </code></pre>
+    </div>
+    <p>
+      For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
+    </p>
+    <div class="sourceCode">
+      <pre class="sourceCode json"><code class="sourceCode json">
+        <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
+        <span class="dt">  -u '&lt;YOUR_ACCOUNT_ID&gt;:&lt;YOUR_AUTH_TOKEN&gt;'</span>
+      </code></pre>
+    </div>
+    <p>
+      If you want to use API keys to authenticate instead of your Real&Mate account ID and auth token, then use the API key as your username and your API key’s Secret as your password:
+    </p>
+    <div class="sourceCode">
+      <pre class="sourceCode json"><code class="sourceCode json">
+        <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
+        <span class="dt">  -u '&lt;YOUR_API_KEY&gt;:&lt;YOUR_API_KEY_SECRET&gt;'</span>
+      </code></pre>
+    </div>
+    <p>
+      The API key type has to be created as <code>Base</code> for the above command to access your accounts. Keys of type <code>Common</code> can only be used on commands where you also provide the Account ID as part of the API. For example:
+    </p>
+    <div class="sourceCode">
+      <pre class="sourceCode json"><code class="sourceCode json">
+        <span class="dt">curl -X GET https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
+        <span class="dt">  '&lt;YOUR_ACCOUNT_ID&gt;/Applications.json' \</span>
+        <span class="dt">  -u $'&lt;YOUR_API_KEY&gt;:&lt;YOUR_API_KEY_SECRET&gt;'</span>
+      </code></pre>
+    </div>
+    <p>
+      Real&Mate will authenticate to your web server using the provided username and password and will remain logged in for the duration of the action.
+    </p>
+  </main>
 
-  <p>
-    API is an abbreviation for "Application Programming Interface". An API is a set of rules that lets programs talk to each other, exposing data and functionality across the Internet in a consistent format.
-  </p>
-  <p>
-    REST stands for "<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank">Representational State Transfer</a>". This is an architectural pattern that describes how distributed systems can expose a
-    consistent interface. When people use the term "REST API", they are generally referring to an API accessed using the HTTP protocol at a predefined set of URLs.
-  </p>
-  <p>
-    These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them over HTTP, like
-    GET, POST, PUT, and DELETE. The action represented by the first and last of these is clear, but POST and PUT have specific meanings. How they are defined is confusing, but the general rule is: use POST to create resources, and PUT to update
-    resources.
-  </p>
-  <p>
-    Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its own API, and at
-    the same time you will work with each of them in roughly the same way, directly over HTTP.
-  </p>
-
-  <h2>Authenticate with HTTP</h2>
-
-  <p>
-    Real&Mate supports <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic authentication</a>. This allows you to protect the URLs on your web server so that only you and Real&Mate can access them. In order
-    to authenticate with HTTP, you may provide a username and password with the following URL format:
-  </p>
-  <div class="sourceCode">
-    <pre class="sourceCode json"><code class="sourceCode json">
-      <span class="dt">https://username:password@api.realandmate.com/yyyy-mm-dd/your_desired_path</span>
-    </code></pre>
-  </div>
-  <p>
-    For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
-  </p>
-  <div class="sourceCode">
-    <pre class="sourceCode json"><code class="sourceCode json">
-      <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
-      <span class="dt">  -u '&lt;YOUR_ACCOUNT_ID&gt;:&lt;YOUR_AUTH_TOKEN&gt;'</span>
-    </code></pre>
-  </div>
-  <p>
-    If you want to use API keys to authenticate instead of your Real&Mate account ID and auth token, then use the API key as your username and your API key’s Secret as your password:
-  </p>
-  <div class="sourceCode">
-    <pre class="sourceCode json"><code class="sourceCode json">
-      <span class="dt">curl -G https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
-      <span class="dt">  -u '&lt;YOUR_API_KEY&gt;:&lt;YOUR_API_KEY_SECRET&gt;'</span>
-    </code></pre>
-  </div>
-  <p>
-    The API key type has to be created as <code>Base</code> for the above command to access your accounts. Keys of type <code>Common</code> can only be used on commands where you also provide the Account ID as part of the API. For example:
-  </p>
-  <div class="sourceCode">
-    <pre class="sourceCode json"><code class="sourceCode json">
-      <span class="dt">curl -X GET https://api.realandmate.com/yyyy-mm-dd/Accounts \</span>
-      <span class="dt">  '&lt;YOUR_ACCOUNT_ID&gt;/Applications.json' \</span>
-      <span class="dt">  -u $'&lt;YOUR_API_KEY&gt;:&lt;YOUR_API_KEY_SECRET&gt;'</span>
-    </code></pre>
-  </div>
-
-
-  </div>
+  <div id="footerContainer"></div>
 
   <script src="../../scripts/check-browser.js"></script>
   <script src="../../scripts/elements-title.js"></script>

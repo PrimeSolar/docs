@@ -31,7 +31,8 @@
     </p>
     <p>
       These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them over HTTP, like
-      GET, POST, PUT, and DELETE. The action represented by the first and last of these is clear, but POST and PUT have specific meanings. How they are defined is confusing, but the general rule is: use POST to create resources, and PUT to update
+      <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>. The action represented by the first and last of these is clear, but <code>POST</code> and <code>PUT</code> have specific meanings. How they are defined is
+      confusing, but the general rule is: use <code>POST</code> to create resources, and <code>PUT</code> to update
       resources.
     </p>
     <p>
@@ -79,6 +80,15 @@
     </div>
     <p>
       Real&Mate will authenticate to your web server using the provided username and password and will remain logged in for the duration of the action.
+    </p>
+    <h2>How Real&Mate’s API uses webhooks</h2>
+    <p>
+      <a href="webhooks.html" target="_blank">Webhooks</a> are user-defined HTTP callbacks triggered by an event in a web application.<br />Real&Mate uses webhooks to let your application know when events happen, like adding a new real estate object
+      or updating an existing one. Webhooks are triggered asynchronously.
+    </p>
+    <p>
+      When the webhook event occurs, Real&Mate makes an HTTP request (usually <code>GET</code> or <code>POST</code>) to the URL you have configured for your webhook. Real&Mate's request to your application includes details of the event like the body
+      of an log entry or the updated real estate parameters. Your application can then perform whatever logic is necessary, then reply to Real&Mate with a response containing the instructions you’d like Real&Mate to perform.
     </p>
   </main>
 

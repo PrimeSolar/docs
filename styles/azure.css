@@ -272,6 +272,7 @@ optionalityDegreeU:before {
 }
 
 p {
+  line-height: 1.7;
   margin: 20px 0px;
   font-size: 20px;
 }
@@ -396,7 +397,6 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
 .sourceCode {
   background-color: #fefefe;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #318CE7;
 }
 
@@ -517,6 +517,18 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   width: 100%;
 }
 
+#screenshotContainerRelative {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#screenshotContainerAbsolute {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
 #switchyContainerAbsolute {
   position: absolute;
   right: -61px;
@@ -531,6 +543,18 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   transition: 0.5s;
 }
 
+#screenshotTitle {
+  display: block;
+  position: absolute;
+  right: -10vw;
+  top: 80vh;
+  transition: 0.5s;
+}
+
+sevenpx {
+  padding-left: 7px;
+}
+
 #switchy {
   border-radius: 35px;
   border-style: none;
@@ -542,6 +566,21 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   top: 5%;
   transition: 0.5s;
   width: 70px;
+  z-index: 1;
+}
+
+#screenshotBtn {
+  border-radius: 35px;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 525;
+  height: 57px;
+  position: relative;
+  right: -9.7vw;
+  top: 27vh;
+  transition: 0.5s;
   z-index: 1;
 }
 
@@ -609,7 +648,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --a-color: #000;
   --a-visited-color: #000;
   --body-color: #222;
-  --code-background: #fff;
+  --code-background-color: #eee;
   --code-color: #222;
   --code-span-fu-color: #06287e;
   --data-type-box-shadow: 0 0.5px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
@@ -626,6 +665,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --class-list-link-color: #000;
   --class-no-shadow-hover-box-shadow: unset;
+  --class-sourceCode-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --class-sourceCode-json-background-color: #fefefe;
   /* id variables */
   --id-editor-mode-background: #fff;
@@ -644,6 +684,11 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --id-switchy-indicator-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
+  --id-screenshot-btn-background: #fff;
+  --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --id-screenshot-btn-color: #555;
 }
 
 /* automatic dark theme */
@@ -654,7 +699,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     --a-color: #fff;
     --a-visited-color: #fff;
     --body-color: #fff;
-    --code-background: #333;
+    --code-background-color: #333;
     --code-color: #fff;
     --code-span-fu-color: #6CB4EE;
     --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
@@ -671,7 +716,8 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
     --class-list-link-color: #fff;
     --class-no-shadow-hover-box-shadow: unset;
-    --class-sourceCode-json-background-color: #333;
+    --class-sourceCode-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    --class-sourceCode-json-background-color: #2a2a2a;
     /* id variables */
     --id-editor-mode-background: #222;
     --id-editor-mode-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
@@ -689,6 +735,11 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
     --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
       inset 0 4px 4px rgba(255, 255, 255, 0.2),
       inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    --id-screenshot-btn-background: #555;
+    --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1),
+      inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    --id-screenshot-btn-color: #f2f2f2;
   }
 }
 
@@ -699,7 +750,7 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --a-color: #fff;
   --a-visited-color: #fff;
   --body-color: #fff;
-  --code-background: #333;
+  --code-background-color: #333;
   --code-color: #fff;
   --code-span-fu-color: #6CB4EE;
   --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
@@ -716,7 +767,8 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
   --class-list-link-color: #fff;
   --class-no-shadow-hover-box-shadow: unset;
-  --class-sourceCode-json-background-color: #333;
+  --class-sourceCode-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  --class-sourceCode-json-background-color: #2a2a2a;
   /* id variables */
   --id-editor-mode-background: #222;
   --id-editor-mode-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
@@ -734,6 +786,11 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 4px 4px rgba(255, 255, 255, 0.2),
     inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  --id-screenshot-btn-background: #555;
+  --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  --id-screenshot-btn-color: #f2f2f2;
 }
 
 /* variables */
@@ -754,7 +811,7 @@ body {
 }
 
 code {
-  background: var(--code-background);
+  background-color: var(--code-background-color);
   color: var(--code-color);
 }
 
@@ -812,8 +869,12 @@ th {
   box-shadow: var(--class-no-shadow-hover-box-shadow);
 }
 
-.sourceCode {
+.sourceCode .json {
   background-color: var(--class-sourceCode-json-background-color);
+}
+
+.sourceCode {
+  box-shadow: var(--class-sourceCode-box-shadow);
 }
 
 /* id variables */
@@ -835,4 +896,10 @@ th {
 #switchy .indicator {
   background-image: var(--id-switchy-indicator-background-image);
   box-shadow: var(--id-switchy-indicator-box-shadow);
+}
+
+#screenshotBtn {
+  background: var(--id-screenshot-btn-background);
+  box-shadow: var(--id-screenshot-btn-box-shadow);
+  color: var(--id-screenshot-btn-color);
 }

@@ -34,4 +34,20 @@ class editorButton extends HTMLElement {
 }
 customElements.define("editor-button", editorButton);
 
+//Screenshot Button
+class screenshotButton extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <div id="screenshotContainerRelative">
+      <div id="screenshotContainerAbsolute">
+        <button id="screenshotBtn">
+          Download Page<br/>As Image
+        </button>
+      </div>
+    </div>
+    `
+  }
+}
+customElements.define("screenshot-button", screenshotButton);
+
 console.log("elements-title.js is completed");

@@ -2,7 +2,8 @@
 
 const createCommentary = document.getElementsByTagName('a-comment');
 const commentaryTag = "<comment-tag onclick='displayCommentary(this)'/>";
-var b = 0;
+var zIndex = 0;
+// Declare a, give it the value of createCommentary
 for (let a of createCommentary) {
   a.insertAdjacentHTML("beforebegin", commentaryTag);
 }
@@ -17,7 +18,7 @@ function displayCommentary(element) {
     element.nextSibling.classList.remove("not-shown")
     element.nextSibling.classList.add("shown")
     element.nextSibling.style.display = "block";
-    element.nextSibling.style.zIndex = ++b;
+    element.nextSibling.style.zIndex = ++zIndex;
   }
   let checkOutElement = element.parentNode.childNodes[0].tagName;
   if (checkOutElement == "COMMENT-LABEL") {

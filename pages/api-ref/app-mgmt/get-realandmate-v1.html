@@ -53,8 +53,11 @@
   </dl>-->
   <p><a name="response"></a></p>
   <h2>
-    <t-response></t-response>
+    <t-response-body></t-response-body>
   </h2>
+  <h3>
+    <t-http-code-200></t-http-code-200>
+  </h3>
   <div class="sourceCode" id="cb2">
     <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
     <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
@@ -65,7 +68,7 @@
     <span class="dt">&quot;date_modified&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
     <span class="dt">&quot;owner&quot;</span><span class="fu">:</span> <span class="er">object</span><span class="fu">,</span>
     <span class="dt">&quot;app_category&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">array</span><span class="fu">,</span>
+    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">[string]</span><span class="fu">,</span>
     <span class="dt">&quot;documentation_url&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
     <span class="dt">&quot;license&quot;</span><span class="fu">:</span> <span class="er">string</span>
 <span class="fu">}</span></code></pre>
@@ -145,6 +148,10 @@
     <t-response-codes></t-response-codes>
   </h2>
   <table>
+    <colgroup id="rc-colgroup">
+      <col span="1">
+      <col span="1">
+    </colgroup>
     <thead>
       <tr>
         <th>
@@ -169,6 +176,7 @@
 
   <div id="footerContainer"></div>
 
+  <!-- Scripts -->
   <script src="../../../scripts/elements-title.js"></script>
   <script src="../../../scripts/api-ref.js"></script>
   <script src="../../../scripts/comments.js"></script>

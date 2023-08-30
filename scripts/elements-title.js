@@ -50,4 +50,26 @@ class screenshotButton extends HTMLElement {
 }
 customElements.define("screenshot-button", screenshotButton);
 
+//Greetings
+let container = document.getElementById("header-index");
+if (container !== null) {
+  let timeNow = new Date().getHours();
+  let greetings = timeNow >= 0 && timeNow < 12 ?
+    "Good Morning!" :
+    timeNow >= 12 && timeNow < 18 ?
+    "Good Afternoon!" :
+    "Good Evening!";
+  container.innerHTML = `<h1>${greetings}</h1>` + container.innerHTML;
+}
+
+//Logo
+const logo = document.getElementById("logo");
+if (logo !== null) {
+  logo.alt = "Real&Mate Logo";
+  logo.name = "real-and-mate-logo";
+  logo.src = "pics/logo-transparent.jpg";
+  logo.title = "Real&Mate Logo";
+  logo.classList.add("center", "no-shadow");
+}
+
 console.log("elements-title.js is completed");

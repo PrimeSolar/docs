@@ -42,13 +42,39 @@ body {
   padding: 0;
 }
 
+div.sourceCode>button {
+  background-color: #318CE7;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 5px 20px;
+  outline: none;
+  transition: 1s;
+  width: 100px;
+  /* A fixed width for the Copy button */
+  z-index: 1;
+}
+
+.json {
+  display: block;
+  margin: 0;
+  padding: 1vh 0;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+
 code {
-  line-height: 150%;
   background: #333;
   border-radius: 5px;
   color: #fff;
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
   font-size: 100%;
+  line-height: 150%;
   padding: 3.5px 3.5px;
 }
 
@@ -70,19 +96,19 @@ comment-tag {
   background: linear-gradient(#006fab 5%, #0099ff 100%);
   background: -moz-linear-gradient(#006fab 25%, #0099ff 100%);
   background: -ms-linear-gradient(#006fab 25%, #0099ff 100%);
-  background: -moz-linear-gradient(#006fab 25%, #0099ff 100%);
-  background: -moz-linear-gradient(#006fab 25%, #0099ff 100%);
+  background: -o-linear-gradient(#006fab 25%, #0099ff 100%);
+  background: -webkit-linear-gradient(#006fab 25%, #0099ff 100%);
   border-radius: 5px;
   box-shadow: 0 1px 2px #bbb;
   color: #fff;
-  font-size: 14px;
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+  font-size: 14px;
   font-weight: normal;
   height: 20px;
   margin: 0;
   padding: 0 4px 2px;
   position: absolute;
-  right: 30px;
+  right: -8vw;
   text-shadow: 2px 2px 5px #0099ff;
   transition: 0.25s;
   white-space: pre-wrap;
@@ -96,6 +122,21 @@ comment-tag:hover {
   box-shadow: var(--class-center-hover-box-shadow);
   cursor: pointer;
   transition: 0.25s;
+}
+
+dataType {
+  background-color: #4c8abd;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+  font-size: 14px;
+  margin: 0 0 0 7px;
+  padding: 3px 4px 3px;
+}
+
+dataType dataType {
+  display: none;
 }
 
 dd {
@@ -124,17 +165,15 @@ details>summary {
   box-shadow: none;
   color: #fff;
   cursor: pointer;
+  display: block;
+  font-size: 25px;
   font-weight: normal;
   height: 50px;
   margin-bottom: 25px;
-  padding: 5px;
+  max-width: 100%;
+  padding: 25px;
   text-align: center;
   transition: 0.25s;
-  padding: 25px;
-  font-size: 25px;
-  display: block;
-  height: 50%;
-  max-width: 100%;
 }
 
 details>summary:hover {
@@ -143,11 +182,10 @@ details>summary:hover {
 }
 
 details>ul {
-  list-style-type: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
   font-size: 20px;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
 }
 
 dt {
@@ -170,6 +208,32 @@ footer {
   text-align: center;
   vertical-align: middle;
   width: 100%;
+}
+
+footer a {
+  color: #fff;
+}
+
+footerLower {
+  background: linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -moz-linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -ms-linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -o-linear-gradient(#007FFF 25%, #318CE7 100%);
+  background: -webkit-linear-gradient(#007FFF 25%, #318CE7 100%);
+  /* background: linear-gradient(90deg, #fff 5%, #007FFF 30%, #007FFF 70%, #fff 95%); */
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  margin: 0;
+  padding: 1em 0;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+footerLower a {
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -339,6 +403,26 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   transition: 0.5s;
 }
 
+table {
+  border-collapse: collapse;
+  box-sizing: inherit;
+  display: table;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  position: relative;
+  table-layout: fixed;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  background-color: #0088ff;
+  color: #fff;
+  padding: 5px;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* classes */
@@ -398,6 +482,8 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   background-color: #fefefe;
   border-radius: 10px;
   color: #318CE7;
+  margin: 0;
+  position: relative;
 }
 
 .sourceCode.json {
@@ -458,6 +544,11 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   padding: 0;
 }
 
+#footerContainerLower {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   color: #007FFF;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -511,16 +602,14 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* dark theme */
-#switchyContainerRelative {
+#screenshotContainerRelative {
   display: block;
   position: relative;
   width: 100%;
 }
 
-#screenshotContainerRelative {
-  display: block;
-  position: relative;
-  width: 100%;
+#screenshotContainerRelative:hover {
+  transition: 0.5s;
 }
 
 #screenshotContainerAbsolute {
@@ -529,10 +618,24 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   top: 0px;
 }
 
+#screenshotContainerAbsolute:hover {
+  transition: 0.5s;
+}
+
+#switchyContainerRelative {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
 #switchyContainerAbsolute {
   position: absolute;
   right: -61px;
   top: 30px;
+}
+
+#switchyContainerAbsolute:hover {
+  transition: 0.5s;
 }
 
 #theme {
@@ -582,6 +685,14 @@ sevenpx {
   top: 27vh;
   transition: 0.5s;
   z-index: 1;
+}
+
+#screenshotBtn:hover {
+  transition: 0.25s;
+}
+
+a-comment:hover {
+  background-color: #0099ff;
 }
 
 #switchy .indicator {
@@ -684,11 +795,14 @@ sevenpx {
   --id-switchy-indicator-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
-  --id-screenshot-btn-background: #fff;
+  --id-screenshot-btn-background: #f2f2f2;
+  --id-screenshot-btn-active-background: #e2e2e2;
+  --id-screenshot-btn-color: #555;
+  --id-screenshot-btn-active-color: #444;
+  /*
   --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
-    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  --id-screenshot-btn-color: #555;
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 /* automatic dark theme */
@@ -735,11 +849,14 @@ sevenpx {
     --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
       inset 0 4px 4px rgba(255, 255, 255, 0.2),
       inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-    --id-screenshot-btn-background: #555;
+    --id-screenshot-btn-background: #777;
+    --id-screenshot-btn-active-background: #555;
+    --id-screenshot-btn-color: #f2f2f2;
+    --id-screenshot-btn-active-color: #e2e2e2;
+    /*
     --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
       inset 0 8px 8px rgba(0, 0, 0, 0.1),
-      inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-    --id-screenshot-btn-color: #f2f2f2;
+      inset 0 -4px 4px rgba(0, 0, 0, 0.1);*/
   }
 }
 
@@ -786,11 +903,14 @@ sevenpx {
   --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
     inset 0 4px 4px rgba(255, 255, 255, 0.2),
     inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-  --id-screenshot-btn-background: #555;
+  --id-screenshot-btn-background: #777;
+  --id-screenshot-btn-active-background: #555;
+  --id-screenshot-btn-color: #f2f2f2;
+  --id-screenshot-btn-active-color: #e2e2e2;
+  /*
   --id-screenshot-btn-box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
     inset 0 8px 8px rgba(0, 0, 0, 0.1),
-    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  --id-screenshot-btn-color: #f2f2f2;
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 /* variables */
@@ -853,6 +973,36 @@ th {
 }
 
 /* class variables */
+.cell-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cell-center-bold {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cell-center-monospace {
+  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cell-left {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cell-left-monospace {
+  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+  font-size: 17px;
+  text-align: left;
+  vertical-align: middle;
+}
+
 .center:hover {
   box-shadow: var(--class-center-hover-box-shadow);
 }
@@ -900,6 +1050,16 @@ th {
 
 #screenshotBtn {
   background: var(--id-screenshot-btn-background);
-  box-shadow: var(--id-screenshot-btn-box-shadow);
   color: var(--id-screenshot-btn-color);
+  /*
+  box-shadow: var(--id-screenshot-btn-box-shadow);*/
+}
+
+#screenshotBtn:active {
+  background: var(--id-screenshot-btn-active-background);
+  color: var(--id-screenshot-btn-active-color);
+}
+
+#screenshotBtn:hover {
+  box-shadow: var(--class-center-hover-box-shadow);
 }

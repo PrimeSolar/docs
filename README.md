@@ -230,4 +230,4 @@ If a similar feature request already exists, don't forget to leave a "+1". If yo
 
 LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/)
 
-![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+developer;Internet+sommelier;Passionate+athlete;Caring+environmentalist;Human)
+![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+Sommelier;Passionate+Athlete;Caring+Environmentalist;Human)

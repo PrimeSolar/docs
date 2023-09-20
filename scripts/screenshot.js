@@ -1,9 +1,13 @@
-const btns = document.getElementById('container-button');
+const containerButton = document.getElementById('container-button');
+const button = document.getElementsByTagName("button");
 const comment = document.getElementsByTagName("comment-tag");
 const switchyBtn = document.getElementById('switchy');
 
 function screenshot() {
-  btns.style.display = "none";
+  containerButton.style.display = "none";
+  for (let x of button) {
+    x.style.display = "none";
+  }
   for (let x of comment) {
     x.style.display = "none";
   }
@@ -15,7 +19,10 @@ function screenshot() {
       a.setAttribute('href', url);
       a.click();
     })
-  btns.style.display = "block";
+  containerButton.style.display = "block";
+  for (let x of button) {
+    x.style.display = "block";
+  }
   for (let x of comment) {
     x.style.display = "inline";
   }

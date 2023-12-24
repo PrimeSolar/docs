@@ -50,26 +50,26 @@ class screenshotButton extends HTMLElement {
 }
 customElements.define("screenshot-button", screenshotButton);
 
+//Logo
+class logoImg extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <img alt="Real&Mate Logo" id="logo" name="real-and-mate-logo" src="pics/logo-transparent.jpg" title="Real&Mate Logo"/>
+    `
+  }
+}
+customElements.define("logo-img", logoImg);
+
 //Greetings
-let container = document.getElementById("header-index");
-if (container !== null) {
+let headerIndex = document.getElementById("header-index");
+if (headerIndex !== null) {
   let timeNow = new Date().getHours();
   let greetings = timeNow >= 0 && timeNow < 12 ?
     "Good Morning!" :
     timeNow >= 12 && timeNow < 18 ?
     "Good Afternoon!" :
     "Good Evening!";
-  container.innerHTML = `<h1>${greetings}</h1>` + container.innerHTML;
-}
-
-//Logo
-const logo = document.getElementById("logo");
-if (logo !== null) {
-  logo.alt = "Real&Mate Logo";
-  logo.name = "real-and-mate-logo";
-  logo.src = "pics/logo-transparent.jpg";
-  logo.title = "Real&Mate Logo";
-  logo.classList.add("center", "no-shadow");
+  headerIndex.innerHTML = `<h1>${greetings}</h1>` + headerIndex.innerHTML;
 }
 
 console.log("elements-title.js is completed");

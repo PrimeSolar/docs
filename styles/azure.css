@@ -64,7 +64,7 @@ div.sourceCode>button {
   display: block;
   margin: 0;
   padding: 1vh 0;
-  text-wrap: wrap;
+  white-space: pre-wrap;
   word-wrap: break-word;
 }
 

@@ -4,7 +4,7 @@
 class DtAmenities extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    amenities
+    amenities <da-arraystring/>
     `
   }
 }
@@ -23,7 +23,7 @@ customElements.define("dd-amenities", DdAmenities);
 class DtAppCategory extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    app_category
+    app_category <da-string/>
     `
   }
 }
@@ -50,7 +50,7 @@ customElements.define("capitalized-resource-name", capitalizedResourceName);
 class DtDateCreated extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    date_created
+    date_created <da-date/>
     `
   }
 }
@@ -69,7 +69,7 @@ customElements.define("dd-date-created", DdDateCreated);
 class DtDateModified extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    date_modified
+    date_modified <da-date/>
     `
   }
 }
@@ -88,7 +88,7 @@ customElements.define("dd-date-modified", DdDateModified);
 class DtDescription extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    description
+    description <da-string/>
     `
   }
 }
@@ -107,7 +107,7 @@ customElements.define("dd-description", DdDescription);
 class DtDocumentationUrl extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    documentation_url
+    documentation_url <da-string/>
     `
   }
 }
@@ -126,7 +126,7 @@ customElements.define("dd-documentation-url", DdDocumentationUrl);
 class DtEmail extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    email
+    email <da-string/>
     `
   }
 }
@@ -145,7 +145,7 @@ customElements.define("dd-email", DdEmail);
 class DtId extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    id
+    id <da-string/>
     `
   }
 }
@@ -164,7 +164,7 @@ customElements.define("dd-id", DdId);
 class DtItems extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    items
+    items <da-object/>
     `
   }
 }
@@ -183,7 +183,7 @@ customElements.define("dd-items", DdItems);
 class DtItemsCount extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    items_count
+    items_count <da-number/>
     `
   }
 }
@@ -202,7 +202,7 @@ customElements.define("dd-items-count", DdItemsCount);
 class DtLeaseAgreementDetails extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    lease_agreement_details
+    lease_agreement_details <da-string/>
     `
   }
 }
@@ -221,7 +221,7 @@ customElements.define("dd-lease-agreement-details", DdLeaseAgreementDetails);
 class DtLeaseTerm extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    lease_term
+    lease_term <da-string/>
     `
   }
 }
@@ -240,7 +240,7 @@ customElements.define("dd-lease-term", DdLeaseTerm);
 class DtLicense extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    license
+    license <da-string/>
     `
   }
 }
@@ -267,7 +267,7 @@ customElements.define("main-resource-name", mainResourceName);
 class DtMaintenanceSchedule extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    maintenance_schedule
+    maintenance_schedule <da-arraystring/>
     `
   }
 }
@@ -286,7 +286,7 @@ customElements.define("dd-maintenance-schedule", DdMaintenanceSchedule);
 class DtName extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    name
+    name <da-string/>
     `
   }
 }
@@ -305,7 +305,7 @@ customElements.define("dd-name", DdName);
 class DtName2 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    name
+    name <da-string/>
     `
   }
 }
@@ -324,7 +324,7 @@ customElements.define("dd-name-2", DdName2);
 class DtOccupancy extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    occupancy
+    occupancy <da-number/>
     `
   }
 }
@@ -343,7 +343,7 @@ customElements.define("dd-occupancy", DdOccupancy);
 class DtOwner extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    owner
+    owner <da-object/>
     `
   }
 }
@@ -370,7 +370,7 @@ customElements.define("resource-name", resourceName);
 class DtPassword extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    password
+    password <da-string/>
     `
   }
 }
@@ -389,7 +389,7 @@ customElements.define("dd-password", DdPassword);
 class DtPhone extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    phone
+    phone <da-string/>
     `
   }
 }
@@ -408,7 +408,7 @@ customElements.define("dd-phone", DdPhone);
 class DtProcessingTimeout extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    processing_timeout
+    processing_timeout <da-boolean/>
     `
   }
 }
@@ -432,7 +432,7 @@ customElements.define("dd-processing-timeout", DdProcessingTimeout);
 class DtPropertyAddress extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    property_address
+    property_address <da-string/>
     `
   }
 }
@@ -451,7 +451,7 @@ customElements.define("dd-property-address", DdPropertyAddress);
 class DtPropertySize extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    property_size
+    property_size <da-string/>
     `
   }
 }
@@ -470,7 +470,7 @@ customElements.define("dd-property-size", DdPropertySize);
 class DtPropertyType extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    property_type
+    property_type <da-string/>
     `
   }
 }
@@ -489,7 +489,7 @@ customElements.define("dd-property-type", DdPropertyType);
 class DtRealEstateObjects extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    real_estate_objects
+    real_estate_objects <da-object/>
     `
   }
 }
@@ -508,7 +508,7 @@ customElements.define("dd-real-estate-objects", DdRealEstateObjects);
 class DtRentableArea extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    rentable_area
+    rentable_area <da-string/>
     `
   }
 }
@@ -527,7 +527,7 @@ customElements.define("dd-rentable-area", DdRentableArea);
 class DtRentalPrice extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    rental_price
+    rental_price <da-string/>
     `
   }
 }
@@ -546,7 +546,7 @@ customElements.define("dd-rental-price", DdRentalPrice);
 class DtSecurityDeposit extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    security_deposit
+    security_deposit <da-string/>
     `
   }
 }
@@ -565,7 +565,7 @@ customElements.define("dd-security-deposit", DdSecurityDeposit);
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    service_enabled
+    service_enabled <da-boolean/>
     `
   }
 }
@@ -589,7 +589,7 @@ customElements.define("dd-service-enabled", DdServiceEnabled);
 class DtTags extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    tags
+    tags <da-arraystring/>
     `
   }
 }
@@ -608,7 +608,7 @@ customElements.define("dd-tags", DdTags);
 class DtTenant extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    tenant
+    tenant <da-object/>
     `
   }
 }
@@ -627,7 +627,7 @@ customElements.define("dd-tenant", DdTenant);
 class DtUrl extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    url
+    url <da-string/>
     `
   }
 }
@@ -646,7 +646,7 @@ customElements.define("dd-url", DdUrl);
 class DtUsername extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    username
+    username <da-string/>
     `
   }
 }
@@ -665,7 +665,7 @@ customElements.define("dd-username", DdUsername);
 class DtUtilities extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    utilities
+    utilities <da-arraystring/>
     `
   }
 }
@@ -691,7 +691,7 @@ customElements.define("dd-utilities", DdUtilities);
 class DtVersion extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    version
+    version <da-string/>
     `
   }
 }
@@ -711,31 +711,41 @@ customElements.define("dd-version", DdVersion);
 
 // Titles
 
-// Request headers
-class TRequestHeaders extends HTMLElement {
+// HTTP Code: 200
+class THTTPCode200 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    Request headers
+    HTTP Code: 200
     `
   }
 }
-customElements.define("t-request-headers", TRequestHeaders);
+customElements.define("t-http-code-200", THTTPCode200);
 
 // Request body
 class TRequestBody extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    Request body
+    Request Body
     `
   }
 }
 customElements.define("t-request-body", TRequestBody);
 
+// Request headers
+class TRequestHeaders extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Request Headers
+    `
+  }
+}
+customElements.define("t-request-headers", TRequestHeaders);
+
 // Response body
 class TResponseBody extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    Response body
+    Response Body
     `
   }
 }
@@ -745,7 +755,7 @@ customElements.define("t-response-body", TResponseBody);
 class TResponseCodes extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    Response codes
+    Response Codes
     `
   }
 }
@@ -869,7 +879,15 @@ customElements.define("da-string", DtString);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Status codes
+// Response Codes
+
+// Column rules
+
+const colgroup = document.getElementById("rc-colgroup").getElementsByTagName("col");
+if (colgroup !== null) {
+  colgroup[0].style.width = "20%";
+  colgroup[1].style.width = "80%";
+}
 
 // 200
 class Sc200 extends HTMLElement {

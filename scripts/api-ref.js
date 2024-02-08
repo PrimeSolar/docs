@@ -883,10 +883,10 @@ customElements.define("da-string", DtString);
 
 // Column rules
 
-const colgroup = document.getElementById("rc-colgroup").getElementsByTagName("col");
-if (colgroup !== null) {
-  colgroup[0].style.width = "20%";
-  colgroup[1].style.width = "80%";
+const colgroup = document.getElementById("rc-colgroup");
+if (colgroup != null) {
+  colgroup.children[0].style.width = "20%";
+  colgroup.children[1].style.width = "80%";
 }
 
 // 200

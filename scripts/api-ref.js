@@ -893,7 +893,7 @@ if (colgroup != null) {
 class Sc200 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The request succeeded.
+    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.1" target="_blank">The request has succeeded.</a>
     `
   }
 }
@@ -903,7 +903,7 @@ customElements.define("sc-200", Sc200);
 class Sc404 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The server cannot find the requested resource.
+    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.4.5" target="_blank">The server cannot find the requested resource.</a>
     `
   }
 }
@@ -913,7 +913,7 @@ customElements.define("sc-404", Sc404);
 class Sc500 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    Internal server error.
+    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.5.1" target="_blank">Internal server error.</a>
     `
   }
 }

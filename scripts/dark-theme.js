@@ -2,6 +2,13 @@
 // if class is not presented, determines actual condition based on the OS or web browser color scheme
 // if OS and web browser color scheme aren't supported, determines light condition
 
+const switchy = document.getElementById('switchy');
+
+function moveIndicator() {
+  switchy.classList.toggle('active');
+}
+switchy.addEventListener("click", moveIndicator, false);
+
 function switchyDarkTheme() {
   if (document.documentElement.classList.contains("dark")) {
     document.documentElement.classList.remove("dark")
@@ -17,12 +24,5 @@ function switchyDarkTheme() {
     }
   }
 }
-
-const switchy = document.getElementById('switchy');
-
-function moveIndicator() {
-  switchy.classList.toggle('active');
-}
-switchy.addEventListener("click", moveIndicator, false);
 
 console.log("dark-theme.js is completed");

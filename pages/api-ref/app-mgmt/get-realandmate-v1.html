@@ -59,19 +59,19 @@
     <t-http-code-200></t-http-code-200>
   </h3>
   <div class="sourceCode" id="cb2">
-    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
-    <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span><a-comment>the method works correctly and is easy to use</a-comment>
-    <span class="dt">&quot;version&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span><a-comment>it's so helpful, thank you</a-comment>
-    <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;date_created&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
-    <span class="dt">&quot;date_modified&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
-    <span class="dt">&quot;owner&quot;</span><span class="fu">:</span> <span class="er">object</span><span class="fu">,</span>
-    <span class="dt">&quot;app_category&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">[string]</span><span class="fu">,</span>
-    <span class="dt">&quot;documentation_url&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;license&quot;</span><span class="fu">:</span> <span class="er">string</span>
-<span class="fu">}</span></code></pre>
+    <pre class="json"><code class="json"><span class="dt">{</span>
+    <span class="dt">&quot;id&quot;: string,</span>
+    <span class="dt">&quot;name&quot;: string,</span>
+    <span class="dt">&quot;version&quot;: string,</span>
+    <span class="dt">&quot;description&quot;: string,</span>
+    <span class="dt">&quot;date_created&quot;: date,</span>
+    <span class="dt">&quot;date_modified&quot;: date,</span>
+    <span class="dt">&quot;owner&quot;: object,</span>
+    <span class="dt">&quot;app_category&quot;: string,</span>
+    <span class="dt">&quot;tags&quot;: [string],</span>
+    <span class="dt">&quot;documentation_url&quot;: string,</span>
+    <span class="dt">&quot;license&quot;: string</span>
+<span class="dt">}</span></code></pre>
   </div>
 
   <dl class="dl-root">
@@ -148,7 +148,7 @@
     <t-response-codes></t-response-codes>
   </h2>
   <table>
-    <colgroup id="rc-colgroup">
+    <colgroup class="rc-colgroup">
       <col span="1">
       <col span="1">
     </colgroup>
@@ -180,6 +180,7 @@
   <script src="../../../scripts/elements-title.js"></script>
   <script src="../../../scripts/api-ref.js"></script>
   <script src="../../../scripts/comments.js"></script>
+  <script src="../../../scripts/copy.js"></script>
   <script src="../../../scripts/dark-theme.js"></script>
   <script src="../../../scripts/editor-mode.js"></script>
   <script src="../../../scripts/elements.js"></script>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>GET /realandmate/v1/LogService | Get Information about the Real Estate object collection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
+</head>
+
+<body id="body">
+
+  <div id="container-button">
+    <theme-button />
+    <editor-button />
+    <screenshot-button />
+  </div>
+
+  <span id="mainResourceName">Real Estate Service</span>
+  <span id="resourceName">Real Estate object collection</span>
+  <span id="capitalizedResourceName">Real Estate object collection</span>
+
+  <header>
+    <h1>GET /realandmate/v1/RealEstateService/RealEstateObjects</h1>
+  </header>
+
+  <main>
+    <p>
+      <indent></indent>Returns a collection of the Real Estate objects.
+    </p>
+    <hr />
+    <!--<ul>
+      <li><a href="#request-h">
+          <t-request-h></t-request-h>
+        </a></li>
+      <li><a href="#response">
+          <t-response></t-response>
+        </a></li>
+    </ul>
+    <p><a name="request-h"></a></p>
+    <p><strong>
+        <t-request-h></t-request-h>
+      </strong></p>
+    <div class="sourceCode">
+      <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+        <span class="dt">&quot;&quot;</span><span class="fu">:</span> <span class="er">string</span>
+  <span class="fu">}</span></code></pre>
+    </div>
+    <dl class="dl-root">
+      <dt>
+        <dt-session-id></dt-session-id>
+      </dt>
+      <dd>
+        <dd-session-id></dd-session-id>
+      </dd>
+    </dl>-->
+    <p><a name="response"></a></p>
+    <h2>
+      <t-response-body></t-response-body>
+    </h2>
+    <h3>
+      <t-http-code-200></t-http-code-200>
+    </h3>
+    <div class="sourceCode">
+      <pre class="json"><code class="json"><span class="dt">{</span>
+      <span class="dt">&quot;id&quot;: string,</span>
+      <span class="dt">&quot;name&quot;: string,</span>
+      <span class="dt">&quot;description&quot;: string,</span>
+      <span class="dt">&quot;items&quot;:{</span>
+        <span class="dt">&quot;url&quot;: string</span>
+      <span class="dt">},</span>
+      <span class="dt">&quot;items_count&quot;: number</span>
+  <span class="dt">}</span></code></pre>
+    </div>
+
+    <dl class="dl-root">
+      <dt>
+        <dt-id></dt-id>
+      </dt>
+      <dd>
+        <dd-id></dd-id>
+      </dd>
+      <dt>
+        <dt-name></dt-name>
+      </dt>
+      <dd>
+        <dd-name></dd-name>
+      </dd>
+      <dt>
+        <dt-description></dt-description>
+      </dt>
+      <dd>
+        <dd-description></dd-description>
+      </dd>
+      <dt>
+        <dt-items></dt-items>
+      </dt>
+      <dd>
+        <dd-items></dd-items>
+        <dl>
+          <dt>
+            <dt-url></dt-url>
+          </dt>
+          <dd>
+            <dd-url></dd-url>
+          </dd>
+        </dl>
+      </dd>
+      <dt>
+        <dt-items-count></dt-items-count>
+      </dt>
+      <dd>
+        <dd-items-count></dd-items-count>
+      </dd>
+    </dl>
+
+    <p><a name="t-response-codes"></a></p>
+    <h2>
+      <t-response-codes></t-response-codes>
+    </h2>
+    <table>
+      <colgroup>
+        <col span="1" style="width: 20%;">
+        <col span="1" style="width: 80%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>
+            Code
+          </th>
+          <th>
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell-center-bold">
+            200
+          </td>
+          <td class="cell-center">
+            <sc-200></sc-200>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="footerContainer"></div>
+
+  <!-- Scripts -->
+  <script src="../../../scripts/elements-title.js"></script>
+  <script src="../../../scripts/api-ref.js"></script>
+  <script src="../../../scripts/copy.js"></script>
+  <script src="../../../scripts/dark-theme.js"></script>
+  <script src="../../../scripts/editor-mode.js"></script>
+  <script src="../../../scripts/elements.js"></script>
+  <script src="../../../scripts/html2canvas.js"></script>
+  <script src="../../../scripts/screenshot.js"></script>
+</body>
+
+</html>

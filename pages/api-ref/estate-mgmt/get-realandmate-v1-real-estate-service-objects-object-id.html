@@ -14,6 +14,7 @@
   <div id="container-button">
     <theme-button />
     <editor-button />
+    <screenshot-button />
   </div>
 
   <span id="mainResourceName">Real Estate Service</span>
@@ -62,39 +63,42 @@
   </dl>-->
   <p><a name="response"></a></p>
   <h2>
-    <t-response></t-response>
+    <t-response-body></t-response-body>
   </h2>
+  <h3>
+    <t-http-code-200></t-http-code-200>
+  </h3>
   <div class="sourceCode" id="cb2">
-    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
-    <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="er">string</span>
-    <span class="dt">&quot;date_created&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
-    <span class="dt">&quot;date_modified&quot;</span><span class="fu">:</span> <span class="er">date</span><span class="fu">,</span>
-    <span class="dt">&quot;owner&quot;</span><span class="fu">:{</span>
-      <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span>
-    <span class="fu">},</span>
-    <span class="dt">&quot;tenant&quot;</span><span class="fu">:{</span>
-      <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;phone&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-      <span class="dt">&quot;email&quot;</span><span class="fu">:</span> <span class="er">string</span>
-    <span class="fu">},</span>
-    <span class="dt">&quot;property_type&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;property_address&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;property_size&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;occupancy&quot;</span><span class="fu">:</span> <span class="er">number</span><span class="fu">,</span>
-    <span class="dt">&quot;rentable_area&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;lease_term&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;rental_price&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;maintenance_schedule&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
-    <span class="dt">&quot;utilities&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
-    <span class="dt">&quot;amenities&quot;</span><span class="fu">:</span> <span class="er">array[string]</span><span class="fu">,</span>
-    <span class="dt">&quot;lease_agreement_details&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;security_deposit&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;tags&quot;</span><span class="fu">:</span> <span class="er">[string]</span>
-<span class="fu">}</span></code></pre>
+    <pre class="json"><code class="json"><span class="dt">{</span>
+    <span class="dt">&quot;id&quot;: string,</span>
+    <span class="dt">&quot;name&quot;: string,</span>
+    <span class="dt">&quot;description&quot;: string,</span>
+    <span class="dt">&quot;date_created&quot;: date,</span>
+    <span class="dt">&quot;date_modified&quot;: date,</span>
+    <span class="dt">&quot;owner&quot;:{</span>
+      <span class="dt">&quot;name&quot;: string,</span>
+      <span class="dt">&quot;phone&quot;: string,</span>
+      <span class="dt">&quot;email&quot;: string</span>
+    <span class="dt">},</span>
+    <span class="dt">&quot;tenant&quot;:{</span>
+      <span class="dt">&quot;name&quot;: string,</span>
+      <span class="dt">&quot;phone&quot;: string,</span>
+      <span class="dt">&quot;email&quot;: string</span>
+    <span class="dt">},</span>
+    <span class="dt">&quot;property_type&quot;: string,</span>
+    <span class="dt">&quot;property_address&quot;: string,</span>
+    <span class="dt">&quot;property_size&quot;: string,</span>
+    <span class="dt">&quot;occupancy&quot;: number,</span>
+    <span class="dt">&quot;rentable_area&quot;: string,</span>
+    <span class="dt">&quot;lease_term&quot;: string,</span>
+    <span class="dt">&quot;rental_price&quot;: string,</span>
+    <span class="dt">&quot;maintenance_schedule&quot;: [string],</span>
+    <span class="dt">&quot;utilities&quot;: [string],</span>
+    <span class="dt">&quot;amenities&quot;: [string],</span>
+    <span class="dt">&quot;lease_agreement_details&quot;: string,</span>
+    <span class="dt">&quot;security_deposit&quot;: string,</span>
+    <span class="dt">&quot;tags&quot;: [string]</span>
+<span class="dt">}</span></code></pre>
   </div>
   <dl class="dl-root">
     <dt>
@@ -264,6 +268,10 @@
     <t-response-codes></t-response-codes>
   </h2>
   <table>
+    <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: 80%;">
+    </colgroup>
     <thead>
       <tr>
         <th>
@@ -288,11 +296,15 @@
 
   <div id="footerContainer"></div>
 
+  <!-- Scripts -->
   <script src="../../../scripts/elements-title.js"></script>
   <script src="../../../scripts/api-ref.js"></script>
+  <script src="../../../scripts/copy.js"></script>
   <script src="../../../scripts/dark-theme.js"></script>
   <script src="../../../scripts/editor-mode.js"></script>
   <script src="../../../scripts/elements.js"></script>
+  <script src="../../../scripts/html2canvas.js"></script>
+  <script src="../../../scripts/screenshot.js"></script>
 </body>
 
 </html>

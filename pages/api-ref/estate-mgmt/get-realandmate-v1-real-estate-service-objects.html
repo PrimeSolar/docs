@@ -14,6 +14,7 @@
   <div id="container-button">
     <theme-button />
     <editor-button />
+    <screenshot-button />
   </div>
 
   <span id="mainResourceName">Real Estate Service</span>
@@ -52,18 +53,21 @@
   </dl>-->
   <p><a name="response"></a></p>
   <h2>
-    <t-response></t-response>
+    <t-response-body></t-response-body>
   </h2>
+  <h3>
+    <t-http-code-200></t-http-code-200>
+  </h3>
   <div class="sourceCode" id="cb2">
-    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
-    <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="er">string</span><span class="fu">,</span>
-    <span class="dt">&quot;items&quot;</span><span class="fu">:{</span>
-      <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="er">string</span>
-    <span class="fu">},</span>
-    <span class="dt">&quot;items_count&quot;</span><span class="fu">:</span> <span class="er">number</span>
-<span class="fu">}</span></code></pre>
+    <pre class="json"><code class="json"><span class="dt">{</span>
+    <span class="dt">&quot;id&quot;: string,</span>
+    <span class="dt">&quot;name&quot;: string,</span>
+    <span class="dt">&quot;description&quot;: string,</span>
+    <span class="dt">&quot;items&quot;:{</span>
+      <span class="dt">&quot;url&quot;: string</span>
+    <span class="dt">},</span>
+    <span class="dt">&quot;items_count&quot;: number</span>
+<span class="dt">}</span></code></pre>
   </div>
 
   <dl class="dl-root">
@@ -112,6 +116,10 @@
     <t-response-codes></t-response-codes>
   </h2>
   <table>
+    <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: 80%;">
+    </colgroup>
     <thead>
       <tr>
         <th>
@@ -136,11 +144,15 @@
 
   <div id="footerContainer"></div>
 
+  <!-- Scripts -->
   <script src="../../../scripts/elements-title.js"></script>
   <script src="../../../scripts/api-ref.js"></script>
+  <script src="../../../scripts/copy.js"></script>
   <script src="../../../scripts/dark-theme.js"></script>
   <script src="../../../scripts/editor-mode.js"></script>
   <script src="../../../scripts/elements.js"></script>
+  <script src="../../../scripts/html2canvas.js"></script>
+  <script src="../../../scripts/screenshot.js"></script>
 </body>
 
 </html>

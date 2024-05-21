@@ -8,7 +8,7 @@ class themeButton extends HTMLElement {
       <div id="theme">Theme</div>
       <div id="switchyContainerAbsolute">
         <button id="switchy" onClick="switchyDarkTheme()" value="Theme">
-          <i class="indicator"/>
+          <i class="indicator"></i>
         </button>
       </div>
     </div>
@@ -49,6 +49,30 @@ class screenshotButton extends HTMLElement {
   }
 }
 customElements.define("screenshot-button", screenshotButton);
+
+//Menu container
+class menuContainer extends HTMLElement {
+  connectedCallback(){
+    this.innerHTML += `
+    <div id="dropdown" class="dropdown">
+      <div id="menu-container" onclick="menuToggle(this)">
+        <div id="menu-title">Menu</div>
+        <div id="menu-button">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div id="container-button" class="dropdown-content">
+        <theme-button></theme-button>
+        <editor-button></editor-button>
+        <screenshot-button></screenshot-button>
+      </div>
+    </div>
+     `
+  }
+}
+customElements.define("menu-container", menuContainer);
 
 //Logo
 class logoImg extends HTMLElement {

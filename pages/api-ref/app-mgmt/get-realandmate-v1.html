@@ -11,22 +11,22 @@
 
 <body id="body">
 
-  <div id="container-button">
-    <theme-button />
-    <editor-button />
-    <screenshot-button />
-  </div>
-
   <span id="mainResourceName">Application</span>
   <span id="resourceName">Real&Mate Application</span>
   <span id="capitalizedResourceName">Real&Mate Application</span>
 
-  <h1>GET /realandmate/v1</h1>
-  <p>
-    <indent></indent>Returns information about the application.
-  </p>
-  <hr />
-  <!--<ul>
+  <header>
+    <menu-container></menu-container>
+    <h1>GET /realandmate/v1</h1>
+  </header>
+
+  <main>
+
+    <p>
+      <indent></indent>Returns information about the application.
+    </p>
+    <hr />
+    <!--<ul>
     <li><a href="#request-h">
         <t-request-h></t-request-h>
       </a></li>
@@ -51,15 +51,15 @@
       <dd-session-id></dd-session-id>
     </dd>
   </dl>-->
-  <p><a name="response"></a></p>
-  <h2>
-    <t-response-body></t-response-body>
-  </h2>
-  <h3>
-    <t-http-code-200></t-http-code-200>
-  </h3>
-  <div class="sourceCode" id="cb2">
-    <pre class="json"><code class="json"><span class="dt">{</span>
+    <p><a name="response"></a></p>
+    <h2>
+      <t-response-body></t-response-body>
+    </h2>
+    <h3>
+      <t-http-code-200></t-http-code-200>
+    </h3>
+    <div class="sourceCode" id="cb2">
+      <pre class="json"><code class="json"><span class="dt">{</span>
     <span class="dt">&quot;id&quot;: string,</span>
     <span class="dt">&quot;name&quot;: string,</span>
     <span class="dt">&quot;version&quot;: string,</span>
@@ -72,107 +72,109 @@
     <span class="dt">&quot;documentation_url&quot;: string,</span>
     <span class="dt">&quot;license&quot;: string</span>
 <span class="dt">}</span></code></pre>
-  </div>
+    </div>
 
-  <dl class="dl-root">
-    <dt>
-      <dt-id></dt-id>
-    </dt>
-    <dd>
-      <dd-id></dd-id>
-    </dd>
-    <dt>
-      <dt-name></dt-name>
-    </dt>
-    <dd>
-      <dd-name></dd-name>
-    </dd>
-    <dt>
-      <dt-version></dt-version>
-    </dt>
-    <dd>
-      <dd-version></dd-version>
-    </dd>
-    <dt>
-      <dt-description></dt-description>
-    </dt>
-    <dd>
-      <dd-description></dd-description>
-    </dd>
-    <dt>
-      <dt-date-created></dt-date-created>
-    </dt>
-    <dd>
-      <dd-date-created></dd-date-created>
-    </dd>
-    <dt>
-      <dt-date-modified></dt-date-modified>
-    </dt>
-    <dd>
-      <dd-date-modified></dd-date-modified>
-    </dd>
-    <dt>
-      <dt-owner></dt-owner>
-    </dt>
-    <dd>
-      <dd-owner></dd-owner>
-    </dd>
-    <dt>
-      <dt-app-category></dt-app-category>
-    </dt>
-    <dd>
-      <dd-app-category></dd-app-category>
-    </dd>
-    <dt>
-      <dt-tags></dt-tags>
-    </dt>
-    <dd>
-      <dd-tags></dd-tags>
-    </dd>
-    <dt>
-      <dt-documentation-url></dt-documentation-url>
-    </dt>
-    <dd>
-      <dd-documentation-url></dd-documentation-url>
-    </dd>
-    <dt>
-      <dt-license></dt-license>
-    </dt>
-    <dd>
-      <dd-license></dd-license>
-    </dd>
-  </dl>
+    <dl class="dl-root">
+      <dt>
+        <dt-id></dt-id>
+      </dt>
+      <dd>
+        <dd-id></dd-id>
+      </dd>
+      <dt>
+        <dt-name></dt-name>
+      </dt>
+      <dd>
+        <dd-name></dd-name>
+      </dd>
+      <dt>
+        <dt-version></dt-version>
+      </dt>
+      <dd>
+        <dd-version></dd-version>
+      </dd>
+      <dt>
+        <dt-description></dt-description>
+      </dt>
+      <dd>
+        <dd-description></dd-description>
+      </dd>
+      <dt>
+        <dt-date-created></dt-date-created>
+      </dt>
+      <dd>
+        <dd-date-created></dd-date-created>
+      </dd>
+      <dt>
+        <dt-date-modified></dt-date-modified>
+      </dt>
+      <dd>
+        <dd-date-modified></dd-date-modified>
+      </dd>
+      <dt>
+        <dt-owner></dt-owner>
+      </dt>
+      <dd>
+        <dd-owner></dd-owner>
+      </dd>
+      <dt>
+        <dt-app-category></dt-app-category>
+      </dt>
+      <dd>
+        <dd-app-category></dd-app-category>
+      </dd>
+      <dt>
+        <dt-tags></dt-tags>
+      </dt>
+      <dd>
+        <dd-tags></dd-tags>
+      </dd>
+      <dt>
+        <dt-documentation-url></dt-documentation-url>
+      </dt>
+      <dd>
+        <dd-documentation-url></dd-documentation-url>
+      </dd>
+      <dt>
+        <dt-license></dt-license>
+      </dt>
+      <dd>
+        <dd-license></dd-license>
+      </dd>
+    </dl>
 
-  <p><a name="t-response-codes"></a></p>
-  <h2>
-    <t-response-codes></t-response-codes>
-  </h2>
-  <table>
-    <colgroup class="rc-colgroup">
-      <col span="1">
-      <col span="1">
-    </colgroup>
-    <thead>
-      <tr>
-        <th>
-          Code
-        </th>
-        <th>
-          Description
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="cell-center-bold">
-          200
-        </td>
-        <td class="cell-center">
-          <sc-200></sc-200>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <p><a name="t-response-codes"></a></p>
+    <h2>
+      <t-response-codes></t-response-codes>
+    </h2>
+    <table>
+      <colgroup class="rc-colgroup">
+        <col span="1">
+        <col span="1">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>
+            Code
+          </th>
+          <th>
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell-center-bold">
+            200
+          </td>
+          <td class="cell-center">
+            <sc-200></sc-200>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
 
   <div id="footerContainer"></div>
 
@@ -185,6 +187,7 @@
   <script src="../../../scripts/editor-mode.js"></script>
   <script src="../../../scripts/elements.js"></script>
   <script src="../../../scripts/html2canvas.js"></script>
+  <script src="../../../scripts/menu.js"></script>
   <script src="../../../scripts/screenshot.js"></script>
 </body>
 

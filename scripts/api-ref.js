@@ -38,6 +38,73 @@ class DdAppCategory extends HTMLElement {
 }
 customElements.define("dd-app-category", DdAppCategory);
 
+// boot
+class DtBoot extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    boot <da-object/>
+    `
+  }
+}
+customElements.define("dt-boot", DtBoot);
+// +
+class DdBoot extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Parameters of the boot.
+    `
+  }
+}
+customElements.define("dd-boot", DdBoot);
+
+// boot_source_override_enabled
+class DtBootSourceOverrideEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    boot_source_override_enabled <da-string/>
+    `
+  }
+}
+customElements.define("dt-boot-source-override-enabled", DtBootSourceOverrideEnabled);
+// +
+class DdBootSourceOverrideEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Boot source override configuration:<ul>
+      <li><code>once</code>: the option is enabled. The next download will occur from the source specified in <code>boot_source_override_target</code>. The value of <code>boot_source_override_enabled</code> is then reboot back to <code>disabled</code>.</li>
+      <li><code>disabled</code>: the option is disabled. Loading will occur according to the selected priority in main configuration.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-boot-source-override-enabled", DdBootSourceOverrideEnabled);
+
+// boot_source_override_target
+class DtBootSourceOverrideTarget extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    boot_source_override_target <da-string/>
+    `
+  }
+}
+customElements.define("dt-boot-source-override-target", DtBootSourceOverrideTarget);
+// +
+class DdBootSourceOverrideTarget extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Boot source when the value of <code>boot_source_override_enabled</code> is <code>once</code>:<ul>
+      <li><code>pxe</code>: an environment for booting the system using a net card without using local data drives.</li>
+      <li><code>hdd</code>: hard disk drive.</li>
+      <li><code>cd</code>: compact disk.</li>
+      <li><code>bios_setup</code>: BIOS Setup program.</li>
+      <li><code>usb</code>: USB drive.</li>
+      <li><code>none</code>: boot source is not selected.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-boot-source-override-target", DdBootSourceOverrideTarget);
+
 // capitalizedResourceName
 class capitalizedResourceName extends HTMLElement {
   connectedCallback() {
@@ -45,6 +112,44 @@ class capitalizedResourceName extends HTMLElement {
   }
 }
 customElements.define("capitalized-resource-name", capitalizedResourceName);
+
+// comments
+class DtComments extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    comments <da-string/>
+    `
+  }
+}
+customElements.define("dt-comments", DtComments);
+// +
+class DdComments extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Additional comments or notes.
+    `
+  }
+}
+customElements.define("dd-comments", DdComments);
+
+// communication_plan
+class DtCommunicationPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    communication_plan <da-string/>
+    `
+  }
+}
+customElements.define("dt-communication-plan", DtCommunicationPlan);
+// +
+class DdCommunicationPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Strategy for informing users and stakeholders about the reboot.
+    `
+  }
+}
+customElements.define("dd-communication-plan", DdCommunicationPlan);
 
 // date_created
 class DtDateCreated extends HTMLElement {
@@ -103,6 +208,25 @@ class DdDescription extends HTMLElement {
 }
 customElements.define("dd-description", DdDescription);
 
+// documentation_updates
+class DtDocumentationUpdates extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    documentation_updates <da-string/>
+    `
+  }
+}
+customElements.define("dt-documentation-updates", DtDocumentationUpdates);
+// +
+class DdDocumentationUpdates extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Updating documentation to reflect changes introduced by the reboot.
+    `
+  }
+}
+customElements.define("dd-documentation-updates", DdDocumentationUpdates);
+
 // documentation_url
 class DtDocumentationUrl extends HTMLElement {
   connectedCallback() {
@@ -141,6 +265,49 @@ class DdEmail extends HTMLElement {
 }
 customElements.define("dd-email", DdEmail);
 
+// end_time
+class DtEndTime extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    end_time <da-datetime/>
+    `
+  }
+}
+customElements.define("dt-end-time", DtEndTime);
+// +
+class DdEndTime extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The date and time when the process is expected to be completed.
+    `
+  }
+}
+customElements.define("dd-end-time", DdEndTime);
+
+// environment
+class DtEnvironment extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    environment <da-arraystring/>
+    `
+  }
+}
+customElements.define("dt-environment", DtEnvironment);
+// +
+class DdEnvironment extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The environment type being rebooted:
+    <ul>
+      <li><b>Development</b>.</li>
+      <li><b>Testing</b>.</li>
+      <li><b>Production</b>.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-environment", DdEnvironment);
+
 // id
 class DtId extends HTMLElement {
   connectedCallback() {
@@ -159,6 +326,44 @@ class DdId extends HTMLElement {
   }
 }
 customElements.define("dd-id", DdId);
+
+// impact_assessment
+class DtImpactAssessment extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    impact_assessment <da-string/>
+    `
+  }
+}
+customElements.define("dt-impact-assessment", DtImpactAssessment);
+// +
+class DdImpactAssessment extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Evaluation of the potential impact of the reboot on users.
+    `
+  }
+}
+customElements.define("dd-impact-assessment", DdImpactAssessment);
+
+// incident_response
+class DtIncidentResponse extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    incident_response <da-string/>
+    `
+  }
+}
+customElements.define("dt-incident-response", DtIncidentResponse);
+// +
+class DdIncidentResponse extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Protocol for handling any incidents or issues that may arise during or after the reboot.
+    `
+  }
+}
+customElements.define("dd-incident-response", DdIncidentResponse);
 
 // items
 class DtItems extends HTMLElement {
@@ -282,6 +487,25 @@ class DdMaintenanceSchedule extends HTMLElement {
 }
 customElements.define("dd-maintenance-schedule", DdMaintenanceSchedule);
 
+// monitoring
+class DtMonitoring extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    monitoring <da-string/>
+    `
+  }
+}
+customElements.define("dt-monitoring", DtMonitoring);
+// +
+class DdMonitoring extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Configuration for monitoring the reboot process in real-time.
+    `
+  }
+}
+customElements.define("dd-monitoring", DdMonitoring);
+
 // name
 class DtName extends HTMLElement {
   connectedCallback() {
@@ -358,6 +582,49 @@ class DdOwner extends HTMLElement {
 }
 customElements.define("dd-owner", DdOwner);
 
+// reason
+class DtReason extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    reason <da-string/>
+    `
+  }
+}
+customElements.define("dt-reason", DtReason);
+// +
+class DdReason extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A brief description of why the action is considered necessary.
+    `
+  }
+}
+customElements.define("dd-reason", DdReason);
+
+// reboot_type
+class DtRebootType extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    reboot_type <da-arraystring/>
+    `
+  }
+}
+customElements.define("dt-reboot-type", DtRebootType);
+// +
+class DdRebootType extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The type of reboot being performed:
+    <ul>
+      <li><b>System Restart</b>.</li>
+      <li><b>Configuration Change</b>.</li>
+      <li><b>Software Update</b>.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-reboot-type", DdRebootType);
+
 // resourceName
 class resourceName extends HTMLElement {
   connectedCallback() {
@@ -403,6 +670,44 @@ class DdPhone extends HTMLElement {
   }
 }
 customElements.define("dd-phone", DdPhone);
+
+// post_analysis
+class DtPostAnalysis extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    post_analysis <da-string/>
+    `
+  }
+}
+customElements.define("dt-post-analysis", DtPostAnalysis);
+// +
+class DdPostAnalysis extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Analysis of the process to identify areas for improvement.
+    `
+  }
+}
+customElements.define("dd-post-analysis", DdPostAnalysis);
+
+// post_reboot_verification
+class DtPostRebootVerification extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    post_reboot_verification <da-string/>
+    `
+  }
+}
+customElements.define("dt-post-reboot-verification", DtPostRebootVerification);
+// +
+class DdPostRebootVerification extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Verification steps to confirm that the reboot was successful and the application is operating as expected.
+    `
+  }
+}
+customElements.define("dd-post-reboot-verification", DdPostRebootVerification);
 
 // processing_timeout
 class DtProcessingTimeout extends HTMLElement {
@@ -542,7 +847,26 @@ class DdRentalPrice extends HTMLElement {
 }
 customElements.define("dd-rental-price", DdRentalPrice);
 
-// license
+// rollback_plan
+class DtRollbackPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    rollback_plan <da-string/>
+    `
+  }
+}
+customElements.define("dt-rollback-plan", DtRollbackPlan);
+// +
+class DdRollbackPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A plan outlining steps to revert to the previous state in case of any issues during the reboot process.
+    `
+  }
+}
+customElements.define("dd-rollback-plan", DdRollbackPlan);
+
+// security_deposit
 class DtSecurityDeposit extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -585,6 +909,25 @@ class DdServiceEnabled extends HTMLElement {
 }
 customElements.define("dd-service-enabled", DdServiceEnabled);
 
+// start_time
+class DtStartTime extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    start_time <da-datetime/>
+    `
+  }
+}
+customElements.define("dt-start-time", DtStartTime);
+// +
+class DdStartTime extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The date and time when the process is scheduled to begin.
+    `
+  }
+}
+customElements.define("dd-start-time", DdStartTime);
+
 // tags
 class DtTags extends HTMLElement {
   connectedCallback() {
@@ -622,6 +965,25 @@ class DdTenant extends HTMLElement {
   }
 }
 customElements.define("dd-tenant", DdTenant);
+
+// testing_procedures
+class DtTestingProcedures extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    testing_procedures <da-string/>
+    `
+  }
+}
+customElements.define("dt-testing-procedures", DtTestingProcedures);
+// +
+class DdTestingProcedures extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Procedures for testing the application after the reboot to ensure proper functionality and performance.
+    `
+  }
+}
+customElements.define("dd-testing-procedures", DdTestingProcedures);
 
 // url
 class DtUrl extends HTMLElement {
@@ -846,6 +1208,16 @@ class DtDate extends HTMLElement {
 }
 customElements.define("da-date", DtDate);
 
+// datetime
+class DtDateTime extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <dataType>datetime</dataType>
+    `
+  }
+}
+customElements.define("da-datetime", DtDateTime);
+
 // number
 class DtNumber extends HTMLElement {
   connectedCallback() {
@@ -898,6 +1270,16 @@ class Sc200 extends HTMLElement {
   }
 }
 customElements.define("sc-200", Sc200);
+
+// 204
+class Sc204 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.5" target="_blank">The request was completed successfully,<br/>there is no additional content to send.</a>
+    `
+  }
+}
+customElements.define("sc-204", Sc204);
 
 // 404
 class Sc404 extends HTMLElement {

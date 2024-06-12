@@ -1,4 +1,4 @@
-# docs
+# Documents
 <p align="center">
 <img alt="Latest release: 1.0" src="pics/latest-release.svg" style="padding: 0; margin: 0;"/>
 <img alt="Solution: ES12" src="pics/solution-es12.svg" style="padding: 0; margin: 0;"/>
@@ -7,7 +7,7 @@
 <img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
 </p>
 
-This open-source repository contains the documentation sample code files that I have developed from scratch 📚
+&nbsp;&nbsp;This open-source repository contains the documentation sample code files that I have developed from scratch 📚
 
 ⭐ Star me on GitHub — it motivates me a lot!
 
@@ -32,11 +32,11 @@ This open-source repository contains the documentation sample code files that I 
 
 <img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logo-transparent.jpg"/>
 
-Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
+&nbsp;&nbsp;Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
-<!--Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
+<!--&nbsp;&nbsp;Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
 
-**To view the documentation, please visit <a href="https://firstsolar.github.io/docs/" target="_blank">Real&Mate Docs</a> website.**
+&nbsp;&nbsp;**To view the documentation, please visit <a href="https://firstsolar.github.io/docs/" target="_blank">Real&Mate Docs</a> website.**
 
 <a name="features"/>
 
@@ -50,7 +50,7 @@ Real&Mate software is designed for prompt implementation and support of real est
 <a name="how-it-works"/>
 
 ### How It Works
-Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
+&nbsp;&nbsp;Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
 1. The manager, using the Control Unit, sets up the client assessment methods in the Assessment Unit.
 2. To create an application, the client manually fills out the form in Client Unit. Personal data are passed from the Client Unit to the Assessment Unit.
 3. Assessment Unit sends data to the Integration Unit in JSON format using SQL request to get data from a specific external service. When requested, a record with client's application information is generated in the database with primary key which includes application ID and session IDs of connected external services. Sessions of connected external services are generated automatically when application is created. The database genType column specifies methods that form a queue of requests to external services. If there are no specified methods in the column, all available methods will be called. Parameters in requests to different external services may vary.
@@ -62,21 +62,21 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 5. External service processing received request and sends a response to the Integration Unit. Before further sending, the Integration Unit checks received data according to two criteria:
     * Data must be in JSON format.
     * Parameter names from external service must match with parameter names used by Assessment Unit.
-    
+
     If at least one of the criteria is not met:
-    
+
     5.1. The presence of handler for this external service is checked.
-    
+
     5.2. If there is a handler, it's called and data is converted.
 
     <img align="left" width="20" height="20" alt="Note: " title="Note" src="pics/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
     <br clear="left"/>
-    
+
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
 7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
 8. After processing an application for purchase, sale or lease of real estate Control Unit sends to Client Unit the response to the client's request with deal options.
 
-> All brands and related information mentioned in repository are fictitious for the purpose of demonstrating what kind of documentation I can develop. Any resemblance to real companies is purely coincidental.
+> All brands and related information mentioned in the repository are fictitious for the purpose of demonstrating what types of documents I can develop. Any resemblance to real companies is purely coincidental.
 
 <a name="external-services"/>
 
@@ -86,24 +86,24 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 |:-------------------:|:------------:|:------------------:|
 |   AH Real Estate    | File manager |    ah-real&mate    |
 | Cushmaw & Wakefielg | File manager | Natively supported |
-|        Essev        | Text editor  |  real&mate.essev   | 
-|        GSRE         | Text editor  |   real&mate.gsre   | 
-|       Notiuv        | File manager | Natively supported | 
+|        Essev        | Text editor  |  real&mate.essev   |
+|        GSRE         | Text editor  |   real&mate.gsre   |
+|       Notiuv        | File manager | Natively supported |
 
 <a name="road-map"/>
 
 ### Road Map
 #### Common
 * [x] Create main page (index.html)
-* [ ] Create scripts with reusable content
+* [x] Create scripts with reusable content
 * [x] Create style file
-* [ ] Create theme switch
+* [x] Create theme switch
 * [x] Add footer
 * [ ] Add common info about technical support
 * [ ] Add requirements for contacting technical support
 * [ ] Add contacts
-* [ ] Add more reusable content to elements.js
-* [ ] Improve style
+* [x] Add more reusable content to elements.js
+* [x] Improve style
 #### Glossary
 * [x] Create glossary.html
 * [x] Add title part
@@ -186,11 +186,11 @@ Real&Mate is designed to automatically process an application for a purchase, sa
 
 ## Contributing
 
-docs is an open-source project. I am committed to a fully transparent development process of the project and appreciate highly any contributions. Whether you are helping me fix bugs, proposing new features or spreading the word &mdash; I would love to have you as part of the docs community.
+&nbsp;&nbsp;Documents is an open-source project. I am committed to a fully transparent development process of the project and appreciate highly any contributions. Whether you are helping me fix bugs, proposing new features or spreading the word &mdash; I would love to have you as part of the Documents community.
 
-Please refer to our [Contribution Guidelines](https://github.com/FirstSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md) if you're interested in helping.
+&nbsp;&nbsp;Please refer to our [Contribution Guidelines](https://github.com/FirstSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md) if you're interested in helping.
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
+&nbsp;&nbsp;This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
 ## Support
 
@@ -200,34 +200,34 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 <a name="create-a-bug-report"/>
 
-You can ask questions and participate in discussions about docs-related topics:
+&nbsp;&nbsp;You can ask questions and participate in discussions about document-related topics:
 
-* on the docs Discord channel.
+* on the Documents Discord channel.
 
 <a href="https://discord.gg/f6Vk2kDe" target="_blank"><img alt="Discord channel " title="Discord channel" src="pics/discord.svg" style="padding: 0; margin: 0;"/></a>
 
-* on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">docs Matrix channel</a>.
+* on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">Documets Matrix channel</a>.
 
-* on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-docs` tag.
+* on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-documents` tag.
 
-Remember to search for existing questions before creating a new one.
+&nbsp;&nbsp;Remember to search for existing questions before creating a new one.
 
 ### Create a Bug Report
 
-If you run into an issue, please [create bug report](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all docs users.
+&nbsp;&nbsp;If you run into an issue, please [create bug report](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all Documents users.
 
 <a name="submit-a-feature-request"/>
 
 ### Submit a Feature Request
 
-If you have an idea, or you're missing an information that would make docs easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
+&nbsp;&nbsp;If you have an idea, or you're missing an information that would make documents easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
 
-If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly :)
+&nbsp;&nbsp;If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly :)
 
 <a name="contact-me"/>
 
 ### Contact Me
 
-LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/)
+&nbsp;&nbsp;LinkedIn [@PepsiCo](https://www.linkedin.com/in/PepsiCo/)
 
 ![Animated Text](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Internet+Sommelier;Passionate+Athlete;Caring+Environmentalist;Human)

@@ -1,5 +1,28 @@
 // Terms
 
+// activity_logs
+class DtActivityLogs extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    activity_logs <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-activity-logs", DtActivityLogs);
+// +
+class DdActivityLogs extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether activity logs are enabled for the user account:
+    <ul>
+    <li><code>true</code>: logs are enabled. Default.</li>
+    <li><code>false</code>: logs are disabled.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-activity-logs", DdActivityLogs);
+
 // amenities
 class DtAmenities extends HTMLElement {
   connectedCallback() {
@@ -37,6 +60,25 @@ class DdAppCategory extends HTMLElement {
   }
 }
 customElements.define("dd-app-category", DdAppCategory);
+
+// auth_token
+class DtAuthToken extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    auth_token <da-string/>
+    `
+  }
+}
+customElements.define("dt-auth-token", DtAuthToken);
+// +
+class DdAuthToken extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A token used for a user authentication.
+    `
+  }
+}
+customElements.define("dd-auth-token", DdAuthToken);
 
 // boot
 class DtBoot extends HTMLElement {
@@ -265,6 +307,29 @@ class DdEmail extends HTMLElement {
 }
 customElements.define("dd-email", DdEmail);
 
+// enabled
+class DtEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    enabled <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-enabled", DtEnabled);
+// +
+class DdEnabled extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether the <resource-name></resource-name> is enabled:
+    <ul>
+      <li><code>true</code>: the <resource-name></resource-name> is enabled. Default.</li>
+      <li><code>false</code>: the <resource-name></resource-name> is disabled.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-enabled", DdEnabled);
+
 // end_time
 class DtEndTime extends HTMLElement {
   connectedCallback() {
@@ -308,6 +373,25 @@ class DdEnvironment extends HTMLElement {
 }
 customElements.define("dd-environment", DdEnvironment);
 
+// first_name
+class DtFirstName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    first_name <da-string/>
+    `
+  }
+}
+customElements.define("dt-first-name", DtFirstName);
+// +
+class DdFirstName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A personal name that identifies an individual, as distinct from their last name.
+    `
+  }
+}
+customElements.define("dd-first-name", DdFirstName);
+
 // id
 class DtId extends HTMLElement {
   connectedCallback() {
@@ -326,6 +410,25 @@ class DdId extends HTMLElement {
   }
 }
 customElements.define("dd-id", DdId);
+
+// id (2)
+class DtId2 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    id <da-string/>
+    `
+  }
+}
+customElements.define("dt-id-2", DtId2);
+// +
+class DdId2 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The unique identifier of the <sub-resource-name></sub-resource-name>.
+    `
+  }
+}
+customElements.define("dd-id-2", DdId2);
 
 // impact_assessment
 class DtImpactAssessment extends HTMLElement {
@@ -402,6 +505,63 @@ class DdItemsCount extends HTMLElement {
   }
 }
 customElements.define("dd-items-count", DdItemsCount);
+
+// language
+class DtLanguage extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    language <da-string/>
+    `
+  }
+}
+customElements.define("dt-language", DtLanguage);
+// +
+class DdLanguage extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A language used for the application. Default: <code>en-US</code>. Example: <code>fr-FR</code>, <code>es-ES</code>.
+    `
+  }
+}
+customElements.define("dd-language", DdLanguage);
+
+// language_default
+class DtLanguageDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    language_default <da-string/>
+    `
+  }
+}
+customElements.define("dt-language-default", DtLanguageDefault);
+// +
+class DdLanguageDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The default language to be used for the application. Default: <code>en-US</code>. Example: <code>fr-FR</code>, <code>es-ES</code>.
+    `
+  }
+}
+customElements.define("dd-language-default", DdLanguageDefault);
+
+// last_name
+class DtLastName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    last_name <da-string/>
+    `
+  }
+}
+customElements.define("dt-last-name", DtLastName);
+// +
+class DdLastName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A name that identifies an individual's family, as distinct from their first name.
+    `
+  }
+}
+customElements.define("dd-last-name", DdLastName);
 
 // lease_agreement_details
 class DtLeaseAgreementDetails extends HTMLElement {
@@ -487,6 +647,101 @@ class DdMaintenanceSchedule extends HTMLElement {
 }
 customElements.define("dd-maintenance-schedule", DdMaintenanceSchedule);
 
+// max_password_length
+class DtMaxPasswordLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    max_password_length <da-number/>
+    `
+  }
+}
+customElements.define("dt-max-password-length", DtMaxPasswordLength);
+// +
+class DdMaxPasswordLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+     Maximum length of password. Default: <code>20</code>.
+    `
+  }
+}
+customElements.define("dd-max-password-length", DdMaxPasswordLength);
+
+// max_username_length
+class DtMaxUsernameLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    max_username_length <da-number/>
+    `
+  }
+}
+customElements.define("dt-max-username-length", DtMaxUsernameLength);
+// +
+class DdMaxUsernameLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+     Maximum length of username. Default: <code>20</code>.
+    `
+  }
+}
+customElements.define("dd-max-username-length", DdMaxUsernameLength);
+
+// middle_name
+class DtMiddleName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    middle_name <da-string/>
+    `
+  }
+}
+customElements.define("dt-middle-name", DtMiddleName);
+// +
+class DdMiddleName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An additional personal name that is placed between a person's first name and their last name.
+    `
+  }
+}
+customElements.define("dd-middle-name", DdMiddleName);
+
+// min_password_length
+class DtMinPasswordLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    min_password_length <da-number/>
+    `
+  }
+}
+customElements.define("dt-min-password-length", DtMinPasswordLength);
+// +
+class DdMinPasswordLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+     Minimum length of password. Default: <code>8</code>.
+    `
+  }
+}
+customElements.define("dd-min-password-length", DdMinPasswordLength);
+
+// min_username_length
+class DtMinUsernameLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    min_username_length <da-number/>
+    `
+  }
+}
+customElements.define("dt-min-username-length", DtMinUsernameLength);
+// +
+class DdMinUsernameLength extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+     Minimum length of username. Default: <code>4</code>.
+    `
+  }
+}
+customElements.define("dd-min-username-length", DdMinUsernameLength);
+
 // monitoring
 class DtMonitoring extends HTMLElement {
   connectedCallback() {
@@ -543,6 +798,69 @@ class DdName2 extends HTMLElement {
   }
 }
 customElements.define("dd-name-2", DdName2);
+
+// name (3)
+class DtName3 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    name <da-string/>
+    `
+  }
+}
+customElements.define("dt-name-3", DtName3);
+// +
+class DdName3 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A word or set of words by which a <sub-resource-name></sub-resource-name> is known, addressed and referred to.
+    `
+  }
+}
+customElements.define("dd-name-3", DdName3);
+
+// notifications
+class DtNotifications extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    notifications <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-notifications", DtNotifications);
+// +
+class DdNotifications extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The setting for notifications in the application:<ul>
+    <li><code>true</code>: notifications are enabled. Default.</li>
+    <li><code>false</code>: notifications are disabled.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-notifications", DdNotifications);
+
+// notifications_default
+class DtNotificationsDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    notifications_default <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-notifications-default", DtNotificationsDefault);
+// +
+class DdNotificationsDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The default setting for notifications in the application:<ul>
+    <li><code>true</code>: notifications are enabled. Default.</li>
+    <li><code>false</code>: notifications are disabled.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-notifications-default", DdNotificationsDefault);
 
 // occupancy
 class DtOccupancy extends HTMLElement {
@@ -625,6 +943,29 @@ class DdRebootType extends HTMLElement {
 }
 customElements.define("dd-reboot-type", DdRebootType);
 
+// require_two_factor_auth
+class DtRequireTwoFactorAuth extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    require_two_factor_auth <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-require-two-factor-auth", DtRequireTwoFactorAuth);
+// +
+class DdRequireTwoFactorAuth extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether to require two-factor authentication:
+    <ul>
+      <li><code>true</code>: two-factor authentication is required.</li>
+      <li><code>false</code>: two-factor authentication is not required. Default.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-require-two-factor-auth", DdRequireTwoFactorAuth);
+
 // resourceName
 class resourceName extends HTMLElement {
   connectedCallback() {
@@ -652,6 +993,48 @@ class DdPassword extends HTMLElement {
 }
 customElements.define("dd-password", DdPassword);
 
+// password_change_required
+class DtPasswordChangeRequired extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    password_change_required <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-password-change-required", DtPasswordChangeRequired);
+// +
+class DdPasswordChangeRequired extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether a password change is required:
+      <ul>
+        <li><code>true</code>: a password change is required.</li>
+        <li><code>false</code>: a password change is not required.</li>
+      </ul>
+      `
+  }
+}
+customElements.define("dd-password-change-required", DdPasswordChangeRequired);
+
+// permissions
+class DtPermissions extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    permissions <da-arraystring/>
+    `
+  }
+}
+customElements.define("dt-permissions", DtPermissions);
+// +
+class DdPermissions extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of permissions that are available for the user account.
+    `
+  }
+}
+customElements.define("dd-permissions", DdPermissions);
+
 // phone
 class DtPhone extends HTMLElement {
   connectedCallback() {
@@ -670,6 +1053,106 @@ class DdPhone extends HTMLElement {
   }
 }
 customElements.define("dd-phone", DdPhone);
+
+// plan
+class DtPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    plan <da-object/>
+    `
+  }
+}
+customElements.define("dt-plan", DtPlan);
+// +
+class DdPlan extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A subscription plan.
+    `
+  }
+}
+customElements.define("dd-plan", DdPlan);
+
+// plan_features
+class DtPlanFeatures extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    plan_features <da-arraystring/>
+    `
+  }
+}
+customElements.define("dt-plan-features", DtPlanFeatures);
+// +
+class DdPlanFeatures extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The list of features included in the subscription plan.
+    `
+  }
+}
+customElements.define("dd-plan-features", DdPlanFeatures);
+
+// plan_name
+class DtPlanName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    plan_name <da-string/>
+    `
+  }
+}
+customElements.define("dt-plan-name", DtPlanName);
+// +
+class DdPlanName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The name of the subscription plan:<ul>
+    <li><code>Starter</code>.</li>
+    <li><code>Standard</code>.</li>
+    <li><code>Premium</code>.</li>
+    <li><code>Enterprise</code>.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-plan-name", DdPlanName);
+
+// plan_price
+class DtPlanPrice extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    plan_price <da-number/>
+    `
+  }
+}
+customElements.define("dt-plan-price", DtPlanPrice);
+// +
+class DdPlanPrice extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The price of the subscription plan.
+    `
+  }
+}
+customElements.define("dd-plan-price", DdPlanPrice);
+
+// plans
+class DtPlans extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    plans <da-arrayobject/>
+    `
+  }
+}
+customElements.define("dt-plans", DtPlans);
+// +
+class DdPlans extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of available subscription plans.
+    `
+  }
+}
+customElements.define("dd-plans", DdPlans);
 
 // post_analysis
 class DtPostAnalysis extends HTMLElement {
@@ -709,6 +1192,25 @@ class DdPostRebootVerification extends HTMLElement {
 }
 customElements.define("dd-post-reboot-verification", DdPostRebootVerification);
 
+// preferences
+class DtPreferences extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    preferences <da-object/>
+    `
+  }
+}
+customElements.define("dt-preferences", DtPreferences);
+// +
+class DdPreferences extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A list of user preferences.
+    `
+  }
+}
+customElements.define("dd-preferences", DdPreferences);
+
 // processing_timeout
 class DtProcessingTimeout extends HTMLElement {
   connectedCallback() {
@@ -724,8 +1226,8 @@ class DdProcessingTimeout extends HTMLElement {
     this.innerHTML += `
     An indication of whether the processing timeout is set:
       <ul>
-        <li><b>true</b>: the processing timeout is set.</li>
-        <li><b>false</b>: the processing timeout is not set.</li>
+        <li><code>true</code>: the processing timeout is set.</li>
+        <li><code>false</code>: the processing timeout is not set.</li>
       </ul>
     Default processing timeout: 30 seconds.
     `
@@ -847,6 +1349,25 @@ class DdRentalPrice extends HTMLElement {
 }
 customElements.define("dd-rental-price", DdRentalPrice);
 
+// roles
+class DtRoles extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    roles <da-object/>
+    `
+  }
+}
+customElements.define("dt-roles", DtRoles);
+// +
+class DdRoles extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Roles assigned to users within the application.
+    `
+  }
+}
+customElements.define("dd-roles", DdRoles);
+
 // rollback_plan
 class DtRollbackPlan extends HTMLElement {
   connectedCallback() {
@@ -885,6 +1406,25 @@ class DdSecurityDeposit extends HTMLElement {
 }
 customElements.define("dd-security-deposit", DdSecurityDeposit);
 
+// security_settings
+class DtSecuritySettings extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    security_settings <da-object/>
+    `
+  }
+}
+customElements.define("dt-security-settings", DtSecuritySettings);
+// +
+class DdSecuritySettings extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+     Settings related to security.
+    `
+  }
+}
+customElements.define("dd-security-settings", DdSecuritySettings);
+
 // service_enabled
 class DtServiceEnabled extends HTMLElement {
   connectedCallback() {
@@ -900,14 +1440,56 @@ class DdServiceEnabled extends HTMLElement {
     this.innerHTML += `
     An indication of whether the <resource-name></resource-name> is enabled:
       <ul>
-        <li><b>true</b>: the service is enabled.</li>
-        <li><b>false</b>: the service is disabled.</li>
+        <li><code>true</code>: the service is enabled.</li>
+        <li><code>false</code>: the service is disabled.</li>
       </ul>
     Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.
     `
   }
 }
 customElements.define("dd-service-enabled", DdServiceEnabled);
+
+// show_plans_modal_window
+class DtShowPlansModalWindow extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    show_plans_modal_window <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-show-plans-modal-window", DtShowPlansModalWindow);
+// +
+class DdShowPlansModalWindow extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether to display a modal window for subscription plans:
+      <ul>
+        <li><code>true</code>: modal window is displayed. Default.</li>
+        <li><code>false</code>: modal window is not displayed.</li>
+      </ul>
+    `
+  }
+}
+customElements.define("dd-show-plans-modal-window", DdShowPlansModalWindow);
+
+// show_plans_modal_window_repeat_after
+class DtShowPlansModalWindowRepeatAfter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    show_plans_modal_window_repeat_after <da-number/>
+    `
+  }
+}
+customElements.define("dt-show-plans-modal-window-repeat-after", DtShowPlansModalWindowRepeatAfter);
+// +
+class DdShowPlansModalWindowRepeatAfter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The number of days after which the subscription plans modal window should be displayed again. Default: <code>30</code>.
+    `
+  }
+}
+customElements.define("dd-show-plans-modal-window-repeat-after", DdShowPlansModalWindowRepeatAfter);
 
 // start_time
 class DtStartTime extends HTMLElement {
@@ -927,6 +1509,33 @@ class DdStartTime extends HTMLElement {
   }
 }
 customElements.define("dd-start-time", DdStartTime);
+
+// subResourceName
+class subResourceName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += document.getElementById("subResourceName").innerHTML;
+  }
+}
+customElements.define("sub-resource-name", subResourceName);
+
+// subscription_management
+class DtSubscriptionManagement extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    subscription_management <da-object/>
+    `
+  }
+}
+customElements.define("dt-subscription-management", DtSubscriptionManagement);
+// +
+class DdSubscriptionManagement extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Settings related to subscription management.
+    `
+  }
+}
+customElements.define("dd-subscription-management", DdSubscriptionManagement);
 
 // tags
 class DtTags extends HTMLElement {
@@ -985,6 +1594,67 @@ class DdTestingProcedures extends HTMLElement {
 }
 customElements.define("dd-testing-procedures", DdTestingProcedures);
 
+// time_zone
+class DtTimeZone extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    time_zone <da-string/>
+    `
+  }
+}
+customElements.define("dt-time-zone", DtTimeZone);
+// +
+class DdTimeZone extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The time zone used for the application. Default: <code>America/New_York</code>. Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
+    `
+  }
+}
+customElements.define("dd-time-zone", DdTimeZone);
+
+// time_zone_default
+class DtTimeZoneDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    time_zone_default <da-string/>
+    `
+  }
+}
+customElements.define("dt-time-zone-default", DtTimeZoneDefault);
+// +
+class DdTimeZoneDefault extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The default time zone to be used for the application. Default: <code>America/New_York</code>. Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
+    `
+  }
+}
+customElements.define("dd-time-zone-default", DdTimeZoneDefault);
+
+// two_factor_auth
+class DtTwoFactorAuth extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    two_factor_auth <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-two-factor-auth", DtTwoFactorAuth);
+// +
+class DdTwoFactorAuth extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether a two-factor authentication is required:
+    <ul>
+      <li><code>true</code>: a two-factor authentication is required.</li>
+      <li><code>false</code>: a two-factor authentication is not required. Default.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-two-factor-auth", DdTwoFactorAuth);
+
 // url
 class DtUrl extends HTMLElement {
   connectedCallback() {
@@ -1017,7 +1687,7 @@ customElements.define("dt-username", DtUsername);
 class DdUsername extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    An identifier used by a person with access to the <main-resource-name></main-resource-name>.
+    An identifier used by a person with an access to the <main-resource-name></main-resource-name>.
     `
   }
 }

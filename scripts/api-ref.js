@@ -61,6 +61,31 @@ class DdAppCategory extends HTMLElement {
 }
 customElements.define("dd-app-category", DdAppCategory);
 
+// assigned_privileges
+class DtAssignedPrivileges extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    assigned_privileges <da-arraystring/>
+    `
+  }
+}
+customElements.define("dt-assigned-privileges", DtAssignedPrivileges);
+// +
+class DdAssignedPrivileges extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The privileges this role includes:<ul>
+      <li><code>Login</code>: able to log into the Real&Mate and read resources.</li>
+      <li><code>CustomizeExecutive</code>: able to customize executive resources.</li>
+      <li><code>CustomizeUsers</code>: able to customize users' accounts and their records.</li>
+      <li><code>CustomizeSelf</code>: able to change the password for the current user account.</li>
+      <li><code>CustomizeComponents</code>: able to customize components managed by this service.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-assigned-privileges", DdAssignedPrivileges);
+
 // auth_token
 class DtAuthToken extends HTMLElement {
   connectedCallback() {
@@ -150,7 +175,7 @@ customElements.define("dd-boot-source-override-target", DdBootSourceOverrideTarg
 // capitalizedResourceName
 class capitalizedResourceName extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += document.getElementById("capitalizedResourceName").innerHTML;
+    this.innerHTML = document.getElementById("capitalizedResourceName").innerHTML;
   }
 }
 customElements.define("capitalized-resource-name", capitalizedResourceName);
@@ -193,11 +218,30 @@ class DdCommunicationPlan extends HTMLElement {
 }
 customElements.define("dd-communication-plan", DdCommunicationPlan);
 
+// date_added
+class DtDateAdded extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    date_added <da-datetime/>
+    `
+  }
+}
+customElements.define("dt-date-added", DtDateAdded);
+// +
+class DdDateAdded extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The date and time the <resource-name></resource-name> was originally added.
+    `
+  }
+}
+customElements.define("dd-date-added", DdDateAdded);
+
 // date_created
 class DtDateCreated extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    date_created <da-date/>
+    date_created <da-datetime/>
     `
   }
 }
@@ -206,7 +250,7 @@ customElements.define("dt-date-created", DtDateCreated);
 class DdDateCreated extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The date the <resource-name></resource-name> was initially made.
+    The date and time the <resource-name></resource-name> was originally created.
     `
   }
 }
@@ -244,7 +288,7 @@ customElements.define("dt-description", DtDescription);
 class DdDescription extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The informational representation of the <resource-name></resource-name>.
+    An informational representation of the <resource-name></resource-name>.
     `
   }
 }
@@ -429,6 +473,29 @@ class DdId2 extends HTMLElement {
   }
 }
 customElements.define("dd-id-2", DdId2);
+
+// is_predefined
+class DtIsPredefined extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    is_predefined <da-boolean/>
+    `
+  }
+}
+customElements.define("dt-is-predefined", DtIsPredefined);
+// +
+class DdIsPredefined extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    An indication of whether the role is predefined:
+    <ul>
+      <li><code>true</code>: the role is predefined. Default.</li>
+      <li><code>false</code>: the role is custom.</li>
+    </ul>
+    `
+  }
+}
+customElements.define("dd-is-predefined", DdIsPredefined);
 
 // impact_assessment
 class DtImpactAssessment extends HTMLElement {
@@ -623,7 +690,7 @@ customElements.define("dd-license", DdLicense);
 // mainResourceName
 class mainResourceName extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += document.getElementById("mainResourceName").innerHTML;
+    this.innerHTML = document.getElementById("mainResourceName").innerHTML;
   }
 }
 customElements.define("main-resource-name", mainResourceName);
@@ -774,7 +841,7 @@ customElements.define("dt-name", DtName);
 class DdName extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    A word or set of words by which a <resource-name></resource-name> is known, addressed and referred to.
+    A word or set of words by which the <resource-name></resource-name> is known, addressed and referred to.
     `
   }
 }
@@ -969,7 +1036,7 @@ customElements.define("dd-require-two-factor-auth", DdRequireTwoFactorAuth);
 // resourceName
 class resourceName extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += document.getElementById("resourceName").innerHTML;
+    this.innerHTML = document.getElementById("resourceName").innerHTML;
   }
 }
 customElements.define("resource-name", resourceName);
@@ -1254,6 +1321,25 @@ class DdPropertyAddress extends HTMLElement {
 }
 customElements.define("dd-property-address", DdPropertyAddress);
 
+// property_id
+class DtPropertyId extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    property_id <da-string/>
+    `
+  }
+}
+customElements.define("dt-property-id", DtPropertyId);
+// +
+class DdPropertyId extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    The unique identifier of the property.
+    `
+  }
+}
+customElements.define("dd-property-id", DdPropertyId);
+
 // property_size
 class DtPropertySize extends HTMLElement {
   connectedCallback() {
@@ -1348,6 +1434,25 @@ class DdRentalPrice extends HTMLElement {
   }
 }
 customElements.define("dd-rental-price", DdRentalPrice);
+
+// role_name
+class DtRoleName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    role_name <da-string/>
+    `
+  }
+}
+customElements.define("dt-role-name", DtRoleName);
+// +
+class DdRoleName extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    A name of the specific role within the Real&Mate.
+    `
+  }
+}
+customElements.define("dd-role-name", DdRoleName);
 
 // roles
 class DtRoles extends HTMLElement {
@@ -1738,6 +1843,24 @@ class DdVersion extends HTMLElement {
 }
 customElements.define("dd-version", DdVersion);
 
+const dd = document.getElementsByTagName("dd");
+const dl = document.getElementsByTagName("dl");
+for (let x of dd) {
+  for (let y of dl) {
+    if (x.contains(y) == true) {
+      x.style.marginBottom = "0";
+    }
+  }
+}
+const ul = document.getElementsByTagName("ul");
+for (let x of dd) {
+  for (let w of ul) {
+    if (x.contains(w) == true) {
+      x.style.marginBottom = "0";
+    }
+  }
+}
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1766,7 +1889,7 @@ customElements.define("t-request-body", TRequestBody);
 // Request headers
 class TRequestHeaders extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += `
+    this.innerHTML = `
     Request Headers
     `
   }
@@ -1945,11 +2068,33 @@ customElements.define("sc-200", Sc200);
 class Sc204 extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.5" target="_blank">The request was completed successfully,<br/>there is no additional content to send.</a>
+    <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.5" target="_blank">The request was completed successfully,<br />there is no additional content to send.</a>
     `
   }
 }
 customElements.define("sc-204", Sc204);
+
+// 400
+class Sc400 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <a href="https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1" target="_blank">The server cannot process the request<br />
+    because a client error has been detected.</a>
+    `
+  }
+}
+customElements.define("sc-400", Sc400);
+
+// 403
+class Sc403 extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <a href="https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3" target="_blank">The server understood the request<br />
+    and does not authorize it.</a>
+    `
+  }
+}
+customElements.define("sc-403", Sc403);
 
 // 404
 class Sc404 extends HTMLElement {

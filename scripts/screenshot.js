@@ -1,14 +1,28 @@
 const containerButton = document.getElementById('container-button');
+const dropdown = document.getElementById('dropdown');
+const localReusableItems = document.getElementById("local-reusable-items");
+const a = document.getElementsByTagName("a");
 const button = document.getElementsByTagName("button");
 const comment = document.getElementsByTagName("comment-tag");
+const noscript = document.getElementsByTagName("noscript");
 const switchyBtn = document.getElementById('switchy');
 
 function screenshot() {
   containerButton.style.display = "none";
+  dropdown.style.display = "none";
+  if (localReusableItems != null) {
+    localReusableItems.style.display = "none";
+  }
+  for (let x of a) {
+    x.style.textDecoration = "none";
+  }
   for (let x of button) {
     x.style.display = "none";
   }
   for (let x of comment) {
+    x.style.display = "none";
+  }
+  for (let x of noscript) {
     x.style.display = "none";
   }
   html2canvas(document.body)
@@ -19,7 +33,11 @@ function screenshot() {
       a.setAttribute('href', url);
       a.click();
     })
-  containerButton.style.display = "block";
+  containerButton.style.display = null;
+  dropdown.style.display = null;
+  for (let x of a) {
+    x.style.textDecoration = "underline";
+  }
   for (let x of button) {
     x.style.display = "block";
   }

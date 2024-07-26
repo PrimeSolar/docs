@@ -3,10 +3,11 @@
 
 <head>
   <title>GET /realandmate/v1 | Get Information about the Application</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
+  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" title="Main Stylesheet" />
 </head>
 
 <body id="body">
@@ -16,42 +17,26 @@
   <span id="capitalizedResourceName">Real&Mate Application</span>
 
   <header>
-    <menu-container></menu-container>
+    <nav-links-api-ref></nav-links-api-ref>
     <h1>GET /realandmate/v1</h1>
   </header>
 
   <main>
 
     <p>
-      <indent></indent>Returns information about the application.
+      Returns information about the application.
     </p>
     <hr />
-    <!--<ul>
-    <li><a href="#request-h">
-        <t-request-h></t-request-h>
-      </a></li>
-    <li><a href="#response">
-        <t-response></t-response>
-      </a></li>
-  </ul>
-  <p><a name="request-h"></a></p>
-  <p><strong>
-      <t-request-h></t-request-h>
-    </strong></p>
-  <div class="sourceCode">
-    <pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
-      <span class="dt">&quot;&quot;</span><span class="fu">:</span> <span class="er">string</span>
-<span class="fu">}</span></code></pre>
-  </div>
-  <dl class="dl-root">
-    <dt>
-      <dt-session-id></dt-session-id>
-    </dt>
-    <dd>
-      <dd-session-id></dd-session-id>
-    </dd>
-  </dl>-->
-    <p><a name="response"></a></p>
+    <ul>
+      <li><a href="#response-body">
+          <t-response-body></t-response-body>
+        </a></li>
+      <li><a href="#response-codes">
+          <t-response-codes></t-response-codes>
+        </a></li>
+    </ul>
+
+    <a name="response-body"></a>
     <h2>
       <t-response-body></t-response-body>
     </h2>
@@ -143,7 +128,7 @@
       </dd>
     </dl>
 
-    <p><a name="t-response-codes"></a></p>
+    <a name="response-codes"></a>
     <h2>
       <t-response-codes></t-response-codes>
     </h2>
@@ -163,32 +148,94 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="cell-center-bold">
-            200
-          </td>
-          <td class="cell-center">
-            <sc-200></sc-200>
-          </td>
-        </tr>
+        <tr id="sc-200"></tr>
       </tbody>
     </table>
 
   </main>
 
+  <!-- Footer -->
   <div id="footerContainer"></div>
 
+  <!-- Enable JavaScript -->
+  <noscript>
+    <style>
+      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
+        display: none;
+      }
+    </style>
+    <section id="enable-javascript">
+      <h2>Enable JavaScript</h2>
+      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
+        document displays correctly and its features work as expected.</p>
+      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
+      <details style="margin-top: 5vh;">
+        <summary>
+          <strong>Chrome</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
+          <li>Click <strong>Site settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Edge</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>Allowed (recommended)</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Firefox</strong>
+        </summary>
+        <ol type="1">
+          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
+          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
+          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Opera</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
+          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
+          <li>Click <strong>Site Settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.
+      </details>
+    </section>
+  </noscript>
+
   <!-- Scripts -->
-  <script src="../../../scripts/elements-title.js"></script>
-  <script src="../../../scripts/api-ref.js"></script>
-  <script src="../../../scripts/comments.js"></script>
-  <script src="../../../scripts/copy.js"></script>
-  <script src="../../../scripts/dark-theme.js"></script>
-  <script src="../../../scripts/editor-mode.js"></script>
-  <script src="../../../scripts/elements.js"></script>
-  <script src="../../../scripts/html2canvas.js"></script>
-  <script src="../../../scripts/menu.js"></script>
-  <script src="../../../scripts/screenshot.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-title.js"></script>
+  <script type="text/javascript" src="../../../scripts/api-ref.js"></script>
+  <script type="text/javascript" src="../../../scripts/p-1-line-indent.js"></script>
+  <script type="text/javascript" src="../../../scripts/comments.js"></script>
+  <script type="text/javascript" src="../../../scripts/copy.js"></script>
+  <script type="text/javascript" src="../../../scripts/dark-theme.js"></script>
+  <script type="text/javascript" src="../../../scripts/editor-mode.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements.js"></script>
+  <script type="text/javascript" src="../../../scripts/html2canvas.js"></script>
+  <script type="text/javascript" src="../../../scripts/menu.js"></script>
+  <script type="text/javascript" src="../../../scripts/screenshot.js"></script>
+
 </body>
 
 </html>

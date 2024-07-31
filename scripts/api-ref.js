@@ -1,3 +1,8 @@
+// The Library of Custom Reusable Web Elements
+// This file is the library containing my collection of custom, reusable web elements
+// that can be used across different parts of the project. These elements go beyond what browsers provide,
+// allowing for expanded capabilities and functionality in the project.
+
 // Terms
 
 // activity_logs
@@ -2046,7 +2051,7 @@ customElements.define("da-string", DtString);
 
 // Response Codes
 
-// Column rules
+// Column Rules
 
 const colgroup = document.getElementById("rc-colgroup");
 if (colgroup != null) {
@@ -2055,27 +2060,51 @@ if (colgroup != null) {
 }
 
 // 200
-class Sc200 extends HTMLElement {
+class Sc200Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.1" target="_blank">The request has succeeded.</a>
     `
   }
 }
-customElements.define("sc-200", Sc200);
+customElements.define("sc-200-dsc", Sc200Dsc);
+// +
+const sc200 = document.getElementById("sc-200");
+if (sc200 != null){
+  sc200.innerHTML += `
+      <td>
+        200
+      </td>
+      <td class="cell-center">
+        <sc-200-dsc></sc-200-dsc>
+      </td>
+    `
+}
 
 // 204
-class Sc204 extends HTMLElement {
+class Sc204Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.2.5" target="_blank">The request was completed successfully,<br />there is no additional content to send.</a>
     `
   }
 }
-customElements.define("sc-204", Sc204);
+customElements.define("sc-204-dsc", Sc204Dsc);
+// +
+const sc204 = document.getElementById("sc-204");
+if (sc204 != null){
+  sc204.innerHTML += `
+      <td>
+        204
+      </td>
+      <td class="cell-center">
+        <sc-204-dsc></sc-204-dsc>
+      </td>
+    `
+}
 
 // 400
-class Sc400 extends HTMLElement {
+class Sc400Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1" target="_blank">The server cannot process the request<br />
@@ -2083,10 +2112,22 @@ class Sc400 extends HTMLElement {
     `
   }
 }
-customElements.define("sc-400", Sc400);
+customElements.define("sc-400-dsc", Sc400Dsc);
+// +
+const sc400 = document.getElementById("sc-400");
+if (sc400 != null){
+  sc400.innerHTML += `
+      <td>
+        400
+      </td>
+      <td class="cell-center">
+        <sc-400-dsc></sc-400-dsc>
+      </td>
+    `
+}
 
 // 403
-class Sc403 extends HTMLElement {
+class Sc403Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3" target="_blank">The server understood the request<br />
@@ -2094,27 +2135,63 @@ class Sc403 extends HTMLElement {
     `
   }
 }
-customElements.define("sc-403", Sc403);
+customElements.define("sc-403-dsc", Sc403Dsc);
+// +
+const sc403 = document.getElementById("sc-403");
+if (sc403 != null){
+  sc403.innerHTML += `
+      <td>
+        403
+      </td>
+      <td class="cell-center">
+        <sc-403-dsc></sc-403-dsc>
+      </td>
+    `
+}
 
 // 404
-class Sc404 extends HTMLElement {
+class Sc404Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.4.5" target="_blank">The server cannot find the requested resource.</a>
     `
   }
 }
-customElements.define("sc-404", Sc404);
+customElements.define("sc-404-dsc", Sc404Dsc);
+// +
+const sc404 = document.getElementById("sc-404");
+if (sc404 != null){
+  sc404.innerHTML += `
+      <td>
+        404
+      </td>
+      <td class="cell-center">
+        <sc-404-dsc></sc-404-dsc>
+      </td>
+    `
+}
 
 // 500
-class Sc500 extends HTMLElement {
+class Sc500Dsc extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
     <a href="https://www.rfc-editor.org/rfc/rfc2616#section-10.5.1" target="_blank">Internal server error.</a>
     `
   }
 }
-customElements.define("sc-500", Sc500);
+customElements.define("sc-500-dsc", Sc500Dsc);
+// +
+const sc500 = document.getElementById("sc-500");
+if (sc500 != null){
+  sc500.innerHTML += `
+      <td>
+        500
+      </td>
+      <td class="cell-center">
+        <sc-500-dsc></sc-500-dsc>
+      </td>
+    `
+}
 
 // Code
 class ScCode extends HTMLElement {

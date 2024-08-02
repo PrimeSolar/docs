@@ -3,16 +3,17 @@
 
 <head>
   <title>How to Use Real&Mate's REST API</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../styles/azure.css" />
+  <link rel="stylesheet" type="text/css" href="../../styles/azure.css" title="Main Stylesheet" />
 </head>
 
 <body id="body">
 
   <header>
-    <menu-container></menu-container>
+    <nav-links-api-ref></nav-links-api-ref>
     <h1>How to Use Real&Mate's REST API</h1>
   </header>
 
@@ -20,26 +21,26 @@
 
     <h2>What is a REST API?</h2>
     <p>
-      <indent></indent>API is an abbreviation for "Application Programming Interface". An API is a set of rules that lets programs talk to each other, exposing data and functionality across the Internet in a consistent format.
+      API is an abbreviation for "Application Programming Interface". An API is a set of rules that lets programs talk to each other, exposing data and functionality across the Internet in a consistent format.
     </p>
     <p>
-      <indent></indent>REST stands for "<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank">Representational State Transfer</a>". This is an architectural pattern that describes how distributed systems
+      REST stands for "<a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm" target="_blank">Representational State Transfer</a>". This is an architectural pattern that describes how distributed systems
       can expose a consistent interface. When people use the term "REST API", they are generally referring to an API accessed using the HTTP protocol at a predefined set of URLs.
     </p>
     <p>
-      <indent></indent>These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them
+      These URLs represent various resources — any information or content accessed at that location, which can be returned as JSON, HTML, audio files, or images. Often resources have one or more methods that can be performed on them
       over HTTP, like
       <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>. The action represented by the first and last of these is clear, but <code>POST</code> and <code>PUT</code> have specific meanings. How they are defined is
       confusing, but the general rule is: use <code>POST</code> to create resources, and <code>PUT</code> to update
       resources.
     </p>
     <p>
-      <indent></indent>Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its
+      Real&Mate, for example, provides many separate REST APIs for managing application, getting information about real estate objects, adding new real estate objects and a whole lot more. In Real&Mate ecosystem, each service has its
       own API, and at the same time you will work with each of them in roughly the same way, directly over HTTP.
     </p>
     <h2>Authenticate with HTTP</h2>
     <p>
-      <indent></indent>Real&Mate supports <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic authentication</a>. This allows you to protect the URLs on your web server so that only you and Real&Mate can
+      Real&Mate supports <a href="https://en.wikipedia.org/wiki/Basic_access_authentication" target="_blank">HTTP Basic authentication</a>. This allows you to protect the URLs on your web server so that only you and Real&Mate can
       access them. In order to authenticate with HTTP, you may provide a username and password with the following URL format:
     </p>
     <div class="sourceCode">
@@ -48,7 +49,7 @@
       </code></pre>
     </div>
     <p>
-      <indent></indent>For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
+      For HTTP Basic authentication, you will use your Real&Mate account ID as your username and your auth token as your password:
     </p>
     <div class="sourceCode">
       <pre class="json"><code class="json">
@@ -57,7 +58,7 @@
       </code></pre>
     </div>
     <p>
-      <indent></indent>If you want to use API keys to authenticate instead of your Real&Mate account ID and auth token, then use the API key as your username and your API key’s Secret as your password:
+      If you want to use API keys to authenticate instead of your Real&Mate account ID and auth token, then use the API key as your username and your API key’s Secret as your password:
     </p>
     <div class="sourceCode">
       <pre class="json"><code class="json">
@@ -66,7 +67,7 @@
       </code></pre>
     </div>
     <p>
-      <indent></indent>The API key type has to be created as <code>Base</code> for the above command to access your accounts. Keys of type <code>Common</code> can only be used on commands where you also provide the Account ID as part of the API. For
+      The API key type has to be created as <code>Base</code> for the above command to access your accounts. Keys of type <code>Common</code> can only be used on commands where you also provide the Account ID as part of the API. For
       example:
     </p>
     <div class="sourceCode">
@@ -77,32 +78,99 @@
       </code></pre>
     </div>
     <p>
-      <indent></indent>Real&Mate will authenticate to your web server using the provided username and password and will remain logged in for the duration of the action.
+      Real&Mate will authenticate to your web server using the provided username and password and will remain logged in for the duration of the action.
     </p>
     <h2>How Real&Mate’s API uses webhooks</h2>
     <p>
-      <indent></indent><a href="webhooks.html" target="_blank">Webhooks</a> are user-defined HTTP callbacks triggered by an event in a web application. Real&Mate uses webhooks to let your application know when events happen, like adding a new
+      <a href="webhooks.html">Webhooks</a> are user-defined HTTP callbacks triggered by an event in a web application. Real&Mate uses webhooks to let your application know when events happen, like adding a new
       real estate object or updating an existing one. Webhooks are triggered asynchronously.
     </p>
     <p>
-      <indent></indent>When the webhook event occurs, Real&Mate makes an HTTP request (usually <code>GET</code> or <code>POST</code>) to the URL you have configured for your webhook. Real&Mate's request to your application includes details of the
+      When the webhook event occurs, Real&Mate makes an HTTP request (usually <code>GET</code> or <code>POST</code>) to the URL you have configured for your webhook. Real&Mate's request to your application includes details of the
       event like the body of an log entry or the updated real estate parameters. Your application can then perform whatever logic is necessary, then reply to Real&Mate with a response containing the instructions you’d like Real&Mate to perform.
     </p>
 
   </main>
 
+  <!-- Footer -->
   <div id="footerContainer"></div>
 
+  <!-- Enable JavaScript -->
+  <noscript>
+    <style>
+      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
+        display: none;
+      }
+    </style>
+    <section id="enable-javascript">
+      <h2>Enable JavaScript</h2>
+      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
+        document displays correctly and its features work as expected.</p>
+      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
+      <details style="margin-top: 5vh;">
+        <summary>
+          <strong>Chrome</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
+          <li>Click <strong>Site settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Edge</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>Allowed (recommended)</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Firefox</strong>
+        </summary>
+        <ol type="1">
+          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
+          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
+          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Opera</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
+          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
+          <li>Click <strong>Site Settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.
+      </details>
+    </section>
+  </noscript>
+
   <!-- Scripts -->
-  <script src="../../scripts/check-browser.js"></script>
-  <script src="../../scripts/copy.js"></script>
-  <script src="../../scripts/elements-title.js"></script>
-  <script src="../../scripts/dark-theme.js"></script>
-  <script src="../../scripts/editor-mode.js"></script>
-  <script src="../../scripts/elements.js"></script>
-  <script src="../../scripts/html2canvas.js"></script>
-  <script src="../../scripts/menu.js"></script>
-  <script src="../../scripts/screenshot.js"></script>
+  <script type="text/javascript" src="../../scripts/copy.js"></script>
+  <script type="text/javascript" src="../../scripts/p-1-line-indent.js"></script>
+  <script type="text/javascript" src="../../scripts/elements-title.js"></script>
+  <script type="text/javascript" src="../../scripts/dark-theme.js"></script>
+  <script type="text/javascript" src="../../scripts/editor-mode.js"></script>
+  <script type="text/javascript" src="../../scripts/elements.js"></script>
+  <script type="text/javascript" src="../../scripts/html2canvas.js"></script>
+  <script type="text/javascript" src="../../scripts/menu.js"></script>
+  <script type="text/javascript" src="../../scripts/screenshot.js"></script>
 
 </body>
 

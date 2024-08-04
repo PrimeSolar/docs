@@ -18,18 +18,35 @@
   </header>
 
   <main>
-
     <p>
       Webhooks are user-defined <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" />HTTP</a> callbacks. They are triggered by some event in a web application and can facilitate integrating different
       applications or third-party APIs, like Real&Mate.
+    </p>
+
+    <h2>Why Use Webhooks</h2>
+    <p>
+      When building Real&Mate integrations, you might want your applications to receive events as they occur in your Real&Mate accounts, so that your backend systems can execute actions accordingly.
     </p>
     <p>
       Real&Mate uses webhooks to let your application know when events happen, such as getting information about real estate objects or adding new ones. When the event occurs, Real&Mate makes an HTTP request (usually <a
         href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank" />a POST or a GET</a>) to the URL you configured for the webhook. Real&Mate's request will include details of the event such as the user
       identifier or real estate parameters. Many other modern web services like GitHub and Slack also make use of webhooks to communicate events.
     </p>
+    <p>
+      To enable webhook events, you need to register webhook endpoints. After you register them, Real&Mate can push real-time event data to your application’s webhook endpoint when events happen in your account. Real&Mate sends webhook events to your
+      app as a JSON payload.
+    </p>
 
     <h2>Getting Started with Real&Mate Webhooks</h2>
+    <p>
+      To start receiving webhook events in your app, create and register a webhook endpoint:
+    </p>
+    <ol>
+      <li>Create a webhook endpoint handler to receive event data POST requests.</li>
+      <li>Test your webhook endpoint handler.</li>
+      <li>Register your endpoint within Real&Mate.</li>
+      <li>Secure your webhook endpoint.</li>
+    </ol>
     <p>
       For testing purposes during development, you may find it worthwhile to set up mock HTTP requests to your application. We suggest either using a command-line tool like <a href="https://curl.se/docs/manpage.html" target="_blank" />curl</a>, or a
       desktop application like <a href="https://www.getpostman.com" target="_blank" />Postman</a>.
@@ -38,7 +55,7 @@
   </main>
 
   <!-- Footer -->
-  <div id="footerContainerLowerMC"></div>
+  <div id="footerContainer"></div>
 
   <!-- Enable JavaScript -->
   <noscript>
@@ -101,7 +118,8 @@
           <li>Click <strong>Site Settings</strong>.</li>
           <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
           <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.
+          <li>Refresh this page.</li>
+        </ol>
       </details>
     </section>
   </noscript>

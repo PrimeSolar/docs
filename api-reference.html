@@ -3,83 +3,205 @@
 
 <head>
   <title>API Reference</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="styles/azure.css" />
+  <link rel="stylesheet" type="text/css" href="styles/azure.css" title="Main Stylesheet" />
 </head>
 
 <body id="body">
 
   <div id="container">
-    <theme-button />
+    <theme-button></theme-button>
     <div id="header">
       <h1><span class="title">API Reference</span><br />
-        <span id="subtitle" />
+        <span id="subtitle"></span>
       </h1>
       <logo-img></logo-img>
     </div>
   </div>
 
-  <p>
-    Real&Mate’s API (Application Programming Interface) powers its business platform. Behind this API is a software layer connecting and optimizing communications networks around the world to allow your users to buy, sell and rent real estate.
-  </p>
+  <main>
 
-  <a href="pages/api-ref/how-to.html" target="_blank" class="list-link">How to Use Our REST API</a>
+    <p>
+      <indent></indent>Real&Mate’s API (Application Programming Interface) powers its business platform. Behind this API is a software layer connecting and optimizing communications networks around the world to allow your users to buy, sell and rent
+      real estate.
+    </p>
 
-  <div id="methods" />
+    <a href="pages/api-ref/api-glossary.html" class="list-link">API Glossary</a>
+    <a href="pages/api-ref/how-to.html" class="list-link">How to Use Our API</a>
 
-  <details>
-    <span class="no-user-details"></span>
-    <summary>
-      Application Management
-    </summary>
-    <ul>
-      <li><a href="pages/api-ref/app-mgmt/get-realandmate-v1.html" target="_blank">Get Information about the Application</a></li>
-    </ul>
-  </details>
+    <div id="methods">
 
-  <details>
-    <summary>
-      Real Estate Management
-    </summary>
-    <ul>
-      <li class="no-user"><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service.html" target="_blank">Get Information about the Real Estate Service Parameters</a></li>
-      <li><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service-objects.html" target="_blank">Get Collection of the Real Estate Objects</a></li>
-      <li><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service-objects-object-id.html" target="_blank">Get Information about Specific Real Estate Object</a></li>
-      <li><a href="pages/api-ref/estate-mgmt/post-realandmate-v1-real-estate-service-objects.html" target="_blank">Create Real Estate Object</a></li>
-      <li><a href="pages/api-ref/estate-mgmt/delete-realandmate-v1-real-estate-service-objects-object-id.html" target="_blank">Delete Real Estate Object</a></li>
-    </ul>
-  </details>
+      <details>
+        <span class="no-user-details"></span>
+        <summary>
+          Application Management
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/app-mgmt/get-realandmate-v1.html">Get Information about the Application</a></li>
+          <li><a href="pages/api-ref/app-mgmt/get-realandmate-v1-reboot-act-info.html">Get Information about the Application Reboot Parameters</a></li>
+          <li><a href="pages/api-ref/app-mgmt/get-realandmate-v1-acts-application-reboot.html">Reboot the Application</a></li>
+          <li><a href="pages/api-ref/app-mgmt/patch-realandmate-v1.html">One-Time Override Boot Source</a></li>
+        </ul>
+      </details>
 
-  <details>
-    <span class="no-user-details"></span>
-    <summary>
-      Application Logging
-    </summary>
-    <ul>
-      <li><a href="pages/api-ref/app-log/get-realandmate-v1-log-service.html" target="_blank">Get Application Log Entry Collection</a></li>
-    </ul>
-  </details>
+      <details>
+        <summary>
+          Real Estate Management
+        </summary>
+        <ul>
+          <li class="no-user"><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service.html">Get an Information about Real Estate Service Parameters</a></li>
+          <li><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service-objects.html">Get the Real Estate Object Collection</a></li>
+          <li><a href="pages/api-ref/estate-mgmt/get-realandmate-v1-real-estate-service-objects-object-id.html">Get an Information about a Specific Real Estate Object</a></li>
+          <li><a href="pages/api-ref/estate-mgmt/post-realandmate-v1-real-estate-service-objects.html">Create a Real Estate Object</a></li>
+          <li><a href="pages/api-ref/estate-mgmt/delete-realandmate-v1-real-estate-service-objects-object-id.html">Delete a Real Estate Object</a></li>
+        </ul>
+      </details>
 
-  </div>
+      <details>
+        <summary>
+          Advertisement Management
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/advertisement-mgmt/get-realandmate-v1-advertisement-service-advertisements.html">Get the Real Estate Advertisement Collection</a></li>
+          <li><a href="pages/api-ref/advertisement-mgmt/post-realandmate-v1-advertisement-service-advertisements.html">Create an Advertisement</a></li>
+        </ul>
+      </details>
 
-  <div class="w3c">
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fapi-reference.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-text">
-      Verified by World Wide Web Consortium:
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fapi-reference.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-img">
-      <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt=" W3C" /></a>
-  </div>
+      <details>
+        <span class="no-user-details"></span>
+        <summary>
+          Application Logging
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/app-log/get-realandmate-v1-log-service.html">Get Application Log Entry Collection</a></li>
+        </ul>
+      </details>
 
+      <details>
+        <span class="no-user-details"></span>
+        <summary>
+          Agency Management
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/agency-mgmt/get-realandmate-v1-agency-service-agencies.html">Get the Application Agency Collection</a></li>
+          <li><a href="pages/api-ref/agency-mgmt/post-realandmate-v1-agency-service-agencies.html">Add an Agency</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <span class="no-user-details"></span>
+        <summary>
+          Account Management
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/account-mgmt/get-realandmate-v1-account-service.html">Get Information about the Account Management Settings</a></li>
+          <li><a href="pages/api-ref/account-mgmt/patch-realandmate-v1-account-service.html">Change the Account Management Settings</a></li>
+          <li><a href="pages/api-ref/account-mgmt/get-realandmate-v1-account-service-accounts.html">Get the Application Account Collection</a></li>
+          <li><a href="pages/api-ref/account-mgmt/get-realandmate-v1-account-service-accounts-username.html">Get Information about an Account</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <span class="no-user-details"></span>
+        <summary>
+          Role Management
+        </summary>
+        <ul>
+          <li><a href="pages/api-ref/role-mgmt/get-realandmate-v1-role-service-roles.html">Get the Application Role Collection</a></li>
+          <li><a href="pages/api-ref/role-mgmt/get-realandmate-v1-role-service-roles-role-name.html">Get an Information about a Role</a></li>
+        </ul>
+      </details>
+
+    </div>
+
+    <div class="w3c">
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fapi-reference.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-text">
+        Verified by World Wide Web Consortium:&nbsp;
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fapi-reference.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-img">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt=" W3C" /></a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
   <div id="footerContainer"></div>
 
+  <!-- Enable JavaScript -->
+  <noscript>
+    <style>
+      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
+        display: none;
+      }
+    </style>
+    <section id="enable-javascript">
+      <h2>Enable JavaScript</h2>
+      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
+        document displays correctly and its features work as expected.</p>
+      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
+      <details style="margin-top: 5vh;">
+        <summary>
+          <strong>Chrome</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
+          <li>Click <strong>Site settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Edge</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Click <strong>Settings</strong>.</li>
+          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>Allowed (recommended)</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Firefox</strong>
+        </summary>
+        <ol type="1">
+          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
+          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
+          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>
+          <strong>Opera</strong>
+        </summary>
+        <ol type="1">
+          <li>Click on the browser menu button in the browser upper right corner.</li>
+          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
+          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
+          <li>Click <strong>Site Settings</strong>.</li>
+          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
+          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+          <li>Refresh this page.</li>
+        </ol>
+      </details>
+    </section>
+  </noscript>
+
   <!-- Scripts -->
-  <script src="scripts/check-browser.js"></script>
-  <script src="scripts/display.js"></script>
-  <script src="scripts/elements-title.js"></script>
-  <script src="scripts/dark-theme.js"></script>
-  <script src="scripts/elements.js"></script>
+  <script type="text/javascript" src="scripts/display.js"></script>
+  <script type="text/javascript" src="scripts/elements-title.js"></script>
+  <script type="text/javascript" src="scripts/dark-theme.js"></script>
+  <script type="text/javascript" src="scripts/elements.js"></script>
 
 </body>
 

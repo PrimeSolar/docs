@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>GET /realandmate/v1/AccountService | Get Information about the Account Management Settings</title>
+  <title>GET /realandmate/v1/AccountService | Retrieve Information about the Account Management Settings</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,13 +28,27 @@
     </p>
     <hr />
     <ul>
+      <li><a href="#request-example">
+          <t-request-example></t-request-example>
+        </a></li>
       <li><a href="#response-body">
           <t-response-body></t-response-body>
+        </a></li>
+      <li><a href="#response-example">
+          <t-response-example></t-response-example>
         </a></li>
       <li><a href="#response-codes">
           <t-response-codes></t-response-codes>
         </a></li>
     </ul>
+
+    <a name="request-example"></a>
+    <h2>
+      <t-request-example></t-request-example>
+    </h2>
+    <codeblock>
+GET https://example.com/realandmate/v1/AccountService
+    </codeblock>
 
     <a name="response-body"></a>
     <h2>
@@ -43,34 +57,34 @@
     <h3>
       <t-http-code-200></t-http-code-200>
     </h3>
-    <div class="sourceCode">
-      <pre class="json"><code class="json"><span class="dt">{</span>
-    <span class="dt">&quot;permissions&quot;: [string],</span>
-    <span class="dt">&quot;preferences&quot;: {</span>
-      <span class="dt">&quot;language_default&quot;: string,</span>
-      <span class="dt">&quot;time_zone_default&quot;: string,</span>
-      <span class="dt">&quot;notifications_default&quot;: boolean</span>
-    <span class="dt">},</span>
-    <span class="dt">&quot;seurity_settings&quot;: {</span>
-      <span class="dt">&quot;min_username_length&quot;: number,</span>
-      <span class="dt">&quot;max_username_length&quot;: number,</span>
-      <span class="dt">&quot;min_password_length&quot;: number,</span>
-      <span class="dt">&quot;max_password_length&quot;: number,</span>
-      <span class="dt">&quot;require_two_factor_auth&quot;: boolean</span>
-    <span class="dt">},</span>
-    <span class="dt">&quot;subscription_management&quot;:{</span>
-      <span class="dt">&quot;plans&quot;: [{
-        <span class="dt">&quot;plan_name&quot;: string,</span>
-        <span class="dt">&quot;plan_features&quot;: [string],</span>
-        <span class="dt">&quot;plan_price&quot;: number</span>
-      <span class="dt">}],</span></span>
-      <span class="dt">&quot;show_plans_modal_window&quot;: boolean,</span>
-      <span class="dt">&quot;show_plans_modal_window_repeat_after&quot;: number</span>
-    <span class="dt">},</span>
-    <span class="dt">&quot;activity_logs&quot;: boolean,</span>
-    <span class="dt">&quot;auth_token&quot;: string</span>
-<span class="dt">}</span></code></pre>
-    </div>
+    <codeblock>
+{
+  "permissions": [string],
+  "preferences": {
+  "language_default": string,
+  "time_zone_default": string,
+    "notifications_default": boolean
+  },
+  "seurity_settings": {
+    "min_username_length": number,
+    "max_username_length": number,
+    "min_password_length": number,
+    "max_password_length": number,
+    "require_two_factor_auth": boolean
+  },
+  "subscription_management":{
+    "plans": [{
+      "plan_name": string,
+      "plan_features": [string],
+      "plan_price": number
+    }],
+    "show_plans_modal_window": boolean,
+    "show_plans_modal_window_repeat_after": number
+  },
+  "activity_logs": boolean,
+  "auth_token": string
+}
+    </codeblock>
 
     <dl class="dl-root">
       <dt>
@@ -203,6 +217,42 @@
       </dd>
     </dl>
 
+    <a name="response-example"></a>
+    <h2>
+      <t-response-example></t-response-example>
+    </h2>
+    <h2>
+      <t-http-code-200></t-http-code-200>
+    </h2>
+    <codeblock>
+{
+  "permissions": ["Create advertisements", "Read advertisements", "Edit advertisements", "Delete advertisements", "Manage accounts"],
+  "preferences": {
+  "language_default": "English",
+  "time_zone_default": "America/New_York",
+    "notifications_default": true
+  },
+  "seurity_settings": {
+    "min_username_length": 1,
+    "max_username_length": 50,
+    "min_password_length": 14,
+    "max_password_length": 50,
+    "require_two_factor_auth": false
+  },
+  "subscription_management":{
+    "plans": [{
+      "plan_name": "Premium",
+      "plan_features": ["Unlimited Access to Properties Information", "Advertisement-Free Experience", "Offline Downloads", "Exclusive Offers", "Priority Support"],
+      "plan_price": 20
+    }],
+    "show_plans_modal_window": true,
+    "show_plans_modal_window_repeat_after": 30
+  },
+  "activity_logs": true,
+  "auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+}
+    </codeblock>
+
     <a name="response-codes"></a>
     <h2>
       <t-response-codes></t-response-codes>
@@ -301,16 +351,16 @@
   </noscript>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-title-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/api-ref-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/dark-theme-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/editor-mode-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/html2canvas-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/screenshot-min.js"></script>
 
 </body>
 

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>GET /realandmate/v1/RebootActInfo | Get Information about Reboot Parameters of the Application</title>
+  <title>GET /realandmate/v1/RebootActInfo | Retrieve Information about Reboot Parameters of the Application</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,13 +28,27 @@
     </p>
     <hr />
     <ul>
+      <li><a href="#request-example">
+          <t-request-example></t-request-example>
+        </a></li>
       <li><a href="#response-body">
           <t-response-body></t-response-body>
+        </a></li>
+      <li><a href="#response-example">
+          <t-response-example></t-response-example>
         </a></li>
       <li><a href="#response-codes">
           <t-response-codes></t-response-codes>
         </a></li>
     </ul>
+
+    <a name="request-example"></a>
+    <h2>
+      <t-request-example></t-request-example>
+    </h2>
+    <codeblock>
+GET https://example.com/realandmate/v1/RebootActInfo
+    </codeblock>
 
     <a name="response-body"></a>
     <h2>
@@ -43,27 +57,27 @@
     <h3>
       <t-http-code-200></t-http-code-200>
     </h3>
-    <div class="sourceCode" id="cb2">
-      <pre class="json"><code class="json"><span class="dt">{</span>
-    <span class="dt">&quot;id&quot;: string,</span>
-    <span class="dt">&quot;name&quot;: string,</span>
-    <span class="dt">&quot;version&quot;: string,</span>
-    <span class="dt">&quot;environment&quot;: [string],</span>
-    <span class="dt">&quot;reboot_type&quot;: [string],</span>
-    <span class="dt">&quot;start_time&quot;: datetime,</span>
-    <span class="dt">&quot;end_time&quot;: datetime,</span>
-    <span class="dt">&quot;reason&quot;: string,</span>
-    <span class="dt">&quot;impact_assessment&quot;: string,</span>
-    <span class="dt">&quot;communication_plan&quot;: string,</span>
-    <span class="dt">&quot;rollback_plan&quot;: string,</span>
-    <span class="dt">&quot;monitoring&quot;: string,</span>
-    <span class="dt">&quot;documentation_updates&quot;: string,</span>
-    <span class="dt">&quot;testing_procedures&quot;: string,</span>
-    <span class="dt">&quot;post_reboot_verification&quot;: string,</span>
-    <span class="dt">&quot;incident_response&quot;: string,</span>
-    <span class="dt">&quot;post_analysis&quot;: string</span>
-<span class="dt">}</span></code></pre>
-    </div>
+    <codeblock>
+{
+  "id": string,
+  "name": string,
+  "version": string,
+  "environment": [string],
+  "reboot_type": [string],
+  "start_time": datetime,
+  "end_time": datetime,
+  "reason": string,
+  "impact_assessment": string,
+  "communication_plan": string,
+  "rollback_plan": string,
+  "monitoring": string,
+  "documentation_updates": string,
+  "testing_procedures": string,
+  "post_reboot_verification": string,
+  "incident_response": string,
+  "post_analysis": string
+}
+    </codeblock>
 
     <dl class="dl-root">
       <dt>
@@ -170,6 +184,35 @@
       </dd>
     </dl>
 
+    <a name="response-example"></a>
+    <h2>
+      <t-response-example></t-response-example>
+    </h2>
+    <h2>
+      <t-http-code-200></t-http-code-200>
+    </h2>
+    <codeblock>
+{
+  "id": "7",
+  "name": "Real&Mate Application",
+  "version": "1.0",
+  "environment": ["Development"],
+  "reboot_type": ["System Restart"],
+  "start_time": "21-07-17T07:07:07",
+  "end_time": "21-07-17T07:07:08",
+  "reason": "Stability and performance",
+  "impact_assessment": "Minimal",
+  "communication_plan": "Email notice",
+  "rollback_plan": "string",
+  "monitoring": "string",
+  "documentation_updates": "string",
+  "testing_procedures": "string",
+  "post_reboot_verification": "string",
+  "incident_response": "string",
+  "post_analysis": "string"
+}
+    </codeblock>
+
     <a name="response-codes"></a>
     <h2>
       <t-response-codes></t-response-codes>
@@ -267,17 +310,17 @@
   </noscript>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent.js"></script>
-  <script type="text/javascript" src="../../../scripts/comments.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-title-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/api-ref-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/comments-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/dark-theme-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/editor-mode-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/html2canvas-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/screenshot-min.js"></script>
 
 </body>
 

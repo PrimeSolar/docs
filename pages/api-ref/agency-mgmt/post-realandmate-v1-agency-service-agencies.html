@@ -23,33 +23,31 @@
 
   <main>
     <p>
-      Add an agency.
+      Adds an agency.
     </p>
     <hr />
     <ul>
-      <li><a href="#request-headers">
-          <t-request-headers></t-request-headers>
+      <li><a href="#request-example">
+          <t-request-example></t-request-example>
         </a></li>
       <li><a href="#response-body">
           <t-response-body></t-response-body>
+        </a></li>
+      <li><a href="#response-example">
+          <t-response-example></t-response-example>
         </a></li>
       <li><a href="#response-codes">
           <t-response-codes></t-response-codes>
         </a></li>
     </ul>
 
-    <a name="request-headers"></a>
+    <a name="request-example"></a>
     <h2>
-      <t-request-headers></t-request-headers>
+      <t-request-example></t-request-example>
     </h2>
-    <dl class="dl-root">
-      <dt>
-        <dt-id></dt-id>
-      </dt>
-      <dd>
-        <dd-id></dd-id>
-      </dd>
-    </dl>
+    <codeblock>
+POST https://example.com/realandmate/v1/AgencyService/agencies
+    </codeblock>
 
     <a name="response-body"></a>
     <h2>
@@ -58,13 +56,13 @@
     <h3>
       <t-http-code-200></t-http-code-200>
     </h3>
-    <div class="sourceCode" id="cb2">
-      <pre class="json"><code class="json"><span class="dt">{</span>
-    <span class="dt">&quot;id&quot;: string,</span>
-    <span class="dt">&quot;url&quot;: string,</span>
-    <span class="dt">&quot;date_added&quot;: datetime</span>
-<span class="dt">}</span></code></pre>
-    </div>
+    <codeblock>
+{
+  "id": string,
+  "url": string,
+  "date_added": datetime
+}
+    </codeblock>
 
     <dl class="dl-root">
       <dt>
@@ -86,6 +84,21 @@
         <dd-date-added></dd-date-added>
       </dd>
     </dl>
+
+    <a name="response-example"></a>
+    <h2>
+      <t-response-example></t-response-example>
+    </h2>
+    <h2>
+      <t-http-code-200></t-http-code-200>
+    </h2>
+    <codeblock>
+{
+  "id": "77",
+  "url": "https://example.com/realandmate/v1/AgencyService/agencies/77",
+  "date_added": "2021-07-01T07:07:07Z"
+}
+    </codeblock>
 
     <a name="response-codes"></a>
     <h2>
@@ -186,16 +199,16 @@
   </noscript>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-title-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/api-ref-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/copy-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/dark-theme-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/editor-mode-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/elements-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/html2canvas-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/menu-min-min.js"></script>
+  <script type="text/javascript" src="../../../scripts/screenshot-min-min.js"></script>
 
 </body>
 

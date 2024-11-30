@@ -846,7 +846,7 @@ customElements.define("dt-name", DtName);
 class DdName extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    A word or set of words by which the <resource-name></resource-name> is known, addressed and referred to.
+    A word or set of words by that the <resource-name></resource-name> is known, addressed and referred to.
     `
   }
 }
@@ -1301,7 +1301,7 @@ class DdProcessingTimeout extends HTMLElement {
         <li><code>true</code>: the processing timeout is set.</li>
         <li><code>false</code>: the processing timeout is not set.</li>
       </ul>
-    Default processing timeout: 30 seconds.
+    <p>Default processing timeout: 30 seconds.</p>
     `
   }
 }
@@ -1553,7 +1553,7 @@ class DdServiceEnabled extends HTMLElement {
         <li><code>true</code>: the service is enabled.</li>
         <li><code>false</code>: the service is disabled.</li>
       </ul>
-    Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.
+    <p>Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.</p>
     `
   }
 }
@@ -1595,7 +1595,7 @@ customElements.define("dt-show-plans-modal-window-repeat-after", DtShowPlansModa
 class DdShowPlansModalWindowRepeatAfter extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    The number of days after which the subscription plans modal window should be displayed again. Default: <code>30</code>.
+    The number of days after that the subscription plans modal window should be displayed again. Default: <code>30</code>.
     `
   }
 }
@@ -1891,6 +1891,16 @@ class TRequestBody extends HTMLElement {
 }
 customElements.define("t-request-body", TRequestBody);
 
+// Request example
+class TRequestExample extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Request Example
+    `
+  }
+}
+customElements.define("t-request-example", TRequestExample);
+
 // Request headers
 class TRequestHeaders extends HTMLElement {
   connectedCallback() {
@@ -1920,6 +1930,16 @@ class TResponseCodes extends HTMLElement {
   }
 }
 customElements.define("t-response-codes", TResponseCodes);
+
+// Response example
+class TResponseExample extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    Response Example
+    `
+  }
+}
+customElements.define("t-response-example", TResponseExample);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2070,7 +2090,7 @@ class Sc200Dsc extends HTMLElement {
 customElements.define("sc-200-dsc", Sc200Dsc);
 // +
 const sc200 = document.getElementById("sc-200");
-if (sc200 != null){
+if (sc200 != null) {
   sc200.innerHTML += `
       <td>
         200
@@ -2092,7 +2112,7 @@ class Sc204Dsc extends HTMLElement {
 customElements.define("sc-204-dsc", Sc204Dsc);
 // +
 const sc204 = document.getElementById("sc-204");
-if (sc204 != null){
+if (sc204 != null) {
   sc204.innerHTML += `
       <td>
         204
@@ -2115,7 +2135,7 @@ class Sc400Dsc extends HTMLElement {
 customElements.define("sc-400-dsc", Sc400Dsc);
 // +
 const sc400 = document.getElementById("sc-400");
-if (sc400 != null){
+if (sc400 != null) {
   sc400.innerHTML += `
       <td>
         400
@@ -2138,7 +2158,7 @@ class Sc403Dsc extends HTMLElement {
 customElements.define("sc-403-dsc", Sc403Dsc);
 // +
 const sc403 = document.getElementById("sc-403");
-if (sc403 != null){
+if (sc403 != null) {
   sc403.innerHTML += `
       <td>
         403
@@ -2160,7 +2180,7 @@ class Sc404Dsc extends HTMLElement {
 customElements.define("sc-404-dsc", Sc404Dsc);
 // +
 const sc404 = document.getElementById("sc-404");
-if (sc404 != null){
+if (sc404 != null) {
   sc404.innerHTML += `
       <td>
         404
@@ -2182,7 +2202,7 @@ class Sc500Dsc extends HTMLElement {
 customElements.define("sc-500-dsc", Sc500Dsc);
 // +
 const sc500 = document.getElementById("sc-500");
-if (sc500 != null){
+if (sc500 != null) {
   sc500.innerHTML += `
       <td>
         500

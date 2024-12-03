@@ -3,6 +3,7 @@ const dropdown = document.getElementById('dropdown');
 const localReusableItems = document.getElementById("local-reusable-items");
 const a = document.getElementsByTagName("a");
 const button = document.getElementsByTagName("button");
+const speakButtons = document.getElementsByClassName("speak-inline");
 const comment = document.getElementsByTagName("comment-tag");
 const noscript = document.getElementsByTagName("noscript");
 const switchyBtn = document.getElementById('switchy');
@@ -17,6 +18,9 @@ function screenshot() {
     x.style.textDecoration = "none";
   }
   for (let x of button) {
+    x.style.display = "none";
+  }
+  for (let x of speakButtons) {
     x.style.display = "none";
   }
   for (let x of comment) {
@@ -40,6 +44,9 @@ function screenshot() {
   }
   for (let x of button) {
     x.style.display = "block";
+  }
+  for (let x of speakButtons) {
+    x.style.display = "inline-block";
   }
   for (let x of comment) {
     x.style.display = "inline";

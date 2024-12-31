@@ -20,8 +20,8 @@ class DdActivityLogs extends HTMLElement { // Declare a class DdActivityLogs tha
     this.innerHTML += `
     An indication of whether activity logs are enabled for the user account:
     <ul>
-    <li><code>true</code>: logs are enabled. Default.</li>
-    <li><code>false</code>: logs are disabled.</li>
+      <li><code>true</code>: logs are enabled. Default.</li>
+      <li><code>false</code>: logs are disabled.</li>
     </ul>
     `
   }
@@ -54,6 +54,7 @@ class DdAmenities extends HTMLElement { // Declare a class DdAmenities that defi
       <li><code>Shop</code>.</li>
       <li><code>Temple</code>.</li>
     </ul>
+    <p>Example: <code>["Bank", "Bar", "Beauty Salon", "Cinema", "Garden", "Shop", "Temple"]</code>.</p>
     `
   }
 }
@@ -72,7 +73,7 @@ customElements.define("dt-app-category", DtAppCategory); // Define a custom elem
 class DdAppCategory extends HTMLElement { // Declare a class DdAppCategory that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The high-level family of the application.
+    The high-level family of the application.<br/>Example: <code>Business</code>.
     `
   }
 }
@@ -98,6 +99,7 @@ class DdAssignedPrivileges extends HTMLElement { // Declare a class DdAssignedPr
       <li><code>CustomizeSelf</code>: able to change the password for the current user account.</li>
       <li><code>CustomizeComponents</code>: able to customize components managed by this service.</li>
     </ul>
+    <p>Example: <code>["Login"]</code>.</p>
     `
   }
 }
@@ -116,7 +118,7 @@ customElements.define("dt-auth-token", DtAuthToken); // Define a custom element 
 class DdAuthToken extends HTMLElement { // Declare a class DdAuthToken that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A token used for a user authentication.
+    A token used for a user authentication.<br/>Example: <code>73d0f8mkabpbmjp721asv7jaidwxn</code>.
     `
   }
 }
@@ -158,6 +160,7 @@ class DdBootSourceOverrideEnabled extends HTMLElement { // Declare a class DdBoo
       <li><code>once</code>: the option is enabled. The next download will occur from the source specified in <code>boot_source_override_target</code>. The value of <code>boot_source_override_enabled</code> is then reboot back to <code>disabled</code>.</li>
       <li><code>disabled</code>: the option is disabled. Loading will occur according to the selected priority in main configuration.</li>
     </ul>
+    <p>Example: <code>"disabled"</code>.</p>
     `
   }
 }
@@ -184,6 +187,7 @@ class DdBootSourceOverrideTarget extends HTMLElement { // Declare a class DdBoot
       <li><code>usb</code>: USB drive.</li>
       <li><code>none</code>: boot source is not selected.</li>
     </ul>
+    <p>Example: <code>"none"</code>.</p>
     `
   }
 }
@@ -210,7 +214,7 @@ customElements.define("dt-comments", DtComments); // Define a custom element dt-
 class DdComments extends HTMLElement { // Declare a class DdComments that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Additional comments or notes.
+    Additional comments or notes.<br/>Example: <code>This is a text comment.</code>.
     `
   }
 }
@@ -229,7 +233,14 @@ customElements.define("dt-communication-plan", DtCommunicationPlan); // Define a
 class DdCommunicationPlan extends HTMLElement { // Declare a class DdCommunicationPlan that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Strategy for informing users and stakeholders about the reboot.
+    Strategy for informing users and stakeholders about the reboot:<ul>
+      <li><code>Email</code>.</li>
+      <li><code>Website</code>.</li>
+      <li><code>Social Media</code>.</li>
+      <li><code>Documentation</code>.</li>
+      <li><code>FAQ</code>.</li>
+    </ul>
+    <p>Example: <code>"Website"</code>.</p>
     `
   }
 }
@@ -305,7 +316,7 @@ customElements.define("dt-description", DtDescription); // Define a custom eleme
 class DdDescription extends HTMLElement { // Declare a class DdDescription that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    An informational representation of the <resource-name></resource-name>.
+    An informational representation of the <resource-name></resource-name>.<br/>Example: <code>"This is an informational representation."</code>.
     `
   }
 }
@@ -324,7 +335,7 @@ customElements.define("dt-documentation-updates", DtDocumentationUpdates); // De
 class DdDocumentationUpdates extends HTMLElement { // Declare a class DdDocumentationUpdates that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Updating documentation to reflect changes introduced by the reboot.
+    Updating documentation to reflect changes introduced by the reboot.<br/>Example: <code>"Technical documentation can be updated promptly."</code>.
     `
   }
 }
@@ -343,7 +354,7 @@ customElements.define("dt-documentation-url", DtDocumentationUrl); // Define a c
 class DdDocumentationUrl extends HTMLElement { // Declare a class DdDocumentationUrl that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The base URL for the <resource-name></resource-name> documentation.
+    The base URL for the <resource-name></resource-name> documentation.<br/>Example: <code>"https://firstsolar.github.io/docs/"</code>.
     `
   }
 }
@@ -362,7 +373,7 @@ customElements.define("dt-email", DtEmail); // Define a custom element dt-email 
 class DdEmail extends HTMLElement { // Declare a class DdEmail that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    An email address.
+    An email address.<br/>Example: <code>"johndoe@gmail.com"</code>.
     `
   }
 }
@@ -386,6 +397,7 @@ class DdEnabled extends HTMLElement { // Declare a class DdEnabled that defines 
       <li><code>true</code>: the <resource-name></resource-name> is enabled. Default.</li>
       <li><code>false</code>: the <resource-name></resource-name> is disabled.</li>
     </ul>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -425,10 +437,11 @@ class DdEnvironment extends HTMLElement { // Declare a class DdEnvironment that 
     this.innerHTML += `
     The environment type being rebooted:
     <ul>
-      <li><b>Development</b>.</li>
-      <li><b>Testing</b>.</li>
-      <li><b>Production</b>.</li>
+      <li><code>Development</code>.</li>
+      <li><code>Testing</code>.</li>
+      <li><code>Production</code>.</li>
     </ul>
+    <p>Example: <code>["Development"]</code>.</p>
     `
   }
 }
@@ -447,7 +460,7 @@ customElements.define("dt-first-name", DtFirstName); // Define a custom element 
 class DdFirstName extends HTMLElement { // Declare a class DdFirstName that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A personal name that identifies an individual, as distinct from their last name.
+    A personal name that identifies an individual, as distinct from their last name.<br/>Example: <code>"John"</code>.
     `
   }
 }
@@ -466,7 +479,7 @@ customElements.define("dt-id", DtId); // Define a custom element dt-id and assig
 class DdId extends HTMLElement { // Declare a class DdId that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The unique identifier of the <resource-name></resource-name>.
+    The unique identifier of the <resource-name></resource-name>.<br/>Example: <code>"777"</code>.
     `
   }
 }
@@ -485,7 +498,7 @@ customElements.define("dt-id-2", DtId2); // Define a custom element dt-id-2 and 
 class DdId2 extends HTMLElement { // Declare a class DdId2 that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The unique identifier of the <sub-resource-name></sub-resource-name>.
+    The unique identifier of the <sub-resource-name></sub-resource-name>.<br/>Example: <code>"777"</code>.
     `
   }
 }
@@ -509,6 +522,7 @@ class DdIsPredefined extends HTMLElement { // Declare a class DdIsPredefined tha
       <li><code>true</code>: the role is predefined. Default.</li>
       <li><code>false</code>: the role is custom.</li>
     </ul>
+    <p>Example: <code>true</code>.</p>
     `
   }
 }
@@ -527,7 +541,7 @@ customElements.define("dt-impact-assessment", DtImpactAssessment); // Define a c
 class DdImpactAssessment extends HTMLElement { // Declare a class DdImpactAssessment that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Evaluation of the potential impact of the reboot on users.
+    Evaluation of the potential impact of the reboot on users.<br/>Example: <code>"Minimal"</code>.
     `
   }
 }
@@ -546,7 +560,7 @@ customElements.define("dt-incident-response", DtIncidentResponse); // Define a c
 class DdIncidentResponse extends HTMLElement { // Declare a class DdIncidentResponse that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Protocol for handling any incidents or issues that may arise during or after the reboot.
+    Protocol for handling any incidents or issues that may arise during or after the reboot.<br/>Example: <code>"Development team is well-prepared and ready to tackle any issues swiftly and efficiently."</code>.
     `
   }
 }
@@ -584,7 +598,7 @@ customElements.define("dt-items-count", DtItemsCount); // Define a custom elemen
 class DdItemsCount extends HTMLElement { // Declare a class DdItemsCount that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The number of items in the collection.
+    The number of items in the collection.<br/>Example: <code>777</code>.
     `
   }
 }
@@ -603,7 +617,7 @@ customElements.define("dt-language", DtLanguage); // Define a custom element dt-
 class DdLanguage extends HTMLElement { // Declare a class DdLanguage that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A language used for the application. Default: <code>en-US</code>. Example: <code>fr-FR</code>, <code>es-ES</code>.
+    A language used for the application. Default: <code>en-US</code>.<br/>Example: <code>fr-FR</code>, <code>es-ES</code>.
     `
   }
 }
@@ -622,7 +636,7 @@ customElements.define("dt-language-default", DtLanguageDefault); // Define a cus
 class DdLanguageDefault extends HTMLElement { // Declare a class DdLanguageDefault that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The default language to be used for the application. Default: <code>en-US</code>. Example: <code>fr-FR</code>, <code>es-ES</code>.
+    The default language to be used for the application. Default: <code>en-US</code>.<br/>Example: <code>fr-FR</code>, <code>es-ES</code>.
     `
   }
 }
@@ -641,7 +655,7 @@ customElements.define("dt-last-name", DtLastName); // Define a custom element dt
 class DdLastName extends HTMLElement { // Declare a class DdLastName that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A name that identifies an individual's family, as distinct from their first name.
+    A name that identifies an individual's family, as distinct from their first name.<br/>Example: <code>"Doe"</code>.
     `
   }
 }
@@ -660,7 +674,7 @@ customElements.define("dt-lease-agreement-details", DtLeaseAgreementDetails); //
 class DdLeaseAgreementDetails extends HTMLElement { // Declare a class DdLeaseAgreementDetails that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Terms and conditions under that the property is leased.
+    Terms and conditions under that the property is leased.<br/>Example: <code>"The tenant is financially responsible for utilities, the owner is financially responsible for maintenance of the property."</code>.
     `
   }
 }
@@ -679,7 +693,7 @@ customElements.define("dt-lease-term", DtLeaseTerm); // Define a custom element 
 class DdLeaseTerm extends HTMLElement { // Declare a class DdLeaseTerm that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A period of a lease.
+    A period of a lease.<br/>Example: <code>"17 months"</code>.
     `
   }
 }
@@ -725,7 +739,7 @@ customElements.define("dt-maintenance-schedule", DtMaintenanceSchedule); // Defi
 class DdMaintenanceSchedule extends HTMLElement { // Declare a class DdMaintenanceSchedule that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A list of all the expected maintenance plans.
+    A list of all the expected maintenance plans.<br/>Example: <code>["Roof inspection", "Plumbing check", "Flower planting", "Garden watering", "Vegetable harvesting"]</code>.
     `
   }
 }
@@ -744,7 +758,7 @@ customElements.define("dt-max-password-length", DtMaxPasswordLength); // Define 
 class DdMaxPasswordLength extends HTMLElement { // Declare a class DdMaxPasswordLength that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-     Maximum length of password. Default: <code>20</code>.
+     Maximum length of password. Default: <code>20</code>.<br/>Example: <code>777</code>.
     `
   }
 }
@@ -763,7 +777,7 @@ customElements.define("dt-max-username-length", DtMaxUsernameLength); // Define 
 class DdMaxUsernameLength extends HTMLElement { // Declare a class DdMaxUsernameLength that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-     Maximum length of username. Default: <code>20</code>.
+     Maximum length of username. Default: <code>20</code>.<br/>Example: <code>777</code>.
     `
   }
 }
@@ -782,7 +796,7 @@ customElements.define("dt-middle-name", DtMiddleName); // Define a custom elemen
 class DdMiddleName extends HTMLElement { // Declare a class DdMiddleName that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    An additional personal name that is placed between a person's first name and their last name.
+    An additional personal name that is placed between a person's first name and their last name.<br/>Example: <code>"Michael"</code>.
     `
   }
 }
@@ -801,7 +815,7 @@ customElements.define("dt-min-password-length", DtMinPasswordLength); // Define 
 class DdMinPasswordLength extends HTMLElement { // Declare a class DdMinPasswordLength that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-     Minimum length of password. Default: <code>8</code>.
+     Minimum length of password. Default: <code>8</code>.<br/>Example: <code>777</code>.
     `
   }
 }
@@ -820,7 +834,7 @@ customElements.define("dt-min-username-length", DtMinUsernameLength); // Define 
 class DdMinUsernameLength extends HTMLElement { // Declare a class DdMinUsernameLength that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-     Minimum length of username. Default: <code>1</code>.
+     Minimum length of username. Default: <code>1</code>.<br/>Example: <code>1</code>.
     `
   }
 }
@@ -839,7 +853,7 @@ customElements.define("dt-monitoring", DtMonitoring); // Define a custom element
 class DdMonitoring extends HTMLElement { // Declare a class DdMonitoring that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Configuration for monitoring the reboot process in real-time.
+    Configuration for monitoring the reboot process in real-time.<br/>Example: <code>"Monitoring tools that can provide real-time insights."</code>.
     `
   }
 }
@@ -858,7 +872,7 @@ customElements.define("dt-name", DtName); // Define a custom element dt-name and
 class DdName extends HTMLElement { // Declare a class DdName that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A word or set of words by that the <resource-name></resource-name> is known, addressed and referred to.
+    A word or set of words by that the <resource-name></resource-name> is known, addressed and referred to.<br/>Example: <code>"Real Estate Object Profile Collection"</code>.
     `
   }
 }
@@ -877,7 +891,7 @@ customElements.define("dt-name-2", DtName2); // Define a custom element dt-name-
 class DdName2 extends HTMLElement { // Declare a class DdName2 that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A name of a person.
+    A name of a person.<br/>Example: <code>"John"</code>.
     `
   }
 }
@@ -896,7 +910,7 @@ customElements.define("dt-name-3", DtName3); // Define a custom element dt-name-
 class DdName3 extends HTMLElement { // Declare a class DdName3 that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A word or set of words by that a <sub-resource-name></sub-resource-name> is known, addressed and referred to.
+    A word or set of words by that a <sub-resource-name></sub-resource-name> is known, addressed and referred to.<br/>Example: <code>"agency"</code>.
     `
   }
 }
@@ -916,9 +930,10 @@ class DdNotifications extends HTMLElement { // Declare a class DdNotifications t
   connectedCallback() {
     this.innerHTML += `
     The setting for notifications in the application:<ul>
-    <li><code>true</code>: notifications are enabled. Default.</li>
-    <li><code>false</code>: notifications are disabled.</li>
+      <li><code>true</code>: notifications are enabled. Default.</li>
+      <li><code>false</code>: notifications are disabled.</li>
     </ul>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -938,9 +953,10 @@ class DdNotificationsDefault extends HTMLElement { // Declare a class DdNotifica
   connectedCallback() {
     this.innerHTML += `
     The default setting for notifications in the application:<ul>
-    <li><code>true</code>: notifications are enabled. Default.</li>
-    <li><code>false</code>: notifications are disabled.</li>
+      <li><code>true</code>: notifications are enabled. Default.</li>
+      <li><code>false</code>: notifications are disabled.</li>
     </ul>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -959,7 +975,7 @@ customElements.define("dt-occupancy", DtOccupancy); // Define a custom element d
 class DdOccupancy extends HTMLElement { // Declare a class DdOccupancy that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The fact of occupying a <resource-name></resource-name>.
+    The fact of occupying a <resource-name></resource-name>.<br/>Example: <code>"Tenant has a lease agreement."</code>.
     `
   }
 }
@@ -978,7 +994,7 @@ customElements.define("dt-owner", DtOwner); // Define a custom element dt-owner 
 class DdOwner extends HTMLElement { // Declare a class DdOwner that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A person or company that owns the <resource-name></resource-name>.
+    A person or company that owns the <resource-name></resource-name>.<br/>Example: <code>"Real&Mate"</code>.
     `
   }
 }
@@ -997,7 +1013,7 @@ customElements.define("dt-reason", DtReason); // Define a custom element dt-reas
 class DdReason extends HTMLElement { // Declare a DdReason CLASS that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A brief description of why the action is considered necessary.
+    A brief description of why the action is considered necessary.<br/>Example: <code>"Stability and performance"</code>.
     `
   }
 }
@@ -1018,10 +1034,11 @@ class DdRebootType extends HTMLElement { // Declare a class DdRebootType that de
     this.innerHTML += `
     The type of reboot being performed:
     <ul>
-      <li><b>System Restart</b>.</li>
-      <li><b>Configuration Change</b>.</li>
-      <li><b>Software Update</b>.</li>
+      <li><code>System Restart</code>.</li>
+      <li><code>Configuration Change</code>.</li>
+      <li><code>Software Update</code>.</li>
     </ul>
+    <p>Example: <code>["System Restart"]</code>.</p>
     `
   }
 }
@@ -1045,6 +1062,7 @@ class DdRequireTwoFactorAuth extends HTMLElement { // Declare a class DdRequireT
       <li><code>true</code>: two-factor authentication is required.</li>
       <li><code>false</code>: two-factor authentication is not required. Default.</li>
     </ul>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -1071,7 +1089,7 @@ customElements.define("dt-password", DtPassword); // Define a custom element dt-
 class DdPassword extends HTMLElement { // Declare a class DdPassword that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A secret character combination that must be used to gain admission to the <main-resource-name></main-resource-name>.
+    A secret character combination that must be used to gain admission to the <main-resource-name></main-resource-name>.<br/>Example: <code>"7W%9d$Ae$57$Xbd$W$8DER7"</code>.
     `
   }
 }
@@ -1091,11 +1109,12 @@ class DdPasswordChangeRequired extends HTMLElement { // Declare a class DdPasswo
   connectedCallback() {
     this.innerHTML += `
     An indication of whether a password change is required:
-      <ul>
-        <li><code>true</code>: a password change is required.</li>
-        <li><code>false</code>: a password change is not required.</li>
-      </ul>
-      `
+    <ul>
+      <li><code>true</code>: a password change is required.</li>
+      <li><code>false</code>: a password change is not required.</li>
+    </ul>
+    <p>Example: <code>false</code>.</p>
+    `
   }
 }
 customElements.define("dd-password-change-required", DdPasswordChangeRequired); // Define a custom element dd-password-change-required and assign it a class DdPasswordChangeRequired
@@ -1113,7 +1132,7 @@ customElements.define("dt-permissions", DtPermissions); // Define a custom eleme
 class DdPermissions extends HTMLElement { // Declare a class DdPermissions that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A list of permissions that are available for the user account.
+    A list of permissions that are available for the user account.<br/>Example: <code>["Create advertisements", "Read advertisements", "Edit advertisements", "Delete advertisements", "Manage accounts"]</code>.
     `
   }
 }
@@ -1132,7 +1151,7 @@ customElements.define("dt-phone", DtPhone); // Define a custom element dt-phone 
 class DdPhone extends HTMLElement { // Declare a class DdPhone that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A phone number.
+    A phone number.<br/>Example: <code>"7777777"</code>.
     `
   }
 }
@@ -1170,7 +1189,7 @@ customElements.define("dt-plan-features", DtPlanFeatures); // Define a custom el
 class DdPlanFeatures extends HTMLElement { // Declare a class DdPlanFeatures that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The list of features included in the subscription plan.
+    The list of features included in the subscription plan.<br/>Example: <code>["Unlimited Access to Properties Information", "Advertisement-Free Experience", "Offline Downloads", "Exclusive Offers", "Priority Support"]</code>.
     `
   }
 }
@@ -1190,11 +1209,12 @@ class DdPlanName extends HTMLElement { // Declare a class DdPlanName that define
   connectedCallback() {
     this.innerHTML += `
     The name of the subscription plan:<ul>
-    <li><code>Starter</code>.</li>
-    <li><code>Standard</code>.</li>
-    <li><code>Premium</code>.</li>
-    <li><code>Enterprise</code>.</li>
+      <li><code>Starter</code>.</li>
+      <li><code>Standard</code>.</li>
+      <li><code>Premium</code>.</li>
+      <li><code>Enterprise</code>.</li>
     </ul>
+    <p>Example: <code>"Premium"</code>.</p>
     `
   }
 }
@@ -1213,7 +1233,7 @@ customElements.define("dt-plan-price", DtPlanPrice); // Define a custom element 
 class DdPlanPrice extends HTMLElement { // Declare a class DdPlanPrice that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The price of the subscription plan.
+    The price of the subscription plan.<br/>Example: <code>20</code>.
     `
   }
 }
@@ -1251,7 +1271,7 @@ customElements.define("dt-post-analysis", DtPostAnalysis); // Define a custom el
 class DdPostAnalysis extends HTMLElement { // Declare a class DdPostAnalysis that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Analysis of the process to identify areas for improvement.
+    Analysis of the process to identify areas for improvement.<br/>Example: <code>"A detailed post-analysis to celebrate our successes and identify opportunities for future improve"</code>.
     `
   }
 }
@@ -1270,7 +1290,7 @@ customElements.define("dt-post-reboot-verification", DtPostRebootVerification); 
 class DdPostRebootVerification extends HTMLElement { // Declare a class DdPostRebootVerification that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Verification steps to confirm that the reboot was successful and the application is operating as expected.
+    Verification steps to confirm that the reboot was successful and the application is operating as expected.<br/>Example: <code>"A quick verification process to confirm that everything is running perfectly."</code>.
     `
   }
 }
@@ -1309,10 +1329,11 @@ class DdProcessingTimeout extends HTMLElement { // Declare a class DdProcessingT
   connectedCallback() {
     this.innerHTML += `
     An indication of whether the processing timeout is set:
-      <ul>
-        <li><code>true</code>: the processing timeout is set.</li>
-        <li><code>false</code>: the processing timeout is not set.</li>
-      </ul>
+    <ul>
+      <li><code>true</code>: the processing timeout is set.</li>
+      <li><code>false</code>: the processing timeout is not set.</li>
+    </ul>
+    <p>Example: <code>false</code>.</p>
     <p>Default processing timeout: 30 seconds.</p>
     `
   }
@@ -1332,7 +1353,7 @@ customElements.define("dt-property-address", DtPropertyAddress); // Define a cus
 class DdPropertyAddress extends HTMLElement { // Declare a class DdPropertyAddress that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The address of the real estate object.
+    The address of the real estate object.<br/>Example: <code>"723 Maple Street, Springfield, IL 62804"</code>.
     `
   }
 }
@@ -1351,7 +1372,7 @@ customElements.define("dt-property-area", DtPropertyArea); // Define a custom el
 class DdPropertyArea extends HTMLElement { // Declare a class DdPropertyArea that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The area of the real estate object, expressed in square meters.
+    The area of the real estate object, expressed in square meters.<br/>Example: <code>"777"</code>.
     `
   }
 }
@@ -1370,7 +1391,7 @@ customElements.define("dt-property-id", DtPropertyId); // Define a custom elemen
 class DdPropertyId extends HTMLElement { // Declare a class DdPropertyId that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The unique identifier of the property.
+    The unique identifier of the property.<br/>Example: <code>"777"</code>.
     `
   }
 }
@@ -1391,17 +1412,18 @@ class DdPropertyType extends HTMLElement { // Declare a class DdPropertyType tha
     this.innerHTML += `
     The type of the real estate object:
     <ul>
-      <li><code>Apartment</code>: a room or suite of rooms designed as a residence and commonly located in a building occupied by more than one household.</li>
-      <li><code>Townhouse</code>: a house that is one of a row of identical houses situated side by side and sharing common walls, designed as a single-family residence.</li>
-      <li><code>Bungalow</code>: a small house or cottage usually having a single story and sometimes an additional attic story.</li>
-      <li><code>Ranch</code>: an extensive farm.</li>
-      <li><code>Houseboat</code>: a barge designed and equipped for use as a dwelling.</li>
-      <li><code>Single-Family House</code>: a structure maintained and used as a single dwelling unit.</li>
-      <li><code>Mediterranean</code>: a house whose key features can include high ceilings, arches, bricks, wood doors and ceramic tile.</li>
-      <li><code>Tudor</code>: a house that can have tall, narrow doors and windows, small diamond-shaped window panes and wooden staircases.</li>
-      <li><code>Farmhouse</code>: a dwelling house on a farm.</li>
-      <li><code>Mansion</code>: a large stately dwelling house with many rooms.</li>
+      <li><code>"Apartment"</code>: a room or suite of rooms designed as a residence and commonly located in a building occupied by more than one household.</li>
+      <li><code>"Townhouse"</code>: a house that is one of a row of identical houses situated side by side and sharing common walls, designed as a single-family residence.</li>
+      <li><code>"Bungalow"</code>: a small house or cottage usually having a single story and sometimes an additional attic story.</li>
+      <li><code>"Ranch"</code>: an extensive farm.</li>
+      <li><code>"Houseboat"</code>: a barge designed and equipped for use as a dwelling.</li>
+      <li><code>"Single-Family House"</code>: a structure maintained and used as a single dwelling unit.</li>
+      <li><code>"Mediterranean"</code>: a house whose key features can include high ceilings, arches, bricks, wood doors and ceramic tile.</li>
+      <li><code>"Tudor"</code>: a house that can have tall, narrow doors and windows, small diamond-shaped window panes and wooden staircases.</li>
+      <li><code>"Farmhouse"</code>: a dwelling house on a farm.</li>
+      <li><code>"Mansion"</code>: a large stately dwelling house with many rooms.</li>
     </ul>
+    <p>Example: <code>"Apartment"</code>.</p>
     `
   }
 }
@@ -1439,7 +1461,7 @@ customElements.define("dt-rentable-area", DtRentableArea); // Define a custom el
 class DdRentableArea extends HTMLElement { // Declare a class DdRentableArea that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The amount of area that is allocated to a tenant.<br/>It can be used to calculate a total rent owed by a tenant to a lessor.
+    The amount of area that is allocated to a tenant.<br/>It can be used to calculate a total rent owed by a tenant to a lessor.<br/>Example: <code>"777"</code>.
     `
   }
 }
@@ -1458,7 +1480,7 @@ customElements.define("dt-rental-price", DtRentalPrice); // Define a custom elem
 class DdRentalPrice extends HTMLElement { // Declare a class DdRentalPrice that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A rental price of the <resource-name></resource-name>.
+    A rental price of the <resource-name></resource-name>.<br/>Example: <code>"2700 USD"</code>.
     `
   }
 }
@@ -1477,7 +1499,7 @@ customElements.define("dt-role-name", DtRoleName); // Define a custom element dt
 class DdRoleName extends HTMLElement { // Declare a class DdRoleName that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A name of the specific role within the Real&Mate.
+    A name of the specific role within the Real&Mate.<br/>Example: <code>"Developer"</code>.
     `
   }
 }
@@ -1515,7 +1537,7 @@ customElements.define("dt-rollback-plan", DtRollbackPlan); // Define a custom el
 class DdRollbackPlan extends HTMLElement { // Declare a class DdRollbackPlan that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A plan outlining steps to revert to the previous state in case of any issues during the reboot process.
+    A plan outlining steps to revert to the previous state in case of any issues during the reboot process.<br/>Example: <code>"In the unlikely event of a web application issue, revert to the previous stable version of the."</code>.
     `
   }
 }
@@ -1534,7 +1556,7 @@ customElements.define("dt-security-deposit", DtSecurityDeposit); // Define a cus
 class DdSecurityDeposit extends HTMLElement { // Declare a class DdSecurityDeposit that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A sum of money held in trust.
+    A sum of money held in trust.<br/>Example: <code>"777 USD"</code>.
     `
   }
 }
@@ -1573,11 +1595,12 @@ class DdServiceEnabled extends HTMLElement { // Declare a class DdServiceEnabled
   connectedCallback() {
     this.innerHTML += `
     An indication of whether the <resource-name></resource-name> is enabled:
-      <ul>
-        <li><code>true</code>: the service is enabled.</li>
-        <li><code>false</code>: the service is disabled.</li>
-      </ul>
+    <ul>
+      <li><code>true</code>: the service is enabled.</li>
+      <li><code>false</code>: the service is disabled.</li>
+    </ul>
     <p>Enabled means the system will run the service on the next boot. So if you enable a service, you still need to manually start it, or reboot and it will start.</p>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -1597,10 +1620,11 @@ class DdShowPlansModalWindow extends HTMLElement { // Declare a class DdShowPlan
   connectedCallback() {
     this.innerHTML += `
     An indication of whether to display the modal window with subscription plans:
-      <ul>
-        <li><code>true</code>: the modal window is displayed. Default.</li>
-        <li><code>false</code>: the modal window is not displayed.</li>
-      </ul>
+    <ul>
+      <li><code>true</code>: the modal window is displayed. Default.</li>
+      <li><code>false</code>: the modal window is not displayed.</li>
+    </ul>
+    <p>Example: <code>false</code>.</p>
     `
   }
 }
@@ -1619,7 +1643,7 @@ customElements.define("dt-show-plans-modal-window-repeat-after", DtShowPlansModa
 class DdShowPlansModalWindowRepeatAfter extends HTMLElement { // Declare a class DdShowPlansModalWindowRepeatAfter that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The number of days after that the subscription plans modal window should be displayed again. Default: <code>30</code>.
+    The number of days after that the subscription plans modal window should be displayed again. Default: <code>30</code>.<br/>Example: <code>777</code>.
     `
   }
 }
@@ -1684,7 +1708,7 @@ customElements.define("dt-tags", DtTags); // Define a custom element dt-tags and
 class DdTags extends HTMLElement { // Declare a class DdTags that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Labels attached to the <resource-name></resource-name> for the purpose of identification or to add an extra level of description.
+    Labels attached to the <resource-name></resource-name> for the purpose of identification or to add an extra level of description.<br/>Example: <code>["house", "rental", "mediterranean", "garden", "flowers"]</code>.
     `
   }
 }
@@ -1703,7 +1727,7 @@ customElements.define("dt-tenant", DtTenant); // Define a custom element dt-tena
 class DdTenant extends HTMLElement { // Declare a class DdTenant that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A person who rents a property from a lessor.
+    A person who rents a property from a lessor.<br/>Example: <code>"John Doe"</code>.
     `
   }
 }
@@ -1722,7 +1746,7 @@ customElements.define("dt-testing-procedures", DtTestingProcedures); // Define a
 class DdTestingProcedures extends HTMLElement { // Declare a class DdTestingProcedures that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Procedures for testing the application after the reboot to ensure proper functionality and performance.
+    Procedures for testing the application after the reboot to ensure proper functionality and performance.<br/>Example: <code>"Comprehensive testing procedures will guarantee that every feature is working correctly."</code>.
     `
   }
 }
@@ -1741,7 +1765,7 @@ customElements.define("dt-time-zone", DtTimeZone); // Define a custom element dt
 class DdTimeZone extends HTMLElement { // Declare a class DdTimeZone that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The time zone used for the application. Default: <code>America/New_York</code>. Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
+    The time zone used for the application. Default: <code>America/New_York</code>.<br/>Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
     `
   }
 }
@@ -1760,7 +1784,7 @@ customElements.define("dt-time-zone-default", DtTimeZoneDefault); // Define a cu
 class DdTimeZoneDefault extends HTMLElement { // Declare a class DdTimeZoneDefault that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The default time zone to be used for the application. Default: <code>America/New_York</code>. Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
+    The default time zone to be used for the application. Default: <code>America/New_York</code>.<br/>Example: <code>Europe/Paris</code>, <code>Asia/Tokyo</code>.
     `
   }
 }
@@ -1779,7 +1803,7 @@ customElements.define("dt-title", DtTitle); // Define a custom element dt-title 
 class DdTitle extends HTMLElement { // Declare a class DdTitle that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A brief title of the <resource-name></resource-name>.
+    A brief title of the <resource-name></resource-name>.<br/>Example: <code>"Beautiful Apartment"</code>.
     `
   }
 }
@@ -1803,6 +1827,7 @@ class DdTwoFactorAuth extends HTMLElement { // Declare a class DdTwoFactorAuth t
       <li><code>true</code>: a two-factor authentication is required.</li>
       <li><code>false</code>: a two-factor authentication is not required. Default.</li>
     </ul>
+    <p>Example: <code>true</code>.</p>
     `
   }
 }
@@ -1821,7 +1846,7 @@ customElements.define("dt-url", DtUrl); // Define a custom element dt-url and as
 class DdUrl extends HTMLElement { // Declare a class DdUrl that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Resource URL.
+    Resource URL.<br/>Example: <code>"https://example.com/realandmate/v1/RealEstateService/RealEstateObjects/777"</code>.
     `
   }
 }
@@ -1840,7 +1865,7 @@ customElements.define("dt-username", DtUsername); // Define a custom element dt-
 class DdUsername extends HTMLElement { // Declare a class DdUsername that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    An identifier used by a person with an access to the <main-resource-name></main-resource-name>.
+    An identifier used by a person with an access to the <main-resource-name></main-resource-name>.<br/>Example: <code>"johndoe"</code>.
     `
   }
 }
@@ -1867,6 +1892,7 @@ class DdUtilities extends HTMLElement { // Declare a class DdUtilities that defi
       <li><code>Cold water</code>.</li>
       <li><code>Hot water</code>.</li>
     </ul>
+    <p>Example: <code>["Electric power", "Natural gas", "Sewerage", "Cold water", "Hot water"]</code>.</p>
     `
   }
 }
@@ -1885,7 +1911,7 @@ customElements.define("dt-version", DtVersion); // Define a custom element dt-ve
 class DdVersion extends HTMLElement { // Declare a class DdVersion that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A serial number of the <resource-name></resource-name> particular form differing in certain respects from an earlier form of it.
+    A serial number of the <resource-name></resource-name> particular form differing in certain respects from an earlier form of it.<br/>Example: <code>"777"</code>.
     `
   }
 }

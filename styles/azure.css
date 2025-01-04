@@ -17,7 +17,7 @@ a-comment {
   font-family: Verdana, sans-serif; /* Set the font family to "Verdana" and sans-serif */
   font-weight: normal; /* Set the font weight of the text */
   line-height: 1.5;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 3px 4px; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: -25.5px; /* Place the element 25.5 pixels from the left edge of its positioned ancestor */
@@ -26,7 +26,7 @@ a-comment {
   white-space: pre-wrap;
   width: 115px;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -41,7 +41,7 @@ body {
   color: #373737;
   font-family: Verdana, sans-serif; /* Set the font family to "Verdana" and sans-serif */
   height: 100%;
-  margin: 0 10vw 0;
+  margin: 0 10vw 0; /* Set the thickness of the margin area */
   max-width: 80vw;
   padding: 0; /* Remove any default padding */
 }
@@ -57,12 +57,12 @@ main>ul {
 }
 
 best-practices {
-  margin: 0 0 20px;
+  margin: 0 0 20px; /* Set the thickness of the margin area */
   border: 1px solid #318ce7; /* Set the width, the style, and the color of the border */
   padding: 25px 10px 10px; /* Set the thickness of the padding area */
   display: block;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -95,7 +95,7 @@ code {
   padding: 3.5px 3.5px; /* Set the thickness of the padding area */
   color: #318ce7;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -104,7 +104,7 @@ code {
 codeblock {
   position: relative;
   display: block;
-  margin: 1em 0;
+  margin: 1em 0; /* Set the thickness of the margin area */
   border: none;
   padding: 5px; /* Set the thickness of the padding area */
   white-space: pre-wrap;
@@ -114,7 +114,7 @@ codeblock {
   line-height: 150%;
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -126,7 +126,7 @@ codeblock>button {
   border: none;
   color: #fff; /* Set the text color to white */
   cursor: pointer;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   top: 0;
   right: 0;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
@@ -137,7 +137,7 @@ codeblock>button {
   z-index: 1; /* Set the stacking order of the element */
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -155,7 +155,7 @@ comment-tag {
   font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   height: 20px;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 0 4px 2px; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: -8vw; /* Place the element 8% of the viewport width from the left edge of its positioned ancestor */
@@ -163,7 +163,7 @@ comment-tag {
   transition: 0.25s; /* Set an effect of a transition */
   white-space: pre-wrap;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -184,10 +184,10 @@ dataType {
   color: #fff; /* Set the text color to white */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 14px; /* Set the font size of the text */
-  margin: 0 0 0 7px;
+  margin: 0 0 0 7px; /* Set the thickness of the margin area */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -213,7 +213,7 @@ dd ul li {
 
 dd p {
   font-size: inherit; /* Set the font size of the text */
-  margin: 17px 0;
+  margin: 17px 0; /* Set the thickness of the margin area */
 }
 
 details {
@@ -224,16 +224,17 @@ details {
 details>p {
   background-color: #eee;
   box-shadow: 1px 1px 2px #bbb;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 4px; /* Set the thickness of the padding area */
 }
 
 details>summary {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   border: none;
   box-shadow: none;
   color: #fff; /* Set the text color to white */
@@ -257,7 +258,7 @@ details>summary:hover {
 details>ul {
   font-size: 20px; /* Set the font size of the text */
   list-style-type: none;
-  margin: 20px 0;
+  margin: 20px 0; /* Set the thickness of the margin area */
   padding: 0; /* Remove any default padding */
 }
 
@@ -272,15 +273,16 @@ dt {
 }
 
 footer {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #fff; /* Set the text color to white */
   left: 0;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
@@ -297,16 +299,17 @@ footer a:visited {
 }
 
 footerLowerLC {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   bottom: 0;
   color: #fff; /* Set the text color to white */
   left: 0;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: fixed; /* Position the element fixed to the viewport */
   text-align: center; /* Set the alignment of the text */
@@ -330,15 +333,16 @@ footerLowerMC a:visited {
 }
 
 footerLowerMC {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #fff; /* Set the text color to white */
   left: 0;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
@@ -390,7 +394,7 @@ indent {
 }
 
 li {
-  margin: 2vh 0;
+  margin: 2vh 0; /* Set the thickness of the margin area */
   line-height: 1.5em;
 }
 
@@ -407,27 +411,27 @@ li>a:hover {
 note {
   /* Notes highlight information by separating it from the regular, main content. */
   display: block;
-  margin: 2.5px 0 20px;
+  margin: 2.5px 0 20px; /* Set the thickness of the margin area */
   border: 2px solid #1071e5; /* Set the width, the style, and the color of the border */
   padding: 5px 10px 10px; /* Set the thickness of the padding area */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
 }
 
 note>ul {
-  margin: 0.5vh 0;
+  margin: 0.5vh 0; /* Set the thickness of the margin area */
 }
 
 note>p {
   font-size: 16px; /* Set the font size of the text */
-  margin: 10px 0;
+  margin: 10px 0; /* Set the thickness of the margin area */
 }
 
 note>pre {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
 }
 
 optionalityDegreeO {
@@ -438,7 +442,7 @@ optionalityDegreeO {
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   white-space: pre-wrap;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-shadow: 2px 2px 5px #3bacb6;
@@ -446,7 +450,7 @@ optionalityDegreeO {
   opacity: 0;  /* Set the initial opacity to 0 (invisible) */
   transition: 0.5s;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -465,14 +469,14 @@ optionalityDegreeR {
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   white-space: pre-wrap;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   transform: translate(-150px, 0);
   opacity: 0;  /* Set the initial opacity to 0 (invisible) */
   transition: 0.5s;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -491,7 +495,7 @@ optionalityDegreeU {
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   white-space: pre-wrap;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   transform: translate(-150px, 0);
@@ -504,8 +508,8 @@ optionalityDegreeU:before {
 }
 
 p {
-  line-height: 1.7; /* Set the line height */
-  margin: 20px 0px;
+  line-height: 1.7;
+  margin: 20px 0px; /* Set the thickness of the margin area */
   font-size: 20px; /* Set the font size of the text */
 }
 
@@ -521,14 +525,14 @@ paramType {
   background-color: #0047ab; /* Set the background color to a shade of blue */
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
-  font-size: 14px;
+  font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   white-space: pre-wrap;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -598,7 +602,7 @@ td {
 }
 
 td p {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   font-size: inherit; /* Set the font size of the text */
   line-height: 1.4;
 }
@@ -613,8 +617,16 @@ ul {
   list-style: none;
   margin-top: 10px;
   /* Use flexbox to center content inside the element */
-  display: flex;
-  justify-content: center; /* Center items horizontally*/
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items horizontally*/
+  -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  justify-content: center; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -652,15 +664,16 @@ ol {
 }
 
 .doc-list-item {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   color: #fff; /* Set the text color to white */
   display: block;
   height: 50%;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the width of the element to 100% of its parent container */
   text-align: center; /* Set the alignment of the text */
   transition: 0.5s;
@@ -676,7 +689,7 @@ ol {
   display: block;
   font-size: 25px; /* Set the font size of the text */
   height: 50%;
-  margin: 25px 0;
+  margin: 25px 0; /* Set the thickness of the margin area */
   text-align: center; /* Set the alignment of the text */
   text-decoration: none; /* Remove underline from text links */
   padding: 25px; /* Set the thickness of the padding area */
@@ -708,10 +721,18 @@ ol {
   height: 80vh;
   width: 100%; /* Set the width of the element to 100% of its parent container */
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
   gap: 2.5vw;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically */
+  /* Center items horizontally*/
+  -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  justify-content: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items vertically */
+  -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #cards:hover>.card::after {
@@ -721,18 +742,20 @@ ol {
 .card {
   position: relative;
   width: calc(100% - 2px);
-  min-width: 275px;
   min-width: 20vw;
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 10px; /* For older versions of Safari */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 10px; /* For older versions of Firefox */
   -o-border-radius: 10px; /* For older versions of Opera */
   border-radius: 10px; /* Standard property for border radius */
@@ -740,16 +763,21 @@ ol {
 
 .card-content {
   height: 37vh;
-  margin: 1px;
+  margin: 1px; /* Set the thickness of the margin area */
   z-index: 2; /* Set the stacking order of the element */
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
   flex-shrink: 0;
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: inherit; /* For older versions of Safari */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
   -moz-border-radius: inherit; /* For older versions of Firefox */
   -o-border-radius: inherit; /* For older versions of Opera */
   border-radius: inherit; /* Standard property for border radius */
@@ -794,7 +822,7 @@ ol {
   transition: opacity 500ms;
   width: 100%; /* Set the width of the element to 100% of its parent container */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: inherit; /* For older versions of Safari */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
   -moz-border-radius: inherit; /* For older versions of Firefox */
   -o-border-radius: inherit; /* For older versions of Opera */
   border-radius: inherit; /* Standard property for border radius */
@@ -817,7 +845,7 @@ ol {
   text-align: center; /* Set the alignment of the text */
   z-index: -1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the card label */
-  -webkit-border-radius: 10px; /* For older versions of Safari */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 10px; /* For older versions of Firefox */
   -o-border-radius: 10px; /* For older versions of Opera */
   border-radius: 10px; /* Standard property for border radius */
@@ -830,11 +858,12 @@ ol {
   font-weight: bold; /* Set the font weight of the text */
   font-size: 2.5vh; /* Set the font size of the text */
   color: #fff; /* Set the text color to white */
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
+  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
@@ -871,7 +900,7 @@ ol {
   font-size: 2.5vh; /* Set the font size of the text */
   display: none;
   /* Apply a border radius to round the corners of the plan button */
-  -webkit-border-radius: 5px; /* For older versions of Safari */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
   border-radius: 5px; /* Standard property for border radius */
@@ -884,11 +913,16 @@ ol {
 @media (max-width: 1250px) {
   #cards {
     height: 100%;
-    margin: 2.5vh 0;
+    margin: 2.5vh 0; /* Set the thickness of the margin area */
     /* Use flexbox to center content inside the element */
-    display: flex;
+    display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
     gap: 6vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
     justify-content: space-around;
   }
 
@@ -903,10 +937,18 @@ ol {
     margin-top: 0;
     padding-top: 0;
     /* Use flexbox to center content inside the element */
-    display: flex;
+    display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+    display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+    display: flex; /* Standard syntax for modern browsers (widely supported) */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; /* Center items vertically */
+    /* Center items vertically */
+    -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+    -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+    align-items: center; /* Standard syntax for modern browsers (widely supported) */
   }
 
   .card-title {
@@ -920,7 +962,7 @@ ol {
 }
 
 .title {
-  margin: 2.5vh 0 0;
+  margin: 2.5vh 0 0; /* Set the thickness of the margin area */
 }
 
 .to-top {
@@ -937,11 +979,19 @@ ol {
   pointer-events: none; /* Deactivate pointer events */
   transition: 0.25s; /* Set an effect of a transition */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally*/
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items vertically */
+  -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items horizontally*/
+  -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  justify-content: center; /* Standard syntax for modern browsers (widely supported) */
   /* Apply a border radius to make the element circular */
-  -webkit-border-radius: 50%; /* For older versions of Safari */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
   -moz-border-radius: 50%; /* For older versions of Firefox */
   -o-border-radius: 50%; /* For older versions of Opera */
   border-radius: 50%; /* Standard property for border radius */
@@ -957,7 +1007,7 @@ ol {
   border: 0;
   display: block;
   height: 30px;
-  margin: 1em 0 1em auto;
+  margin: 1em 0 1em auto; /* Set the thickness of the margin area */
   right: 0;
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
@@ -993,12 +1043,12 @@ ol {
 }
 
 #footerContainer {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
 }
 
 #footerContainerLower {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
 }
 
@@ -1006,7 +1056,7 @@ ol {
   color: #007fff;
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
   left: 50%;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the width of the element to 100% of its parent container */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
@@ -1019,7 +1069,7 @@ ol {
   color: #007fff;
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
   left: 50%;
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the width of the element to 100% of its parent container */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
@@ -1030,9 +1080,17 @@ ol {
 
 logo-img {
   /* Use flexbox to center content inside the element */
-  display: flex;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items horizontally*/
+  -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  justify-content: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items vertically */
+  -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #logo {
@@ -1044,14 +1102,14 @@ logo-img {
 }
 
 #toc summary {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
 }
 
 #toc>ul {
   display: block;
   padding: 15px 15px 5px; /* Set the thickness of the padding area */
   border: 1px solid #0088ff; /* Set the width, the style, and the color of the border */
-  margin: 0;
+  margin: 0; /* Remove any default margin */
 }
 
 menu-container {
@@ -1066,10 +1124,18 @@ menu-container {
   width: calc(35px + 1vw);
   height: 57px;
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; /* Center items vertically */
+  /* Center items vertically */
+  -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #menu-title {
@@ -1087,7 +1153,7 @@ menu-container {
   width: 35px;
   height: 5px;
   background-color: #318ce7;
-  margin: 6px 0;
+  margin: 6px 0; /* Set the thickness of the margin area */
   transition: 0.4s;
 }
 
@@ -1119,7 +1185,7 @@ menu-container {
   z-index: 1; /* Set the stacking order of the element */
   border: 1px solid #318ce7; /* Set the width, the style, and the color of the border */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 10px; /* For older versions of Safari */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 10px; /* For older versions of Firefox */
   -o-border-radius: 10px; /* For older versions of Opera */
   border-radius: 10px; /* Standard property for border radius */
@@ -1131,7 +1197,7 @@ menu-container {
 
 nav-links {
   display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
-  margin: 1vh 0;
+  margin: 1vh 0; /* Set the thickness of the margin area */
   font-size: 18px; /* Set the font size of the text */
 }
 
@@ -1201,7 +1267,7 @@ sevenpx {
   width: 70px;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 35px; /* For older versions of Safari */
+  -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 35px; /* For older versions of Firefox */
   -o-border-radius: 35px; /* For older versions of Opera */
   border-radius: 35px; /* Standard property for border radius */
@@ -1216,7 +1282,7 @@ sevenpx {
   transition: 0.5s;
   width: 35px;
   /* Apply a border radius to make the element circular */
-  -webkit-border-radius: 50%; /* For older versions of Safari */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
   -moz-border-radius: 50%; /* For older versions of Firefox */
   -o-border-radius: 50%; /* For older versions of Opera */
   border-radius: 50%; /* Standard property for border radius */
@@ -1252,7 +1318,7 @@ sevenpx {
   width: 70px;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 35px; /* For older versions of Safari */
+  -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 35px; /* For older versions of Firefox */
   -o-border-radius: 35px; /* For older versions of Opera */
   border-radius: 35px; /* Standard property for border radius */
@@ -1267,7 +1333,7 @@ sevenpx {
   transition: 0.5s;
   width: 35px;
   /* Apply a border radius to make the element circular */
-  -webkit-border-radius: 50%; /* For older versions of Safari */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
   -moz-border-radius: 50%; /* For older versions of Firefox */
   -o-border-radius: 50%; /* For older versions of Opera */
   border-radius: 50%; /* Standard property for border radius */
@@ -1315,7 +1381,7 @@ editor-button~speak-button #speakBtn {
   transition: 0.5s;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 35px; /* For older versions of Safari */
+  -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 35px; /* For older versions of Firefox */
   -o-border-radius: 35px; /* For older versions of Opera */
   border-radius: 35px; /* Standard property for border radius */
@@ -1370,7 +1436,7 @@ editor-button~speak-button #speakBtn {
   transition: 0.5s;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
-  -webkit-border-radius: 35px; /* For older versions of Safari */
+  -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 35px; /* For older versions of Firefox */
   -o-border-radius: 35px; /* For older versions of Opera */
   border-radius: 35px; /* Standard property for border radius */
@@ -1387,7 +1453,7 @@ editor-button~speak-button #speakBtn {
   pointer-events: none; /* Deactivate pointer events */
   animation: animate 0.7s linear infinite;
   /* Apply a border radius to make the element circular */
-  -webkit-border-radius: 50%; /* For older versions of Safari */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
   -moz-border-radius: 50%; /* For older versions of Firefox */
   -o-border-radius: 50%; /* For older versions of Opera */
   border-radius: 50%; /* Standard property for border radius */
@@ -1765,10 +1831,21 @@ th {
 #enable-javascript {
   padding: 0 25vw; /* Set the thickness of the padding area */
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically */
+  /* Center items horizontally*/
+  -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  justify-content: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Center items vertically */
+  -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 noscript details {

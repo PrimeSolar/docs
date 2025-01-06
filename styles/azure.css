@@ -608,7 +608,7 @@ td p {
 }
 
 th {
-  background-color: #0088ff; /* Set the text color to a shade of blue */
+  background-color: #0088ff; /* Set the text color to the shade of blue */
   color: #fff; /* Set the text color to white */
   padding: 5px; /* Set the thickness of the padding area */
 }
@@ -711,14 +711,14 @@ ol {
 }
 
 .list-link:hover {
-  color: #318ce7; /* Set the text color to a shade of blue */
+  color: #318ce7; /* Set the text color to the shade of blue */
 }
 
 #cards {
   text-align: center; /* Set the alignment of the text */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   font-size: 1.7vh; /* Set the font size of the text */
-  height: 80vh;
+  height: 80vh; /* Set the height of the element to 80% of the viewport height */
   width: 100%; /* Set the width of the element to 100% of its parent container */
   /* Use flexbox to center content inside the element */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
@@ -762,7 +762,7 @@ ol {
 }
 
 .card-content {
-  height: 37vh;
+  height: 37vh; /* Set the height of the element to 37% of the viewport height */
   margin: 1px; /* Set the thickness of the margin area */
   z-index: 2; /* Set the stacking order of the element */
   /* Use flexbox to center content inside the element */
@@ -839,7 +839,7 @@ ol {
   top: -20px; /* Place the card label 20 pixels above */
   padding: 0.5vh 0 2vh; /* Set the thickness of the padding area */
   background-color: #fff; /* Set the background color to white */
-  color: #008cff; /* Set the text color to a shade of blue */
+  color: #008cff; /* Set the text color to the shade of blue */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   font-size: 14px; /* Set the font size of the text */
   text-align: center; /* Set the alignment of the text */

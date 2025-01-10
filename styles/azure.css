@@ -10,6 +10,7 @@ a {
 a-comment {
   background-color: #0088ff; /* Set the background color to a shade of blue */
   border: 2px solid #bbb; /* Set the width, the style, and the color of the border */
+  -webkit-box-shadow: 0 7px 7px -7px #000;
   box-shadow: 0 7px 7px -7px #000;
   color: #fff; /* Set the text color to white */
   display: none; /* Hide the element */
@@ -34,7 +35,10 @@ a-comment {
 
 a-comment:hover {
   background-color: #0099ff; /* Set the background color to a shade of blue */
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 body {
@@ -82,6 +86,7 @@ button {
 }
 
 button:active {
+  -webkit-box-shadow: none;
   box-shadow: none;
   transition: 0.7s;
 }
@@ -132,6 +137,9 @@ codeblock>button {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   padding: 5px 20px; /* Set the thickness of the padding area */
   outline: none;
+  /* Set an effect of a transition */
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   width: 100px; /* The fixed width to 100 pixels for a Copy button */
   z-index: 1; /* Set the stacking order of the element */
@@ -149,6 +157,7 @@ comment-tag {
   background: -o-linear-gradient(#006fab 25%, #0099ff 100%);
   background: -webkit-linear-gradient(#006fab 25%, #0099ff 100%);
   background: linear-gradient(#006fab 5%, #0099ff 100%);
+  -webkit-box-shadow: 0 1px 2px #bbb;
   box-shadow: 0 1px 2px #bbb;
   color: #fff; /* Set the text color to white */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
@@ -160,7 +169,10 @@ comment-tag {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: -8vw; /* Place the element 8% of the viewport width from the left edge of its positioned ancestor */
   text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the text */
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
@@ -175,11 +187,15 @@ comment-tag:before {
 
 comment-tag:hover {
   cursor: pointer;
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 dataType {
   background-color: #4c8abd;
+  -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
@@ -236,6 +252,7 @@ details>summary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
   background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
   border: none; /* Remove any default border */
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff; /* Set the text color to white */
   cursor: pointer;
@@ -247,12 +264,18 @@ details>summary {
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   padding: 25px; /* Set the thickness of the padding area */
   text-align: center; /* Set the alignment of the text */
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 details>summary:hover {
   box-shadow: 1px 1px 2px #bbb;
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 details>ul {
@@ -371,7 +394,10 @@ h3 {
 html {
   height: 100%; /* Set the height of the element to 100% of its parent container */
   scroll-behavior: smooth; /* Enable smooth scrolling for a webpage */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   /*
   background-image: url(../pics/real-estate-10-920x518.jpg);
   background-repeat: no-repeat;
@@ -436,6 +462,7 @@ note>pre {
 
 optionalityDegreeO {
   background-color: #03d4db;
+  -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
   font-size: 14px; /* Set the font size of the text */
@@ -448,7 +475,10 @@ optionalityDegreeO {
   text-shadow: 2px 2px 5px #3bacb6;
   transform: translate(-150px, 0);
   opacity: 0;  /* Set the initial opacity to 0 (invisible) */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -463,6 +493,7 @@ optionalityDegreeO:before {
 optionalityDegreeR {
   background-color: #3bacb6;
   /*background-color: rgb(0,0,180);*/
+  -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
   font-size: 14px;
@@ -474,7 +505,10 @@ optionalityDegreeR {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   transform: translate(-150px, 0);
   opacity: 0;  /* Set the initial opacity to 0 (invisible) */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -489,6 +523,7 @@ optionalityDegreeR:before {
 optionalityDegreeU {
   background-color: #5c7ef7; /* Set the background color to a shade of blue */
   border-radius: 5px;
+  -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
   font-size: 14px; /* Set the font size of the text */
@@ -500,7 +535,10 @@ optionalityDegreeU {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   transform: translate(-150px, 0);
   opacity: 0;  /* Set the initial opacity to 0 (invisible) */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 optionalityDegreeU:before {
@@ -523,6 +561,7 @@ p a {
 
 paramType {
   background-color: #0047ab; /* Set the background color to a shade of blue */
+  -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color to white */
   font-size: 14px; /* Set the font size of the text */
@@ -544,47 +583,74 @@ paramType {
 
 section:hover>ol>li>od-o>optionalityDegreeO {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ol>li>od-r>optionalityDegreeR {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ol>li>od-u>optionalityDegreeU {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ol>li>od-o>optionalityDegreeO {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ol>li>od-r>optionalityDegreeR {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ol>li>od-u>optionalityDegreeU {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ul>li>od-o>optionalityDegreeO {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ul>li>od-r>optionalityDegreeR {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
   opacity: 1;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 table {
@@ -660,7 +726,10 @@ ol {
   margin-bottom: 50px; /* Set the bottom margin to 50 pixels */
   position: relative;
   text-align: center; /* Set the alignment of the text */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .doc-list-item {
@@ -676,12 +745,18 @@ ol {
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   text-align: center; /* Set the alignment of the text */
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
 .doc-list-item:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .doc-list-item a {
@@ -995,7 +1070,10 @@ ol {
   font-size: 16px; /* Set the font size of the text */
   text-decoration: none; /* Remove underline from text links */
   pointer-events: none; /* Deactivate pointer events */
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   /* Use flexbox to center content inside the "To top" button */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
@@ -1113,7 +1191,18 @@ logo-img {
 }
 
 #logo {
-  zoom: 35%;
+  width: 420px;
+  height: 420px;
+}
+
+@media (max-height: 430px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  #logo {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 #toc {
@@ -1259,7 +1348,10 @@ nav-links a {
 }
 
 #switchyContainerAbsolute:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #theme {
@@ -1267,7 +1359,10 @@ nav-links a {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: 42.5px; /* Place the element 42.5 pixels from the right edge of its positioned ancestor */
   top: 5px;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 sevenpx {
@@ -1282,7 +1377,10 @@ sevenpx {
   left: 0;
   position: relative;
   top: 0;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 70px; /* Set the width to 70 pixels */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
@@ -1298,7 +1396,10 @@ sevenpx {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   top: 0;
   transform: scale(0.9);
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 35px; /* Set the width to 35 pixels */
   /* Apply a border radius to make the element circular */
   -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
@@ -1322,7 +1423,10 @@ sevenpx {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: 20px; /* Place the element 20 pixels from the right edge of its positioned ancestor */
   top: 80px;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #editor-mode {
@@ -1333,7 +1437,10 @@ sevenpx {
   left: 35px;
   position: relative;
   top: 100%;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 70px; /* Set the width to 70 pixels */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
@@ -1349,7 +1456,10 @@ sevenpx {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   top: 0;
   transform: scale(0.9);
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   width: 35px; /* Set the width to 35 pixels */
   /* Apply a border radius to make the element circular */
   -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
@@ -1369,7 +1479,10 @@ sevenpx {
 }
 
 #speakContainerRelative:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #speakContainerAbsolute {
@@ -1379,7 +1492,10 @@ sevenpx {
 }
 
 #speakContainerAbsolute:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 editor-button~speak-button #speakBtn {
@@ -1397,7 +1513,10 @@ editor-button~speak-button #speakBtn {
   right: -45px;
   width: 125px; /* Set the width to 125 pixels */
   top: 80px;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
@@ -1407,7 +1526,14 @@ editor-button~speak-button #speakBtn {
 }
 
 #speakBtn:hover {
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.container.speak {
+  position: relative;
 }
 
 .speak-inline {
@@ -1421,6 +1547,22 @@ editor-button~speak-button #speakBtn {
   z-index: 1; /* Set the stacking order of the element */
 }
 
+.container > .speak-inline {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+@media (max-width: 430px){
+  .glossary {
+    position: relative;
+    left: -10vw;
+  }
+  .container > .speak-inline {
+    top: -50px;
+  }
+}
+
 #screenshotContainerRelative {
   display: block; /* Make the element a block-level element */
   position: relative;
@@ -1428,7 +1570,10 @@ editor-button~speak-button #speakBtn {
 }
 
 #screenshotContainerRelative:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #screenshotContainerAbsolute {
@@ -1438,7 +1583,10 @@ editor-button~speak-button #speakBtn {
 }
 
 #screenshotContainerAbsolute:hover {
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #screenshotBtn {
@@ -1452,7 +1600,10 @@ editor-button~speak-button #speakBtn {
   right: -45px; /* Place the element 45 pixels from the left edge of its positioned ancestor */
   width: 125px; /* Set the width to 125 pixels */
   top: 237px;
-  transition: 0.5s; /* Add a transition effect for changes in properties */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
@@ -1462,7 +1613,10 @@ editor-button~speak-button #speakBtn {
 }
 
 #screenshotBtn:hover {
-  transition: 0.25s; /* Set an effect of a transition */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 
 #ripples {
@@ -1501,7 +1655,8 @@ editor-button~speak-button #speakBtn {
   --code-background-color: #eee;
   --code-color: #222;
   --codeblock-background-color: #f7f7f7;
-  --data-type-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
+  --data-type--webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
+  box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   --details-summary-background-color: #fefefe;
   --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --hr-background: #1a1a1a;

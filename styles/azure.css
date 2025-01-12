@@ -23,7 +23,9 @@ a-comment {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: -25.5px; /* Place the element 25.5 pixels from the left edge of its positioned ancestor */
   text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the text */
-  transform: translate(-25px, 0);
+  -webkit-transform: translate(-25px, 0); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-25px, 0); /* For Internet Explorer 10 */
+  transform: translate(-25px, 0); /* Standard syntax for modern browsers (widely supported) */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   width: 115px; /* Set the width to 115 pixels */
   /* Apply a border radius to round the corners of the element */
@@ -239,6 +241,7 @@ details {
 
 details>p {
   background-color: #eee;
+  -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
   margin: 0; /* Remove any default margin */
   padding: 4px; /* Set the thickness of the padding area */
@@ -271,6 +274,7 @@ details>summary {
 }
 
 details>summary:hover {
+  -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
   /* Set an effect of a transition */
   -webkit-transition: 0.25s;
@@ -473,8 +477,10 @@ optionalityDegreeO {
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-shadow: 2px 2px 5px #3bacb6;
-  transform: translate(-150px, 0);
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
+  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -503,8 +509,10 @@ optionalityDegreeR {
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  transform: translate(-150px, 0);
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
+  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -533,8 +541,10 @@ optionalityDegreeU {
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  transform: translate(-150px, 0);
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
+  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -655,7 +665,8 @@ section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
 
 table {
   border-collapse: collapse;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit; /* For older versions of Chrome and Safari */
+  box-sizing: inherit; /* Standard syntax for modern browsers (widely supported) */
   display: table;
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels */
   overflow-x: scroll;
@@ -713,7 +724,9 @@ ol {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* classes */
 .img-inline {
-  transform: translate(0, 20%);
+  -webkit-transform: translate(0, 20%); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(0, 20%); /* For Internet Explorer 10 */
+  transform: translate(0, 20%); /* Standard syntax for modern browsers (widely supported) */
   width: auto;
   height: 30px; /* Set the height to 30 pixels */
 }
@@ -891,7 +904,7 @@ ol {
   content: "";
   height: 100%; /* Set the height of the element to 100% of its parent container */
   left: 0;
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   top: 0;
   transition: opacity 500ms;
@@ -1066,7 +1079,7 @@ ol {
   width: 45px; /* Set the width of the "To top" button to 45 pixels */
   height: 45px; /* Set the height of the "To top" button to 45 pixels */
   z-index: 1; /* Set the stacking order of the "To top" button */
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   font-size: 16px; /* Set the font size of the text */
   text-decoration: none; /* Remove underline from text links */
   pointer-events: none; /* Deactivate pointer events */
@@ -1157,7 +1170,9 @@ ol {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
   top: 55%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
+  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1170,7 +1185,9 @@ ol {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Set the alignment of the text */
   top: 52.5%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
+  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1258,23 +1275,27 @@ menu-container {
 }
 
 .bar {
-  width: 35px; /* Set the width to 35 pixels */
-  height: 5px; /* Set the height to 5 pixels */
+  width: 35px; /* Set the width of a menu bar to 35 pixels */
+  height: 5px; /* Set the height of a menu bar to 5 pixels */
   background-color: #318ce7;
   margin: 6px 0; /* Set the thickness of the margin area */
   transition: 0.4s;
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+  -webkit-transform: translate(0, 11px) rotate(-45deg); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(0, 11px) rotate(-45deg); /* For Internet Explorer 10 */
+  transform: translate(0, 11px) rotate(-45deg); /* Standard syntax for modern browsers (widely supported) */
 }
 
 .change .bar2 {
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity to 0 (invisible) */
 }
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+  -webkit-transform: translate(0, -11px) rotate(45deg); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(0, -11px) rotate(45deg); /* For Internet Explorer 10 */
+  transform: translate(0, -11px) rotate(45deg); /* Standard syntax for modern browsers (widely supported) */
 }
 
 .dropdown {
@@ -1395,7 +1416,9 @@ sevenpx {
   left: 0;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   top: 0;
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
+  -ms-transform: scale(0.9); /* For Internet Explorer 10 */
+  transform: scale(0.9); /* Standard syntax for modern browsers (widely supported) */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1455,7 +1478,9 @@ sevenpx {
   left: 0;
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   top: 0;
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
+  -ms-transform: scale(0.9); /* For Internet Explorer 10 */
+  transform: scale(0.9); /* Standard syntax for modern browsers (widely supported) */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1622,7 +1647,9 @@ editor-button~speak-button #speakBtn {
 #ripples {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   background: #fff; /* Set the background color to white */
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
+  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
   pointer-events: none; /* Deactivate pointer events */
   animation: animate 0.7s linear infinite;
   /* Apply a border radius to make the element circular */
@@ -1655,8 +1682,7 @@ editor-button~speak-button #speakBtn {
   --code-background-color: #eee;
   --code-color: #222;
   --codeblock-background-color: #f7f7f7;
-  --data-type--webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
-  box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
+  --data-type-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   --details-summary-background-color: #fefefe;
   --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --hr-background: #1a1a1a;
@@ -1848,14 +1874,17 @@ code {
 
 codeblock {
   background-color: var(--codeblock-background-color);
+  -webkit-box-shadow: var(--codeblock-box-shadow);
   box-shadow: var(--codeblock-box-shadow);
 }
 
 comment-tag:hover {
+  -webkit-box-shadow: var(--class-center-hover-box-shadow);
   box-shadow: var(--class-center-hover-box-shadow);
 }
 
 dataType {
+  -webkit-box-shadow: var(--data-type-box-shadow);
   box-shadow: var(--data-type-box-shadow);
 }
 
@@ -1864,6 +1893,7 @@ details>summary {
 }
 
 details>summary:hover {
+  -webkit-box-shadow: var(--details-summary-hover-box-shadow);
   box-shadow: var(--details-summary-hover-box-shadow);
 }
 
@@ -1920,15 +1950,18 @@ th {
 }
 
 .center:hover {
+  -webkit-box-shadow: var(--class-center-hover-box-shadow);
   box-shadow: var(--class-center-hover-box-shadow);
 }
 
 .doc-list-item:hover {
+  -webkit-box-shadow: var(--class-doc-list-item-hover-box-shadow);
   box-shadow: var(--class-doc-list-item-hover-box-shadow);
 }
 
 .dropdown-content {
   background-color: var(--class-dropdown-content-background-color);
+  -webkit-box-shadow: var(--class-dropdown-content-box-shadow);
   box-shadow: var(--class-dropdown-content-box-shadow);
 }
 
@@ -1937,6 +1970,7 @@ th {
 }
 
 .no-shadow:hover {
+  -webkit-box-shadow: var(--class-no-shadow-hover-box-shadow);
   box-shadow: var(--class-no-shadow-hover-box-shadow);
 }
 
@@ -1951,21 +1985,25 @@ th {
 /* id variables */
 #editor-mode {
   background: var(--id-editor-mode-background);
+  -webkit-box-shadow: var(--id-editor-mode-box-shadow);
   box-shadow: var(--id-editor-mode-box-shadow);
 }
 
 #editor-mode .indicator {
   background-image: var(--id-editor-mode-indicator-background-image);
+  -webkit-box-shadow: var(--id-editor-mode-indicator-box-shadow);
   box-shadow: var(--id-editor-mode-indicator-box-shadow);
 }
 
 #switchy {
   background: var(--id-switchy-background);
+  -webkit-box-shadow: var(--id-switchy-box-shadow);
   box-shadow: var(--id-switchy-box-shadow);
 }
 
 #switchy .indicator {
   background-image: var(--id-switchy-indicator-background-image);
+  -webkit-box-shadow: var(--id-switchy-indicator-box-shadow);
   box-shadow: var(--id-switchy-indicator-box-shadow);
 }
 
@@ -1973,6 +2011,7 @@ th {
   background: var(--id-screenshot-btn-background);
   color: var(--id-screenshot-btn-color);
   /*
+  -webkit-box-shadow: var(--id-screenshot-btn-box-shadow);
   box-shadow: var(--id-screenshot-btn-box-shadow);*/
 }
 
@@ -1982,6 +2021,7 @@ th {
 }
 
 #screenshotBtn:hover {
+  -webkit-box-shadow: var(--class-center-hover-box-shadow);
   box-shadow: var(--class-center-hover-box-shadow);
 }
 
@@ -1989,6 +2029,7 @@ th {
   background: var(--id-speak-btn-background);
   color: var(--id-speak-btn-color);
   /*
+  -webkit-box-shadow: var(--id-speak-btn-box-shadow);
   box-shadow: var(--id-speak-btn-box-shadow);*/
 }
 
@@ -1998,12 +2039,13 @@ th {
 }
 
 #speakBtn:hover {
+  -webkit-box-shadow: var(--class-center-hover-box-shadow);
   box-shadow: var(--class-center-hover-box-shadow);
 }
 
 /* noscript */
 #enable-javascript {
-  padding: 0 25vw; /* Set the thickness of the padding area */
+  padding: 0 25vw; /* Set the thickness of the padding area of the ""*/
   /* Use flexbox to center content inside the element */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
@@ -2023,22 +2065,31 @@ th {
 }
 
 noscript details {
-  min-width: 50vw;
-  text-align: inherit; /* Set the alignment of the text */
+  min-width: 50vw; /* Ensures details are at least 50% of the viewport width if JavaScript is disabled in the browser */
+  text-align: inherit; /* Set the alignment of text in details if JavaScript is disabled in the browser */
 }
 
 details:first-of-type {
-  margin-top: 5vh; /* Set the top margin to 5% of the viewport height */
+  margin-top: 5vh; /* Set the top margin of the first details element to 5% of the viewport height if JavaScript is disabled in the browser */
 }
 
 noscript details summary {
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Set the alignment of text in details summaries if JavaScript is disabled in the browser */
 }
 
-noscript h3 {
-  font-size: 30px; /* Set the font size of the text */
+noscript h1 {
+  font-size: 50px; /* Set the font size of the "Enable JavaScript" header */
+  width: 50vw; /* Set the width of the "Enable JavaScript" header to 50% of the viewport width */
+  text-align: center; /* Set the alignment of the "Enable JavaScript" header */
+  animation: brighten 1s;
+}
+
+@media screen and (max-width: 430px) {
+  noscript h1 {
+    font-size: 45px; /* Set the font size of the "Enable JavaScript" header if a screen width is less or equal to 430 pixels */
+  }
 }
 
 noscript p {
-  min-width: 50vw;
+  min-width: 50vw; /* Ensures a paragraph is at least 50% of the viewport width if JavaScript is disabled in the browser */
 }

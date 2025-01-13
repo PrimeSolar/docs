@@ -8,27 +8,27 @@ a {
 }
 
 a-comment {
-  background-color: #0088ff; /* Set the background color to a shade of blue */
-  border: 2px solid #bbb; /* Set the width, the style, and the color of the border */
+  background-color: #0088ff; /* Set the background color of a comment to a shade of blue */
+  border: 2px solid #bbb; /* Set the width, the style, and the color of the comment border */
   -webkit-box-shadow: 0 7px 7px -7px #000;
   box-shadow: 0 7px 7px -7px #000;
-  color: #fff; /* Set the text color to white */
-  display: none; /* Hide the element */
-  font-size: 11.25px; /* Set the font size of the text */
-  font-family: Verdana, sans-serif; /* Set the font family to "Verdana" and sans-serif */
-  font-weight: normal; /* Set the font weight of the text */
+  color: #fff; /* Set the text color of a comment to white */
+  display: none; /* Hide a comment */
+  font-size: 11.25px; /* Set the font size of the comment text */
+  font-family: Verdana, sans-serif; /* Set the font family of the comment text to "Verdana" and sans-serif */
+  font-weight: normal; /* Set the font weight of the text of a comment */
   line-height: 1.5;
   margin: 0; /* Remove any default margin */
-  padding: 3px 4px; /* Set the thickness of the padding area */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  right: -25.5px; /* Place the element 25.5 pixels from the left edge of its positioned ancestor */
-  text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the text */
+  padding: 3px 4px; /* Set the thickness of the padding area of a comment */
+  position: absolute; /* Position a comment absolutely within its positioned ancestor */
+  right: -25.5px; /* Place a comment 25.5 pixels from the left edge of its positioned ancestor */
+  text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the comment text */
   -webkit-transform: translate(-25px, 0); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-25px, 0); /* For Internet Explorer 10 */
   transform: translate(-25px, 0); /* Standard syntax for modern browsers (widely supported) */
-  white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  width: 115px; /* Set the width to 115 pixels */
-  /* Apply a border radius to round the corners of the element */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text of a comment */
+  width: 115px; /* Set the width of a comment to 115 pixels */
+  /* Apply a border radius to round the comment corners */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
@@ -36,11 +36,11 @@ a-comment {
 }
 
 a-comment:hover {
-  background-color: #0099ff; /* Set the background color to a shade of blue */
-  /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  background-color: #0099ff; /* Set the background color of a comment to a shade of blue when hovering it */
+  /* Set an effect of a transition for a comment */
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 body {
@@ -171,11 +171,11 @@ comment-tag {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: -8vw; /* Place the element 8% of the viewport width from the left edge of its positioned ancestor */
   text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the text */
-  /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
+  /* Set an effect of a transition */
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -190,21 +190,21 @@ comment-tag:before {
 comment-tag:hover {
   cursor: pointer;
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 dataType {
   background-color: #4c8abd;
   -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
-  color: #fff; /* Set the text color to white */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
-  font-size: 14px; /* Set the font size of the text */
-  margin: 0 0 0 7px; /* Set the thickness of the margin area */
-  padding: 3px 4px 3px; /* Set the thickness of the padding area */
-  /* Apply a border radius to round the corners of the element */
+  color: #fff; /* Set the text color of a data type label to white */
+  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family of a data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-size: 14px; /* Set the font size of a data type label text */
+  margin: 0 0 0 7px; /* Set the thickness of the margin area of a data type label */
+  padding: 3px 4px 3px; /* Set the thickness of the padding area of a data type label */
+  /* Apply a border radius to round the corners of a data type label */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
@@ -236,7 +236,7 @@ dd p {
 
 details {
   position: relative;
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center a text in details */
 }
 
 details>p {
@@ -266,20 +266,20 @@ details>summary {
   margin-bottom: 25px; /* Set the bottom margin to 25 pixels */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   padding: 25px; /* Set the thickness of the padding area */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 details>summary:hover {
   -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 details>ul {
@@ -291,11 +291,11 @@ details>ul {
 
 dl {
   line-height: 150%;
-  margin-bottom: 0; /* Remove any default bottom margin */
+  margin-bottom: 0; /* Remove any default bottom margin from a description list */
 }
 
 dt {
-  font-weight: bold; /* Set the font weight of the text */
+  font-weight: bold; /* Set the font weight of a term text in a description list */
   margin-bottom: 7px; /* Set the bottom margin to 7 pixels */
 }
 
@@ -312,7 +312,7 @@ footer {
   margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -339,7 +339,7 @@ footerLowerLC {
   margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: fixed; /* Position the element fixed to the viewport */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -372,7 +372,7 @@ footerLowerMC {
   margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -732,13 +732,13 @@ ol {
 }
 
 .text-center {
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
 }
 
 .doc-list {
   margin-bottom: 50px; /* Set the bottom margin to 50 pixels */
   position: relative;
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -757,7 +757,7 @@ ol {
   height: 50%; /* Set the height of the element to 50% of its parent container */
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -778,7 +778,7 @@ ol {
   font-size: 25px; /* Set the font size of the text */
   height: 50%; /* Set the height of the element to 50% of its parent container */
   margin: 25px 0; /* Set the thickness of the margin area */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   text-decoration: none; /* Remove underline from text links */
   padding: 25px; /* Set the thickness of the padding area */
 }
@@ -794,7 +794,7 @@ ol {
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels */
   padding: 0; /* Remove any default padding */
   font-size: 18px; /* Set the font size of the text */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   text-decoration: underline;
 }
 
@@ -803,7 +803,7 @@ ol {
 }
 
 #cards {
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   font-size: 1.7vh; /* Set the font size of the text */
   height: 80vh; /* Set the height to 80% of the viewport height */
@@ -930,7 +930,7 @@ ol {
   color: #008cff; /* Set the text color to the shade of blue */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   font-size: 14px; /* Set the font size of the text */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   z-index: -1; /* Set the stacking order of the card label */
   /* Apply a border radius to round the corners of the card label */
   -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
@@ -970,7 +970,7 @@ ol {
 }
 
 .plan-features {
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   padding: 0; /* Remove any default padding */
   flex-basis: 50%;
 }
@@ -1084,9 +1084,9 @@ ol {
   text-decoration: none; /* Remove underline from text links */
   pointer-events: none; /* Deactivate pointer events */
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
   /* Use flexbox to center content inside the "To top" button */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
@@ -1168,7 +1168,7 @@ ol {
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   top: 55%;
   -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
@@ -1183,7 +1183,7 @@ ol {
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   top: 52.5%;
   -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
@@ -1552,9 +1552,9 @@ editor-button~speak-button #speakBtn {
 
 #speakBtn:hover {
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .container.speak {
@@ -1639,9 +1639,9 @@ editor-button~speak-button #speakBtn {
 
 #screenshotBtn:hover {
   /* Set an effect of a transition */
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.25s; /* For older versions of Opera */
+  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #ripples {
@@ -1920,20 +1920,20 @@ th {
 
 /* class variables */
 .cell-center {
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   vertical-align: middle;
 }
 
 .cell-center-bold {
   font-weight: bold; /* Set the font weight of the text */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   vertical-align: middle;
 }
 
 .cell-center-monospace {
   font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 17px; /* Set the font size of the text */
-  text-align: center; /* Set the alignment of the text */
+  text-align: center; /* Center the text */
   vertical-align: middle;
 }
 
@@ -2074,13 +2074,13 @@ details:first-of-type {
 }
 
 noscript details summary {
-  text-align: center; /* Set the alignment of text in details summaries if JavaScript is disabled in the browser */
+  text-align: center; /* Center a text in details summaries if JavaScript is disabled in the browser */
 }
 
 noscript h1 {
   font-size: 50px; /* Set the font size of the "Enable JavaScript" header */
   width: 50vw; /* Set the width of the "Enable JavaScript" header to 50% of the viewport width */
-  text-align: center; /* Set the alignment of the "Enable JavaScript" header */
+  text-align: center; /* Center the "Enable JavaScript" header */
   animation: brighten 1s;
 }
 

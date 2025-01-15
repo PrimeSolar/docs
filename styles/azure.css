@@ -23,9 +23,15 @@ a-comment {
   position: absolute; /* Position a comment absolutely within its positioned ancestor */
   right: -25.5px; /* Place a comment 25.5 pixels from the left edge of its positioned ancestor */
   text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the comment text */
-  -webkit-transform: translate(-25px, 0); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -25px,
+    0
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-25px, 0); /* For Internet Explorer 10 */
-  transform: translate(-25px, 0); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -25px,
+    0
+  ); /* Standard syntax for modern browsers (widely supported) */
   white-space: pre-wrap; /* Preserve whitespace and wrap text of a comment */
   width: 115px; /* Set the width of a comment to 115 pixels */
   /* Apply a border radius to round the comment corners */
@@ -52,11 +58,17 @@ body {
   padding: 0; /* Remove any default padding */
 }
 
+@media (min-width: 1450px) {
+  body {
+    margin: 0 15vw 0;
+  }
+}
+
 main {
   margin-bottom: 29px; /* Set the bottom margin to 29 pixels */
 }
 
-main>ul {
+main > ul {
   font-size: 20px; /* Set the font size of the text */
   display: block; /* Make the element a block-level element */
   list-style-type: disc; /* Use solid circles for items */
@@ -74,11 +86,11 @@ best-practices {
   border-radius: 5px; /* Standard property for border radius */
 }
 
-best-practices>p {
+best-practices > p {
   font-size: 16px; /* Set the font size of the text */
 }
 
-best-practices>ul {
+best-practices > ul {
   display: block; /* Make the element a block-level element */
   list-style-type: inherit;
 }
@@ -96,7 +108,7 @@ button:active {
 code {
   background: #333;
   color: #fff; /* Set the text color to white */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 100%; /* Set the font size of the text */
   line-height: 150%;
   padding: 3.5px 3.5px; /* Set the thickness of the padding area */
@@ -119,7 +131,7 @@ codeblock {
   color: #318ce7;
   font-size: 100%; /* Set the font size of the text */
   line-height: 150%;
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -128,7 +140,7 @@ codeblock {
 }
 
 /* A Copy button inside a Codeblock*/
-codeblock>button {
+codeblock > button {
   background-color: #318ce7;
   border: none; /* Remove any default border */
   color: #fff; /* Set the text color to white */
@@ -162,7 +174,7 @@ comment-tag {
   -webkit-box-shadow: 0 1px 2px #bbb;
   box-shadow: 0 1px 2px #bbb;
   color: #fff; /* Set the text color to white */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   height: 20px; /* Set the height to 20 pixels */
@@ -200,7 +212,7 @@ dataType {
   -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #fff; /* Set the text color of a data type label to white */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family of a data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family of a data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 14px; /* Set the font size of a data type label text */
   margin: 0 0 0 7px; /* Set the thickness of the margin area of a data type label */
   padding: 3px 4px 3px; /* Set the thickness of the padding area of a data type label */
@@ -239,7 +251,7 @@ details {
   text-align: center; /* Center a text in details */
 }
 
-details>p {
+details > p {
   background-color: #eee;
   -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
@@ -247,13 +259,28 @@ details>p {
   padding: 4px; /* Set the thickness of the padding area */
 }
 
-details>summary {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+details > summary {
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   border: none; /* Remove any default border */
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -273,7 +300,7 @@ details>summary {
   transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-details>summary:hover {
+details > summary:hover {
   -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
   /* Set an effect of a transition */
@@ -282,7 +309,7 @@ details>summary:hover {
   transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-details>ul {
+details > ul {
   font-size: 20px; /* Set the font size of the text */
   list-style-type: none;
   margin: 20px 0; /* Set the thickness of the margin area */
@@ -300,12 +327,27 @@ dt {
 }
 
 footer {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #fff; /* Set the text color to white */
   left: 0;
@@ -326,12 +368,27 @@ footer a:visited {
 }
 
 footerLowerLC {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   bottom: 0;
   color: #fff; /* Set the text color to white */
@@ -360,12 +417,27 @@ footerLowerMC a:visited {
 }
 
 footerLowerMC {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #fff; /* Set the text color to white */
   left: 0;
@@ -384,7 +456,12 @@ footerLowerLC a:visited {
   color: #fff; /* Set the text color to white */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
   margin-top: 25px; /* Set the top margin to 25 pixels */
   padding-top: 0; /* Remove top padding*/
@@ -399,9 +476,9 @@ html {
   height: 100%; /* Set the height of the element to 100% of its parent container */
   scroll-behavior: smooth; /* Enable smooth scrolling for a webpage */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   /*
   background-image: url(../pics/real-estate-10-920x518.jpg);
   background-repeat: no-repeat;
@@ -433,7 +510,7 @@ li:first-of-type {
   margin-top: 0; /* Remove top margin */
 }
 
-li>a:hover {
+li > a:hover {
   color: #318ce7;
   text-decoration: none; /* Remove underline from text links */
 }
@@ -451,16 +528,16 @@ note {
   border-radius: 5px; /* Standard property for border radius */
 }
 
-note>ul {
+note > ul {
   margin: 0.5vh 0; /* Set the thickness of the margin area */
 }
 
-note>p {
+note > p {
   font-size: 16px; /* Set the font size of the text */
   margin: 10px 0; /* Set the thickness of the margin area */
 }
 
-note>pre {
+note > pre {
   margin: 0; /* Remove any default margin */
 }
 
@@ -472,19 +549,25 @@ optionalityDegreeO {
   font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-shadow: 2px 2px 5px #3bacb6;
-  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -150px,
+    0
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
-  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -150px,
+    0
+  ); /* Standard syntax for modern browsers (widely supported) */
   opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -505,18 +588,24 @@ optionalityDegreeR {
   font-size: 14px;
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -150px,
+    0
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
-  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -150px,
+    0
+  ); /* Standard syntax for modern browsers (widely supported) */
   opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -537,18 +626,24 @@ optionalityDegreeU {
   font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   position: absolute; /* Position the element absolutely within its positioned ancestor */
-  -webkit-transform: translate(-150px, 0); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -150px,
+    0
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-150px, 0); /* For Internet Explorer 10 */
-  transform: translate(-150px, 0); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -150px,
+    0
+  ); /* Standard syntax for modern browsers (widely supported) */
   opacity: 0; /* Set the initial opacity to 0 (invisible) */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 optionalityDegreeU:before {
@@ -577,7 +672,7 @@ paramType {
   font-size: 14px; /* Set the font size of the text */
   font-weight: normal; /* Set the font weight of the text */
   padding: 3px 4px 3px; /* Set the thickness of the padding area */
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   /* Apply a border radius to round the corners of the element */
@@ -591,76 +686,76 @@ paramType {
   max-width: 80vw; /* Set the maximum width to 80% of the viewport width */
 }
 
-section:hover>ol>li>od-o>optionalityDegreeO {
+section:hover > ol > li > od-o > optionalityDegreeO {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ol>li>od-r>optionalityDegreeR {
+section:hover > ol > li > od-r > optionalityDegreeR {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ol>li>od-u>optionalityDegreeU {
+section:hover > ol > li > od-u > optionalityDegreeU {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ol>li>od-o>optionalityDegreeO {
+section:hover > ul > li > ol > li > od-o > optionalityDegreeO {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ol>li>od-r>optionalityDegreeR {
+section:hover > ul > li > ol > li > od-r > optionalityDegreeR {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ol>li>od-u>optionalityDegreeU {
+section:hover > ul > li > ol > li > od-u > optionalityDegreeU {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ul>li>od-o>optionalityDegreeO {
+section:hover > ul > li > ul > li > od-o > optionalityDegreeO {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ul>li>od-r>optionalityDegreeR {
+section:hover > ul > li > ul > li > od-r > optionalityDegreeR {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-section:hover>ul>li>ul>li>od-u>optionalityDegreeU {
+section:hover > ul > li > ul > li > od-u > optionalityDegreeU {
   opacity: 1;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 table {
@@ -707,12 +802,12 @@ ul {
   flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
 }
 
-ul>li>ul {
+ul > li > ul {
   display: block; /* Make the element a block-level element */
   list-style: inherit;
 }
 
-ul>li>a {
+ul > li > a {
   text-decoration: none !important;
 }
 
@@ -724,9 +819,15 @@ ol {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* classes */
 .img-inline {
-  -webkit-transform: translate(0, 20%); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    0,
+    20%
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(0, 20%); /* For Internet Explorer 10 */
-  transform: translate(0, 20%); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    0,
+    20%
+  ); /* Standard syntax for modern browsers (widely supported) */
   width: auto;
   height: 30px; /* Set the height to 30 pixels */
 }
@@ -740,18 +841,33 @@ ol {
   position: relative;
   text-align: center; /* Center the text */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .doc-list-item {
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   color: #fff; /* Set the text color to white */
   display: block; /* Make the element a block-level element */
   height: 50%; /* Set the height of the element to 50% of its parent container */
@@ -759,17 +875,17 @@ ol {
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
   text-align: center; /* Center the text */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
 .doc-list-item:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .doc-list-item a {
@@ -823,7 +939,7 @@ ol {
   align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
-#cards:hover>.card::after {
+#cards:hover > .card::after {
   opacity: 0.01;
 }
 
@@ -831,12 +947,27 @@ ol {
   position: relative;
   width: calc(100% - 2px); /* Set width to 100% minus 2 pixels */
   min-width: 20vw;
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   /* Use flexbox to center content inside the element */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
@@ -872,30 +1003,38 @@ ol {
 }
 
 .card-dark-theme::before {
-  background: radial-gradient(500px circle,
-      rgba(255, 255, 255, 0.1),
-      transparent 90%);
+  background: radial-gradient(
+    500px circle,
+    rgba(255, 255, 255, 0.1),
+    transparent 90%
+  );
   z-index: 3; /* Set the stacking order of the element */
 }
 
 .card-dark-theme::after {
-  background: radial-gradient(500px circle,
-      rgba(255, 255, 255, 0.4),
-      transparent 50%);
+  background: radial-gradient(
+    500px circle,
+    rgba(255, 255, 255, 0.4),
+    transparent 50%
+  );
   z-index: 1; /* Set the stacking order of the element */
 }
 
 .card-light-theme::before {
-  background: radial-gradient(500px circle,
-      rgba(255, 255, 255, 0.1),
-      transparent 90%);
+  background: radial-gradient(
+    500px circle,
+    rgba(255, 255, 255, 0.1),
+    transparent 90%
+  );
   z-index: 3; /* Set the stacking order of the element */
 }
 
 .card-light-theme::after {
-  background: radial-gradient(500px circle,
-      rgba(255, 255, 255, 0.4),
-      transparent 50%);
+  background: radial-gradient(
+    500px circle,
+    rgba(255, 255, 255, 0.4),
+    transparent 50%
+  );
   z-index: 1; /* Set the stacking order of the element */
 }
 
@@ -946,12 +1085,27 @@ ol {
   font-weight: bold; /* Set the font weight of the text */
   font-size: 2.5vh; /* Set the font size of the text */
   color: #fff; /* Set the text color to white */
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Firefox */
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Opera */
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%); /* For older versions of Chrome and Safari */
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%); /* For Internet Explorer 10 */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007fff', endColorstr='#318ce7', GradientType=0); /* For Internet Explorer 9 and below */
-  background: linear-gradient(#007fff 25%, #318ce7 100%); /* Standard syntax for modern browsers (widely supported) */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
@@ -975,7 +1129,7 @@ ol {
   flex-basis: 50%;
 }
 
-.plan-features>li {
+.plan-features > li {
   font-size: 3vh; /* Set the font size of the text */
 }
 
@@ -1034,7 +1188,7 @@ ol {
     -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
     -ms-flex-direction: column; /* For Internet Explorer 10 */
     flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
-    
+
     justify-content: space-between; /* Distribute space between items */
 
     /* Center items vertically */
@@ -1121,11 +1275,11 @@ ol {
   width: 100%; /* Set the width of the validator container to 100% of its parent container */
 }
 
-.response-codes col:nth-of-type(1){
+.response-codes col:nth-of-type(1) {
   width: 20%; /* Set the width of the element to 20% of its parent container */
 }
 
-.response-codes col:nth-of-type(2){
+.response-codes col:nth-of-type(2) {
   width: 80%; /* Set the width of the element to 80% of its parent container */
 }
 
@@ -1137,7 +1291,10 @@ ol {
   font-family: Arial, sans-serif;
 }
 
-#mainResourceName, #resourceName, #capitalizedResourceName, #subResourceName {
+#mainResourceName,
+#resourceName,
+#capitalizedResourceName,
+#subResourceName {
   display: none; /* Hide the element */
 }
 
@@ -1170,9 +1327,15 @@ ol {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Center the text */
   top: 55%;
-  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -50%,
+    -50%
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
-  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Standard syntax for modern browsers (widely supported) */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1185,9 +1348,15 @@ ol {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   text-align: center; /* Center the text */
   top: 52.5%;
-  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -50%,
+    -50%
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
-  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Standard syntax for modern browsers (widely supported) */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1224,13 +1393,15 @@ logo-img {
 
 #toc {
   text-align: left; /* Set the alignment of the text */
+  margin-bottom: 100px;
 }
 
 #toc summary {
   margin: 0; /* Remove any default margin */
+  display: list-item;
 }
 
-#toc>ul {
+#toc > ul {
   display: block; /* Make the element a block-level element */
   padding: 15px 15px 5px; /* Set the thickness of the padding area */
   border: 1px solid #0088ff; /* Set the width, the style, and the color of the border */
@@ -1334,12 +1505,40 @@ nav-links a {
   text-decoration: underline;
 }
 
+@media (max-width: 430px) {
+  nav-links {
+    max-width: 50vw;
+  }
+}
+
+nav-links-api-ref {
+  display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
+  margin: 1vh 0; /* Set the thickness of the margin area */
+  font-size: 18px; /* Set the font size of the text */
+}
+
+nav-links-api-ref a {
+  text-decoration: underline;
+}
+
+nav-links-doc-main-page {
+  position: absolute;
+  display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
+  margin: 1vh 0; /* Set the thickness of the margin area */
+  font-size: 18px; /* Set the font size of the text */
+  z-index: 1;
+}
+
+nav-links-doc-main-page a {
+  text-decoration: underline;
+}
+
 #w3c-img {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   right: 10vw; /* Place the element 10% of the viewport width from the right edge of its positioned ancestor */
 }
 
-#w3c-img>img {
+#w3c-img > img {
   width: 77px; /* Set the width to 77 pixels */
   height: auto;
 }
@@ -1351,6 +1550,12 @@ nav-links a {
   font-size: 14px; /* Set the font size of the text */
   color: #318ce7;
   text-decoration: none; /* Remove underline from text links */
+}
+
+@media print {
+  #menu-title {
+    display: none;
+  }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1370,9 +1575,9 @@ nav-links a {
 
 #switchyContainerAbsolute:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #theme {
@@ -1381,9 +1586,9 @@ nav-links a {
   right: 42.5px; /* Place the element 42.5 pixels from the right edge of its positioned ancestor */
   top: 5px;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 sevenpx {
@@ -1399,9 +1604,9 @@ sevenpx {
   position: relative;
   top: 0;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   width: 70px; /* Set the width to 70 pixels */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
@@ -1418,11 +1623,13 @@ sevenpx {
   top: 0;
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
-  transform: scale(0.9); /* Standard syntax for modern browsers (widely supported) */
+  transform: scale(
+    0.9
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   width: 35px; /* Set the width to 35 pixels */
   /* Apply a border radius to make the element circular */
   -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
@@ -1447,9 +1654,9 @@ sevenpx {
   right: 20px; /* Place the element 20 pixels from the right edge of its positioned ancestor */
   top: 80px;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #editor-mode {
@@ -1461,9 +1668,9 @@ sevenpx {
   position: relative;
   top: 100%;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   width: 70px; /* Set the width to 70 pixels */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
@@ -1480,11 +1687,13 @@ sevenpx {
   top: 0;
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
-  transform: scale(0.9); /* Standard syntax for modern browsers (widely supported) */
+  transform: scale(
+    0.9
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   width: 35px; /* Set the width to 35 pixels */
   /* Apply a border radius to make the element circular */
   -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
@@ -1505,9 +1714,9 @@ sevenpx {
 
 #speakContainerRelative:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #speakContainerAbsolute {
@@ -1518,12 +1727,12 @@ sevenpx {
 
 #speakContainerAbsolute:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-editor-button~speak-button #speakBtn {
+editor-button ~ speak-button #speakBtn {
   top: 160px;
 }
 
@@ -1539,9 +1748,9 @@ editor-button~speak-button #speakBtn {
   width: 125px; /* Set the width to 125 pixels */
   top: 80px;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
@@ -1564,9 +1773,9 @@ editor-button~speak-button #speakBtn {
 .speak-inline {
   display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
   position: relative;
-  width: 37px; /* Set the width to 37 pixels */
-  height: 37px; /* Set the height to 37 pixels */
-  top: 10px;
+  width: 20px; /* Set the width to 37 pixels */
+  height: 20px; /* Set the height to 37 pixels */
+  top: 4px;
   left: 10px;
   cursor: pointer;
   z-index: 1; /* Set the stacking order of the element */
@@ -1578,13 +1787,24 @@ editor-button~speak-button #speakBtn {
   top: 0;
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
+  .container {
+    position: relative;
+    word-wrap: break-word;
+  }
   .glossary {
     position: relative;
+    width: 100vw;
+    max-width: 100vw;
     left: -10vw;
+    word-wrap: break-word;
+  }
+  .glossary th:first-of-type {
+    width: 25vw;
   }
   .container > .speak-inline {
-    top: -50px;
+    top: -45px;
+    left: 80vw;
   }
 }
 
@@ -1596,9 +1816,9 @@ editor-button~speak-button #speakBtn {
 
 #screenshotContainerRelative:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #screenshotContainerAbsolute {
@@ -1609,9 +1829,9 @@ editor-button~speak-button #speakBtn {
 
 #screenshotContainerAbsolute:hover {
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #screenshotBtn {
@@ -1626,9 +1846,9 @@ editor-button~speak-button #speakBtn {
   width: 125px; /* Set the width to 125 pixels */
   top: 237px;
   /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
   z-index: 1; /* Set the stacking order of the element */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 35px; /* For older versions of Chrome and Safari */
@@ -1647,9 +1867,15 @@ editor-button~speak-button #speakBtn {
 #ripples {
   position: absolute; /* Position the element absolutely within its positioned ancestor */
   background: #fff; /* Set the background color to white */
-  -webkit-transform: translate(-50%, -50%); /* For older versions of Chrome and Safari */
+  -webkit-transform: translate(
+    -50%,
+    -50%
+  ); /* For older versions of Chrome and Safari */
   -ms-transform: translate(-50%, -50%); /* For Internet Explorer 10 */
-  transform: translate(-50%, -50%); /* Standard syntax for modern browsers (widely supported) */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Standard syntax for modern browsers (widely supported) */
   pointer-events: none; /* Deactivate pointer events */
   animation: animate 0.7s linear infinite;
   /* Apply a border radius to make the element circular */
@@ -1674,7 +1900,8 @@ editor-button~speak-button #speakBtn {
 }
 
 /* automatic/manual light theme */
-:root, :root.light {
+:root,
+:root.light {
   /* tag variables */
   --a-color: #000;
   --a-visited-color: #000;
@@ -1684,16 +1911,20 @@ editor-button~speak-button #speakBtn {
   --codeblock-background-color: #f7f7f7;
   --data-type-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   --details-summary-background-color: #fefefe;
-  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --hr-background: #1a1a1a;
   --html-background-color: #fff; /* Set the background color to white */
   --input-type-checkbox-filter: invert(0) hue-rotate(0) brightness(1);
+  --tbody-tr-nth-child-even-background-color: #f7f7f7;
   --td-border-bottom: 1px solid #ddd;
   --th-border-bottom: 1px solid #ddd;
   --th-border-left: 0.1px solid #fff;
   /* class variables */
-  --class-center-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --class-center-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --class-dropdown-content-background-color: #fff; /* Set the background color to white */
   --class-dropdown-content-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   --class-list-link-color: #000;
@@ -1702,19 +1933,23 @@ editor-button~speak-button #speakBtn {
   /* id variables */
   --id-editor-mode-background: #fff; /* Set the background color to white */
   --id-editor-mode-box-shadow: inset 0 8px 60px #0000001a,
-    inset 0 8px 8px #0000001a,
-    inset 0 -4px 4px #0000001a;
-  --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    inset 0 8px 8px #0000001a, inset 0 -4px 4px #0000001a;
+  --id-editor-mode-indicator-background-image: linear-gradient(
+    to bottom,
+    #eaeaea,
+    #f9f9f9
+  );
   --id-editor-mode-indicator-box-shadow: 0 8px 20px #0000001a,
-    inset 0 4px 4px #fff,
-    inset 0 -4px 4px #fff;
+    inset 0 4px 4px #fff, inset 0 -4px 4px #fff;
   --id-switchy-background: #fff; /* Set the background color to white */
-  --id-switchy-box-shadow: inset 0 8px 60px #0000001a,
-    inset 0 8px 8px #0000001a,
+  --id-switchy-box-shadow: inset 0 8px 60px #0000001a, inset 0 8px 8px #0000001a,
     inset 0 -4px 4px #0000001a;
-  --id-switchy-indicator-background-image: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-  --id-switchy-indicator-box-shadow: 0 8px 20px #0000001a,
-    inset 0 4px 4px #fff,
+  --id-switchy-indicator-background-image: linear-gradient(
+    to bottom,
+    #eaeaea,
+    #f9f9f9
+  );
+  --id-switchy-indicator-box-shadow: 0 8px 20px #0000001a, inset 0 4px 4px #fff,
     inset 0 -4px 4px #fff;
   --id-screenshot-btn-background: #f2f2f2;
   --id-screenshot-btn-active-background: #e2e2e2;
@@ -1742,18 +1977,23 @@ editor-button~speak-button #speakBtn {
     --code-color: #fff; /* Set the text color to white */
     --codeblock-background-color: #2a2a2a;
     --codeblock-box-shadow: 0 4px 8px 0 #ffffff55;
-    --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
+    --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1),
+      0 3px 20px 0 rgba(256, 256, 256, 0.1);
     --details-summary-background-color: #333;
-    --details-summary-hover-box-shadow: 0 2px 4px 0 rgba(256, 256, 256, 0.2), 0 2px 10px 0 rgba(256, 256, 256, 0.19);
+    --details-summary-hover-box-shadow: 0 2px 4px 0 rgba(256, 256, 256, 0.2),
+      0 2px 10px 0 rgba(256, 256, 256, 0.19);
     --hr-background: #555;
     --html-background-color: #222;
     --input-type-checkbox-filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+    --tbody-tr-nth-child-even-background-color: #2a2a2a;
     --td-border-bottom: 1px solid #555;
     --th-border-bottom: 1px solid #555;
     --th-border-left: 0.1px solid #222;
     /* class variables */
-    --class-center-hover-box-shadow: 0 4px 8px 0 #ffffff55, 0 6px 20px 0 rgba(256, 256, 256, 0.19);
-    --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 #ffffff55, 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+    --class-center-hover-box-shadow: 0 4px 8px 0 #ffffff55,
+      0 6px 20px 0 rgba(256, 256, 256, 0.19);
+    --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 #ffffff55,
+      0 6px 20px 0 rgba(256, 256, 256, 0.19);
     --class-dropdown-content-background-color: #222;
     --class-dropdown-content-box-shadow: 0px 8px 16px 0px #ffffff55;
     --class-list-link-color: #fff; /* Set the text color to white */
@@ -1762,20 +2002,24 @@ editor-button~speak-button #speakBtn {
     /* id variables */
     --id-editor-mode-background: #222;
     --id-editor-mode-box-shadow: inset 0 8px 60px #0000001a,
-      inset 0 8px 8px #0000001a,
-      inset 0 -4px 4px #0000001a;
-    --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #444, #222);
+      inset 0 8px 8px #0000001a, inset 0 -4px 4px #0000001a;
+    --id-editor-mode-indicator-background-image: linear-gradient(
+      to bottom,
+      #444,
+      #222
+    );
     --id-editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-      inset 0 4px 4px #ffffff55,
-      inset 0 -4px 4px #ffffff55;
+      inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
     --id-switchy-background: #222;
     --id-switchy-box-shadow: inset 0 8px 60px #0000001a,
-      inset 0 8px 8px #0000001a,
-      inset 0 -4px 4px #0000001a;
-    --id-switchy-indicator-background-image: linear-gradient(to bottom, #444, #222);
+      inset 0 8px 8px #0000001a, inset 0 -4px 4px #0000001a;
+    --id-switchy-indicator-background-image: linear-gradient(
+      to bottom,
+      #444,
+      #222
+    );
     --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-      inset 0 4px 4px #ffffff55,
-      inset 0 -4px 4px #ffffff55;
+      inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
     --id-screenshot-btn-background: #777;
     --id-screenshot-btn-active-background: #555;
     --id-screenshot-btn-color: #f2f2f2;
@@ -1802,18 +2046,23 @@ editor-button~speak-button #speakBtn {
   --code-color: #fff; /* Set the text color to white */
   --codeblock-background-color: #2a2a2a;
   --codeblock-box-shadow: 0 4px 8px 0 #ffffff55;
-  --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1), 0 3px 20px 0 rgba(256, 256, 256, 0.1);
+  --data-type-box-shadow: 0 0.5px 8px 0 rgba(256, 256, 256, 0.1),
+    0 3px 20px 0 rgba(256, 256, 256, 0.1);
   --details-summary-background-color: #333;
-  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --details-summary-hover-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --hr-background: #555;
   --html-background-color: #222;
   --input-type-checkbox-filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+  --tbody-tr-nth-child-even-background-color: #2a2a2a;
   --td-border-bottom: 1px solid #555;
   --th-border-bottom: 1px solid #555;
   --th-border-left: 0.1px solid #222;
   /* class variables */
-  --class-center-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
-  --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2), 0 6px 20px 0 rgba(256, 256, 256, 0.19);
+  --class-center-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2),
+    0 6px 20px 0 rgba(256, 256, 256, 0.19);
+  --class-doc-list-item-hover-box-shadow: 0 4px 8px 0 rgba(256, 256, 256, 0.2),
+    0 6px 20px 0 rgba(256, 256, 256, 0.19);
   --class-dropdown-content-background-color: #222;
   --class-dropdown-content-box-shadow: 0px 8px 16px 0px #ffffff55;
   --class-list-link-color: #fff; /* Set the text color to white */
@@ -1822,20 +2071,24 @@ editor-button~speak-button #speakBtn {
   /* id variables */
   --id-editor-mode-background: #222;
   --id-editor-mode-box-shadow: inset 0 8px 60px #0000001a,
-    inset 0 8px 8px #0000001a,
-    inset 0 -4px 4px #0000001a;
-  --id-editor-mode-indicator-background-image: linear-gradient(to bottom, #444, #222);
+    inset 0 8px 8px #0000001a, inset 0 -4px 4px #0000001a;
+  --id-editor-mode-indicator-background-image: linear-gradient(
+    to bottom,
+    #444,
+    #222
+  );
   --id-editor-mode-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-    inset 0 4px 4px #ffffff55,
-    inset 0 -4px 4px #ffffff55;
+    inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
   --id-switchy-background: #222;
-  --id-switchy-box-shadow: inset 0 8px 60px #0000001a,
-    inset 0 8px 8px #0000001a,
+  --id-switchy-box-shadow: inset 0 8px 60px #0000001a, inset 0 8px 8px #0000001a,
     inset 0 -4px 4px #0000001a;
-  --id-switchy-indicator-background-image: linear-gradient(to bottom, #444, #222);
+  --id-switchy-indicator-background-image: linear-gradient(
+    to bottom,
+    #444,
+    #222
+  );
   --id-switchy-indicator-box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-    inset 0 4px 4px #ffffff55,
-    inset 0 -4px 4px #ffffff55;
+    inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
   --id-screenshot-btn-background: #777;
   --id-screenshot-btn-active-background: #555;
   --id-screenshot-btn-color: #f2f2f2;
@@ -1888,11 +2141,11 @@ dataType {
   box-shadow: var(--data-type-box-shadow);
 }
 
-details>summary {
+details > summary {
   background-color: var(--details-summary-background-color);
 }
 
-details>summary:hover {
+details > summary:hover {
   -webkit-box-shadow: var(--details-summary-hover-box-shadow);
   box-shadow: var(--details-summary-hover-box-shadow);
 }
@@ -1907,6 +2160,10 @@ html {
 
 input[type="checkbox"] {
   filter: var(--input-type-checkbox-filter);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--tbody-tr-nth-child-even-background-color);
 }
 
 td {
@@ -1931,7 +2188,7 @@ th {
 }
 
 .cell-center-monospace {
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 17px; /* Set the font size of the text */
   text-align: center; /* Center the text */
   vertical-align: middle;
@@ -1943,7 +2200,7 @@ th {
 }
 
 .cell-left-monospace {
-  font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
+  font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 17px; /* Set the font size of the text */
   text-align: left; /* Set the alignment of the text */
   vertical-align: middle;

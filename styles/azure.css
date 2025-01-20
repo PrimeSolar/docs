@@ -112,7 +112,7 @@ code {
   font-size: 100%; /* Set the font size of the text */
   line-height: 150%;
   padding: 3.5px 3.5px; /* Set the thickness of the padding area */
-  color: #318ce7;
+  color: #318ce7; /* Set the color of a code to a shade of blue */
   /* Apply a border radius to round the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -121,7 +121,7 @@ code {
 }
 
 codeblock {
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   display: block; /* Make the element a block-level element */
   margin: 1em 0; /* Set the thickness of the margin area */
   border: none; /* Remove any default border */
@@ -148,7 +148,7 @@ codeblock > button {
   margin: 0; /* Remove any default margin */
   top: 0;
   right: 0;
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   padding: 5px 20px; /* Set the thickness of the padding area */
   outline: none;
   /* Set an effect of a transition */
@@ -180,7 +180,7 @@ comment-tag {
   height: 20px; /* Set the height to 20 pixels */
   margin: 0; /* Remove any default margin */
   padding: 0 4px 2px; /* Set the thickness of the padding area */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: -8vw; /* Place the element 8% of the viewport width from the left edge of its positioned ancestor */
   text-shadow: 2px 2px 5px #0099ff; /* Apply a blue shadow to the text */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
@@ -247,7 +247,7 @@ dd p {
 }
 
 details {
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   text-align: center; /* Center a text in details */
 }
 
@@ -353,7 +353,7 @@ footer {
   left: 0;
   margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   text-align: center; /* Center the text */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
@@ -411,7 +411,7 @@ footerLowerMC a:visited {
 
 @media (max-width: 1250px) {
   footerLowerMC {
-    position: absolute; /* Position the element absolutely within its positioned ancestor */
+    position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
     bottom: auto;
   }
 }
@@ -443,7 +443,7 @@ footerLowerMC {
   left: 0;
   margin: 0; /* Remove any default margin */
   padding: 1em 0; /* Set the thickness of the padding area */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   text-align: center; /* Center the text */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
@@ -552,7 +552,7 @@ optionalityDegreeO {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   text-shadow: 2px 2px 5px #3bacb6;
   -webkit-transform: translate(
     -150px,
@@ -591,7 +591,7 @@ optionalityDegreeR {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   -webkit-transform: translate(
     -150px,
     0
@@ -629,7 +629,7 @@ optionalityDegreeU {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   margin: 0; /* Remove any default margin */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   -webkit-transform: translate(
     -150px,
     0
@@ -765,7 +765,7 @@ table {
   display: table;
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels */
   overflow-x: scroll;
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   table-layout: fixed;
 }
 
@@ -838,7 +838,7 @@ ol {
 
 .doc-list {
   margin-bottom: 50px; /* Set the bottom margin to 50 pixels */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   text-align: center; /* Center the text */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
@@ -919,21 +919,21 @@ ol {
 }
 
 #cards {
-  text-align: center; /* Center the text */
-  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 1.7vh; /* Set the font size of the text */
-  height: 80vh; /* Set the height to 80% of the viewport height */
-  width: 100%; /* Set the width of the element to 100% of its parent container */
-  /* Use flexbox to center content inside the element */
+  text-align: center; /* Center the text of the cards container */
+  font-family: "Sono", sans-serif; /* Set the font family of the cards container to "Sono" and sans-serif */
+  font-size: 1.7vh; /* Set the font size of the text of the cards container */
+  height: 80vh; /* Set the height of the cards container to 80% of the viewport height */
+  width: 100%; /* Set the width of the cards container of the element to 100% of its parent container */
+  /* Use flexbox to center content inside the cards container */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
-  gap: 2.5vw; /* Set the gap between items to 2.5% of the viewport width */
-  /* Center items horizontally*/
+  gap: 2.5vw; /* Set the gap between cards to 2.5% of the viewport width */
+  /* Center cards horizontally*/
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */
-  /* Center items vertically */
+  /* Center cards vertically */
   -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   align-items: center; /* Standard syntax for modern browsers (widely supported) */
@@ -944,9 +944,9 @@ ol {
 }
 
 .card {
-  position: relative;
-  width: calc(100% - 2px); /* Set width to 100% minus 2 pixels */
-  min-width: 20vw;
+  position: relative; /* Position the element relative to its normal position */
+  width: calc(100% - 2px); /* Set width of a card to 100% of its parent container minus 2 pixels */
+  min-width: 20vw; /* Ensures a card is at least 20% of the viewport width */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
@@ -1044,7 +1044,7 @@ ol {
   height: 100%; /* Set the height of the element to 100% of its parent container */
   left: 0;
   opacity: 0; /* Set the initial opacity to 0 (invisible) */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 0;
   transition: opacity 500ms;
   width: 100%; /* Set the width of the element to 100% of its parent container */
@@ -1300,11 +1300,11 @@ ol {
 
 #container {
   height: 100%; /* Set the height of the element to 100% of its parent container */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
 }
 
 #container-button {
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   overflow: hidden;
 }
 
@@ -1319,14 +1319,14 @@ ol {
 }
 
 #header {
-  color: #007fff;
+  color: #007fff; /* Set the color of the element to a shade of blue */
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
-  left: 50%;
+  left: 50%; /* Position the element 50% from the left edge of its positioned ancestor */
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   text-align: center; /* Center the text */
-  top: 55%;
+  top: 55%; /* Position the element 55% from the top edge of its positioned ancestor */
   -webkit-transform: translate(
     -50%,
     -50%
@@ -1342,12 +1342,12 @@ ol {
 #header-index {
   color: #007fff;
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family to "Segoe UI", "Arial", and sans-serif */
-  left: 50%;
+  left: 50%; /* Position the element 50% from the left edge of its positioned ancestor */
   margin: 0; /* Remove any default margin */
   max-width: 100%; /* Set the maximum width of the element to 100% of its parent container */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   text-align: center; /* Center the text */
-  top: 52.5%;
+  top: 52.5%; /* Position the element 52.5% from the top edge of its positioned ancestor */
   -webkit-transform: translate(
     -50%,
     -50%
@@ -1409,14 +1409,14 @@ logo-img {
 }
 
 menu-container {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  top: 5px; /* Place the element 5 pixels from the top edge of its positioned ancestor */
-  right: 5px; /* Place the element 5 pixels from the right edge of its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  top: 5px; /* Position the element 5 pixels from the top edge of its positioned ancestor */
+  right: 5px; /* Position the element 5 pixels from the right edge of its positioned ancestor */
 }
 
 #menu-container {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  right: 5px; /* Place the element 5 pixels from the right edge of its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  right: 5px; /* Position the element 5 pixels from the right edge of its positioned ancestor */
   width: calc(35px + 1vw);
   height: 57px; /* Set the height to 57 pixels */
   /* Use flexbox to center content inside the element */
@@ -1470,18 +1470,18 @@ menu-container {
 }
 
 .dropdown {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   display: block; /* Make the element a block-level element */
-  right: 0;
+  right: 0; /* Align the right edge of the element with the right edge of its nearest positioned ancestor */
   z-index: 2; /* Set the stacking order of the element */
 }
 
 .dropdown-content {
   display: none; /* Hide the element */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  top: 57px; /* Place the element 57 pixels from the top edge of its positioned ancestor */
-  min-width: 142px;
-  min-height: 307px;
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  top: 57px; /* Position the element 57 pixels from the top edge of its nearest positioned ancestor */
+  min-width: 142px; /* Ensure the width of the element is at least 142 pixels */
+  min-height: 307px; /* Ensure the height of the element is at least 307 pixels */
   z-index: 1; /* Set the stacking order of the element */
   border: 1px solid #318ce7; /* Set the width, the style, and the color of the border */
   /* Apply a border radius to round the corners of the element */
@@ -1507,7 +1507,7 @@ nav-links a {
 
 @media (max-width: 430px) {
   nav-links {
-    max-width: 50vw;
+    max-width: 50vw; /* Set the maximum width of the element to 50% of the viewport width */
   }
 }
 
@@ -1522,11 +1522,11 @@ nav-links-api-ref a {
 }
 
 nav-links-doc-main-page {
-  position: absolute;
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
   margin: 1vh 0; /* Set the thickness of the margin area */
   font-size: 18px; /* Set the font size of the text */
-  z-index: 1;
+  z-index: 1; /* Set the stacking order of the element */
 }
 
 nav-links-doc-main-page a {
@@ -1534,17 +1534,17 @@ nav-links-doc-main-page a {
 }
 
 #w3c-img {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  right: 10vw; /* Place the element 10% of the viewport width from the right edge of its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  right: 10vw; /* Position the element 10% of the viewport width from the right edge of its nearest positioned ancestor */
 }
 
 #w3c-img > img {
-  width: 77px; /* Set the width to 77 pixels */
+  width: 77px; /* Set the width of the element to 77 pixels */
   height: auto;
 }
 
 #w3c-text {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
   right: calc(10vw + 77px);
   font-size: 14px; /* Set the font size of the text */
@@ -1563,14 +1563,14 @@ nav-links-doc-main-page a {
 /* Dark theme and buttons */
 #switchyContainerRelative {
   display: block; /* Make the element a block-level element */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
 #switchyContainerAbsolute {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 30px;
-  right: 35px;
+  right: 0;
 }
 
 #switchyContainerAbsolute:hover {
@@ -1582,8 +1582,8 @@ nav-links-doc-main-page a {
 
 #theme {
   display: block; /* Make the element a block-level element */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
-  right: 42.5px; /* Place the element 42.5 pixels from the right edge of its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  right: 7px; /* Place the element 42.5 pixels from the right edge of its positioned ancestor */
   top: 5px;
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
@@ -1601,7 +1601,7 @@ sevenpx {
   display: block; /* Make the element a block-level element */
   height: 35px; /* Set the height to 35 pixels */
   left: 0;
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   top: 0;
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
@@ -1619,7 +1619,7 @@ sevenpx {
 #switchy .indicator {
   height: 35px; /* Set the height to 35 pixels */
   left: 0;
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 0;
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
@@ -1643,14 +1643,14 @@ sevenpx {
 }
 
 #editorModeContainerAbsolute {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: 70px; /* Place the element 70 pixels from the right edge of its positioned ancestor */
   top: 105px;
 }
 
 #edit-doc {
   display: block; /* Make the element a block-level element */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: 20px; /* Place the element 20 pixels from the right edge of its positioned ancestor */
   top: 80px;
   /* Add a transition effect for changes in properties */
@@ -1665,7 +1665,7 @@ sevenpx {
   display: block; /* Make the element a block-level element */
   height: 35px; /* Set the height to 35 pixels */
   left: 35px;
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   top: 100%;
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
@@ -1683,7 +1683,7 @@ sevenpx {
 #editor-mode .indicator {
   height: 35px; /* Set the height to 35 pixels */
   left: 0;
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 0;
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
@@ -1708,7 +1708,7 @@ sevenpx {
 
 #speakContainerRelative {
   display: block; /* Make the element a block-level element */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1720,7 +1720,7 @@ sevenpx {
 }
 
 #speakContainerAbsolute {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: 50px; /* Place the element 50 pixels from the right edge of its positioned ancestor */
   top: 0;
 }
@@ -1743,7 +1743,7 @@ editor-button ~ speak-button #speakBtn {
   font-size: 14px; /* Set the font size of the text */
   font-weight: 525; /* Set the font weight of the text */
   height: 57px; /* Set the height to 57 pixels */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: -45px;
   width: 125px; /* Set the width to 125 pixels */
   top: 80px;
@@ -1767,12 +1767,12 @@ editor-button ~ speak-button #speakBtn {
 }
 
 .container.speak {
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
 }
 
 .speak-inline {
   display: inline-block; /* Set the display property to inline-block, allowing the element to sit alongside other inline elements */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   width: 20px; /* Set the width to 37 pixels */
   height: 20px; /* Set the height to 37 pixels */
   top: 4px;
@@ -1789,11 +1789,11 @@ editor-button ~ speak-button #speakBtn {
 
 @media (max-width: 430px) {
   .container {
-    position: relative;
+    position: relative; /* Position the element relative to its normal position */
     word-wrap: break-word;
   }
   .glossary {
-    position: relative;
+    position: relative; /* Position the element relative to its normal position */
     width: 100vw;
     max-width: 100vw;
     left: -10vw;
@@ -1810,7 +1810,7 @@ editor-button ~ speak-button #speakBtn {
 
 #screenshotContainerRelative {
   display: block; /* Make the element a block-level element */
-  position: relative;
+  position: relative; /* Position the element relative to its normal position */
   width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
@@ -1822,7 +1822,7 @@ editor-button ~ speak-button #speakBtn {
 }
 
 #screenshotContainerAbsolute {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: 50px; /* Place the element 50 pixels from the right edge of its positioned ancestor */
   top: 0;
 }
@@ -1841,7 +1841,7 @@ editor-button ~ speak-button #speakBtn {
   font-size: 14px; /* Set the font size of the text */
   font-weight: 525; /* Set the font weight of the text */
   height: 57px; /* Set the height to 57 pixels */
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   right: -45px; /* Place the element 45 pixels from the left edge of its positioned ancestor */
   width: 125px; /* Set the width to 125 pixels */
   top: 237px;
@@ -1865,7 +1865,7 @@ editor-button ~ speak-button #speakBtn {
 }
 
 #ripples {
-  position: absolute; /* Position the element absolutely within its positioned ancestor */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   background: #fff; /* Set the background color to white */
   -webkit-transform: translate(
     -50%,

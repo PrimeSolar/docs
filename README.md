@@ -1,4 +1,5 @@
-# Documents
+# Documentation
+
 <p align="center">
 <img alt="Latest release: 1.0" src="pics/latest-release.svg" style="padding: 0; margin: 0;"/>
 <img alt="Solution: ES12" src="pics/solution-es12.svg" style="padding: 0; margin: 0;"/>
@@ -7,26 +8,31 @@
 <img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
 </p>
 
-&nbsp;&nbsp;This open-source repository contains the documentation sample code files that I have developed from scratch 📚
+&nbsp;&nbsp;This open-source repository contains code examples related to software documentation that I have developed from scratch 📚
 
-⭐ Star me on GitHub — it motivates me a lot!
+⭐ Please consider starring it on GitHub &mdash; your support motivates me to continue improving and expanding this work!
 
 ## Table of Contents
 
-* [Real&Mate](#real&mate)
-   * [Features](#features)
-   * [How It Works](#how-it-works)
-   * [External Services](#external-services)
-   * [Road Map](#road-map)
-* [License](#license)
-* [Contributing](#contributing)
-* [Support](#support)
-   * [Ask a question about docs](#ask-a-question-about-docs)
-   * [Create a Bug Report](#create-a-bug-report)
-   * [Submit a Feature Request](#submit-a-feature-request)
-   * [Contact Me](#contact-me)
+- [Documentation](#documentation)
+  - [Table of Contents](#table-of-contents)
+  - [Real\&Mate](#realmate)
+    - [Features](#features)
+    - [How It Works](#how-it-works)
+    - [External Services](#external-services)
+    - [Road Map](#road-map)
+      - [Common](#common)
+      - [Glossary](#glossary)
+      - [Security Guide](#security-guide)
+    - [Code Attribution](#code-attribution)
+  - [Contributing](#contributing)
+  - [Support](#support)
+    - [Ask a question about Real\&Mate Documentation](#ask-a-question-about-realmate-documentation)
+    - [Create a Bug Report](#create-a-bug-report)
+    - [Submit a Feature Request](#submit-a-feature-request)
+    - [Contact Me](#contact-me)
 
-<a name="real&mate"/>
+<a name="realandmate"></a>
 
 ## Real&Mate
 
@@ -36,9 +42,9 @@
 
 <!--&nbsp;&nbsp;Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
 
-&nbsp;&nbsp;**To view the documentation, please visit <a href="https://firstsolar.github.io/docs/" target="_blank">Real&Mate Docs</a> website.**
+&nbsp;&nbsp;**To view the documentation, please visit <a href="https://primesolar.github.io/docs/" target="_blank">Real&Mate Documentation</a> website.**
 
-<a name="features"/>
+<a name="features"></a>
 
 ### Features
 
@@ -47,7 +53,7 @@
 * Several contracts support for one client.
 * Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 
-<a name="how-it-works"/>
+<a name="how-it-works"></a>
 
 ### How It Works
 &nbsp;&nbsp;Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
@@ -78,7 +84,7 @@
 
 > All brands and related information mentioned in the repository are fictitious for the purpose of demonstrating what types of documents I can develop. Any resemblance to real companies is purely coincidental.
 
-<a name="external-services"/>
+<a name="external-services"></a>
 
 ### External Services
 
@@ -90,115 +96,75 @@
 |        GSRE         | Text editor  |   real&mate.gsre   |
 |       Notiuv        | File manager | Natively supported |
 
-<a name="road-map"/>
+<a name="road-map"></a>
 
 ### Road Map
 #### Common
-* [x] Create main page (index.html)
+* [x] Create a main page (index.html)
 * [x] Create scripts with reusable content
-* [x] Create style file
-* [x] Create theme switch
-* [x] Add footer
+* [x] Create a style file
+* [x] Create a theme switch
+* [x] Add a footer
 * [ ] Add common info about technical support
 * [ ] Add requirements for contacting technical support
 * [ ] Add contacts
 * [x] Add more reusable content to elements.js
-* [x] Improve style
+* [x] Improve the style
 #### Glossary
-* [x] Create glossary.html
-* [x] Add title part
-* [ ] Add annotation
-* [ ] Add terms
+* [x] Create a glossary.html
+* [x] Add a title part
+* [x] Add an annotation
+* [x] Add terms
 #### Security Guide
-* [ ] Create secg.md
-* [ ] Create secg.html
-* [ ] Add annotation
-* [ ] Add glossary
+* [ ] Create a security-guide.html
+* [ ] Add an annotation
+* [ ] Add a glossary
 * [ ] Add basic security concepts
 * [ ] Add user roles
 * [ ] Add operations available according to roles
 * [ ] Add event logging info
-* [ ] Add algorithm for getting records from the log
+* [ ] Add an algorithm for getting records from the log
 * [ ] Add operations in the log info
-#### Intergration Unit Admin Guide
-* [ ] Create intmodag.md
-* [ ] Create intmodag.html
-* [ ] Add annotation
-* [ ] Add glossary
-* [ ] Add how it works
-* [ ] Add functionality
-* [ ] Add external services
-* [ ] Add command syntax overview
-* [ ] Add unit installation preconditions
-* [ ] Add unit installation
-* [ ] Add integration installation
-* [ ] Add troubleshooting
-* [ ] Add technical support info
-### Selection Unit Manager Guide
-* [ ] Create selmodmg.md
-* [ ] Create selmodmg.html
-* [ ] Add annotation
-* [ ] Add glossary
-* [ ] Add how it works
-* [ ] Add Real&Mate concept
-* [ ] Add functionality
-* [ ] Add external services
-* [ ] Add authorization
-* [ ] Add unit structure
-* [ ] Add method creation
-* [ ] Add method version info receiving
-* [ ] Add version creation
-* [ ] Add version points editing
-* [ ] Add point addition
-* [ ] Add point editing
-* [ ] Add point creation
-* [ ] Add rule display
-* [ ] Add rule creation
-* [ ] Add rule editing
-* [ ] Add rule removal
-* [ ] Add rule sorting
-* [ ] Add point compilation
-* [ ] Add node removal
-* [ ] Add node priority
-* [ ] Add disabled nodes
-* [ ] Add version copying
-* [ ] Add version status
-* [ ] Add version removal
-* [ ] Add version filtration
-* [ ] Add version sorting
-* [ ] Add method test creation
-* [ ] Add test detail editing
-* [ ] Add test parameter creation
-* [ ] Add test parameter editing
-* [ ] Add test parameter removal
-* [ ] Add test parameter sorting
-* [ ] Add A/B and Shadow test status editing
-* [ ] Add Retro test editing
-* [ ] Add test report receiving
-* [ ] Add test filtration
-* [ ] Add test sorting
-* [ ] Add technical support info
 
-<a name="license"/>
+<a name="code-attribution"></a>
 
-## License
-[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)<a name="contributing"/>
+### Code Attribution
+
+&nbsp;&nbsp;This project utilizes powerful libraries and stylesheets to enhance functionality and ensure consistent styling across different browsers:
+
+* **Dexie.js**
+   - **Author**: David Fahlander
+   - **License**: Apache License, Version 2.0
+   - **Link**: [Dexie.js Repository](https://github.com/dexie/Dexie.js)
+   - **License Text**: [Apache License, Version 2.0](https://github.com/dexie/Dexie.js/blob/master/LICENSE)
+
+* **html2canvas**
+   - **Author**: Niklas von Hertzen
+   - **License**: MIT License
+   - **Link**: [html2canvas Repository](https://github.com/niklasvh/html2canvas)
+   - **License Text**: [MIT License](https://github.com/niklasvh/html2canvas/blob/master/LICENSE)
+
+* **Normalize.css**
+   - **Author**: Nicolas Gallagher and Jonathan Neal
+   - **License**: MIT License
+   - **Link**: [Normalize.css Repository](https://github.com/necolas/normalize.css)
+   - **License Text**: [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 
 ## Contributing
 
-&nbsp;&nbsp;Documents is an open-source project. I am committed to a fully transparent development process of the project and appreciate highly any contributions. Whether you are helping me fix bugs, proposing new features or spreading the word &mdash; I would love to have you as part of the Documents community.
+&nbsp;&nbsp;Real&Mate Documentation is an open-source project. I am committed to a fully transparent development process of the project and appreciate highly any contributions. Whether you are helping me fix bugs, proposing new features or spreading the word &mdash; I would love to have you as part of the Real&Mate Documentation community.
 
-&nbsp;&nbsp;Please refer to our [Contribution Guidelines](https://github.com/FirstSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md) if you're interested in helping.
+&nbsp;&nbsp;Please refer to our [Contribution Guidelines](https://github.com/PrimeSolar/docs/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/PrimeSolar/docs/blob/main/CODE_OF_CONDUCT.md) if you're interested in helping.
 
 &nbsp;&nbsp;This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
 ## Support
 
-<a name="ask-a-question-about-docs"/>
+<a name="ask-a-question-about-docs"></a>
 
-### Ask a question about docs
+### Ask a question about Real&Mate Documentation
 
-<a name="create-a-bug-report"/>
+<a name="create-a-bug-report"></a>
 
 &nbsp;&nbsp;You can ask questions and participate in discussions about document-related topics:
 
@@ -214,17 +180,17 @@
 
 ### Create a Bug Report
 
-&nbsp;&nbsp;If you run into an issue, please [create bug report](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all Documents users.
+&nbsp;&nbsp;If you run into an issue, please [create bug report](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all Documents users.
 
-<a name="submit-a-feature-request"/>
+<a name="submit-a-feature-request"></a>
 
 ### Submit a Feature Request
 
-&nbsp;&nbsp;If you have an idea, or you're missing an information that would make documents easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
+&nbsp;&nbsp;If you have an idea, or you're missing an information that would make documents easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
 
-&nbsp;&nbsp;If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly :)
+&nbsp;&nbsp;If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly 🙌
 
-<a name="contact-me"/>
+<a name="contact-me"></a>
 
 ### Contact Me
 

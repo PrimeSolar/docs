@@ -151,14 +151,19 @@ New entries are only considered created once some of their content has been writ
           <h3 class="speak">Links</h3>
           <!-- prettier-ignore -->
           <p>Links can redirect users to other parts/sections of the Real&Mate Documentation (internal links) and to any other resource outside the Real&Mate Documentation (external links).</p>
-          <!-- prettier-ignore -->
+
           <best-practices>
-      <ul>
-        <li>If the name of the doc/section to link is already in the sentence, directly put the link on that doc/section name. Otherwise, add the name of the related doc and the link in the following format: <code>(see &lt;a href="link">document
+            <ul>
+              <!-- prettier-ignore -->
+              <li>If the name of the doc/section to link is already in the sentence, directly put the link on that doc/section name. Otherwise, add the name of the related doc and the link in the following format: <code>(see &lt;a href="link">document
             name&lt;/a>)</code>.</li>
-        <li>External links should contain the <code>target="_blank"</code> attribute value.</li>
-      </ul>
-    </best-practices>
+              <li>
+                External links should contain the
+                <code>target="_blank"</code> attribute value.
+              </li>
+            </ul>
+            <!-- prettier-ignore -->
+          </best-practices>
 
           <h4>Internal Link</h4>
           <!-- prettier-ignore -->
@@ -167,10 +172,9 @@ New entries are only considered created once some of their content has been writ
     </codeblock>
 
           <h4>External Link</h4>
-
+          <!-- prettier-ignore -->
           <codeblock>
-            &lt;a href="https://restfulapi.net/"
-            target="_blank">Representational State Transfer&lt;/a>
+&lt;a href="https://restfulapi.net/" target="_blank">Representational State Transfer&lt;/a>
           </codeblock>
         </section>
 
@@ -195,10 +199,10 @@ New entries are only considered created once some of their content has been writ
           <!-- prettier-ignore -->
           <codeblock>
 The name of the subscription plan:&lt;ul>
-&lt;li>&lt;code>Starter&lt;/code>.&lt;/li>
-&lt;li>&lt;code>Standard&lt;/code>.&lt;/li>
-&lt;li>&lt;code>Premium&lt;/code>.&lt;/li>
-&lt;li>&lt;code>Enterprise&lt;/code>.&lt;/li>
+  &lt;li>&lt;code>Starter&lt;/code>.&lt;/li>
+  &lt;li>&lt;code>Standard&lt;/code>.&lt;/li>
+  &lt;li>&lt;code>Premium&lt;/code>.&lt;/li>
+  &lt;li>&lt;code>Enterprise&lt;/code>.&lt;/li>
 &lt;/ul>
     </codeblock>
 
@@ -206,10 +210,10 @@ The name of the subscription plan:&lt;ul>
           <!-- prettier-ignore -->
           <codeblock>
 To start receiving webhook events in your app, create and register a webhook endpoint:&lt;ol>
-&lt;li>Create a webhook endpoint handler to receive event data POST requests.&lt;/li>
-&lt;li>Test your webhook endpoint handler.&lt;/li>
-&lt;li>Register your endpoint within Real&Mate.&lt;/li>
-&lt;li>Secure your webhook endpoint.&lt;/li>
+  &lt;li>Create a webhook endpoint handler to receive event data POST requests.&lt;/li>
+  &lt;li>Test your webhook endpoint handler.&lt;/li>
+  &lt;li>Register your endpoint within Real&Mate.&lt;/li>
+  &lt;li>Secure your webhook endpoint.&lt;/li>
 &lt;/ol>
     </codeblock>
         </section>
@@ -220,8 +224,9 @@ To start receiving webhook events in your app, create and register a webhook end
           <!-- prettier-ignore -->
           <p>Code examples are displayed in a console-like style, that also contains a "Copy" button for easier use.</p>
 
+          <!-- prettier-ignore -->
           <codeblock>
-            &lt;codeblock> Necessary code goes here. &lt;/codeblock>
+&lt;codeblock>Necessary code goes here.&lt;/codeblock>
           </codeblock>
         </section>
 
@@ -359,10 +364,9 @@ To start receiving webhook events in your app, create and register a webhook end
             src="pics/screenshots/style-guide.jpg"
             class="screenshot"
           />
-
+          <!-- prettier-ignore -->
           <codeblock>
-            &lt;img alt="Style Guide" title="Style Guide"
-            src="pics/screenshots/style-guide.jpg" class="screenshot" />
+&lt;img alt="Style Guide" title="Style Guide" src="pics/screenshots/style-guide.jpg" class="screenshot" />
           </codeblock>
         </section>
 

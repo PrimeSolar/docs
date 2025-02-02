@@ -1,44 +1,536 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/azure.css"
+      title="Main Stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Style Guide</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="styles/azure.css" />
-</head>
-
-<body id="body">
-
-  <div id="container">
-    <theme-button />
-    <editor-button />
-    <div id="header">
-      <h1>
-        <span class="title">Style Guide</span>
-      </h1>
-      <img id="logo" alt="Real&Mate Logotype" src="pics/logo-transparent.jpg" class="center no-shadow" />
+  <body id="body">
+    <div id="container">
+      <nav>
+        <nav-links-doc-main-page></nav-links-doc-main-page>
+      </nav>
+      <theme-button></theme-button>
+      <editor-button></editor-button>
+      <speak-button></speak-button>
+      <div id="header">
+        <h1>
+          <span class="title">Style Guide</span>
+        </h1>
+        <logo-img></logo-img>
+      </div>
     </div>
-  </div>
 
-  <div class="w3c">
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-text">
-      Verified by World Wide Web Consortium:
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffirstsolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en" target="_blank" id="w3c-img">
-      <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt=" W3C" />
-    </a>
-  </div>
+    <main>
+      <!-- prettier-ignore -->
+      <p class=" text-center speak">The Real&Mate formatting options are a mix of HTML and custom reusable web elements. Below are listed all these content formatting options as well as guidelines and best practices to follow when writing for Real&Mate's Documentation.</p>
 
-  <div id="footerContainer"></div>
+      <details id="toc">
+        <summary>Table of Contents</summary>
+        <ul class="ul-left">
+          <li>
+            <a href="#content-formatting"> Content Formatting </a>
+            <ul>
+              <li><a href="#titles"> Titles </a></li>
+              <li><a href="#text-highlights"> Text highlights </a></li>
+              <li><a href="#notes"> Notes </a></li>
+              <li><a href="#links"> Links </a></li>
+              <li><a href="#lists"> Lists </a></li>
+              <li><a href="#code-examples"> Code Examples </a></li>
+              <li><a href="#details"> Details </a></li>
+              <li><a href="#tables"> Tables </a></li>
+              <!--
+            <li><a href="#requests-&-responses">
+                Requests & Responses
+              </a></li>-->
+            </ul>
+          </li>
+          <li>
+            <a href="#illustrations"> Illustrations </a>
+            <ul>
+              <li><a href="#screenshots"> Screenshots </a></li>
+              <li><a href="#buttons"> Buttons </a></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
 
-  <script src="scripts/check-browser.js"></script>
-  <script src="scripts/elements-title.js"></script>
-  <script src="scripts/dark-theme.js"></script>
-  <script src="scripts/editor-mode.js"></script>
-  <script src="scripts/elements.js"></script>
+      <section>
+        <a name="content-formatting"></a>
+        <h2 class="speak">Content Formatting</h2>
 
-</body>
+        <section>
+          <a name="titles"></a>
+          <h3 class="speak">Titles</h3>
+          <!-- prettier-ignore -->
+          <p>Titles are the base of a documentation structure, as they shape the content by separating it into coherent sections.</p>
+          <!-- prettier-ignore -->
+          <p>There is only one H1 title, at the beginning of the documentation file. Other titles can be used several times throughout the file and must keep a logical order.</p>
 
+          <best-practices>
+            <ul>
+              <!-- prettier-ignore -->
+              <li>Titles must be short, and at the same time give a clear idea of what topic will be tackled in the related documentation section.
+        </li>
+              <!-- prettier-ignore -->
+              <li>Titles shouldn't be a question.
+        </li>
+              <!-- prettier-ignore -->
+              <li>Titles should all have a similar format, especially titles of the same level.
+        </li>
+              <!-- prettier-ignore -->
+              <li>Titles can emphasise the action that is tackled in the following documentation by starting with an action verb (e.g. "Writing content", "Creating content-types").
+        </li>
+            </ul>
+          </best-practices>
+
+          <codeblock>
+            &lt;h1>H1 title&lt;/h1> &lt;h2>H2 title&lt;/h2> &lt;h3>H3
+            title&lt;/h3> &lt;h4>H4 title&lt;/h4> &lt;h5>H5 title&lt;/h5>
+          </codeblock>
+        </section>
+
+        <section>
+          <a name="text-highlights"></a>
+          <h3 class="speak">Text Highlights</h3>
+          <!-- prettier-ignore -->
+          <p>Text highlights are basic formatting that represent and/or highlight items from user interfaces:</p>
+
+          <ul>
+            <li><i>italics</i>: for GUI section, window and field names.</li>
+            <li><b>bold</b>: for button names.</li>
+            <li>
+              <code>code</code>: for small code excerpts, file names and paths.
+            </li>
+          </ul>
+          <!-- prettier-ignore -->
+          <codeblock>
+&lt;i>italics&lt;/i>
+
+&lt;b>bold&lt;/b>
+
+&lt;code>code&lt;/code>
+    </codeblock>
+        </section>
+
+        <section>
+          <a name="notes"></a>
+          <h3 class="speak">Notes</h3>
+          <!-- prettier-ignore -->
+          <p>Notes highlight information by separating it from the regular, main content.</p>
+
+          <note>
+            <p>
+              <!-- prettier-ignore -->
+              New entries are only considered created once some of their content has been written and saved. Only then will the new entry be listed in the list view.
+            </p>
+          </note>
+          <!-- prettier-ignore -->
+          <codeblock>
+&lt;note>&lt;p>
+New entries are only considered created once some of their content has been written and saved. Only then will the new entry be listed in the list view.
+&lt;/p>&lt;/note>
+    </codeblock>
+        </section>
+
+        <section>
+          <a name="links"></a>
+          <h3 class="speak">Links</h3>
+          <!-- prettier-ignore -->
+          <p>Links can redirect users to other parts/sections of the Real&Mate Documentation (internal links) and to any other resource outside the Real&Mate Documentation (external links).</p>
+          <!-- prettier-ignore -->
+          <best-practices>
+      <ul>
+        <li>If the name of the doc/section to link is already in the sentence, directly put the link on that doc/section name. Otherwise, add the name of the related doc and the link in the following format: <code>(see &lt;a href="link">document
+            name&lt;/a>)</code>.</li>
+        <li>External links should contain the <code>target="_blank"</code> attribute value.</li>
+      </ul>
+    </best-practices>
+
+          <h4>Internal Link</h4>
+          <!-- prettier-ignore -->
+          <codeblock>
+&lt;a href="style-guide.html">Style Guide&lt;/a>
+    </codeblock>
+
+          <h4>External Link</h4>
+
+          <codeblock>
+            &lt;a href="https://restfulapi.net/"
+            target="_blank">Representational State Transfer&lt;/a>
+          </codeblock>
+        </section>
+
+        <section>
+          <a name="lists"></a>
+          <h3 class="speak">Lists</h3>
+          <!-- prettier-ignore -->
+          <p>Lists allow to group sets of related items:</p>
+
+          <ul>
+            <!-- prettier-ignore -->
+            <li>Bullet lists are for same-level items. They are used where enumeration isn't necessary.</li>
+            <!-- prettier-ignore -->
+            <li>Numbered lists are for procedures. Each number describes an action that will lead a user to complete a goal.</li>
+          </ul>
+
+          <best-practices>
+            <p>Always start with a capital letter and finish with a period.</p>
+          </best-practices>
+
+          <h4>Bullet List</h4>
+          <!-- prettier-ignore -->
+          <codeblock>
+The name of the subscription plan:&lt;ul>
+&lt;li>&lt;code>Starter&lt;/code>.&lt;/li>
+&lt;li>&lt;code>Standard&lt;/code>.&lt;/li>
+&lt;li>&lt;code>Premium&lt;/code>.&lt;/li>
+&lt;li>&lt;code>Enterprise&lt;/code>.&lt;/li>
+&lt;/ul>
+    </codeblock>
+
+          <h4>Numbered List (Procedure)</h4>
+          <!-- prettier-ignore -->
+          <codeblock>
+To start receiving webhook events in your app, create and register a webhook endpoint:&lt;ol>
+&lt;li>Create a webhook endpoint handler to receive event data POST requests.&lt;/li>
+&lt;li>Test your webhook endpoint handler.&lt;/li>
+&lt;li>Register your endpoint within Real&Mate.&lt;/li>
+&lt;li>Secure your webhook endpoint.&lt;/li>
+&lt;/ol>
+    </codeblock>
+        </section>
+
+        <section>
+          <a name="code-examples"></a>
+          <h3 class="speak">Code Examples</h3>
+          <!-- prettier-ignore -->
+          <p>Code examples are displayed in a console-like style, that also contains a "Copy" button for easier use.</p>
+
+          <codeblock>
+            &lt;codeblock> Necessary code goes here. &lt;/codeblock>
+          </codeblock>
+        </section>
+
+        <section>
+          <a name="details"></a>
+          <h3>Details</h3>
+          <!-- prettier-ignore -->
+          <p>Details are elements that by default only display a title, as the rest of the content is collapsed. It's used for content that can be hidden by default to make documentation shorter and cleaner.
+    </p>
+
+          <details>
+            <summary>Title of the Details</summary>
+            Necessary content goes here.
+          </details>
+
+          <!-- prettier-ignore -->
+          <codeblock>
+&lt;details>
+  &lt;summary>
+    Title of the Details
+  &lt;/summary>
+  Necessary content goes here.
+&lt;/details>
+    </codeblock>
+        </section>
+
+        <section>
+          <a name="tables"></a>
+          <h3 class="speak">Tables</h3>
+
+          <!-- prettier-ignore -->
+          <p>Tables display more clearly complex groups of items related to the same kind of information.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+                <th>Title 4</th>
+                <th>Title 5</th>
+                <th>Title 6</th>
+                <th>Title 7</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Key Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+              </tr>
+              <tr>
+                <td>Key Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- prettier-ignore -->
+          <codeblock>
+&lt;table>
+  &lt;thead>
+    &lt;tr>
+      &lt;th>Title 1&lt;/th>
+      &lt;th>Title 2&lt;/th>
+      &lt;th>Title 3&lt;/th>
+      &lt;th>Title 4&lt;/th>
+      &lt;th>Title 5&lt;/th>
+      &lt;th>Title 6&lt;/th>
+      &lt;th>Title 7&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>Key Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>Key Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+      &lt;td>Item&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+</codeblock>
+        </section>
+
+        <!--<a name="requests-&-responses"></a>
+    <h3 class="speak">Requests & Responses</h3>-->
+      </section>
+
+      <section>
+        <a name="illustrations"></a>
+        <h2 class="speak">Illustrations</h2>
+
+        <section>
+          <a name="screenshots"></a>
+          <h3 class="speak">Screenshots</h3>
+
+          <!-- prettier-ignore -->
+          <p>Screenshots show contents of a device display.</p>
+
+          <best-practices>
+            <ul>
+              <!-- prettier-ignore -->
+              <li>Prefer screenshots of the whole interface instead of cutting only part of it. It's easier for a user to locate where something is on the interface using a context.
+        </li>
+              <!-- prettier-ignore -->
+              <li>To indicate a specific area of the screenshot that's mentioned in the documentation, edit the screenshot to add a rectangular shape around the area. The shape should blue (#37aef7), and its lines should be 3px wide.
+        </li>
+            </ul>
+          </best-practices>
+
+          <img
+            alt="Style Guide"
+            title="Style Guide"
+            src="pics/screenshots/style-guide.jpg"
+            class="screenshot"
+          />
+
+          <codeblock>
+            &lt;img alt="Style Guide" title="Style Guide"
+            src="pics/screenshots/style-guide.jpg" class="screenshot" />
+          </codeblock>
+        </section>
+
+        <section>
+          <a name="buttons"></a>
+          <h3 class="speak">Buttons</h3>
+
+          <!-- prettier-ignore -->
+          <p>Buttons are used to replicate those used on Real&Mate user interfaces (for example, the admin panel), to help users locate them on the interface. Buttons are available in the <code>pics/buttons</code> folder, in the SVG format, and should be integrated in the documentation files as images.</p>
+
+          <!-- prettier-ignore -->
+          <p>Click <img alt="Arrow counterclockwise" src="pics/buttons/arrow-counterclockwise.svg" /> to refresh the window.</p>
+
+          <!-- prettier-ignore -->
+          <codeblock>
+Click &lt;img alt="Arrow counterclockwise" src="pics/buttons/arrow-counterclockwise.svg" /> to refresh the window.
+    </codeblock>
+        </section>
+
+        <div class="w3c">
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
+            target="_blank"
+            rel="noopener"
+            id="w3c-text"
+          >
+            Verified by World Wide Web Consortium:&nbsp;
+          </a>
+          <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
+            target="_blank"
+            rel="noopener"
+            id="w3c-img"
+          >
+            <img
+              src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt=" W3C"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footerContainer"></div>
+
+    <!-- Enable JavaScript -->
+    <noscript>
+      <style>
+        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
+          display: none;
+        }
+      </style>
+      <section id="enable-javascript">
+        <h1>Enable JavaScript</h1>
+        <p>
+          Because this document uses web based technologies, it requires
+          interactive browser functionality. This functionality is provided, in
+          part, by JavaScript. You might have to enable JavaScript within the
+          browser in order to ensure that the document displays correctly and
+          its features work as expected.
+        </p>
+        <p>
+          Instructions for enabling JavaScript vary by browser. Select your
+          browser from the list to learn how.
+        </p>
+        <details>
+          <summary>
+            <strong>Chrome</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Click <strong>Privacy and security</strong> in the side menu.
+            </li>
+            <li>Click <strong>Site settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Edge</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Choose <strong>Cookies and site permissions</strong> section.
+            </li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>Allowed (recommended)</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Firefox</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Type <code>about:config</code> in the address bar and press
+              <strong>Enter</strong>. A warning page may appear. Click
+              <strong>Accept the Risk and Continue</strong> to go to the
+              <strong>about:config</strong> page.
+            </li>
+            <li>
+              In <strong>Search preference name</strong> field, type
+              <code>javascript.enabled</code>. It should be set to
+              <code>true</code> by default.
+            </li>
+            <li>
+              If <code>javascript.enabled</code> is set to <code>false</code>,
+              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
+              back to <code>true</code>.
+            </li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Opera</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>
+              Scroll all the way down and click
+              <strong>Go to full browser settings</strong>.
+            </li>
+            <li>
+              Scroll to the <strong>Privacy and security</strong> section.
+            </li>
+            <li>Click <strong>Site Settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+      </section>
+    </noscript>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/elements-title-min.js"></script>
+    <script type="text/javascript" src="scripts/dark-theme-min.js"></script>
+    <script type="text/javascript" src="scripts/editor-mode-min.js"></script>
+    <script
+      type="text/javascript"
+      src="scripts/p-1-line-indent-min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/speak-min.js"></script>
+    <script type="text/javascript" src="scripts/copy-min.js"></script>
+    <script type="text/javascript" src="scripts/elements-min.js"></script>
+  </body>
 </html>

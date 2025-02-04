@@ -95,6 +95,11 @@ best-practices > ul {
   list-style-type: inherit;
 }
 
+section > ul {
+  display: block; /* Make the element a block-level element */
+  list-style-type: inherit;
+}
+
 button {
   overflow: hidden;
 }
@@ -679,7 +684,7 @@ paramType {
 }
 
 .screenshot {
-  max-width: 80vw; /* Set the maximum width of the element */
+  max-width: 100%; /* Set the maximum width of the element */
 }
 
 section:hover > ol > li > od-o > optionalityDegreeO {

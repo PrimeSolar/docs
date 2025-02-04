@@ -759,15 +759,22 @@ section:hover > ul > li > ul > li > od-u > optionalityDegreeU {
   transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
+table-container {
+  max-width: 100%;
+  display: block;
+  overflow: auto;
+}
+
 table {
+  max-width: 100%;
+  width: 100%;
   border-collapse: collapse;
   -webkit-box-sizing: inherit; /* For older versions of Chrome and Safari */
   box-sizing: inherit; /* Standard syntax for modern browsers (widely supported) */
   display: table;
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels */
-  overflow-x: scroll;
   position: relative; /* Position the element relative to its normal position */
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 td {
@@ -1379,8 +1386,9 @@ logo-img {
 }
 
 #logo {
-  width: 420px; /* Set the width of the element */
-  height: 420px; /* Set the height of the element */
+  max-width: 100%; /* Set the width of the element */
+  width: 420px;
+  height: auto; /* Set the height of the element */
 }
 
 @media (max-height: 430px) {
@@ -1390,6 +1398,12 @@ logo-img {
   #logo {
     width: 320px; /* Set the width of the element */
     height: 320px; /* Set the height of the element */
+  }
+}
+
+@media (max-height: 730px) {
+  #header {
+    top: 64vh;
   }
 }
 
@@ -1775,7 +1789,7 @@ editor-button ~ speak-button #speakBtn {
 
 .container > .speak-inline {
   position: absolute;
-  left: 100%; /* Position the element relative to the left edge of its nearest positioned ancestor */
+  left: 100.5%; /* Position the element relative to the left edge of its nearest positioned ancestor */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
 

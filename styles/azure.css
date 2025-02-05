@@ -305,6 +305,12 @@ details > summary {
   transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
 }
 
+@media (max-width: 430px) {
+  details > summary {
+    font-size: 20px; /* Set the font size of the text */
+  }
+}
+
 details > summary:hover {
   -webkit-box-shadow: 1px 1px 2px #bbb;
   box-shadow: 1px 1px 2px #bbb;
@@ -907,6 +913,12 @@ ol {
   padding: 25px; /* Set the thickness of the padding area */
 }
 
+/* @media (max-width: 430px) {
+  .doc-list-item a {
+    font-size: 20px;
+  }
+} */
+
 .glossary {
   font-size: 20px; /* Set the font size of the text */
   margin-top: 10vh; /* Set the top margin to 10% of the viewport height */
@@ -1395,6 +1407,7 @@ logo-img {
   h1 {
     font-size: 1.5em;
   }
+
   #logo {
     width: 320px; /* Set the width of the element */
     height: 320px; /* Set the height of the element */
@@ -1798,6 +1811,7 @@ editor-button ~ speak-button #speakBtn {
     position: relative; /* Position the element relative to its normal position */
     word-wrap: break-word;
   }
+
   .glossary {
     position: relative; /* Position the element relative to its normal position */
     width: 100vw; /* Set the width of the element */
@@ -1805,11 +1819,13 @@ editor-button ~ speak-button #speakBtn {
     left: -10vw; /* Position the element relative to the left edge of its nearest positioned ancestor */
     word-wrap: break-word;
   }
+
   .glossary th:first-of-type {
     width: 25vw; /* Set the width of the element */
   }
+
   .container > .speak-inline {
-    top: -45px; /* Position the element relative to the top edge of its nearest positioned ancestor */
+    top: -27px; /* Position the element relative to the top edge of its nearest positioned ancestor */
     left: 80vw; /* Position the element relative to the left edge of its nearest positioned ancestor */
   }
 }

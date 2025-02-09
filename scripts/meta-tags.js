@@ -12,16 +12,24 @@ metaViewport.content = "width=device-width, initial-scale=1";
 document.querySelector("head").appendChild(metaViewport);
 
 // Set `title` for the <html> element based on a webpage's content
-const title = document.querySelector("span.title");
+const title = document.querySelector(".title");
 if (
   title &&
   title.innerHTML !==
     'Welcome to the Real<span id="amp">&amp;</span>Mate Documentation!'
 ) {
-  document.title = title.textContent + " | Real&Mate Documentation";
+  document.title =
+    title.textContent.replace(/Read Out Loud/g, "").trim() +
+    " | Real&Mate Documentation";
 } else {
   document.title = "Real&Mate Documentation";
 }
+
+// Insert <meta name="author" content="Vladislav Kazantsev">
+const metaAuthor = document.createElement("meta");
+metaAuthor.name = "author";
+metaAuthor.content = "Vladislav Kazantsev";
+document.querySelector("head").appendChild(metaAuthor);
 
 // Insert <meta name="copyright" content="© `Current Year` Vladislav Kazantsev">
 const metaCopyright = document.createElement("meta");
@@ -61,23 +69,23 @@ linkAzure.onload = function () {
 };
 linkAzure.onerror = function () {
   console.error("Failed to load azure.css");
-  // Optionally, show an informational message
+  // Show an informational message
   document.body.insertAdjacentHTML(
     "afterbegin",
-    "<h1>Error loading styles. Please try again later.</h1>"
+    "<p>Error loading styles. Please try again later.</p>"
   );
   document.body.style.display = "block"; // Show the body even if CSS fails
 };
 
-// Insert <link rel="icon" href="pics/logos/favicon.jpg">
+// Insert <link rel="icon" href="pics/logos/favicon-transparent.jpg">
 const linkImage = document.createElement("link");
 linkImage.rel = "icon";
 if (window.location.href.indexOf("/api-ref/") !== -1) {
-  linkImage.href = "../../../pics/logos/favicon.jpg";
+  linkImage.href = "../../../pics/logos/favicon-transparent.jpg";
 } else if (window.location.href.indexOf("/pages/") !== -1) {
-  linkImage.href = "../pics/logos/favicon.jpg";
+  linkImage.href = "../pics/logos/favicon-transparent.jpg";
 } else {
-  linkImage.href = "pics/logos/favicon.jpg";
+  linkImage.href = "pics/logos/favicon-transparent.jpg";
 }
 document.querySelector("head").appendChild(linkImage);
 

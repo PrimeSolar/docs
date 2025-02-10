@@ -17,7 +17,7 @@ class themeButton extends HTMLElement {
         </button>
       </div>
     </div>
-    `
+    `;
   }
 }
 customElements.define("theme-button", themeButton);
@@ -34,10 +34,26 @@ class editorButton extends HTMLElement {
         </button>
       </div>
     </div>
-    `
+    `;
   }
 }
 customElements.define("editor-button", editorButton);
+
+// Speak Button
+class speakButton extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <div id="speakContainerRelative">
+      <div id="speakContainerAbsolute">
+        <button id="speakBtn" onclick="speak()">
+          Read Page<br/>Out Loud
+        </button>
+      </div>
+    </div>
+    `;
+  }
+}
+customElements.define("speak-button", speakButton);
 
 // Screenshot Button
 class screenshotButton extends HTMLElement {
@@ -50,7 +66,7 @@ class screenshotButton extends HTMLElement {
         </button>
       </div>
     </div>
-    `
+    `;
   }
 }
 customElements.define("screenshot-button", screenshotButton);
@@ -71,16 +87,17 @@ class menuContainer extends HTMLElement {
       <div id="container-button" class="dropdown-content">
         <theme-button></theme-button>
         <editor-button></editor-button>
+        <speak-button></speak-button>
         <screenshot-button></screenshot-button>
       </div>
     </div>
-     `
+     `;
   }
 }
 customElements.define("menu-container", menuContainer);
 
 const menuContainerElement = document.createElement("menu-container");
-if (document.querySelector("header") != null) {
+if (!document.querySelector("#container>theme-button")) {
   document.querySelector("header").appendChild(menuContainerElement);
 }
 
@@ -92,8 +109,8 @@ if (document.querySelector("header") != null) {
 class HomeL extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-      <a href="https://firstsolar.github.io/docs/">Real&Mate Docs</a>
-    `
+      <a href="https://primesolar.github.io/docs/">Real&Mate Documentation</a>
+    `;
   }
 }
 customElements.define("home-l", HomeL);
@@ -101,8 +118,8 @@ customElements.define("home-l", HomeL);
 class APIRefL extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-      <a href="https://firstsolar.github.io/docs/api-reference">API Reference</a>
-    `
+      <a href="https://primesolar.github.io/docs/api-reference">API Reference</a>
+    `;
   }
 }
 customElements.define("api-ref-l", APIRefL);
@@ -113,10 +130,21 @@ class NavLinksAPIRef extends HTMLElement {
       <nav-links>
         <home-l></home-l> > <api-ref-l></api-ref-l>
       </nav-links>
-    `
+    `;
   }
 }
 customElements.define("nav-links-api-ref", NavLinksAPIRef);
+
+class NavLinksDocMainPage extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+      <nav-links>
+        <home-l></home-l>
+      </nav-links>
+    `;
+  }
+}
+customElements.define("nav-links-doc-main-page", NavLinksDocMainPage);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -125,12 +153,14 @@ customElements.define("nav-links-api-ref", NavLinksAPIRef);
 let headerIndex = document.getElementById("header-index");
 if (headerIndex !== null) {
   let timeNow = new Date().getHours();
-  let greetings = timeNow >= 0 && timeNow < 12 ?
-    "Good Morning!" :
-    timeNow >= 12 && timeNow < 18 ?
-    "Good Afternoon!" :
-    "Good Evening!";
-  headerIndex.innerHTML = `<h1>${greetings}</h1>` + headerIndex.innerHTML;
+  let greetings =
+    timeNow >= 0 && timeNow < 12
+      ? "Good Morning!"
+      : timeNow >= 12 && timeNow < 18
+      ? "Good Afternoon!"
+      : "Good Evening!";
+  headerIndex.innerHTML =
+    `<h1 class="title">${greetings}</h1>` + headerIndex.innerHTML;
 }
 
 // Logo
@@ -138,7 +168,7 @@ class logoImg extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <img alt="Real&Mate Logo" title="Real&Mate Logo" name="real-and-mate-logo" id="logo" src="pics/logo-transparent.jpg" />
-    `
+    `;
   }
 }
 customElements.define("logo-img", logoImg);

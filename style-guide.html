@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8" />
-    <title>Style Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="styles/azure.css"
-      title="Main Stylesheet"
-    />
   </head>
 
-  <body id="body">
+  <body style="display: none">
     <div id="container">
       <nav>
         <nav-links-doc-main-page></nav-links-doc-main-page>
@@ -44,14 +30,14 @@
           <li>
             <a href="#content-formatting"> Content Formatting </a>
             <ul>
-              <li><a href="#titles"> Titles </a></li>
-              <li><a href="#text-highlights"> Text highlights </a></li>
-              <li><a href="#notes"> Notes </a></li>
-              <li><a href="#links"> Links </a></li>
-              <li><a href="#lists"> Lists </a></li>
-              <li><a href="#code-examples"> Code Examples </a></li>
-              <li><a href="#details"> Details </a></li>
-              <li><a href="#tables"> Tables </a></li>
+              <li><a href="#titles">Titles</a></li>
+              <li><a href="#text-highlights">Text Highlights</a></li>
+              <li><a href="#notes">Notes</a></li>
+              <li><a href="#links">Links</a></li>
+              <li><a href="#lists">Lists</a></li>
+              <li><a href="#code-examples">Code Examples</a></li>
+              <li><a href="#details">Details</a></li>
+              <li><a href="#tables">Tables</a></li>
               <!--
             <li><a href="#requests-&-responses">
                 Requests & Responses
@@ -59,10 +45,10 @@
             </ul>
           </li>
           <li>
-            <a href="#illustrations"> Illustrations </a>
+            <a href="#illustrations">Illustrations</a>
             <ul>
-              <li><a href="#screenshots"> Screenshots </a></li>
-              <li><a href="#buttons"> Buttons </a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#buttons">Buttons</a></li>
             </ul>
           </li>
         </ul>
@@ -97,9 +83,13 @@
             </ul>
           </best-practices>
 
+          <!-- prettier-ignore -->
           <codeblock>
-            &lt;h1>H1 title&lt;/h1> &lt;h2>H2 title&lt;/h2> &lt;h3>H3
-            title&lt;/h3> &lt;h4>H4 title&lt;/h4> &lt;h5>H5 title&lt;/h5>
+&lt;h1>H1 title&lt;/h1>
+&lt;h2>H2 title&lt;/h2>
+&lt;h3>H3 title&lt;/h3>
+&lt;h4>H4 title&lt;/h4>
+&lt;h5>H5 title&lt;/h5>
           </codeblock>
         </section>
 
@@ -260,39 +250,41 @@ To start receiving webhook events in your app, create and register a webhook end
           <!-- prettier-ignore -->
           <p>Tables display more clearly complex groups of items related to the same kind of information.</p>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Title 1</th>
-                <th>Title 2</th>
-                <th>Title 3</th>
-                <th>Title 4</th>
-                <th>Title 5</th>
-                <th>Title 6</th>
-                <th>Title 7</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Key Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-              <tr>
-                <td>Key Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-            </tbody>
-          </table>
+          <table-container>
+            <table>
+              <thead>
+                <tr>
+                  <th>Title 1</th>
+                  <th>Title 2</th>
+                  <th>Title 3</th>
+                  <th>Title 4</th>
+                  <th>Title 5</th>
+                  <th>Title 6</th>
+                  <th>Title 7</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Key Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+                <tr>
+                  <td>Key Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                  <td>Item</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-container>
 
           <!-- prettier-ignore -->
           <codeblock>
@@ -410,10 +402,8 @@ Click &lt;img alt="Arrow counterclockwise" src="pics/buttons/arrow-counterclockw
       </section>
     </main>
 
-    <!-- Footer -->
     <div id="footerContainer"></div>
 
-    <!-- Enable JavaScript -->
     <noscript>
       <style>
         body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
@@ -525,16 +515,13 @@ Click &lt;img alt="Arrow counterclockwise" src="pics/buttons/arrow-counterclockw
       </section>
     </noscript>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="scripts/elements-title-min.js"></script>
-    <script type="text/javascript" src="scripts/dark-theme-min.js"></script>
-    <script type="text/javascript" src="scripts/editor-mode-min.js"></script>
-    <script
-      type="text/javascript"
-      src="scripts/p-1-line-indent-min.js"
-    ></script>
-    <script type="text/javascript" src="scripts/speak-min.js"></script>
-    <script type="text/javascript" src="scripts/copy-min.js"></script>
-    <script type="text/javascript" src="scripts/elements-min.js"></script>
+    <script src="scripts/elements-title-min.js"></script>
+    <script src="scripts/dark-theme-min.js"></script>
+    <script src="scripts/editor-mode-min.js"></script>
+    <script src="scripts/p-1-line-indent-min.js"></script>
+    <script src="scripts/speak-min.js"></script>
+    <script src="scripts/copy-min.js"></script>
+    <script src="scripts/elements-min.js"></script>
+    <script src="scripts/meta-tags-min.js"></script>
   </body>
 </html>

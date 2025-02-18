@@ -1,152 +1,179 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <title>API Glossary</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../styles/azure.css" title="Main Stylesheet" />
-</head>
+  <body style="display: none">
+    <header>
+      <nav-links-api-ref></nav-links-api-ref>
+      <h1 class="title speak">API Glossary</h1>
+    </header>
 
-<body id="body">
+    <main>
+      <div class="container speak">
+        <table class="glossary">
+          <thead class="text-center">
+            <tr>
+              <th>Term / Abbreviation</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- API -->
+            <tr id="gAPI"></tr>
+            <!-- Authorization -->
+            <tr id="gAuthorization"></tr>
+            <!-- Authentication -->
+            <tr id="gAuthentication"></tr>
+            <!-- Endpoint -->
+            <tr id="gEndpoint"></tr>
+            <!-- HTTP -->
+            <tr id="gHTTP"></tr>
+            <!-- JSON -->
+            <tr id="gJSON"></tr>
+            <!-- Metadata -->
+            <tr id="gMetadata"></tr>
+            <!-- OAuth -->
+            <tr id="gOAuth"></tr>
+            <!-- OData -->
+            <tr id="gOData"></tr>
+            <!-- Payload -->
+            <tr id="gPayload"></tr>
+            <!-- Protocol -->
+            <tr id="gProtocol"></tr>
+            <!-- Query -->
+            <tr id="gQuery"></tr>
+            <!-- REST -->
+            <tr id="gREST"></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
 
-  <header>
-    <nav-links-api-ref></nav-links-api-ref>
-    <h1>API Glossary</h1>
-  </header>
+    <div id="footerContainer"></div>
 
-  <main>
+    <noscript>
+      <style>
+        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
+          display: none;
+        }
+      </style>
+      <section id="enable-javascript">
+        <h1>Enable JavaScript</h1>
+        <p>
+          Because this document uses web based technologies, it requires
+          interactive browser functionality. This functionality is provided, in
+          part, by JavaScript. You might have to enable JavaScript within the
+          browser in order to ensure that the document displays correctly and
+          its features work as expected.
+        </p>
+        <p>
+          Instructions for enabling JavaScript vary by browser. Select your
+          browser from the list to learn how.
+        </p>
+        <details>
+          <summary>
+            <strong>Chrome</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Click <strong>Privacy and security</strong> in the side menu.
+            </li>
+            <li>Click <strong>Site settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Edge</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Choose <strong>Cookies and site permissions</strong> section.
+            </li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>Allowed (recommended)</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Firefox</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Type <code>about:config</code> in the address bar and press
+              <strong>Enter</strong>. A warning page may appear. Click
+              <strong>Accept the Risk and Continue</strong> to go to the
+              <strong>about:config</strong> page.
+            </li>
+            <li>
+              In <strong>Search preference name</strong> field, type
+              <code>javascript.enabled</code>. It should be set to
+              <code>true</code> by default.
+            </li>
+            <li>
+              If <code>javascript.enabled</code> is set to <code>false</code>,
+              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
+              back to <code>true</code>.
+            </li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Opera</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>
+              Scroll all the way down and click
+              <strong>Go to full browser settings</strong>.
+            </li>
+            <li>
+              Scroll to the <strong>Privacy and security</strong> section.
+            </li>
+            <li>Click <strong>Site Settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+      </section>
+    </noscript>
 
-    <div class="container">
-      <table class="glossary">
-        <thead class="text-center">
-          <tr>
-            <th>
-              Term/Abbreviation
-            </th>
-            <th>
-              Definition
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- API -->
-          <tr id="gAPI"></tr>
-          <!-- Authorization -->
-          <tr id="gAuthorization"></tr>
-          <!-- Authentication -->
-          <tr id="gAuthentication"></tr>
-          <!-- Endpoint -->
-          <tr id="gEndpoint"></tr>
-          <!-- HTTP -->
-          <tr id="gHTTP"></tr>
-          <!-- JSON -->
-          <tr id="gJSON"></tr>
-          <!-- Metadata -->
-          <tr id="gMetadata"></tr>
-          <!-- OAuth -->
-          <tr id="gOAuth"></tr>
-          <!-- OData -->
-          <tr id="gOData"></tr>
-          <!-- Payload -->
-          <tr id="gPayload"></tr>
-          <!-- Protocol -->
-          <tr id="gProtocol"></tr>
-          <!-- Query -->
-          <tr id="gQuery"></tr>
-          <!-- Replication -->
-          <tr id="gReplication"></tr>
-          <!-- REST -->
-          <tr id="gREST"></tr>
-        </tbody>
-      </table>
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <div id="footerContainer"></div>
-
-  <!-- Enable JavaScript -->
-  <noscript>
-    <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
-        display: none;
-      }
-    </style>
-    <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
-      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
-        document displays correctly and its features work as expected.</p>
-      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
-        <summary>
-          <strong>Chrome</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
-          <li>Click <strong>Site settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Edge</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>Allowed (recommended)</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Firefox</strong>
-        </summary>
-        <ol type="1">
-          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
-          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
-          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Opera</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
-          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
-          <li>Click <strong>Site Settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-    </section>
-  </noscript>
-
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../scripts/elements-title-min.js"></script>
-  <script type="text/javascript" src="../../scripts/menu-min.js"></script>
-  <script type="text/javascript" src="../../scripts/glossary-min.js"></script>
-  <script type="text/javascript" src="../../scripts/p-1-line-indent-min.js"></script>
-  <script type="text/javascript" src="../../scripts/dark-theme-min.js"></script>
-  <script type="text/javascript" src="../../scripts/editor-mode-min.js"></script>
-  <script type="text/javascript" src="../../scripts/screenshot-min.js"></script>
-  <script type="text/javascript" src="../../scripts/html2canvas-min.js"></script>
-  <script type="text/javascript" src="../../scripts/elements-min.js"></script>
-
-</body>
-
+    <script src="../../scripts/elements-title-min.js"></script>
+    <script src="../../scripts/menu-min.js"></script>
+    <script src="../../scripts/dark-theme-min.js"></script>
+    <script src="../../scripts/editor-mode-min.js"></script>
+    <script src="../../scripts/glossary-min.js"></script>
+    <script src="../../scripts/p-1-line-indent-min.js"></script>
+    <script src="../../scripts/ripples-min.js"></script>
+    <script src="../../scripts/speak-min.js"></script>
+    <script src="../../scripts/screenshot-min.js"></script>
+    <script src="../../scripts/elements-min.js"></script>
+    <script src="../../scripts/meta-tags-min.js"></script>
+  </body>
 </html>

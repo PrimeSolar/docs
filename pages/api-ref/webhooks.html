@@ -1,151 +1,174 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <title>Webhooks</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../styles/azure.css" title="Main Stylesheet" />
-</head>
+  <body style="display: none">
+    <header>
+      <nav-links-api-ref></nav-links-api-ref>
+      <h1 class="title speak">Webhooks</h1>
+    </header>
 
-<body id="body">
+    <main>
+      <ul id="toc">
+        <li><a href="#why-use-webhooks"> About Webhooks </a></li>
+        <li>
+          <a href="#getting-started-with-real&mate-webhooks">
+            Getting Started with Real&Mate Webhooks
+          </a>
+        </li>
+      </ul>
 
-  <header>
-    <nav-links-api-ref></nav-links-api-ref>
-    <h1>Webhooks</h1>
-  </header>
+      <section id="why-use-webhooks">
+        <h2 class="speak">About Webhooks</h2>
+        <!-- prettier-ignore -->
+        <p>Webhooks are user-defined <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" rel="noopener noreferrer">HTTP</a> callbacks. They are triggered by some event in a web application and can facilitate integrating different applications or third-party APIs, like Real&Mate.</p>
+        <!-- prettier-ignore -->
+        <p>When building Real&Mate integrations, you might want your applications to receive events as they occur in your Real&Mate accounts, so that your backend systems can execute actions accordingly.</p>
+        <!-- prettier-ignore -->
+        <p>The Real&Mate uses webhooks to let your application know when events happen, such as retrieving information about real estate objects or adding new ones. When the event occurs, Real&Mate makes an HTTP request (usually <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank" rel="noopener noreferrer">a POST or a GET</a>) to the URL you configured for the webhook. Real&Mate's request will include details of the event such as the user identifier or real estate parameters. Many other modern web services like GitHub and Slack also make use of webhooks to communicate events.</p>
+        <!-- prettier-ignore -->
+        <p>To enable webhook events, you need to register webhook endpoints. After you register them, the Real&Mate can push real-time event data to your application’s webhook endpoint when events happen in your account. Real&Mate sends webhook events to your app as a JSON payload.</p>
+      </section>
 
-  <main>
-
-    <ul>
-      <li><a href="#why-use-webhooks">
-          About Webhooks
-        </a></li>
-      <li><a href="#getting-started-with-real&mate-webhooks">
-          Getting Started with Real&Mate Webhooks
-        </a></li>
-    </ul>
-
-    <a name="why-use-webhooks"></a>
-    <h2>About Webhooks</h2>
-    <p>
-      Webhooks are user-defined <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" />HTTP</a> callbacks. They are triggered by some event in a web application and can facilitate integrating different
-      applications or third-party APIs, like Real&Mate.
-    </p>
-    <p>
-      When building Real&Mate integrations, you might want your applications to receive events as they occur in your Real&Mate accounts, so that your backend systems can execute actions accordingly.
-    </p>
-    <p>
-      The Real&Mate uses webhooks to let your application know when events happen, such as retrieving information about real estate objects or adding new ones. When the event occurs, Real&Mate makes an HTTP request (usually <a
-        href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods" target="_blank" />a POST or a GET</a>) to the URL you configured for the webhook. Real&Mate's request will include details of the event such as the user
-      identifier or real estate parameters. Many other modern web services like GitHub and Slack also make use of webhooks to communicate events.
-    </p>
-    <p>
-      To enable webhook events, you need to register webhook endpoints. After you register them, the Real&Mate can push real-time event data to your application’s webhook endpoint when events happen in your account. Real&Mate sends webhook events to
-      your
-      app as a JSON payload.
-    </p>
-
-    <a name="getting-started-with-real&mate-webhooks"></a>
-    <h2>Getting Started with Real&Mate Webhooks</h2>
-    <p>
-      To start receiving webhook events in your app, create and register a webhook endpoint:
-    </p>
-    <ol>
-      <li>Create a webhook endpoint handler to receive event data POST requests.</li>
-      <li>Test your webhook endpoint handler.</li>
-      <li>Register your endpoint within Real&Mate.</li>
-      <li>Secure your webhook endpoint.</li>
-    </ol>
-    <p>
-      For testing purposes during development, you may find it worthwhile to set up mock HTTP requests to your application. We suggest either using a command-line tool like <a href="https://curl.se/docs/manpage.html" target="_blank" />curl</a>, or a
-      desktop application like <a href="https://www.getpostman.com" target="_blank" />Postman</a>.
-    </p>
-
-  </main>
-
-  <!-- Footer -->
-  <div id="footerContainer"></div>
-
-  <!-- Enable JavaScript -->
-  <noscript>
-    <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
-        display: none;
-      }
-    </style>
-    <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
-      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
-        document displays correctly and its features work as expected.</p>
-      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
-        <summary>
-          <strong>Chrome</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
-          <li>Click <strong>Site settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
+      <section id="getting-started-with-real&mate-webhooks">
+        <h2 class="speak">Getting Started with Real&Mate Webhooks</h2>
+        <!-- prettier-ignore -->
+        <p>To start receiving webhook events in your app, create and register a webhook endpoint:</p>
+        <!-- prettier-ignore -->
+        <ol>
+          <li>Create a webhook endpoint handler to receive event data POST requests.</li>
+          <li>Test your webhook endpoint handler.</li>
+          <li>Register your endpoint within Real&Mate.</li>
+          <li>Secure your webhook endpoint.</li>
         </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Edge</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>Allowed (recommended)</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Firefox</strong>
-        </summary>
-        <ol type="1">
-          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
-          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
-          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Opera</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
-          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
-          <li>Click <strong>Site Settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-    </section>
-  </noscript>
+        <!-- prettier-ignore -->
+        <p>For testing purposes during development, you may find it worthwhile to set up mock HTTP requests to your application. We suggest either using a command-line tool like <a href="https://curl.se/docs/manpage.html" target="_blank" rel="noopener noreferrer">curl</a>, or a desktop application like <a href="https://www.getpostman.com" target="_blank" rel="noopener noreferrer">Postman</a>. </p>
+      </section>
+    </main>
 
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../scripts/elements-title-min.js"></script>
-  <script type="text/javascript" src="../../scripts/p-1-line-indent-min.js"></script>
-  <script type="text/javascript" src="../../scripts/dark-theme-min.js"></script>
-  <script type="text/javascript" src="../../scripts/editor-mode-min.js"></script>
-  <script type="text/javascript" src="../../scripts/elements-min.js"></script>
-  <script type="text/javascript" src="../../scripts/html2canvas-min.js"></script>
-  <script type="text/javascript" src="../../scripts/menu-min.js"></script>
-  <script type="text/javascript" src="../../scripts/screenshot-min.js"></script>
+    <div id="footerContainer"></div>
 
-</body>
+    <noscript>
+      <style>
+        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
+          display: none;
+        }
+      </style>
+      <section id="enable-javascript">
+        <h1>Enable JavaScript</h1>
+        <p>
+          Because this document uses web based technologies, it requires
+          interactive browser functionality. This functionality is provided, in
+          part, by JavaScript. You might have to enable JavaScript within the
+          browser in order to ensure that the document displays correctly and
+          its features work as expected.
+        </p>
+        <p>
+          Instructions for enabling JavaScript vary by browser. Select your
+          browser from the list to learn how.
+        </p>
+        <details>
+          <summary>
+            <strong>Chrome</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Click <strong>Privacy and security</strong> in the side menu.
+            </li>
+            <li>Click <strong>Site settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Edge</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Choose <strong>Cookies and site permissions</strong> section.
+            </li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>Allowed (recommended)</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Firefox</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Type <code>about:config</code> in the address bar and press
+              <strong>Enter</strong>. A warning page may appear. Click
+              <strong>Accept the Risk and Continue</strong> to go to the
+              <strong>about:config</strong> page.
+            </li>
+            <li>
+              In <strong>Search preference name</strong> field, type
+              <code>javascript.enabled</code>. It should be set to
+              <code>true</code> by default.
+            </li>
+            <li>
+              If <code>javascript.enabled</code> is set to <code>false</code>,
+              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
+              back to <code>true</code>.
+            </li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Opera</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>
+              Scroll all the way down and click
+              <strong>Go to full browser settings</strong>.
+            </li>
+            <li>
+              Scroll to the <strong>Privacy and security</strong> section.
+            </li>
+            <li>Click <strong>Site Settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+      </section>
+    </noscript>
 
+    <script src="../../scripts/elements-title-min.js"></script>
+    <script src="../../scripts/dark-theme-min.js"></script>
+    <script src="../../scripts/editor-mode-min.js"></script>
+    <script src="../../scripts/meta-tags-min.js"></script>
+    <script src="../../scripts/p-1-line-indent-min.js"></script>
+    <script src="../../scripts/menu-min.js"></script>
+    <script src="../../scripts/speak-min.js"></script>
+    <script src="../../scripts/screenshot-min.js"></script>
+    <script src="../../scripts/elements-min.js"></script>
+  </body>
 </html>

@@ -1,63 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="An API method for retrieving information about the reboot parameters of Real&Mate."
+    />
+    <meta
+      name="keywords"
+      content="real&mate, web application, documentation, api, reference, method, real estate, business, management, application"
+    />
+  </head>
 
-<head>
-  <title>GET /realandmate/v1/RebootActInfo | Retrieve Information about Reboot Parameters of the Application</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" title="Main Stylesheet" />
-</head>
+  <body style="display: none">
+    <span id="mainResourceName">Application</span>
+    <span id="resourceName">Real&Mate Application</span>
+    <span id="capitalizedResourceName">Real&Mate Application</span>
 
-<body id="body">
+    <header>
+      <nav-links-api-ref></nav-links-api-ref>
+      <h1 class="title speak">GET /realandmate/v1/RebootActInfo</h1>
+    </header>
 
-  <span id="mainResourceName">Application</span>
-  <span id="resourceName">Real&Mate Application</span>
-  <span id="capitalizedResourceName">Real&Mate Application</span>
+    <main>
+      <p class="center speak">
+        Returns information about the reboot parameters of Real&Mate.
+      </p>
+      <hr />
+      <ul id="toc">
+        <li>
+          <a href="#request-example">
+            <t-request-example></t-request-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-body">
+            <t-response-body></t-response-body>
+          </a>
+        </li>
+        <li>
+          <a href="#response-example">
+            <t-response-example></t-response-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-codes">
+            <t-response-codes></t-response-codes>
+          </a>
+        </li>
+      </ul>
 
-  <header>
-    <nav-links-api-ref></nav-links-api-ref>
-    <h1>GET /realandmate/v1/RebootActInfo</h1>
-  </header>
-
-  <main>
-
-    <p>
-      Returns information about application reboot parameters.
-    </p>
-    <hr />
-    <ul>
-      <li><a href="#request-example">
+      <section id="request-example">
+        <h2 class="speak">
           <t-request-example></t-request-example>
-        </a></li>
-      <li><a href="#response-body">
+        </h2>
+        <!-- prettier-ignore -->
+        <p>To use this API method, send the GET request. Below is an example of how to call the API:</p>
+        <!-- prettier-ignore -->
+        <codeblock>
+  GET https://example.com/realandmate/v1/RebootActInfo
+        </codeblock>
+      </section>
+
+      <section id="response-body">
+        <h2 class="speak">
           <t-response-body></t-response-body>
-        </a></li>
-      <li><a href="#response-example">
-          <t-response-example></t-response-example>
-        </a></li>
-      <li><a href="#response-codes">
-          <t-response-codes></t-response-codes>
-        </a></li>
-    </ul>
-
-    <a name="request-example"></a>
-    <h2>
-      <t-request-example></t-request-example>
-    </h2>
-    <codeblock>
-GET https://example.com/realandmate/v1/RebootActInfo
-    </codeblock>
-
-    <a name="response-body"></a>
-    <h2>
-      <t-response-body></t-response-body>
-    </h2>
-    <h3>
-      <t-http-code-200></t-http-code-200>
-    </h3>
-    <codeblock>
+        </h2>
+        <!-- prettier-ignore -->
+        <p>The response will include a JSON string containing information about the reboot parameters of Real&Mate. This string can be converted into a JavaScript object for easier use. Below is the format of the object after parsing the string:</p>
+        <h3>
+          <t-http-code-200></t-http-code-200>
+        </h3>
+        <!-- prettier-ignore -->
+        <codeblock>
 {
   "id": string,
   "name": string,
@@ -77,121 +92,123 @@ GET https://example.com/realandmate/v1/RebootActInfo
   "incident_response": string,
   "post_analysis": string
 }
-    </codeblock>
+        </codeblock>
 
-    <dl class="dl-root">
-      <dt>
-        <dt-id></dt-id>
-      </dt>
-      <dd>
-        <dd-id></dd-id>
-      </dd>
-      <dt>
-        <dt-name></dt-name>
-      </dt>
-      <dd>
-        <dd-name></dd-name>
-      </dd>
-      <dt>
-        <dt-version></dt-version>
-      </dt>
-      <dd>
-        <dd-version></dd-version>
-      </dd>
-      <dt>
-        <dt-environment></dt-environment>
-      </dt>
-      <dd>
-        <dd-environment></dd-environment>
-      </dd>
-      <dt>
-        <dt-reboot-type></dt-reboot-type>
-      </dt>
-      <dd>
-        <dd-reboot-type></dd-reboot-type>
-      </dd>
-      <dt>
-        <dt-start-time></dt-start-time>
-      </dt>
-      <dd>
-        <dd-start-time></dd-start-time>
-      </dd>
-      <dt>
-        <dt-end-time></dt-end-time>
-      </dt>
-      <dd>
-        <dd-end-time></dd-end-time>
-      </dd>
-      <dt>
-        <dt-reason></dt-reason>
-      </dt>
-      <dd>
-        <dd-reason></dd-reason>
-      </dd>
-      <dt>
-        <dt-impact-assessment></dt-impact-assessment>
-      </dt>
-      <dd>
-        <dd-impact-assessment></dd-impact-assessment>
-      </dd>
-      <dt>
-        <dt-communication-plan></dt-communication-plan>
-      </dt>
-      <dd>
-        <dd-communication-plan></dd-communication-plan>
-      </dd>
-      <dt>
-        <dt-rollback-plan></dt-rollback-plan>
-      </dt>
-      <dd>
-        <dd-rollback-plan></dd-rollback-plan>
-      </dd>
-      <dt>
-        <dt-monitoring></dt-monitoring>
-      </dt>
-      <dd>
-        <dd-monitoring></dd-monitoring>
-      </dd>
-      <dt>
-        <dt-documentation-updates></dt-documentation-updates>
-      </dt>
-      <dd>
-        <dd-documentation-updates></dd-documentation-updates>
-      </dd>
-      <dt>
-        <dt-testing-procedures></dt-testing-procedures>
-      </dt>
-      <dd>
-        <dd-testing-procedures></dd-testing-procedures>
-      </dd>
-      <dt>
-        <dt-post-reboot-verification></dt-post-reboot-verification>
-      </dt>
-      <dd>
-        <dd-post-reboot-verification></dd-post-reboot-verification>
-      </dd>
-      <dt>
-        <dt-incident-response></dt-incident-response>
-      </dt>
-      <dd>
-        <dd-incident-response></dd-incident-response>
-      </dd>
-      <dt>
-        <dt-post-reboot-analysis></dt-post-reboot-analysis>
-      </dt>
-      <dd>
-        <dd-post-reboot-analysis></dd-post-reboot-analysis>
-      </dd>
-    </dl>
+        <dl class="dl-root">
+          <dt>
+            <dt-id></dt-id>
+          </dt>
+          <dd>
+            <dd-id></dd-id>
+          </dd>
+          <dt>
+            <dt-name></dt-name>
+          </dt>
+          <dd>
+            <dd-name></dd-name>
+          </dd>
+          <dt>
+            <dt-version></dt-version>
+          </dt>
+          <dd>
+            <dd-version></dd-version>
+          </dd>
+          <dt>
+            <dt-environment></dt-environment>
+          </dt>
+          <dd>
+            <dd-environment></dd-environment>
+          </dd>
+          <dt>
+            <dt-reboot-type></dt-reboot-type>
+          </dt>
+          <dd>
+            <dd-reboot-type></dd-reboot-type>
+          </dd>
+          <dt>
+            <dt-start-time></dt-start-time>
+          </dt>
+          <dd>
+            <dd-start-time></dd-start-time>
+          </dd>
+          <dt>
+            <dt-end-time></dt-end-time>
+          </dt>
+          <dd>
+            <dd-end-time></dd-end-time>
+          </dd>
+          <dt>
+            <dt-reason></dt-reason>
+          </dt>
+          <dd>
+            <dd-reason></dd-reason>
+          </dd>
+          <dt>
+            <dt-impact-assessment></dt-impact-assessment>
+          </dt>
+          <dd>
+            <dd-impact-assessment></dd-impact-assessment>
+          </dd>
+          <dt>
+            <dt-communication-plan></dt-communication-plan>
+          </dt>
+          <dd>
+            <dd-communication-plan></dd-communication-plan>
+          </dd>
+          <dt>
+            <dt-rollback-plan></dt-rollback-plan>
+          </dt>
+          <dd>
+            <dd-rollback-plan></dd-rollback-plan>
+          </dd>
+          <dt>
+            <dt-monitoring></dt-monitoring>
+          </dt>
+          <dd>
+            <dd-monitoring></dd-monitoring>
+          </dd>
+          <dt>
+            <dt-documentation-updates></dt-documentation-updates>
+          </dt>
+          <dd>
+            <dd-documentation-updates></dd-documentation-updates>
+          </dd>
+          <dt>
+            <dt-testing-procedures></dt-testing-procedures>
+          </dt>
+          <dd>
+            <dd-testing-procedures></dd-testing-procedures>
+          </dd>
+          <dt>
+            <dt-post-reboot-verification></dt-post-reboot-verification>
+          </dt>
+          <dd>
+            <dd-post-reboot-verification></dd-post-reboot-verification>
+          </dd>
+          <dt>
+            <dt-incident-response></dt-incident-response>
+          </dt>
+          <dd>
+            <dd-incident-response></dd-incident-response>
+          </dd>
+          <dt>
+            <dt-post-reboot-analysis></dt-post-reboot-analysis>
+          </dt>
+          <dd>
+            <dd-post-reboot-analysis></dd-post-reboot-analysis>
+          </dd>
+        </dl>
+      </section>
 
-    <a name="response-example"></a>
-    <h2>
-      <t-response-example></t-response-example>
-    </h2>
-    <h2>
-      <t-http-code-200></t-http-code-200>
-    </h2>
-    <codeblock>
+      <section id="response-example">
+        <h2 class="speak">
+          <t-response-example></t-response-example>
+        </h2>
+        <h2>
+          <t-http-code-200></t-http-code-200>
+        </h2>
+        <!-- prettier-ignore -->
+        <codeblock>
 {
   "id": "7",
   "name": "Real&Mate Application",
@@ -202,126 +219,164 @@ GET https://example.com/realandmate/v1/RebootActInfo
   "end_time": "21-07-17T07:07:08",
   "reason": "Stability and performance",
   "impact_assessment": "Minimal",
-  "communication_plan": "Email notice",
-  "rollback_plan": "string",
-  "monitoring": "string",
-  "documentation_updates": "string",
-  "testing_procedures": "string",
-  "post_reboot_verification": "string",
-  "incident_response": "string",
-  "post_analysis": "string"
+  "communication_plan": "Email",
+  "rollback_plan": "In the unlikely event of a web application issue, revert to the previous stable version.",
+  "monitoring": "Monitoring tools that can provide real-time insights.",
+  "documentation_updates": "Technical documentation can be updated promptly.",
+  "testing_procedures ": "Comprehensive testing procedures will guarantee that every feature is working correctly.",
+  "post_reboot_verification": "A quick verification process to confirm that everything is running perfectly.",
+  "incident_response ": "Development team is well-prepared and ready to tackle any issues swiftly and efficiently.",
+  "post_analysis ": "A detailed post - analysis to celebrate our successes and identify opportunities for future improvement."
 }
-    </codeblock>
+        </codeblock>
+      </section>
 
-    <a name="response-codes"></a>
-    <h2>
-      <t-response-codes></t-response-codes>
-    </h2>
-    <table>
-      <colgroup class="rc-colgroup">
-        <col span="1">
-        <col span="1">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>
-            Code
-          </th>
-          <th>
-            Description
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="sc-200"></tr>
-      </tbody>
-    </table>
+      <section id="response-codes">
+        <h2>
+          <t-response-codes></t-response-codes>
+        </h2>
+        <table>
+          <colgroup class="rc-colgroup">
+            <col span="1" />
+            <col span="1" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="sc-200"></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-  </main>
+    <div id="footerContainer"></div>
 
-  <!-- Footer -->
-  <div id="footerContainer"></div>
+    <noscript>
+      <style>
+        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
+          display: none;
+        }
+      </style>
+      <section id="enable-javascript">
+        <h1>Enable JavaScript</h1>
+        <p>
+          Because this document uses web based technologies, it requires
+          interactive browser functionality. This functionality is provided, in
+          part, by JavaScript. You might have to enable JavaScript within the
+          browser in order to ensure that the document displays correctly and
+          its features work as expected.
+        </p>
+        <p>
+          Instructions for enabling JavaScript vary by browser. Select your
+          browser from the list to learn how.
+        </p>
+        <details>
+          <summary>
+            <strong>Chrome</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Click <strong>Privacy and security</strong> in the side menu.
+            </li>
+            <li>Click <strong>Site settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Edge</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>Click <strong>Settings</strong>.</li>
+            <li>
+              Choose <strong>Cookies and site permissions</strong> section.
+            </li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>Allowed (recommended)</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Firefox</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Type <code>about:config</code> in the address bar and press
+              <strong>Enter</strong>. A warning page may appear. Click
+              <strong>Accept the Risk and Continue</strong> to go to the
+              <strong>about:config</strong> page.
+            </li>
+            <li>
+              In <strong>Search preference name</strong> field, type
+              <code>javascript.enabled</code>. It should be set to
+              <code>true</code> by default.
+            </li>
+            <li>
+              If <code>javascript.enabled</code> is set to <code>false</code>,
+              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
+              back to <code>true</code>.
+            </li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            <strong>Opera</strong>
+          </summary>
+          <ol type="1">
+            <li>
+              Click on the browser menu button in the browser upper right
+              corner.
+            </li>
+            <li>
+              Scroll all the way down and click
+              <strong>Go to full browser settings</strong>.
+            </li>
+            <li>
+              Scroll to the <strong>Privacy and security</strong> section.
+            </li>
+            <li>Click <strong>Site Settings</strong>.</li>
+            <li>
+              Scroll to the <strong>JavaScript</strong> section and click on it.
+            </li>
+            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
+            <li>Refresh this page.</li>
+          </ol>
+        </details>
+      </section>
+    </noscript>
 
-  <!-- Enable JavaScript -->
-  <noscript>
-    <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
-        display: none;
-      }
-    </style>
-    <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
-      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
-        document displays correctly and its features work as expected.</p>
-      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
-        <summary>
-          <strong>Chrome</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
-          <li>Click <strong>Site settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Edge</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>Allowed (recommended)</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Firefox</strong>
-        </summary>
-        <ol type="1">
-          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
-          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
-          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Opera</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
-          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
-          <li>Click <strong>Site Settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-    </section>
-  </noscript>
-
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/comments-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot-min.js"></script>
-
-</body>
-
+    <script src="../../../scripts/elements-title-min.js"></script>
+    <script src="../../../scripts/api-ref-min.js"></script>
+    <script src="../../../scripts/p-1-line-indent-min.js"></script>
+    <script src="../../../scripts/comments-min.js"></script>
+    <script src="../../../scripts/copy-min.js"></script>
+    <script src="../../../scripts/dark-theme-min.js"></script>
+    <script src="../../../scripts/editor-mode-min.js"></script>
+    <script src="../../../scripts/meta-tags-min.js"></script>
+    <script src="../../../scripts/elements-min.js"></script>
+    <script src="../../../scripts/menu-min.js"></script>
+    <script src="../../../scripts/speak-min.js"></script>
+    <script src="../../../scripts/screenshot-min.js"></script>
+  </body>
 </html>

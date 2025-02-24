@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <title>GET /realandmate/v1 | Get Information about the Application</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" title="Main Stylesheet" />
-</head>
-
-<body id="body">
+  <body style="display: none">
 
   <span id="mainResourceName">Application</span>
   <span id="resourceName">Real&Mate Application</span>
@@ -18,158 +12,212 @@
 
   <header>
     <nav-links-api-ref></nav-links-api-ref>
-    <h1>GET /realandmate/v1</h1>
+    <h1 class="title speak">GET /realandmate/v1</h1>
   </header>
 
   <main>
 
-    <p>
-      Returns information about the application.
+    <p class="center speak">
+      Returns information about Real&Mate.
     </p>
-    <hr />
-    <ul>
+    <hr>
+    
+    <ul id="toc">
+      <li><a href="#request-example">
+          <t-request-example></t-request-example>
+        </a></li>
       <li><a href="#response-body">
           <t-response-body></t-response-body>
+        </a></li>
+      <li><a href="#response-example">
+          <t-response-example></t-response-example>
         </a></li>
       <li><a href="#response-codes">
           <t-response-codes></t-response-codes>
         </a></li>
     </ul>
 
-    <a name="response-body"></a>
-    <h2>
-      <t-response-body></t-response-body>
-    </h2>
-    <h3>
-      <t-http-code-200></t-http-code-200>
-    </h3>
-    <div class="sourceCode" id="cb2">
-      <pre class="json"><code class="json"><span class="dt">{</span>
-    <span class="dt">&quot;id&quot;: string,</span>
-    <span class="dt">&quot;name&quot;: string,</span>
-    <span class="dt">&quot;version&quot;: string,</span>
-    <span class="dt">&quot;description&quot;: string,</span>
-    <span class="dt">&quot;date_created&quot;: date,</span>
-    <span class="dt">&quot;date_modified&quot;: date,</span>
-    <span class="dt">&quot;owner&quot;: object,</span>
-    <span class="dt">&quot;app_category&quot;: string,</span>
-    <span class="dt">&quot;tags&quot;: [string],</span>
-    <span class="dt">&quot;documentation_url&quot;: string,</span>
-    <span class="dt">&quot;license&quot;: string</span>
-<span class="dt">}</span></code></pre>
-    </div>
+    <section id="request-example">
+      <h2 class="speak">
+        <t-request-example></t-request-example>
+      </h2><!-- prettier-ignore -->
+      <p>To use this API method, send the GET request. Below is an example of how to call the API:</p>
+    </h2><!-- prettier-ignore -->
+      <codeblock>
+  GET https://example.com/realandmate/v1
+      </codeblock>
+    </section>
 
-    <dl class="dl-root">
-      <dt>
-        <dt-id></dt-id>
-      </dt>
-      <dd>
-        <dd-id></dd-id>
-      </dd>
-      <dt>
-        <dt-name></dt-name>
-      </dt>
-      <dd>
-        <dd-name></dd-name>
-      </dd>
-      <dt>
-        <dt-version></dt-version>
-      </dt>
-      <dd>
-        <dd-version></dd-version>
-      </dd>
-      <dt>
-        <dt-description></dt-description>
-      </dt>
-      <dd>
-        <dd-description></dd-description>
-      </dd>
-      <dt>
-        <dt-date-created></dt-date-created>
-      </dt>
-      <dd>
-        <dd-date-created></dd-date-created>
-      </dd>
-      <dt>
-        <dt-date-modified></dt-date-modified>
-      </dt>
-      <dd>
-        <dd-date-modified></dd-date-modified>
-      </dd>
-      <dt>
-        <dt-owner></dt-owner>
-      </dt>
-      <dd>
-        <dd-owner></dd-owner>
-      </dd>
-      <dt>
-        <dt-app-category></dt-app-category>
-      </dt>
-      <dd>
-        <dd-app-category></dd-app-category>
-      </dd>
-      <dt>
-        <dt-tags></dt-tags>
-      </dt>
-      <dd>
-        <dd-tags></dd-tags>
-      </dd>
-      <dt>
-        <dt-documentation-url></dt-documentation-url>
-      </dt>
-      <dd>
-        <dd-documentation-url></dd-documentation-url>
-      </dd>
-      <dt>
-        <dt-license></dt-license>
-      </dt>
-      <dd>
-        <dd-license></dd-license>
-      </dd>
-    </dl>
+    <section id="response-body">
+      <h2 class="speak">
+        <t-response-body></t-response-body>
+      </h2>
+    </h2><!-- prettier-ignore -->
+      <p>The response will include a JSON string containing information about Real&Mate. This string can be converted into a JavaScript object for easier use. Below is the format of the object after parsing the string:</p>
+      <h3>
+        <t-http-code-200></t-http-code-200>
+      </h3>
+    </h2><!-- prettier-ignore -->
+      <codeblock>
+{
+  "id": string,
+  "name": string,
+  "version": string,
+  "description": string,
+  "date_created": date,
+  "date_modified": date,
+  "owner": string,
+  "app_category": string,
+  "tags": [string],
+  "documentation_url": string,
+  "license": string
+}
+    </codeblock>
 
-    <a name="response-codes"></a>
-    <h2>
-      <t-response-codes></t-response-codes>
-    </h2>
-    <table>
-      <colgroup class="rc-colgroup">
-        <col span="1">
-        <col span="1">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>
-            Code
-          </th>
-          <th>
-            Description
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="sc-200"></tr>
-      </tbody>
-    </table>
+      <dl class="dl-root">
+        <dt>
+          <dt-id></dt-id>
+        </dt>
+        <dd>
+          <dd-id></dd-id>
+        </dd>
+        <dt>
+          <dt-name></dt-name>
+        </dt>
+        <dd>
+          <dd-name></dd-name>
+        </dd>
+        <dt>
+          <dt-version></dt-version>
+        </dt>
+        <dd>
+          <dd-version></dd-version>
+        </dd>
+        <dt>
+          <dt-description></dt-description>
+        </dt>
+        <dd>
+          <dd-description></dd-description>
+        </dd>
+        <dt>
+          <dt-date-created></dt-date-created>
+        </dt>
+        <dd>
+          <dd-date-created></dd-date-created>
+        </dd>
+        <dt>
+          <dt-date-modified></dt-date-modified>
+        </dt>
+        <dd>
+          <dd-date-modified></dd-date-modified>
+        </dd>
+        <dt>
+          <dt-owner></dt-owner>
+        </dt>
+        <dd>
+          <dd-owner></dd-owner>
+        </dd>
+        <dt>
+          <dt-app-category></dt-app-category>
+        </dt>
+        <dd>
+          <dd-app-category></dd-app-category>
+        </dd>
+        <dt>
+          <dt-tags></dt-tags>
+        </dt>
+        <dd>
+          <dd-tags></dd-tags>
+        </dd>
+        <dt>
+          <dt-documentation-url></dt-documentation-url>
+        </dt>
+        <dd>
+          <dd-documentation-url></dd-documentation-url>
+        </dd>
+        <dt>
+          <dt-license></dt-license>
+        </dt>
+        <dd>
+          <dd-license></dd-license>
+        </dd>
+      </dl>
+    </section>
+
+    <section id="response-example">
+      <h2 class="speak">
+        <t-response-example></t-response-example>
+      </h2>
+      <h2>
+        <t-http-code-200></t-http-code-200>
+      </h2>
+    </h2><!-- prettier-ignore -->
+      <codeblock>
+{
+  "id": "1",
+  "name": "Real&Mate",
+  "version": "1.0",
+  "description": "Real&Mate software is designed for prompt implementation and support of real estate agency business processes.",
+  "date_created": "2022-07-09",
+  "date_modified": "2024-08-07",
+  "owner": "Real&Mate LLC",
+  "app_category": "Business",
+  "tags": [
+    "real-estate",
+    "real-estate-app",
+    "real-estate-application",
+    "real-estate-business",
+    "real-estate-management",
+    "real-estate-software",
+    "real-estate-web-application"
+  ],
+  "documentation_url": "https://primesolar.github.io/docs/",
+  "license": ""
+}
+    </codeblock>
+    </section>
+
+    <section id="response-codes">
+      <h2>
+        <t-response-codes></t-response-codes>
+      </h2>
+      <table>
+        <colgroup class="rc-colgroup">
+          <col span="1">
+          <col span="1">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Description
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="sc-200"></tr>
+        </tbody>
+      </table>
+    </section>
 
   </main>
 
-  <!-- Footer -->
-  <div id="footerContainer"></div>
+    <div id="footerContainer"></div>
 
-  <!-- Enable JavaScript -->
   <noscript>
     <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
+      body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
         display: none;
       }
     </style>
     <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
+      <h1>Enable JavaScript</h1>
       <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
         document displays correctly and its features work as expected.</p>
       <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
+      <details>
         <summary>
           <strong>Chrome</strong>
         </summary>
@@ -218,23 +266,24 @@
           <li>Click <strong>Site Settings</strong>.</li>
           <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
           <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.
+          <li>Refresh this page.</li>
+        </ol>
       </details>
     </section>
   </noscript>
 
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent.js"></script>
-  <script type="text/javascript" src="../../../scripts/comments.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot.js"></script>
+  <script src="../../../scripts/elements-title-min.js"></script>
+  <script src="../../../scripts/api-ref-min.js"></script>
+  <script src="../../../scripts/p-1-line-indent-min.js"></script>
+  <script src="../../../scripts/comments-min.js"></script>
+  <script src="../../../scripts/copy-min.js"></script>
+  <script src="../../../scripts/dark-theme-min.js"></script>
+  <script src="../../../scripts/editor-mode-min.js"></script>
+  <script src="../../../scripts/meta-tags-min.js"></script>
+  <script src="../../../scripts/elements-min.js"></script>
+  <script src="../../../scripts/menu-min.js"></script>
+  <script src="../../../scripts/speak-min.js"></script>
+  <script src="../../../scripts/screenshot-min.js"></script>
 
 </body>
 

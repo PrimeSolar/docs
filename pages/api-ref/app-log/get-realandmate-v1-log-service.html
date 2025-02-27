@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="An API method for retrieving the collection of log entries from Real&Mate." />
+    <meta name="keywords" content="real&mate, web application, documentation, api, reference, method, real estate, business, management, log" />
+  </head>
 
-<head>
-  <title>GET /realandmate/v1/LogService | Retrieve the Application Log Entry Collection</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" title="Main Stylesheet" />
-</head>
-
-<body id="body">
+  <body style="display: none">
 
   <span id="mainResourceName">Real&Mate</span>
   <span id="resourceName">Real&Mate log collection</span>
@@ -18,16 +14,16 @@
 
   <header>
     <nav-links-api-ref></nav-links-api-ref>
-    <h1>GET /realandmate/v1/LogService</h1>
+    <h1 class="title speak">GET /realandmate/v1/LogService</h1>
   </header>
 
   <main>
 
-    <p>
-      Returns the collection of <main-resource-name></main-resource-name> log entries.
+    <p class="center speak">
+      Returns the collection of log entries from Real&Mate.
     </p>
-    <hr />
-    <ul>
+    <hr>
+    <ul id="toc">
       <li><a href="#request-example">
           <t-request-example></t-request-example>
         </a></li>
@@ -42,24 +38,88 @@
         </a></li>
     </ul>
 
-    <a name="request-example"></a>
-    <h2>
-      <t-request-example></t-request-example>
-    </h2>
-    <codeblock>
-GET https://example.com/realandmate/v1/LogService
+    <section id="request-example">
+      <h2 class="speak">
+        <t-request-example></t-request-example>
+      </h2><!-- prettier-ignore -->
+      <p>To use this API method, send the GET request. Below is an example of how to call the API:</p>
+      <codeblock>
+  GET https://example.com/realandmate/v1/LogService
+    </codeblock>
+    </section>
+
+    <section id="response-body">
+      <h2 class="speak">
+        <t-response-body></t-response-body>
+      </h2><!-- prettier-ignore -->
+      <p>The response will include a JSON string containing the collection of log entries from Real&Mate. This string can be converted into a JavaScript object for easier use. Below is the format of the object after parsing the string:</p>
+      <h3>
+        <t-http-code-200></t-http-code-200>
+      </h3><!-- prettier-ignore -->
+      <codeblock>
+{
+  "id": string,
+  "name": string,
+  "description": string,
+  "items":{
+    "url": string
+  },
+  "items_count": number
+}
     </codeblock>
 
-    <a name="response-body"></a>
-    <h2>
-      <t-response-body></t-response-body>
-    </h2>
-    <h3>
-      <t-http-code-200></t-http-code-200>
-    </h3>
-    <codeblock>
+      <dl class="dl-root">
+        <dt>
+          <dt-id></dt-id>
+        </dt>
+        <dd>
+          <dd-id></dd-id>
+        </dd>
+        <dt>
+          <dt-name></dt-name>
+        </dt>
+        <dd>
+          <dd-name></dd-name>
+        </dd>
+        <dt>
+          <dt-description></dt-description>
+        </dt>
+        <dd>
+          <dd-description></dd-description>
+        </dd>
+        <dt>
+          <dt-items></dt-items>
+        </dt>
+        <dd>
+          <dd-items></dd-items>
+          <dl>
+            <dt>
+              <dt-url></dt-url>
+            </dt>
+            <dd>
+              <dd-url></dd-url>
+            </dd>
+          </dl>
+        </dd>
+        <dt>
+          <dt-items-count></dt-items-count>
+        </dt>
+        <dd>
+          <dd-items-count></dd-items-count>
+        </dd>
+      </dl>
+    </section>
+
+    <section id="response-example">
+      <h2 class="speak">
+        <t-response-example></t-response-example>
+      </h2>
+      <h2>
+        <t-http-code-200></t-http-code-200>
+      </h2><!-- prettier-ignore -->
+      <codeblock>
 {
-  "id": "4",
+  "id": "10",
   "name": "Real&Mate Log Collection",
   "description": "Collection of log entries registered in Real&Mate web application.",
   "items":{
@@ -70,164 +130,46 @@ GET https://example.com/realandmate/v1/LogService
 }
     </codeblock>
 
-    <dl class="dl-root">
-      <dt>
-        <dt-id></dt-id>
-      </dt>
-      <dd>
-        <dd-id></dd-id>
-      </dd>
-      <dt>
-        <dt-name></dt-name>
-      </dt>
-      <dd>
-        <dd-name></dd-name>
-      </dd>
-      <dt>
-        <dt-description></dt-description>
-      </dt>
-      <dd>
-        <dd-description></dd-description>
-      </dd>
-      <dt>
-        <dt-items></dt-items>
-      </dt>
-      <dd>
-        <dd-items></dd-items>
-        <dl>
-          <dt>
-            <dt-url></dt-url>
-          </dt>
-          <dd>
-            <dd-url></dd-url>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-items-count></dt-items-count>
-      </dt>
-      <dd>
-        <dd-items-count></dd-items-count>
-      </dd>
-    </dl>
-
-    <a name="response-example"></a>
-    <h2>
-      <t-response-example></t-response-example>
-    </h2>
-    <h2>
-      <t-http-code-200></t-http-code-200>
-    </h2>
-    <codeblock>
-    </codeblock>
-
-    <a name="response-codes"></a>
-    <h2>
-      <t-response-codes></t-response-codes>
-    </h2>
-    <table>
-      <colgroup>
-        <col span="1" style="width: 20%;">
-        <col span="1" style="width: 80%;">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>
-            Code
-          </th>
-          <th>
-            Description
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="sc-200"></tr>
-      </tbody>
-    </table>
+      <section id="response-codes">
+        <h2>
+          <t-response-codes></t-response-codes>
+        </h2>
+        <table class="response-codes">
+          <colgroup>
+            <col span="1">
+            <col span="1">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>
+                Code
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="sc-200"></tr>
+          </tbody>
+        </table>
+      </section>
 
   </main>
 
-  <!-- Footer -->
   <div id="footerContainer"></div>
 
-  <!-- Enable JavaScript -->
-  <noscript>
-    <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
-        display: none;
-      }
-    </style>
-    <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
-      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
-        document displays correctly and its features work as expected.</p>
-      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
-        <summary>
-          <strong>Chrome</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
-          <li>Click <strong>Site settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Edge</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>Allowed (recommended)</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Firefox</strong>
-        </summary>
-        <ol type="1">
-          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
-          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
-          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Opera</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
-          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
-          <li>Click <strong>Site Settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-    </section>
-  </noscript>
-
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot-min.js"></script>
+  <script src="../../../scripts/elements-title-min.js"></script>
+  <script src="../../../scripts/api-ref-min.js"></script>
+  <script src="../../../scripts/p-1-line-indent-min.js"></script>
+  <script src="../../../scripts/copy-min.js"></script>
+  <script src="../../../scripts/dark-theme-min.js"></script>
+  <script src="../../../scripts/editor-mode-min.js"></script>
+  <script src="../../../scripts/meta-tags-min.js"></script>
+  <script src="../../../scripts/elements-min.js"></script>
+  <script src="../../../scripts/menu-min.js"></script>
+  <script src="../../../scripts/speak-min.js"></script>
+  <script src="../../../scripts/screenshot-min.js"></script>
 
 </body>
 

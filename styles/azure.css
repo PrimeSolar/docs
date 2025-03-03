@@ -95,6 +95,24 @@ best-practices > ul {
   list-style-type: inherit;
 }
 
+section {
+  margin: 10vh 0 0; /* Set the thickness of the margin area */
+}
+
+section:first-of-type {
+  margin: 7.5vh 0 0; /* Set the thickness of the margin area */
+}
+
+@media screen and (max-width: 1500px) {
+  section {
+    margin: 15vh 0 0; /* Set the thickness of the margin area */
+  }
+
+  section:first-of-type {
+    margin: 10vh 0 0; /* Set the thickness of the margin area */
+  }
+}
+
 section > ul {
   display: block; /* Make the element a block-level element */
   list-style-type: inherit;
@@ -487,7 +505,7 @@ html {
   height: 100%; /* Set the height of the element */
   scroll-behavior: smooth; /* Enable smooth scrolling for a webpage */
   /*
-  background-image: url(../pics/real-estate-10-920x518.jpg);
+  background-image: url(../assets/real-estate-10-920x518.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -1247,6 +1265,11 @@ ol {
   animation: brighten 1s;
 }
 
+h1.title {
+  margin: 5vh auto 0; /* Set the thickness of the margin area */
+  max-width: 100%; /* Set the width of the element */
+}
+
 @keyframes brighten {
   0% {
     opacity: 0;
@@ -1455,6 +1478,16 @@ logo-img {
   padding: 15px 15px 5px; /* Set the thickness of the padding area */
   border: 1px solid #0088ff; /* Set the width, the style, and the color of the border */
   margin: 0; /* Remove any default margin */
+}
+
+ul#toc {
+  margin: 7.5vh 0 0; /* Set the thickness of the margin area */
+}
+
+@media screen and (max-width: 1500px) {
+  ul#toc {
+    margin: 10vh 0 0; /* Set the thickness of the margin area */
+  }
 }
 
 menu-container {

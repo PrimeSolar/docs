@@ -4,17 +4,17 @@
 
 ## Got a question?
 
-&nbsp;&nbsp;You can ask questions and discuss docs-related topics by [contacting me](https://github.com/FirstSolar/docs#contact-me).
+&nbsp;&nbsp;You can ask questions and discuss docs-related topics by [contacting me](https://github.com/PrimeSolar/docs#contact-me).
 
 ## Found a bug?
 
-&nbsp;&nbsp;If you found a bug in the source code, you can help me by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=) to my GitHub Repository.
+&nbsp;&nbsp;If you found a bug in the source code, you can help me by [submitting an issue](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=) to my GitHub Repository.
 
 &nbsp;&nbsp;Even better, you can [submit a Pull Request](#submit-pr) with a fix.
 
 ## Missing a feature?
 
-&nbsp;&nbsp;You can request a new feature by [submitting an issue](https://github.com/FirstSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=) to my GitHub Repository.
+&nbsp;&nbsp;You can request a new feature by [submitting an issue](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=) to my GitHub Repository.
 
 &nbsp;&nbsp;If you'd like to implement a new feature, it's always good to be in touch with me before you invest time and effort.
 
@@ -39,7 +39,7 @@
 * [JavaScript](https://javascript.info)
 * [TypeScript](https://www.typescriptlang.org/docs)
 
-&nbsp;&nbsp;If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/FirstSolar/docs/labels/documentation).
+&nbsp;&nbsp;If you don't feel ready to make a code contribution yet, no problem! You can also check out the [documentation issues](https://github.com/PrimeSolar/docs/labels/documentation).
 
 <a name="submit-pr"/>
 
@@ -47,7 +47,7 @@
 
 &nbsp;&nbsp;Are you new to open source contribution? Wondering how contributions work in my project? Here's a quick rundown.
 
-&nbsp;&nbsp;Find an issue that you're interested in addressing, or a feature that you'd like to add. &nbsp;&nbsp;You can use [this view](https://github.com/FirstSolar/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into my project.
+&nbsp;&nbsp;Find an issue that you're interested in addressing, or a feature that you'd like to add. &nbsp;&nbsp;You can use [this view](https://github.com/PrimeSolar/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) which helps new contributors find easy gateways into my project.
 
 ### Step 1: Make a fork
 
@@ -148,6 +148,6 @@ content(glossary): missing GUI description
 
 ## Code of Conduct
 
-&nbsp;&nbsp;Please note that this project is released with a [Code of Conduct](https://github.com/FirstSolar/docs/blob/main/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+&nbsp;&nbsp;Please note that this project is released with a [Code of Conduct](https://github.com/PrimeSolar/docs/blob/main/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 &nbsp;&nbsp;Our Code of Conduct means that you need to treat everyone on the project with respect and politeness.

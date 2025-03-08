@@ -1,458 +1,394 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <title>PATCH /realandmate/v1/AccountService | Update Account Management Settings</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" title="Main Stylesheet" />
-</head>
+  <body style="display: none">
+    <span id="mainResourceName">Account Service</span>
+    <span id="resourceName">account management settings</span>
+    <span id="capitalizedResourceName">Account Management Settings</span>
 
-<body id="body">
+    <header>
+      <nav-links-api-ref></nav-links-api-ref>
+      <h1 class="title speak">PATCH /realandmate/v1/AccountService</h1>
+    </header>
 
-  <span id="mainResourceName">Account Service</span>
-  <span id="resourceName">account management settings</span>
-  <span id="capitalizedResourceName">Account Management Settings</span>
+    <main>
+      <p class="center speak">Updates <resource-name></resource-name>.</p>
+      <hr />
+      <ul id="toc">
+        <li>
+          <a href="#request-body">
+            <t-request-body></t-request-body>
+          </a>
+        </li>
+        <li>
+          <a href="#request-example">
+            <t-request-example></t-request-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-body">
+            <t-response-body></t-response-body>
+          </a>
+        </li>
+        <li>
+          <a href="#response-example">
+            <t-response-example></t-response-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-codes">
+            <t-response-codes></t-response-codes>
+          </a>
+        </li>
+      </ul>
 
-  <header>
-    <nav-links-api-ref></nav-links-api-ref>
-    <h1>PATCH /realandmate/v1/AccountService</h1>
-  </header>
-
-  <main>
-
-    <p>
-      Updates <resource-name></resource-name>.
-    </p>
-    <hr />
-    <ul>
-      <li><a href="#request-body">
+      <section id="request-body">
+        <h2 class="speak">
           <t-request-body></t-request-body>
-        </a></li>
-      <li><a href="#request-example">
+        </h2>
+        <!-- prettier-ignore -->
+        <codeblock>
+{
+  "preferences": {
+    "language_default": string,
+    "time_zone_default": string,
+    "notifications_default": boolean
+  },
+  "security_settings": {
+    "min_username_length": number,
+    "max_username_length": number,
+    "min_password_length": number,
+    "max_password_length": number,
+    "require_two_factor_auth": boolean
+  },
+  "subscription_management":{
+    "show_plans_modal_window": boolean,
+    "show_plans_modal_window_repeat_after": number
+  },
+  "activity_logs": boolean
+}
+    </codeblock>
+
+        <dl class="dl-root">
+          <dt>
+            <dt-preferences></dt-preferences>
+          </dt>
+          <dd>
+            <dd-preferences></dd-preferences>
+            <dl>
+              <dt>
+                <dt-language-default></dt-language-default>
+              </dt>
+              <dd>
+                <dd-language-default></dd-language-default>
+              </dd>
+              <dt>
+                <dt-time-zone-default></dt-time-zone-default>
+              </dt>
+              <dd>
+                <dd-time-zone-default></dd-time-zone-default>
+              </dd>
+              <dt>
+                <dt-notifications-default></dt-notifications-default>
+              </dt>
+              <dd>
+                <dd-notifications-default></dd-notifications-default>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-security-settings></dt-security-settings>
+          </dt>
+          <dd>
+            <dd-security-settings></dd-security-settings>
+            <dl>
+              <dt>
+                <dt-min-username-length></dt-min-username-length>
+              </dt>
+              <dd>
+                <dd-min-username-length></dd-min-username-length>
+              </dd>
+              <dt>
+                <dt-max-username-length></dt-max-username-length>
+              </dt>
+              <dd>
+                <dd-max-username-length></dd-max-username-length>
+              </dd>
+              <dt>
+                <dt-min-password-length></dt-min-password-length>
+              </dt>
+              <dd>
+                <dd-min-password-length></dd-min-password-length>
+              </dd>
+              <dt>
+                <dt-max-password-length></dt-max-password-length>
+              </dt>
+              <dd>
+                <dd-max-password-length></dd-max-password-length>
+              </dd>
+              <dt>
+                <dt-require-two-factor-auth></dt-require-two-factor-auth>
+              </dt>
+              <dd>
+                <dd-require-two-factor-auth></dd-require-two-factor-auth>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-subscription-management></dt-subscription-management>
+          </dt>
+          <dd>
+            <dd-subscription-management></dd-subscription-management>
+            <dl>
+              <dt>
+                <dt-show-plans-modal-window></dt-show-plans-modal-window>
+              </dt>
+              <dd>
+                <dd-show-plans-modal-window></dd-show-plans-modal-window>
+              </dd>
+              <dt>
+                <dt-show-plans-modal-window-repeat-after></dt-show-plans-modal-window-repeat-after>
+              </dt>
+              <dd>
+                <dd-show-plans-modal-window-repeat-after></dd-show-plans-modal-window-repeat-after>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-activity-logs></dt-activity-logs>
+          </dt>
+          <dd>
+            <dd-activity-logs></dd-activity-logs>
+          </dd>
+        </dl>
+      </section>
+
+      <section id="request-example">
+        <h2 class="speak">
           <t-request-example></t-request-example>
-        </a></li>
-      <li><a href="#response-body">
+        </h2>
+        <!-- prettier-ignore -->
+        <codeblock>
+  PATCH https://example.com/realandmate/v1/AccountService
+    </codeblock
+
+        ><!-- prettier-ignore -->
+        <codeblock>
+{
+  "preferences": {
+    "language_default": "English",
+    "time_zone_default": "America/New_York",
+    "notifications_default": true
+  },
+  "security_settings": {
+    "min_username_length": 1,
+    "max_username_length": 50,
+    "min_password_length": 14,
+    "max_password_length": 50,
+    "require_two_factor_auth": false
+  },
+  "subscription_management":{
+    "show_plans_modal_window": true,
+    "show_plans_modal_window_repeat_after": 30
+  },
+  "activity_logs": true
+}
+    </codeblock>
+      </section>
+
+      <section id="response-body">
+        <h2 class="speak">
           <t-response-body></t-response-body>
-        </a></li>
-      <li><a href="#response-example">
+        </h2>
+        <h3>
+          <t-http-code-200></t-http-code-200>
+        </h3>
+        <!-- prettier-ignore -->
+        <codeblock>
+{
+  "preferences": {
+    "language_default": string,
+    "time_zone_default": string,
+    "notifications_default": boolean
+  },
+  "security_settings": {
+    "min_username_length": number,
+    "max_username_length": number,
+    "min_password_length": number,
+    "max_password_length": number,
+    "require_two_factor_auth": boolean
+  },
+  "subscription_management":{
+    "show_plans_modal_window": boolean,
+    "show_plans_modal_window_repeat_after": number
+  },
+  "activity_logs": boolean
+}
+    </codeblock>
+
+        <dl class="dl-root">
+          <dt>
+            <dt-preferences></dt-preferences>
+          </dt>
+          <dd>
+            <dd-preferences></dd-preferences>
+            <dl>
+              <dt>
+                <dt-language-default></dt-language-default>
+              </dt>
+              <dd>
+                <dd-language-default></dd-language-default>
+              </dd>
+              <dt>
+                <dt-time-zone-default></dt-time-zone-default>
+              </dt>
+              <dd>
+                <dd-time-zone-default></dd-time-zone-default>
+              </dd>
+              <dt>
+                <dt-notifications-default></dt-notifications-default>
+              </dt>
+              <dd>
+                <dd-notifications-default></dd-notifications-default>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-security-settings></dt-security-settings>
+          </dt>
+          <dd>
+            <dd-security-settings></dd-security-settings>
+            <dl>
+              <dt>
+                <dt-min-username-length></dt-min-username-length>
+              </dt>
+              <dd>
+                <dd-min-username-length></dd-min-username-length>
+              </dd>
+              <dt>
+                <dt-max-username-length></dt-max-username-length>
+              </dt>
+              <dd>
+                <dd-max-username-length></dd-max-username-length>
+              </dd>
+              <dt>
+                <dt-min-password-length></dt-min-password-length>
+              </dt>
+              <dd>
+                <dd-min-password-length></dd-min-password-length>
+              </dd>
+              <dt>
+                <dt-max-password-length></dt-max-password-length>
+              </dt>
+              <dd>
+                <dd-max-password-length></dd-max-password-length>
+              </dd>
+              <dt>
+                <dt-require-two-factor-auth></dt-require-two-factor-auth>
+              </dt>
+              <dd>
+                <dd-require-two-factor-auth></dd-require-two-factor-auth>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-subscription-management></dt-subscription-management>
+          </dt>
+          <dd>
+            <dd-subscription-management></dd-subscription-management>
+            <dl>
+              <dt>
+                <dt-show-plans-modal-window></dt-show-plans-modal-window>
+              </dt>
+              <dd>
+                <dd-show-plans-modal-window></dd-show-plans-modal-window>
+              </dd>
+              <dt>
+                <dt-show-plans-modal-window-repeat-after></dt-show-plans-modal-window-repeat-after>
+              </dt>
+              <dd>
+                <dd-show-plans-modal-window-repeat-after></dd-show-plans-modal-window-repeat-after>
+              </dd>
+            </dl>
+          </dd>
+          <dt>
+            <dt-activity-logs></dt-activity-logs>
+          </dt>
+          <dd>
+            <dd-activity-logs></dd-activity-logs>
+          </dd>
+        </dl>
+      </section>
+
+      <section id="response-example">
+        <h2 class="speak">
           <t-response-example></t-response-example>
-        </a></li>
-      <li><a href="#response-codes">
+        </h2>
+        <h2>
+          <t-http-code-200></t-http-code-200>
+        </h2>
+        <!-- prettier-ignore -->
+        <codeblock>
+{
+  "preferences": {
+    "language_default": "English",
+    "time_zone_default": "America/New_York",
+    "notifications_default": true
+  },
+  "security_settings": {
+    "min_username_length": 1,
+    "max_username_length": 50,
+    "min_password_length": 14,
+    "max_password_length": 50,
+    "require_two_factor_auth": false
+  },
+  "subscription_management":{
+    "show_plans_modal_window": true,
+    "show_plans_modal_window_repeat_after": 30
+  },
+  "activity_logs": true
+}
+    </codeblock>
+      </section>
+
+      <section id="response-codes">
+        <h2>
           <t-response-codes></t-response-codes>
-        </a></li>
-    </ul>
+        </h2>
+        <table class="response-codes">
+          <colgroup>
+            <col span="1" />
+            <col span="1" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="sc-200"></tr>
+            <tr id="sc-500"></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-    <a name="request-body"></a>
-    <h2>
-      <t-request-body></t-request-body>
-    </h2>
-    <codeblock>
-{
-  "preferences": {
-    "language_default": string,
-    "time_zone_default": string,
-    "notifications_default": boolean
-  },
-  "security_settings": {
-    "min_username_length": number,
-    "max_username_length": number,
-    "min_password_length": number,
-    "max_password_length": number,
-    "require_two_factor_auth": boolean
-  },
-  "subscription_management":{
-    "show_plans_modal_window": boolean,
-    "show_plans_modal_window_repeat_after": number
-  },
-  "activity_logs": boolean
-}
-    </codeblock>
+    <div id="footerContainer"></div>
 
-    <dl class="dl-root">
-      <dt>
-        <dt-preferences></dt-preferences>
-      </dt>
-      <dd>
-        <dd-preferences></dd-preferences>
-        <dl>
-          <dt>
-            <dt-language-default></dt-language-default>
-          </dt>
-          <dd>
-            <dd-language-default></dd-language-default>
-          </dd>
-          <dt>
-            <dt-time-zone-default></dt-time-zone-default>
-          </dt>
-          <dd>
-            <dd-time-zone-default></dd-time-zone-default>
-          </dd>
-          <dt>
-            <dt-notifications-default></dt-notifications-default>
-          </dt>
-          <dd>
-            <dd-notifications-default></dd-notifications-default>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-security-settings></dt-security-settings>
-      </dt>
-      <dd>
-        <dd-security-settings></dd-security-settings>
-        <dl>
-          <dt>
-            <dt-min-username-length></dt-min-username-length>
-          </dt>
-          <dd>
-            <dd-min-username-length></dd-min-username-length>
-          </dd>
-          <dt>
-            <dt-max-username-length></dt-max-username-length>
-          </dt>
-          <dd>
-            <dd-max-username-length></dd-max-username-length>
-          </dd>
-          <dt>
-            <dt-min-password-length></dt-min-password-length>
-          </dt>
-          <dd>
-            <dd-min-password-length></dd-min-password-length>
-          </dd>
-          <dt>
-            <dt-max-password-length></dt-max-password-length>
-          </dt>
-          <dd>
-            <dd-max-password-length></dd-max-password-length>
-          </dd>
-          <dt>
-            <dt-require-two-factor-auth></dt-require-two-factor-auth>
-          </dt>
-          <dd>
-            <dd-require-two-factor-auth></dd-require-two-factor-auth>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-subscription-management></dt-subscription-management>
-      </dt>
-      <dd>
-        <dd-subscription-management></dd-subscription-management>
-        <dl>
-          <dt>
-            <dt-show-plans-modal-window></dt-show-plans-modal-window>
-          </dt>
-          <dd>
-            <dd-show-plans-modal-window></dd-show-plans-modal-window>
-          </dd>
-          <dt>
-            <dt-show-plans-modal-window-repeat-after></dt-show-plans-modal-window-repeat-after>
-          </dt>
-          <dd>
-            <dd-show-plans-modal-window-repeat-after></dd-show-plans-modal-window-repeat-after>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-activity-logs></dt-activity-logs>
-      </dt>
-      <dd>
-        <dd-activity-logs></dd-activity-logs>
-      </dd>
-    </dl>
-
-    <a name="request-example"></a>
-    <h2>
-      <t-request-example></t-request-example>
-    </h2>
-    <codeblock>
-PATCH https://example.com/realandmate/v1/AccountService
-    </codeblock>
-    <codeblock>
-{
-  "preferences": {
-    "language_default": "English",
-    "time_zone_default": "America/New_York",
-    "notifications_default": true
-  },
-  "security_settings": {
-    "min_username_length": 1,
-    "max_username_length": 50,
-    "min_password_length": 14,
-    "max_password_length": 50,
-    "require_two_factor_auth": false
-  },
-  "subscription_management":{
-    "show_plans_modal_window": true,
-    "show_plans_modal_window_repeat_after": 30
-  },
-  "activity_logs": true
-}
-    </codeblock>
-
-    <a name="response-body"></a>
-    <h2>
-      <t-response-body></t-response-body>
-    </h2>
-    <h3>
-      <t-http-code-200></t-http-code-200>
-    </h3>
-    <codeblock>
-{
-  "preferences": {
-    "language_default": string,
-    "time_zone_default": string,
-    "notifications_default": boolean
-  },
-  "security_settings": {
-    "min_username_length": number,
-    "max_username_length": number,
-    "min_password_length": number,
-    "max_password_length": number,
-    "require_two_factor_auth": boolean
-  },
-  "subscription_management":{
-    "show_plans_modal_window": boolean,
-    "show_plans_modal_window_repeat_after": number
-  },
-  "activity_logs": boolean
-}
-    </codeblock>
-
-    <dl class="dl-root">
-      <dt>
-        <dt-preferences></dt-preferences>
-      </dt>
-      <dd>
-        <dd-preferences></dd-preferences>
-        <dl>
-          <dt>
-            <dt-language-default></dt-language-default>
-          </dt>
-          <dd>
-            <dd-language-default></dd-language-default>
-          </dd>
-          <dt>
-            <dt-time-zone-default></dt-time-zone-default>
-          </dt>
-          <dd>
-            <dd-time-zone-default></dd-time-zone-default>
-          </dd>
-          <dt>
-            <dt-notifications-default></dt-notifications-default>
-          </dt>
-          <dd>
-            <dd-notifications-default></dd-notifications-default>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-security-settings></dt-security-settings>
-      </dt>
-      <dd>
-        <dd-security-settings></dd-security-settings>
-        <dl>
-          <dt>
-            <dt-min-username-length></dt-min-username-length>
-          </dt>
-          <dd>
-            <dd-min-username-length></dd-min-username-length>
-          </dd>
-          <dt>
-            <dt-max-username-length></dt-max-username-length>
-          </dt>
-          <dd>
-            <dd-max-username-length></dd-max-username-length>
-          </dd>
-          <dt>
-            <dt-min-password-length></dt-min-password-length>
-          </dt>
-          <dd>
-            <dd-min-password-length></dd-min-password-length>
-          </dd>
-          <dt>
-            <dt-max-password-length></dt-max-password-length>
-          </dt>
-          <dd>
-            <dd-max-password-length></dd-max-password-length>
-          </dd>
-          <dt>
-            <dt-require-two-factor-auth></dt-require-two-factor-auth>
-          </dt>
-          <dd>
-            <dd-require-two-factor-auth></dd-require-two-factor-auth>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-subscription-management></dt-subscription-management>
-      </dt>
-      <dd>
-        <dd-subscription-management></dd-subscription-management>
-        <dl>
-          <dt>
-            <dt-show-plans-modal-window></dt-show-plans-modal-window>
-          </dt>
-          <dd>
-            <dd-show-plans-modal-window></dd-show-plans-modal-window>
-          </dd>
-          <dt>
-            <dt-show-plans-modal-window-repeat-after></dt-show-plans-modal-window-repeat-after>
-          </dt>
-          <dd>
-            <dd-show-plans-modal-window-repeat-after></dd-show-plans-modal-window-repeat-after>
-          </dd>
-        </dl>
-      </dd>
-      <dt>
-        <dt-activity-logs></dt-activity-logs>
-      </dt>
-      <dd>
-        <dd-activity-logs></dd-activity-logs>
-      </dd>
-    </dl>
-
-    <a name="response-example"></a>
-    <h2>
-      <t-response-example></t-response-example>
-    </h2>
-    <h2>
-      <t-http-code-200></t-http-code-200>
-    </h2>
-    <codeblock>
-{
-  "preferences": {
-    "language_default": "English",
-    "time_zone_default": "America/New_York",
-    "notifications_default": true
-  },
-  "security_settings": {
-    "min_username_length": 1,
-    "max_username_length": 50,
-    "min_password_length": 14,
-    "max_password_length": 50,
-    "require_two_factor_auth": false
-  },
-  "subscription_management":{
-    "show_plans_modal_window": true,
-    "show_plans_modal_window_repeat_after": 30
-  },
-  "activity_logs": true
-}
-    </codeblock>
-
-    <a name="response-codes"></a>
-    <h2>
-      <t-response-codes></t-response-codes>
-    </h2>
-    <table>
-      <colgroup>
-        <col span="1" style="width: 20%;">
-        <col span="1" style="width: 80%;">
-      </colgroup>
-      <thead>
-        <tr>
-          <th>
-            Code
-          </th>
-          <th>
-            Description
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="sc-200"></tr>
-        <tr id="sc-500"></tr>
-      </tbody>
-    </table>
-
-  </main>
-
-  <!-- Footer -->
-  <div id="footerContainer"></div>
-
-  <!-- Enable JavaScript -->
-  <noscript>
-    <style>
-      body *:not(noscript, h2, p, details, summary, strong, ol, li) {
-        display: none;
-      }
-    </style>
-    <section id="enable-javascript">
-      <h2>Enable JavaScript</h2>
-      <p>Because this document uses web based technologies, it requires interactive browser functionality. This functionality is provided, in part, by JavaScript. You might have to enable JavaScript within the browser in order to ensure that the
-        document displays correctly and its features work as expected.</p>
-      <p>Instructions for enabling JavaScript vary by browser. Select your browser from the list to learn how.</p>
-      <details style="margin-top: 5vh;">
-        <summary>
-          <strong>Chrome</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Click <strong>Privacy and security</strong> in the side menu.</li>
-          <li>Click <strong>Site settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Edge</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Click <strong>Settings</strong>.</li>
-          <li>Choose <strong>Cookies and site permissions</strong> section.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>Allowed (recommended)</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Firefox</strong>
-        </summary>
-        <ol type="1">
-          <li>Type <code>about:config</code> in the address bar and press <strong>Enter</strong>. A warning page may appear. Click <strong>Accept the Risk and Continue</strong> to go to the <strong>about:config</strong> page.</li>
-          <li>In <strong>Search preference name</strong> field, type <code>javascript.enabled</code>. It should be set to <code>true</code> by default.</li>
-          <li>If <code>javascript.enabled</code> is set to <code>false</code>, click <strong>Toggle</strong> or <strong>Reset</strong> to set it back to <code>true</code>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-      <details>
-        <summary>
-          <strong>Opera</strong>
-        </summary>
-        <ol type="1">
-          <li>Click on the browser menu button in the browser upper right corner.</li>
-          <li>Scroll all the way down and click <strong>Go to full browser settings</strong>.</li>
-          <li>Scroll to the <strong>Privacy and security</strong> section.</li>
-          <li>Click <strong>Site Settings</strong>.</li>
-          <li>Scroll to the <strong>JavaScript</strong> section and click on it.</li>
-          <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-          <li>Refresh this page.</li>
-        </ol>
-      </details>
-    </section>
-  </noscript>
-
-  <!-- Scripts -->
-  <script type="text/javascript" src="../../../scripts/elements-title-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/api-ref-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/p-1-line-indent-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/dark-theme-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/editor-mode-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/elements-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/html2canvas-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
-  <script type="text/javascript" src="../../../scripts/screenshot-min.js"></script>
-
-</body>
-
+    <script src="../../../scripts/elements-title-min.js"></script>
+    <script src="../../../scripts/api-ref-min.js"></script>
+    <script src="../../../scripts/p-1-line-indent-min.js"></script>
+    <script src="../../../scripts/copy-min.js"></script>
+    <script src="../../../scripts/dark-theme-min.js"></script>
+    <script src="../../../scripts/editor-mode-min.js"></script>
+    <script src="../../../scripts/meta-tags-min.js"></script>
+    <script src="../../../scripts/elements-min.js"></script>
+    <script src="../../../scripts/menu-min.js"></script>
+    <script src="../../../scripts/speak-min.js"></script>
+    <script src="../../../scripts/screenshot-min.js"></script>
+  </body>
 </html>

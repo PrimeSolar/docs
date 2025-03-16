@@ -54,12 +54,10 @@
         </ul>
       </details>
 
-      <section>
-        <a name="content-formatting"></a>
+      <section id="content-formatting">
         <h2 class="speak">Content Formatting</h2>
 
-        <section>
-          <a name="titles"></a>
+        <section id="titles">
           <h3 class="speak">Titles</h3>
           <!-- prettier-ignore -->
           <p>Titles are the base of a documentation structure, as they shape the content by separating it into coherent sections.</p>
@@ -93,8 +91,7 @@
           </codeblock>
         </section>
 
-        <section>
-          <a name="text-highlights"></a>
+        <section id="text-highlights">
           <h3 class="speak">Text Highlights</h3>
           <!-- prettier-ignore -->
           <p>Text highlights are basic formatting that represent and/or highlight items from user interfaces:</p>
@@ -116,8 +113,7 @@
     </codeblock>
         </section>
 
-        <section>
-          <a name="notes"></a>
+        <section id="notes">
           <h3 class="speak">Notes</h3>
           <!-- prettier-ignore -->
           <p>Notes highlight information by separating it from the regular, main content.</p>
@@ -136,8 +132,7 @@ New entries are only considered created once some of their content has been writ
     </codeblock>
         </section>
 
-        <section>
-          <a name="links"></a>
+        <section id="links">
           <h3 class="speak">Links</h3>
           <!-- prettier-ignore -->
           <p>Links can redirect users to other parts/sections of the Real&Mate Documentation (internal links) and to any other resource outside the Real&Mate Documentation (external links).</p>
@@ -168,8 +163,7 @@ New entries are only considered created once some of their content has been writ
           </codeblock>
         </section>
 
-        <section>
-          <a name="lists"></a>
+        <section id="lists">
           <h3 class="speak">Lists</h3>
           <!-- prettier-ignore -->
           <p>Lists allow to group sets of related items:</p>
@@ -208,8 +202,7 @@ To start receiving webhook events in your app, create and register a webhook end
     </codeblock>
         </section>
 
-        <section>
-          <a name="code-examples"></a>
+        <section id="code-examples">
           <h3 class="speak">Code Examples</h3>
           <!-- prettier-ignore -->
           <p>Code examples are displayed in a console-like style, that also contains a "Copy" button for easier use.</p>
@@ -220,12 +213,10 @@ To start receiving webhook events in your app, create and register a webhook end
           </codeblock>
         </section>
 
-        <section>
-          <a name="details"></a>
-          <h3>Details</h3>
+        <section id="details">
+          <h3 class="speak">Details</h3>
           <!-- prettier-ignore -->
-          <p>Details are elements that by default only display a title, as the rest of the content is collapsed. It's used for content that can be hidden by default to make documentation shorter and cleaner.
-    </p>
+          <p>Details are elements that by default only display a title, as the rest of the content is collapsed. It's used for content that can be hidden by default to make documentation shorter and cleaner.</p>
 
           <details>
             <summary>Title of the Details</summary>
@@ -243,8 +234,7 @@ To start receiving webhook events in your app, create and register a webhook end
     </codeblock>
         </section>
 
-        <section>
-          <a name="tables"></a>
+        <section id="tables">
           <h3 class="speak">Tables</h3>
 
           <!-- prettier-ignore -->
@@ -328,12 +318,10 @@ To start receiving webhook events in your app, create and register a webhook end
     <h3 class="speak">Requests & Responses</h3>-->
       </section>
 
-      <section>
-        <a name="illustrations"></a>
+      <section id="illustrations">
         <h2 class="speak">Illustrations</h2>
 
-        <section>
-          <a name="screenshots"></a>
+        <section id="screenshots">
           <h3 class="speak">Screenshots</h3>
 
           <!-- prettier-ignore -->
@@ -342,11 +330,9 @@ To start receiving webhook events in your app, create and register a webhook end
           <best-practices>
             <ul>
               <!-- prettier-ignore -->
-              <li>Prefer screenshots of the whole interface instead of cutting only part of it. It's easier for a user to locate where something is on the interface using a context.
-        </li>
+              <li>Prefer screenshots of the whole interface instead of cutting only part of it. It's easier for a user to locate where something is on the interface using a context.</li>
               <!-- prettier-ignore -->
-              <li>To indicate a specific area of the screenshot that's mentioned in the documentation, edit the screenshot to add a rectangular shape around the area. The shape should blue (#37aef7), and its lines should be 3px wide.
-        </li>
+              <li>To indicate a specific area of the screenshot that's mentioned in the documentation, edit the screenshot to add a rectangular shape around the area. The shape should blue (#37aef7), and its lines should be 3px wide.</li>
             </ul>
           </best-practices>
 
@@ -362,8 +348,7 @@ To start receiving webhook events in your app, create and register a webhook end
           </codeblock>
         </section>
 
-        <section>
-          <a name="buttons"></a>
+        <section id="buttons">
           <h3 class="speak">Buttons</h3>
 
           <!-- prettier-ignore -->
@@ -403,117 +388,6 @@ Click &lt;img alt="Arrow counterclockwise" src="assets/buttons/arrow-countercloc
     </main>
 
     <div id="footerContainer"></div>
-
-    <noscript>
-      <style>
-        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
-          display: none;
-        }
-      </style>
-      <section id="enable-javascript">
-        <h1>Enable JavaScript</h1>
-        <p>
-          Because this document uses web based technologies, it requires
-          interactive browser functionality. This functionality is provided, in
-          part, by JavaScript. You might have to enable JavaScript within the
-          browser in order to ensure that the document displays correctly and
-          its features work as expected.
-        </p>
-        <p>
-          Instructions for enabling JavaScript vary by browser. Select your
-          browser from the list to learn how.
-        </p>
-        <details>
-          <summary>
-            <strong>Chrome</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>Click <strong>Settings</strong>.</li>
-            <li>
-              Click <strong>Privacy and security</strong> in the side menu.
-            </li>
-            <li>Click <strong>Site settings</strong>.</li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Edge</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>Click <strong>Settings</strong>.</li>
-            <li>
-              Choose <strong>Cookies and site permissions</strong> section.
-            </li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>Allowed (recommended)</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Firefox</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Type <code>about:config</code> in the address bar and press
-              <strong>Enter</strong>. A warning page may appear. Click
-              <strong>Accept the Risk and Continue</strong> to go to the
-              <strong>about:config</strong> page.
-            </li>
-            <li>
-              In <strong>Search preference name</strong> field, type
-              <code>javascript.enabled</code>. It should be set to
-              <code>true</code> by default.
-            </li>
-            <li>
-              If <code>javascript.enabled</code> is set to <code>false</code>,
-              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
-              back to <code>true</code>.
-            </li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Opera</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>
-              Scroll all the way down and click
-              <strong>Go to full browser settings</strong>.
-            </li>
-            <li>
-              Scroll to the <strong>Privacy and security</strong> section.
-            </li>
-            <li>Click <strong>Site Settings</strong>.</li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-      </section>
-    </noscript>
 
     <script src="scripts/elements-title-min.js"></script>
     <script src="scripts/dark-theme-min.js"></script>

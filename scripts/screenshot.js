@@ -1,12 +1,18 @@
-const containerButton = document.getElementById('container-button');
-const dropdown = document.getElementById('dropdown');
+const html2CanvasScript = document.createElement("script");
+html2CanvasScript.type = "text/javascript";
+html2CanvasScript.src =
+  "https://html2canvas.hertzen.com/dist/html2canvas.min.js";
+document.querySelector("body").appendChild(html2CanvasScript);
+
+const containerButton = document.getElementById("container-button");
+const dropdown = document.getElementById("dropdown");
 const localReusableItems = document.getElementById("local-reusable-items");
 const a = document.getElementsByTagName("a");
 const button = document.getElementsByTagName("button");
 const speakButtons = document.getElementsByClassName("speak-inline");
 const comment = document.getElementsByTagName("comment-tag");
 const noscript = document.getElementsByTagName("noscript");
-const switchyBtn = document.getElementById('switchy');
+const switchyBtn = document.getElementById("switchy");
 
 function screenshot() {
   containerButton.style.display = "none";
@@ -29,14 +35,13 @@ function screenshot() {
   for (let x of noscript) {
     x.style.display = "none";
   }
-  html2canvas(document.body)
-    .then(canvas => {
-      const url = canvas.toDataURL('image/jpg');
-      const a = document.createElement('a');
-      a.setAttribute('download', 'screenshot.jpg');
-      a.setAttribute('href', url);
-      a.click();
-    })
+  html2canvas(document.body).then((canvas) => {
+    const url = canvas.toDataURL("image/jpg");
+    const a = document.createElement("a");
+    a.setAttribute("download", "screenshot.jpg");
+    a.setAttribute("href", url);
+    a.click();
+  });
   containerButton.style.display = null;
   dropdown.style.display = null;
   for (let x of a) {
@@ -59,18 +64,21 @@ function themeScreenshot() {
   switchyBtn.click();
 }
 
-screenshotBtn.addEventListener('click', () => {
+screenshotBtn.addEventListener("click", () => {
   if (document.documentElement.classList.contains("dark")) {
     themeScreenshot();
   } else if (document.documentElement.classList.contains("light")) {
     screenshot();
   } else {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
       themeScreenshot();
     } else {
       screenshot();
     }
   }
-})
+});
 
 console.log("screenshot.js is completed");

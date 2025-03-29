@@ -6,6 +6,7 @@ document.querySelector("body").appendChild(html2CanvasScript);
 
 const containerButton = document.getElementById("container-button");
 const dropdown = document.getElementById("dropdown");
+const titleClass = document.querySelectorAll(".title");
 const localReusableItems = document.getElementById("local-reusable-items");
 const a = document.getElementsByTagName("a");
 const button = document.getElementsByTagName("button");
@@ -19,6 +20,13 @@ function screenshot() {
   dropdown.style.display = "none";
   if (localReusableItems != null) {
     localReusableItems.style.display = "none";
+  }
+  for (let x of titleClass) {
+    x.style.background = "none";
+    x.style.backgroundClip = "none";
+    x.style.webkitTextFillColor = "none";
+    x.style.animation = "none";
+    x.style.color = "#007fff";
   }
   for (let x of a) {
     x.style.textDecoration = "none";
@@ -43,6 +51,13 @@ function screenshot() {
     a.click();
   });
   containerButton.style.display = null;
+  for (let x of titleClass) {
+    x.style.background = "linear-gradient(to right, #007fff, #5597ff)";
+    x.style.backgroundClip = "text";
+    x.style.webkitTextFillColor = "transparent";
+    x.style.animation = "brighten 1s";
+    x.style.color = "none";
+  }
   dropdown.style.display = null;
   for (let x of a) {
     x.style.textDecoration = "underline";

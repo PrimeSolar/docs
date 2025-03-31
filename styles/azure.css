@@ -555,12 +555,12 @@ note {
 }
 
 note > ul {
-  margin: 0.5vh 0; /* Set the thickness of the margin area */
+  margin: 0.5vh 0; /* Set the size of the margin */
 }
 
 note > p {
   font-size: 16px; /* Set the font size of the text */
-  margin: 10px 0; /* Set the thickness of the margin area */
+  margin: 10px 0; /* Set the size of the margin */
 }
 
 note > pre {
@@ -589,7 +589,7 @@ optionalityDegreeO {
     -150px,
     0
   ); /* Standard syntax for modern browsers (widely supported) */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -627,7 +627,7 @@ optionalityDegreeR {
     -150px,
     0
   ); /* Standard syntax for modern browsers (widely supported) */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -665,7 +665,7 @@ optionalityDegreeU {
     -150px,
     0
   ); /* Standard syntax for modern browsers (widely supported) */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -722,7 +722,7 @@ paramType {
 }
 
 section:hover > ol > li > od-o > optionalityDegreeO {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -730,7 +730,7 @@ section:hover > ol > li > od-o > optionalityDegreeO {
 }
 
 section:hover > ol > li > od-r > optionalityDegreeR {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -738,7 +738,7 @@ section:hover > ol > li > od-r > optionalityDegreeR {
 }
 
 section:hover > ol > li > od-u > optionalityDegreeU {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -746,7 +746,7 @@ section:hover > ol > li > od-u > optionalityDegreeU {
 }
 
 section:hover > ul > li > ol > li > od-o > optionalityDegreeO {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -754,7 +754,7 @@ section:hover > ul > li > ol > li > od-o > optionalityDegreeO {
 }
 
 section:hover > ul > li > ol > li > od-r > optionalityDegreeR {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -762,7 +762,7 @@ section:hover > ul > li > ol > li > od-r > optionalityDegreeR {
 }
 
 section:hover > ul > li > ol > li > od-u > optionalityDegreeU {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -770,7 +770,7 @@ section:hover > ul > li > ol > li > od-u > optionalityDegreeU {
 }
 
 section:hover > ul > li > ul > li > od-o > optionalityDegreeO {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -778,7 +778,7 @@ section:hover > ul > li > ul > li > od-o > optionalityDegreeO {
 }
 
 section:hover > ul > li > ul > li > od-r > optionalityDegreeR {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -786,7 +786,7 @@ section:hover > ul > li > ul > li > od-r > optionalityDegreeR {
 }
 
 section:hover > ul > li > ul > li > od-u > optionalityDegreeU {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -988,7 +988,7 @@ ol {
 }
 
 #cards:hover > .card::after {
-  opacity: 0.01;
+  opacity: 0.01; /* Set the opacity of the element */
 }
 
 .card {
@@ -1091,7 +1091,7 @@ ol {
   content: "";
   height: 100%; /* Set the height of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
   position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 0;
   transition: opacity 500ms;
@@ -1104,7 +1104,7 @@ ol {
 }
 
 .card:hover::before {
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
 }
 
 .card-label {
@@ -1217,7 +1217,7 @@ ol {
   }
 
   .card {
-    max-width: 500px; /* Set the maximum width to 500 pixels */
+    max-width: 500px; /* Set the maximum width of the element */
     margin-top: 0; /* Remove top margin */
     padding-top: 0; /* Remove top padding*/
   }
@@ -1267,15 +1267,15 @@ ol {
 
 h1.title {
   margin: 5vh auto 0; /* Set the thickness of the margin area */
-  max-width: 100%; /* Set the width of the element */
+  max-width: 100%; /* Set the maximum width of the element */
 }
 
 @keyframes brighten {
   0% {
-    opacity: 0;
+    opacity: 0; /* Set the opacity of the element */
   }
   100% {
-    opacity: 1;
+    opacity: 1; /* Set the opacity of the element */
   }
 }
 
@@ -1287,7 +1287,7 @@ h1.title {
   width: 45px; /* Set the width of the element */
   height: 45px; /* Set the height of the element */
   z-index: 1; /* Set the stacking order of the "To top" button */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
   font-size: 16px; /* Set the font size of the text */
   text-decoration: none; /* Remove underline from text links */
   pointer-events: none; /* Deactivate pointer events */
@@ -1317,7 +1317,7 @@ h1.title {
 .to-top.active {
   bottom: 56px; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
   pointer-events: auto; /* Allow pointer events */
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
 }
 
 .w3c {
@@ -1447,7 +1447,7 @@ logo-img {
 }
 
 #logo {
-  max-width: 100%; /* Set the width of the element */
+  max-width: 100%; /* Set the maximum width of the element */
   width: 420px;
   height: auto; /* Set the height of the element */
 }
@@ -1532,7 +1532,10 @@ menu-container {
   height: 5px; /* Set the height of the element */
   background-color: #318ce7; /* Set the color of the text */
   margin: 6px 0; /* Set the thickness of the margin area */
-  transition: 0.4s;
+  /* Set an effect of a transition */
+  -webkit-transition: 0.4s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.4s; /* For older versions of Opera */
+  transition: 0.4s; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .change .bar1 {
@@ -1542,7 +1545,7 @@ menu-container {
 }
 
 .change .bar2 {
-  opacity: 0; /* Set the opacity to 0 (invisible) */
+  opacity: 0; /* Set the opacity of the element */
 }
 
 .change .bar3 {
@@ -1960,13 +1963,13 @@ editor-button ~ speak-button #speakBtn {
   0% {
     width: 0; /* Set the width of the element */
     height: 0; /* Set the height of the element */
-    opacity: 0.5; /* Set the opacity to 0.5 (partially transparent) */
+    opacity: 0.5; /* Set the opacity of the element */
   }
 
   100% {
     width: 1000px; /* Set the width of the element */
     height: 1000px; /* Set the height of the element */
-    opacity: 0; /* Set the opacity to 0 (invisible) */
+    opacity: 0; /* Set the opacity of the element */
   }
 }
 

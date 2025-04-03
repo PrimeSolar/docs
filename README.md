@@ -1,11 +1,9 @@
 # Documentation
 
 <p align="center">
-<img alt="Latest release: 1.0" src="pics/latest-release.svg" style="padding: 0; margin: 0;"/>
-<img alt="Solution: ES12" src="pics/solution-es12.svg" style="padding: 0; margin: 0;"/>
-<img alt="Solution: Linux | Windows" src="pics/os-linux-windows.svg" style="padding: 0; margin: 0;"/>
-<img alt="Contributions: welcome" src="pics/contributions-welcome.svg" style="padding: 0; margin: 0;"/>
-<img alt="License: Mozilla Public License 2.0" src="pics/license-mozilla.svg" style="padding: 0; margin: 0;"/>   
+<img alt="Latest release: 1.0" src="assets/latest-release.svg" style="padding: 0; margin: 0;"/>
+<img alt="Solution: ES12" src="assets/solution-es15.svg" style="padding: 0; margin: 0;"/>
+<img alt="Solution: Linux | Windows" src="assets/os-linux-windows.svg" style="padding: 0; margin: 0;"/>
 </p>
 
 &nbsp;&nbsp;This open-source repository contains code examples related to software documentation that I have developed from scratch 📚
@@ -20,10 +18,6 @@
     - [Features](#features)
     - [How It Works](#how-it-works)
     - [External Services](#external-services)
-    - [Road Map](#road-map)
-      - [Common](#common)
-      - [Glossary](#glossary)
-      - [Security Guide](#security-guide)
     - [Code Attribution](#code-attribution)
   - [Contributing](#contributing)
   - [Support](#support)
@@ -36,7 +30,7 @@
 
 ## Real&Mate
 
-<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="pics/logo-transparent.jpg"/>
+<img align="right" width="200" height="200" alt="Real&Mate Logo" title="Real&Mate Logo" src="assets/logo-transparent.jpg"/>
 
 &nbsp;&nbsp;Real&Mate software is designed for prompt implementation and support of real estate agency business processes.
 
@@ -48,35 +42,38 @@
 
 ### Features
 
-* Automation of providing the client with real estate offers from several agencies.
-* Provision of additional services by several service organizations to one client under one contract.
-* Several contracts support for one client.
-* Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
+- Automation of providing the client with real estate offers from several agencies.
+- Provision of additional services by several service organizations to one client under one contract.
+- Several contracts support for one client.
+- Agreement decisions are made in real time based on requirement analysis results and depend on the scores calculated on the basis of client data set.
 
 <a name="how-it-works"></a>
 
 ### How It Works
+
 &nbsp;&nbsp;Real&Mate is designed to automatically process an application for a purchase, sale or lease of real estate, for client data analysis and manual setting of processing criteria by manager. GUI and CLI control is available. The software is developed in JavaScript. Interaction between software components is as follows:
+
 1. The manager, using the Control Unit, sets up the client assessment methods in the Assessment Unit.
 2. To create an application, the client manually fills out the form in Client Unit. Personal data are passed from the Client Unit to the Assessment Unit.
 3. Assessment Unit sends data to the Integration Unit in JSON format using SQL request to get data from a specific external service. When requested, a record with client's application information is generated in the database with primary key which includes application ID and session IDs of connected external services. Sessions of connected external services are generated automatically when application is created. The database genType column specifies methods that form a queue of requests to external services. If there are no specified methods in the column, all available methods will be called. Parameters in requests to different external services may vary.
 
-<img align="left" width="20" height="20" alt="Note: " title="Note" src="pics/note.svg" style="padding: 0; margin: 0;"/> If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
+<img align="left" width="20" height="20" alt="Note: " title="Note" src="assets/note.svg" style="padding: 0; margin: 0;"/> If the request is retried and the cache is active, no further steps are taken. Assessment Unit gets response from cache.
 <br clear="left"/>
 
 4. Integration Unit sends request to the external service. The further interaction can be done using technologies such as HTTPS, REST API, SOAP and SQL-queries to the database.
 5. External service processing received request and sends a response to the Integration Unit. Before further sending, the Integration Unit checks received data according to two criteria:
-    * Data must be in JSON format.
-    * Parameter names from external service must match with parameter names used by Assessment Unit.
 
-    If at least one of the criteria is not met:
+   - Data must be in JSON format.
+   - Parameter names from external service must match with parameter names used by Assessment Unit.
 
-    5.1. The presence of handler for this external service is checked.
+   If at least one of the criteria is not met:
 
-    5.2. If there is a handler, it's called and data is converted.
+   5.1. The presence of handler for this external service is checked.
 
-    <img align="left" width="20" height="20" alt="Note: " title="Note" src="pics/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
-    <br clear="left"/>
+   5.2. If there is a handler, it's called and data is converted.
+
+   <img align="left" width="20" height="20" alt="Note: " title="Note" src="assets/note.svg" style="padding: 0; margin: 0;"/> Conversion procedures are individual for the handlers of each external service and are configured by developer.
+   <br clear="left"/>
 
 6. Integration Unit sends data in JSON format to Assessment Unit using SQL-query.
 7. Assessment Unit sends response with processed data to Control Unit. Manager gets real estate assessment report, manually adjusts the assessment method if necessary, and additionally analyzes real estate parameters.
@@ -89,42 +86,12 @@
 ### External Services
 
 |     Application     | Description  |       Plugin       |
-|:-------------------:|:------------:|:------------------:|
+| :-----------------: | :----------: | :----------------: |
 |   AH Real Estate    | File manager |    ah-real&mate    |
 | Cushmaw & Wakefielg | File manager | Natively supported |
 |        Essev        | Text editor  |  real&mate.essev   |
 |        GSRE         | Text editor  |   real&mate.gsre   |
 |       Notiuv        | File manager | Natively supported |
-
-<a name="road-map"></a>
-
-### Road Map
-#### Common
-* [x] Create a main page (index.html)
-* [x] Create scripts with reusable content
-* [x] Create a style file
-* [x] Create a theme switch
-* [x] Add a footer
-* [ ] Add common info about technical support
-* [ ] Add requirements for contacting technical support
-* [ ] Add contacts
-* [x] Add more reusable content to elements.js
-* [x] Improve the style
-#### Glossary
-* [x] Create a glossary.html
-* [x] Add a title part
-* [x] Add an annotation
-* [x] Add terms
-#### Security Guide
-* [ ] Create a security-guide.html
-* [ ] Add an annotation
-* [ ] Add a glossary
-* [ ] Add basic security concepts
-* [ ] Add user roles
-* [ ] Add operations available according to roles
-* [ ] Add event logging info
-* [ ] Add an algorithm for getting records from the log
-* [ ] Add operations in the log info
 
 <a name="code-attribution"></a>
 
@@ -132,23 +99,25 @@
 
 &nbsp;&nbsp;This project utilizes powerful libraries and stylesheets to enhance functionality and ensure consistent styling across different browsers:
 
-* **Dexie.js**
-   - **Author**: David Fahlander
-   - **License**: Apache License, Version 2.0
-   - **Link**: [Dexie.js Repository](https://github.com/dexie/Dexie.js)
-   - **License Text**: [Apache License, Version 2.0](https://github.com/dexie/Dexie.js/blob/master/LICENSE)
+- **Dexie.js**
 
-* **html2canvas**
-   - **Author**: Niklas von Hertzen
-   - **License**: MIT License
-   - **Link**: [html2canvas Repository](https://github.com/niklasvh/html2canvas)
-   - **License Text**: [MIT License](https://github.com/niklasvh/html2canvas/blob/master/LICENSE)
+  - **Author**: David Fahlander
+  - **License**: Apache License, Version 2.0
+  - **Link**: [Dexie.js Repository](https://github.com/dexie/Dexie.js)
+  - **License Text**: [Apache License, Version 2.0](https://github.com/dexie/Dexie.js/blob/master/LICENSE)
 
-* **Normalize.css**
-   - **Author**: Nicolas Gallagher and Jonathan Neal
-   - **License**: MIT License
-   - **Link**: [Normalize.css Repository](https://github.com/necolas/normalize.css)
-   - **License Text**: [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+- **html2canvas**
+
+  - **Author**: Niklas von Hertzen
+  - **License**: MIT License
+  - **Link**: [html2canvas Repository](https://github.com/niklasvh/html2canvas)
+  - **License Text**: [MIT License](https://github.com/niklasvh/html2canvas/blob/master/LICENSE)
+
+- **Normalize.css**
+  - **Author**: Nicolas Gallagher and Jonathan Neal
+  - **License**: MIT License
+  - **Link**: [Normalize.css Repository](https://github.com/necolas/normalize.css)
+  - **License Text**: [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 
 ## Contributing
 
@@ -168,13 +137,13 @@
 
 &nbsp;&nbsp;You can ask questions and participate in discussions about document-related topics:
 
-* on the Documents Discord channel.
+- on the Documents Discord channel.
 
-<a href="https://discord.gg/f6Vk2kDe" target="_blank"><img alt="Discord channel " title="Discord channel" src="pics/discord.svg" style="padding: 0; margin: 0;"/></a>
+<a href="https://discord.gg/f6Vk2kDe" target="_blank"><img alt="Discord channel " title="Discord channel" src="assets/discord.svg" style="padding: 0; margin: 0;"/></a>
 
-* on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">Documets Matrix channel</a>.
+- on the <a href="https://matrix.to/#/#docs:matrix.org" target="_blank">Documets Matrix channel</a>.
 
-* on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-documents` tag.
+- on <a href="https://stackoverflow.com/questions/tagged/real&mate-docs" target="_blank">Stack Overflow</a> by including the `realmate-documents` tag.
 
 &nbsp;&nbsp;Remember to search for existing questions before creating a new one.
 

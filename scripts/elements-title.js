@@ -167,7 +167,7 @@ if (headerIndex !== null) {
 class logoImg extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <img alt="Real&Mate Logo" title="Real&Mate Logo" name="real-and-mate-logo" id="logo" src="pics/logo-transparent.jpg" />
+      <img alt="Real&Mate Logo" title="Real&Mate Logo" name="real-and-mate-logo" id="logo" src="assets/logo-transparent.jpg" />
     `;
   }
 }

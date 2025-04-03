@@ -63,7 +63,7 @@ const notes = document.getElementsByTagName("note");
 if (notes) {
   for (let x of notes) {
     x.innerHTML =
-      '<img alt="Note:" title="Note" name="note" class="img-inline" src="pics/note.jpg" />&nbsp;<strong>Note</strong>' +
+      '<img alt="Note:" title="Note" name="note" class="img-inline" src="assets/note.jpg" />&nbsp;<strong>Note</strong>' +
       x.innerHTML;
   }
 }

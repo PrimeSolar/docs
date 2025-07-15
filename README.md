@@ -19,7 +19,9 @@
   - [Support](#support)
     - [Ask a question about Real\&Mate Documentation](#ask-a-question-about-realmate-documentation)
     - [Create a Bug Report](#create-a-bug-report)
+    - [Disclaimer](#disclaimer)
     - [Submit a Feature Request](#submit-a-feature-request)
+    - [☕ Support My Work](#-support-my-work)
     - [Contact Me](#contact-me)
 
 <a name="realandmate"></a>
@@ -147,6 +149,12 @@
 
 &nbsp;&nbsp;If you run into an issue, please [create bug report](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20bug&template=bug_report.md&title=). This effort is valued and it will help all Documents users.
 
+### Disclaimer
+
+<a name="disclaimer"></a>
+
+&nbsp;&nbsp;The tools provided in this repository and on the website https://primesolar.github.io/docs/ for editing and saving content are intended for personal use only. I do not take any responsibility for the use of these tools or the content created or modified using them. All information that is not original or that is not published by me is not associated with me in any way. Users are solely responsible for their actions and the consequences of using the editing and saving features. By using this repository, files associated with this repository, or the website https://primesolar.github.io/docs/, you acknowledge and agree to this disclaimer.
+
 <a name="submit-a-feature-request"></a>
 
 ### Submit a Feature Request
@@ -154,6 +162,16 @@
 &nbsp;&nbsp;If you have an idea, or you're missing an information that would make documents easier to understand, more accurate and more up-to-date, please [submit feature request](https://github.com/PrimeSolar/docs/issues/new?assignees=&labels=type%3A%20feature%20request&template=feature_request.md&title=).
 
 &nbsp;&nbsp;If a similar feature request already exists, don't forget to leave a "+1". If you add some more information such as your thoughts and vision about the feature, your comments will be embraced warmly 🙌
+
+### ☕ Support My Work
+
+If you enjoy my project and would like to support my work, consider buying me a coffee! Your contributions help me stay energized and motivated to create even more amazing content.
+
+Every cup of coffee you buy not only fuels my passion but also allows me to dedicate more time to developing innovative projects and sharing knowledge. Whether it's a small gesture or a generous contribution, every bit is greatly appreciated!
+
+👉 [Buy me a coffee](https://buymeacoffee.com/cocacola)
+
+Thank you for your support! Together, we can create something wonderful! 💖
 
 <a name="contact-me"></a>
 

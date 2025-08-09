@@ -385,10 +385,11 @@ details > summary {
   padding-bottom: 25px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 25px; /* Set the thickness for the left padding area of the element */
   text-align: center; /* Align the text in the element */
-  /* Set an effect of a transition for the element */
-  -webkit-transition: 0.25s; /* For older versions of Chrome and Safari */
-  -o-transition: 0.25s; /* For older versions of Opera */
-  transition: 0.25s; /* Standard syntax for modern browsers (widely supported) */
+  /* Set the border radius for the corners of the element */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  border-radius: 5px; /* Standard property for border radius */
 }
 
 @media (max-width: 430px) {
@@ -452,13 +453,19 @@ footer {
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
   margin: 0; /* Set the size of the margin for the element */
-  padding-top: 1em; /* Set the thickness for the top padding area of the element */
+  padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
-  padding-bottom: 1em; /* Set the thickness for the bottom padding area of the element */
+  padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   position: absolute; /* Set the position of the element */
   text-align: center; /* Align the text in the element */
   width: 100%; /* Set the width of the element */
+}
+
+footer p,
+footerLowerLC p,
+footerLowerMC p {
+  margin: 21px 0px; /* Set the size of the margin for the element */
 }
 
 footer a {
@@ -468,6 +475,38 @@ footer a {
 
 footer a:visited {
   color: #ffffff; /* Set the color for the text of the element */
+}
+
+.bmc-button {
+  display: block; /* Specify the display behavior of the element */
+  width: fit-content; /* Set the width of the element */
+  height: 24px; /* Set the height of the element */
+  margin: 20px auto; /* Set the size for the margin of the element */
+  background-color: #ff843f !important; /* Set the color for the background of the element */
+  color: #ffffff; /* Set the color for the text of the element */
+  font-family: "Cookie", cursive; /* Set the font family for the text of the element */
+  font-weight: bold; /* Set the font weight for the text of the element */
+  text-decoration: none; /* Set the decoration for the text of the element */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element */
+  border: none;
+  padding: 10px 20px; /* Set the padding of the element */
+  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element */
+  outline: none;
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element */
+  /* Set the border radius for the corners of the element */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  border-radius: 5px; /* Standard property for border radius */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
+}
+
+.bmc-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px #0000004d;
 }
 
 footerLowerLC {
@@ -497,9 +536,9 @@ footerLowerLC {
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
   margin: 0; /* Set the size of the margin for the element */
-  padding-top: 1em; /* Set the thickness for the top padding area of the element */
+  padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
-  padding-bottom: 1em; /* Set the thickness for the bottom padding area of the element */
+  padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   position: fixed; /* Position the element fixed to the viewport */
   text-align: center; /* Align the text in the element */
@@ -548,9 +587,9 @@ footerLowerMC {
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
   margin: 0; /* Set the size of the margin for the element */
-  padding-top: 1em; /* Set the thickness for the top padding area of the element */
+  padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
-  padding-bottom: 1em; /* Set the thickness for the bottom padding area of the element */
+  padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   position: absolute; /* Set the position of the element */
   text-align: center; /* Align the text in the element */
@@ -992,6 +1031,7 @@ ol {
 }
 
 .doc-list-item {
+  width: 100%; /* Set the width of the element */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
@@ -1019,19 +1059,21 @@ ol {
   margin: 0; /* Set the size of the margin for the element */
   max-width: 100%; /* Set the maximum width of the element */
   text-align: center; /* Align the text in the element */
-  /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
-  -o-transition: 0.5s; /* For older versions of Opera */
-  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
-  width: 100%; /* Set the width of the element */
-}
-
-.doc-list-item:hover {
+  /* Set the border radius for the corners of the element */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  border-radius: 5px; /* Standard property for border radius */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
   transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
+
+/* .doc-list-item:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 8px #0000004d;
+} */
 
 .doc-list-item a {
   color: #ffffff !important; /* Set the color for the text of the element */
@@ -1456,7 +1498,7 @@ h1.title {
 }
 
 .to-top.active {
-  bottom: 56px; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
+  bottom: 141px; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
   pointer-events: auto; /* Control the element's response to pointer events */
   opacity: 1; /* Set the opacity of the element */
 }

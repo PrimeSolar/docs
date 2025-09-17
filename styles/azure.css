@@ -477,7 +477,7 @@ footer a:visited {
   color: #ffffff; /* Set the color for the text of the element */
 }
 
-.bmc-button {
+#bmc-button {
   display: block; /* Specify the display behavior of the element */
   width: fit-content; /* Set the width of the element */
   height: 24px; /* Set the height of the element */
@@ -504,7 +504,7 @@ footer a:visited {
   transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-.bmc-button:active {
+#bmc-button:active {
   transform: scale(0.95);
   box-shadow: 0 4px 8px #0000004d;
 }
@@ -622,7 +622,7 @@ h3 {
 
 html {
   height: 100%; /* Set the height of the element */
-  scroll-behavior: smooth; /* Enable smooth scrolling for a webpage */
+  scroll-behavior: smooth; /* Set the scroll behavior of the element */
   /*
   background-image: url(../assets/real-estate-10-920x518.jpg);
   background-repeat: no-repeat;
@@ -976,7 +976,7 @@ ul {
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
-  /* Align items horizontally*/
+  /* Align items horizontally */
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */
@@ -1128,7 +1128,7 @@ ol {
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
   gap: 2.5vw; /* Set the gap between items of the element*/
-  /* Center cards horizontally*/
+  /* Center cards horizontally */
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */
@@ -1276,7 +1276,7 @@ ol {
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   font-weight: bold; /* Set the font weight for the text of the element */
   font-size: 2.5vh; /* Set the font size for the text of the element */
-  color: #ffffff; /* Set the text color to white */
+  color: #ffffff; /* Set the color for the text of the element */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
@@ -1486,7 +1486,7 @@ h1.title {
   -webkit-box-align: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-align: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   align-items: center; /* Standard syntax for modern browsers (widely supported) */
-  /* Align items horizontally*/
+  /* Align items horizontally */
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */
@@ -1503,7 +1503,7 @@ h1.title {
   opacity: 1; /* Set the opacity of the element */
 }
 
-.w3c {
+#w3c {
   border: 0;
   display: block; /* Specify the display behavior of the element */
   height: 30px; /* Set the height of the element */
@@ -1624,7 +1624,7 @@ logo-img {
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
-  /* Align items horizontally*/
+  /* Align items horizontally */
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */
@@ -1831,9 +1831,117 @@ nav-links-doc-main-page a {
   text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation */
 }
 
-@media print {
-  #menu-title {
+@media screen {
+  #bmc-link,
+  #bmc-arrow {
     display: none;
+  }
+}
+
+@media print {
+  #menu-title,
+  theme-button,
+  editor-button,
+  speak-button,
+  .speak-inline,
+  codeblock button {
+    display: none !important;
+  }
+
+  #header {
+    top: 45%;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  section#tables codeblock,
+  #copyright,
+  #bmc-arrow,
+  #bmc-link {
+    font-size: 10pt;
+  }
+
+  section#response-codes,
+  footer p {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title {
+    color: #007fff;
+    background: none;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
+
+  ul,
+  ul code,
+  ol,
+  #toc a,
+  p,
+  p code,
+  table,
+  dl,
+  dl code,
+  best-practices,
+  note,
+  #copyright {
+    color: #000000;
+  }
+
+  details#toc {
+    page-break-after: always;
+  }
+
+  details#toc a {
+    border-bottom: 1px solid #000000;
+  }
+
+  summary {
+    display: block !important;
+  }
+
+  th {
+    border-left: none !important;
+    border-right: none !important;
+  }
+
+  summary,
+  p a,
+  table a,
+  #copyright a {
+    color: #1177ff !important;
+  }
+
+  #bmc-button {
+    margin: 5pt auto 0;
+    text-decoration: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: #ffffff !important;
+    /* display: none; */
+  }
+
+  #bmc-arrow {
+    display: block;
+    margin: 5pt auto 0;
+    font-size: 15pt;
+    text-decoration: none !important;
+    color: #000000;
+  }
+
+  #bmc-link {
+    display: block;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    color: #1177ff !important;
   }
 }
 
@@ -2289,11 +2397,11 @@ editor-button ~ speak-button #speakBtn {
 @media (prefers-color-scheme: dark) {
   :root {
     /* tag variables */
-    --a-color: #ffffff; /* Set the text color to white */
-    --a-visited-color: #ffffff; /* Set the text color to white */
-    --body-color: #ffffff; /* Set the text color to white */
+    --a-color: #ffffff; /* Set the color for the text of the element */
+    --a-visited-color: #ffffff; /* Set the color for the text of the element */
+    --body-color: #ffffff; /* Set the color for the text of the element */
     --code-background-color: #333333; /* Set the color for the background of the element */
-    --code-color: #ffffff; /* Set the text color to white */
+    --code-color: #ffffff; /* Set the color for the text of the element */
     --codeblock-background-color: #2a2a2a; /* Set the color for the background of the element */
     --codeblock-box-shadow: 0 4px 8px 0 #ffffff55;
     --data-type-box-shadow: 0 0.5px 8px 0 #ffffff1a, 0 3px 20px 0 #ffffff1a;
@@ -2314,7 +2422,7 @@ editor-button ~ speak-button #speakBtn {
       0 6px 20px 0 #ffffff30;
     --class-dropdown-content-background-color: #222222; /* Set the color for the background of the element */
     --class-dropdown-content-box-shadow: 0px 8px 16px 0px #ffffff55;
-    --class-list-link-color: #ffffff; /* Set the text color to white */
+    --class-list-link-color: #ffffff; /* Set the color for the text of the element */
     --class-no-shadow-hover-box-shadow: unset;
     --class-card-content-background-color: #2f2f2f; /* Set the color for the background of the element */
     /* id variables */
@@ -2357,11 +2465,11 @@ editor-button ~ speak-button #speakBtn {
 /* sync this with the automatic dark theme above! */
 :root.dark {
   /* tag variables */
-  --a-color: #ffffff; /* Set the text color to white */
-  --a-visited-color: #ffffff; /* Set the text color to white */
-  --body-color: #ffffff; /* Set the text color to white */
+  --a-color: #ffffff; /* Set the color for the text of the element */
+  --a-visited-color: #ffffff; /* Set the color for the text of the element */
+  --body-color: #ffffff; /* Set the color for the text of the element */
   --code-background-color: #333333; /* Set the color for the background of the element */
-  --code-color: #ffffff; /* Set the text color to white */
+  --code-color: #ffffff; /* Set the color for the text of the element */
   --codeblock-background-color: #2a2a2a; /* Set the color for the background of the element */
   --codeblock-box-shadow: 0 4px 8px 0 #ffffff55;
   --data-type-box-shadow: 0 0.5px 8px 0 #ffffff1a, 0 3px 20px 0 #ffffff1a;
@@ -2381,7 +2489,7 @@ editor-button ~ speak-button #speakBtn {
     0 6px 20px 0 #ffffff30;
   --class-dropdown-content-background-color: #222222; /* Set the color for the background of the element */
   --class-dropdown-content-box-shadow: 0px 8px 16px 0px #ffffff55;
-  --class-list-link-color: #ffffff; /* Set the text color to white */
+  --class-list-link-color: #ffffff; /* Set the color for the text of the element */
   --class-no-shadow-hover-box-shadow: unset;
   --class-card-background-color: #2f2f2f; /* Set the color for the background of the element */
   /* id variables */
@@ -2677,7 +2785,7 @@ th {
   -webkit-box-direction: normal; /* For earlier versions of Chrome and Safari */
   -ms-flex-direction: column; /* For Internet Explorer 10 */
   flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
-  /* Align items horizontally*/
+  /* Align items horizontally */
   -webkit-box-pack: center; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   -ms-flex-pack: center; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   justify-content: center; /* Standard syntax for modern browsers (widely supported) */

@@ -2,61 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="An API method for adding a real estate agency profile to Real&Mate." />
-    <meta name="keywords" content="real&mate, web application, documentation, api, reference, method, real estate, business, management, agency" />
+    <meta
+      name="description"
+      content="An API method for adding a real estate agency profile to Real&Mate."
+    />
+    <meta
+      name="keywords"
+      content="real&mate, web application, documentation, api, reference, method, real estate, business, management, agency"
+    />
   </head>
 
   <body style="display: none">
+    <span id="mainResourceName">Agency Service</span>
+    <span id="resourceName">agency</span>
+    <span id="capitalizedResourceName">Agency</span>
 
-  <span id="mainResourceName">Agency Service</span>
-  <span id="resourceName">agency</span>
-  <span id="capitalizedResourceName">Agency</span>
+    <header>
+      <nav-links-api-ref></nav-links-api-ref>
+      <h1 class="title speak">POST /realandmate/v1/AgencyService/agencies</h1>
+    </header>
 
-  <header>
-    <nav-links-api-ref></nav-links-api-ref>
-    <h1 class="title speak">POST /realandmate/v1/AgencyService/agencies</h1>
-  </header>
+    <main>
+      <p class="center speak">
+        Adds a real estate agency profile to Real&Mate.
+      </p>
+      <hr />
+      <ul id="toc">
+        <li>
+          <a href="#request-example">
+            <t-request-example></t-request-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-body">
+            <t-response-body></t-response-body>
+          </a>
+        </li>
+        <li>
+          <a href="#response-example">
+            <t-response-example></t-response-example>
+          </a>
+        </li>
+        <li>
+          <a href="#response-codes">
+            <t-response-codes></t-response-codes>
+          </a>
+        </li>
+      </ul>
 
-  <main>
-
-    <p class="center speak">
-      Adds a real estate agency profile to Real&Mate.
-    </p>
-    <hr>
-    <ul id="toc">
-      <li><a href="#request-example">
+      <section id="request-example">
+        <h2 class="speak">
           <t-request-example></t-request-example>
-        </a></li>
-      <li><a href="#response-body">
-          <t-response-body></t-response-body>
-        </a></li>
-      <li><a href="#response-example">
-          <t-response-example></t-response-example>
-        </a></li>
-      <li><a href="#response-codes">
-          <t-response-codes></t-response-codes>
-        </a></li>
-    </ul>
-
-    <section id="request-example">
-      <h2 class="speak">
-        <t-request-example></t-request-example>
-      </h2>
-      <p>To use this API method, send the POST request. Below is an example of how to call the API:</p><!-- prettier-ignore -->
-      <codeblock>
+        </h2>
+        <p>
+          To use this API method, send the POST request. Below is an example of
+          how to call the API:
+        </p>
+        <!-- prettier-ignore -->
+        <codeblock>
   POST https://example.com/realandmate/v1/AgencyService/agencies
     </codeblock>
-    </section>
+      </section>
 
-    <section id="response-body">
-      <h2 class="speak">
-        <t-response-body></t-response-body>
-      </h2><!-- prettier-ignore -->
-      <p>The response will include a JSON string containing information about the real estate agency profile. This string can be converted into a JavaScript object for easier use. Below is the format of the object after parsing the string:</p>
-      <h3>
-        <t-http-code-200></t-http-code-200>
-      </h3><!-- prettier-ignore -->
-      <codeblock>
+      <section id="response-body">
+        <h2 class="speak">
+          <t-response-body></t-response-body>
+        </h2>
+        <!-- prettier-ignore -->
+        <p>The response will include a JSON string containing information about the real estate agency profile. This string can be converted into a JavaScript object for easier use. Below is the format of the object after parsing the string:</p>
+        <h3>
+          <t-http-code-200></t-http-code-200>
+        </h3>
+        <!-- prettier-ignore -->
+        <codeblock>
 {
   "id": string,
   "url": string,
@@ -64,62 +82,58 @@
 }
     </codeblock>
 
-      <dl class="dl-root">
-        <dt>
-          <dt-id></dt-id>
-        </dt>
-        <dd>
-          <dd-id></dd-id>
-        </dd>
-        <dt>
-          <dt-url></dt-url>
-        </dt>
-        <dd>
-          <dd-url></dd-url>
-        </dd>
-        <dt>
-          <dt-date-added></dt-date-added>
-        </dt>
-        <dd>
-          <dd-date-added></dd-date-added>
-        </dd>
-      </dl>
-    </section>
+        <dl class="dl-root">
+          <dt>
+            <dt-id></dt-id>
+          </dt>
+          <dd>
+            <dd-id></dd-id>
+          </dd>
+          <dt>
+            <dt-url></dt-url>
+          </dt>
+          <dd>
+            <dd-url></dd-url>
+          </dd>
+          <dt>
+            <dt-date-added></dt-date-added>
+          </dt>
+          <dd>
+            <dd-date-added></dd-date-added>
+          </dd>
+        </dl>
+      </section>
 
-    <section id="response-example">
-      <h2 class="speak">
-        <t-response-example></t-response-example>
-      </h2>
-      <h2>
-        <t-http-code-200></t-http-code-200>
-      </h2><!-- prettier-ignore -->
-      <codeblock>
+      <section id="response-example">
+        <h2 class="speak">
+          <t-response-example></t-response-example>
+        </h2>
+        <h2>
+          <t-http-code-200></t-http-code-200>
+        </h2>
+        <!-- prettier-ignore -->
+        <codeblock>
 {
   "id": "77",
   "url": "https://example.com/realandmate/v1/AgencyService/agencies/77",
   "date_added": "2021-07-01T07:07:07Z"
 }
     </codeblock>
-    </section>
+      </section>
 
-    <section id="response-codes">
-      <h2>
-        <t-response-codes></t-response-codes>
-      </h2>
-      <table>
+      <section id="response-codes">
+        <h2>
+          <t-response-codes></t-response-codes>
+        </h2>
         <table class="response-codes">
           <colgroup>
-            <col span="1">
-            <col span="1">
+            <col span="1" />
+            <col span="1" />
           </colgroup>
           <thead>
             <tr>
-              <th>
-                Code
-              </th>
-              <th>
-                Description
-              </th>
+              <th>Code</th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
@@ -128,24 +142,22 @@
             <tr id="sc-403"></tr>
           </tbody>
         </table>
-    </section>
-
-  </main>
+      </section>
+    </main>
 
     <div id="footerContainer"></div>
 
-  <script src="../../../scripts/elements-title-min.js"></script>
-  <script src="../../../scripts/api-ref-min.js"></script>
-  <script src="../../../scripts/p-1-line-indent-min.js"></script>
-  <script src="../../../scripts/copy-min.js"></script>
-  <script src="../../../scripts/dark-theme-min.js"></script>
-  <script src="../../../scripts/editor-mode-min.js"></script>
-  <script src="../../../scripts/meta-tags-min.js"></script>
-  <script src="../../../scripts/elements-min.js"></script>
-  <script src="../../../scripts/menu-min.js"></script>
-  <script src="../../../scripts/speak-min.js"></script>
-  <script src="../../../scripts/screenshot-min.js"></script>
-
-</body>
-
+    <script src="../../../scripts/components-title-min.js"></script>
+    <script src="../../../scripts/api-ref-min.js"></script>
+    <script src="../../../scripts/p-1-line-indent-min.js"></script>
+    <script src="../../../scripts/copy-min.js"></script>
+    <script src="../../../scripts/dark-theme-min.js"></script>
+    <script src="../../../scripts/editor-mode-min.js"></script>
+    <script src="../../../scripts/meta-tags-min.js"></script>
+    <script src="../../../scripts/components-min.js"></script>
+    <script src="../../../scripts/menu-min.js"></script>
+    <script src="../../../scripts/speak-min.js"></script>
+    <script src="../../../scripts/screenshot-min.js"></script>
+    <script src="../../../scripts/download-page-as-html-min.js"></script>
+  </body>
 </html>

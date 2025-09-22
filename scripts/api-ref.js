@@ -79,7 +79,7 @@ class DdAppCategory extends HTMLElement {
   // Declare a class DdAppCategory that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    The high-level family of the application.<br/>Example: <code>Business</code>.
+    The high-level family of the application.<br/>Example: <code>"Business"</code>.
     `;
   }
 }
@@ -128,7 +128,7 @@ class DdAuthToken extends HTMLElement {
   // Declare a class DdAuthToken that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    A token used for a user authentication.<br/>Example: <code>73d0f8mkabpbmjp721asv7jaidwxn</code>.
+    A token used for a user authentication.<br/>Example: <code>"73d0f8mkabpbmjp721asv7jaidwxn"</code>.
     `;
   }
 }
@@ -247,7 +247,7 @@ class DdComments extends HTMLElement {
   // Declare a class DdComments that defines a type of logic for a custom element
   connectedCallback() {
     this.innerHTML += `
-    Additional comments or notes.<br/>Example: <code>This is a text comment.</code>.
+    Additional comments or notes.<br/>Example: <code>"This is a text comment."</code>.
     `;
   }
 }

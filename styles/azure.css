@@ -3,11 +3,11 @@ root {
 }
 
 :root {
-  --primary-color: #0088ff;
-  --secondary-color: #0099ff;
-  --text-color: #373737;
-  --background-color: #eeeeee;
-  --border-color: #bbbbbb;
+  --primary-color: #0088ff; /* Set the color for the text of the element */
+  --secondary-color: #0099ff; /* Set the color for the text of the element */
+  --text-color: #373737; /* Set the color for the text of the element */
+  --background-color: #eeeeee; /* Set the color for the text of the element */
+  --border-color: #bbbbbb; /* Set the color for the text of the element */
   --font-family: Verdana, sans-serif;
 }
 
@@ -20,25 +20,25 @@ a-comment {
   background-color: var(
     --primary-color
   ); /* Set the color for the background of the element */
-  border: 2px solid var(--border-color); /* Set the width, the style, and the color of the comment border */
+  border: 2px solid var(--border-color); /* Set the width, the style, and the color of the element border */
   -webkit-box-shadow: 0 7px 7px -7px #000000;
   box-shadow: 0 7px 7px -7px #000000;
   color: #ffffff; /* Set the color for the text of the element */
-  display: none; /* Hide a comment */
-  font-size: 11.25px; /* Set the font size of the comment text */
+  display: none; /* Specify the display behavior of the element */
+  font-size: 11.25px; /* Set the font size for the text of the element */
   font-family: var(
     --font-family
-  ); /* Set the font family of the comment text to "Verdana" and sans-serif */
+  ); /* Set the font family of the element text to "Verdana" and sans-serif */
   font-weight: normal; /* Set the font weight of the text the element */
   line-height: 1.5; /* Set the vertical spacing between lines of text */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 3px; /* Set the thickness for the top padding area of the element */
   padding-right: 4px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
-  position: absolute; /* Position a comment absolutely within its positioned ancestor */
+  position: absolute; /* Specify the positioning method for the element */
   right: -25.5px; /* Position the element relative to the right edge of its nearest positioned ancestor */
-  text-shadow: 2px 2px 5px var(--secondary-color); /* Apply a blue shadow to the comment text */
+  text-shadow: 2px 2px 5px var(--secondary-color); /* Apply a blue shadow to the element text */
   -webkit-transform: translate(
     -25px,
     0
@@ -48,9 +48,9 @@ a-comment {
     -25px,
     0
   ); /* Standard syntax for modern browsers (widely supported) */
-  white-space: pre-wrap; /* Preserve whitespace and wrap text of a comment */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text of the element */
   width: 115px; /* Set the width of the element */
-  /* Apply a border radius to round the comment corners */
+  /* Apply a border radius to round the element corners */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
@@ -78,17 +78,17 @@ body {
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
-  margin: 0 10vw 0; /* Set the size of the margin for the element */
+  margin: 0 10vw 0; /* Set the thickness for the margin area of the element */
 }
 
 @media (min-width: 1450px) {
   body {
-    margin: 0 15vw 0; /* Set the size of the margin for the element */
+    margin: 0 15vw 0; /* Set the thickness for the margin area of the element */
   }
 }
 
 main {
-  margin-bottom: 29px; /* Set the size of the margin for the element */
+  margin-bottom: 29px; /* Set the thickness for the margin area of the element */
 }
 
 main > ul {
@@ -98,7 +98,7 @@ main > ul {
 }
 
 best-practices {
-  margin: 0 0 20px; /* Set the size of the margin for the element */
+  margin: 0 0 20px; /* Set the thickness for the margin area of the element */
   border: 1px solid #318ce7; /* Set the width, the style, and the color of the border */
   padding-top: 25px; /* Set the thickness for the top padding area of the element */
   padding-right: 10px; /* Set the thickness for the right padding area of the element */
@@ -122,20 +122,20 @@ best-practices > ul {
 }
 
 section {
-  margin: 10vh 0 0; /* Set the thickness of the margin area */
+  margin: 10vh 0 0; /* Set the thickness for the margin area of the element */
 }
 
 section:first-of-type {
-  margin: 7.5vh 0 0; /* Set the thickness of the margin area */
+  margin: 7.5vh 0 0; /* Set the thickness for the margin area of the element */
 }
 
 @media screen and (max-width: 1500px) {
   section {
-    margin: 15vh 0 0; /* Set the thickness of the margin area */
+    margin: 15vh 0 0; /* Set the thickness for the margin area of the element */
   }
 
   section:first-of-type {
-    margin: 10vh 0 0; /* Set the thickness of the margin area */
+    margin: 10vh 0 0; /* Set the thickness for the margin area of the element */
   }
 }
 
@@ -178,7 +178,7 @@ code {
 codeblock {
   position: relative; /* Specify the positioning method for the element */
   display: block; /* Specify the display behavior of the element */
-  margin: 1em 0; /* Set the size of the margin for the element */
+  margin: 1em 0; /* Set the thickness for the margin area of the element */
   border: none;
   padding-top: 5px; /* Set the thickness for the top padding area of the element */
   padding-right: 5px; /* Set the thickness for the right padding area of the element */
@@ -203,10 +203,10 @@ codeblock > button {
   border: none;
   color: #ffffff; /* Set the color for the text of the element */
   cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element, indicating interactivity */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   right: 0; /* Position the element relative to the right edge of its nearest positioned ancestor */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   padding-top: 5px; /* Set the thickness for the top padding area of the element */
   padding-right: 20px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 5px; /* Set the thickness for the bottom padding area of the element */
@@ -255,12 +255,12 @@ comment-tag {
   font-size: 14px; /* Set the font size for the text of the element */
   font-weight: normal; /* Set the font weight for the text of the element */
   height: 20px; /* Set the height of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 4px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 2px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: -8vw; /* Position the element relative to the right edge of its nearest positioned ancestor */
   text-shadow: 2px 2px 5px var(--secondary-color); /* Apply a blue shadow to the text */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
@@ -294,7 +294,7 @@ dataType {
   color: #ffffff; /* Set the color for the text of the element */
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family of a data type label to "Menlo", "Monaco", "Lucida Console", "Consolas", and monospace */
   font-size: 14px; /* Set the font size of the element */
-  margin: 0 0 0 7px; /* Set the size of the margin for the element */
+  margin: 0 0 0 7px; /* Set the thickness for the margin area of the element */
   padding-top: 3px; /* Set the thickness for the top padding area of the element */
   padding-right: 4px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
@@ -326,12 +326,12 @@ dd ul li {
 
 dd p {
   font-size: inherit; /* Set the font size for the text of the element */
-  margin: 17px 0; /* Set the size of the margin for the element */
+  margin: 17px 0; /* Set the thickness for the margin area of the element */
 }
 
 details {
   position: relative; /* Specify the positioning method for the element */
-  text-align: center; /* Align text of the element */
+  text-align: center; /* Align the text within the element */
 }
 
 details > p {
@@ -340,7 +340,7 @@ details > p {
   ); /* Set the color for the background of the element */
   -webkit-box-shadow: 1px 1px 2px var(--border-color);
   box-shadow: 1px 1px 2px var(--border-color);
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 4px; /* Set the thickness for the top padding area of the element */
   padding-right: 4px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 4px; /* Set the thickness for the bottom padding area of the element */
@@ -384,7 +384,7 @@ details > summary {
   padding-right: 25px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 25px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 25px; /* Set the thickness for the left padding area of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   /* Set the border radius for the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -410,7 +410,7 @@ details > summary:hover {
 details > ul {
   font-size: 20px; /* Set the font size for the text of the element */
   list-style-type: none; /* Set the list style type for the element */
-  margin: 20px 0; /* Set the size of the margin for the element */
+  margin: 20px 0; /* Set the thickness for the margin area of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
@@ -452,20 +452,20 @@ footer {
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
-  position: absolute; /* Set the position of the element */
-  text-align: center; /* Align the text in the element */
+  position: absolute; /* Set the position for the element */
+  text-align: center; /* Align the text within the element */
   width: 100%; /* Set the width of the element */
 }
 
 footer p,
 footerLowerLC p,
 footerLowerMC p {
-  margin: 21px 0px; /* Set the size of the margin for the element */
+  margin: 21px 0px; /* Set the thickness for the margin area of the element */
 }
 
 footer a {
@@ -481,7 +481,7 @@ footer a:visited {
   display: block; /* Specify the display behavior of the element */
   width: fit-content; /* Set the width of the element */
   height: 24px; /* Set the height of the element */
-  margin: 20px auto; /* Set the size for the margin of the element */
+  margin: 20px auto; /* Set the thickness for the margin area of the element */
   background-color: #ff843f !important; /* Set the color for the background of the element */
   color: #ffffff; /* Set the color for the text of the element */
   font-family: "Cookie", cursive; /* Set the font family for the text of the element */
@@ -535,13 +535,13 @@ footerLowerLC {
   bottom: 0; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   position: fixed; /* Position the element fixed to the viewport */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   width: 100%; /* Set the width of the element */
 }
 
@@ -556,7 +556,7 @@ footerLowerMC a:visited {
 
 @media (max-width: 1250px) {
   footerLowerMC {
-    position: absolute; /* Set the position of the element */
+    position: absolute; /* Set the position for the element */
     bottom: auto; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
   }
 }
@@ -586,13 +586,13 @@ footerLowerMC {
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
   color: #ffffff; /* Set the color for the text of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
-  position: absolute; /* Set the position of the element */
-  text-align: center; /* Align the text in the element */
+  position: absolute; /* Set the position for the element */
+  text-align: center; /* Align the text within the element */
   width: 100%; /* Set the width of the element */
 }
 
@@ -611,7 +611,7 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Arial, sans-serif; /* Set the font family for the text of the element */
-  margin-top: 25px; /* Set the size of the top margin */
+  margin-top: 25px; /* Set the size for the top margin of the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   word-wrap: break-word; /* Allow breaking long words */
 }
@@ -632,7 +632,7 @@ html {
 }
 
 hr {
-  width: 57.5vw; /* Set the width of the element */
+  width: 57.5vw; /* Set the width for the element */
   display: block; /* Specify the display behavior of the element */
   margin: 0 auto;
 }
@@ -646,8 +646,8 @@ indent {
 }
 
 li {
-  margin: 2vh 0; /* Set the size of the margin for the element */
-  line-height: 1.5em; /* Set the vertical spacing between lines of text */
+  margin: 2vh 0; /* Set the thickness for the margin area of the element */
+  line-height: 1.5em; /* Set the vertical spacing between lines of the text for the element */
 }
 
 li:first-of-type {
@@ -663,8 +663,8 @@ li > a:hover {
 note {
   /* Notes highlight information by separating it from the regular, main content. */
   display: block; /* Specify the display behavior of the element */
-  margin: 2.5px 0 20px; /* Set the size of the margin for the element */
-  border: 2px solid #1071e5; /* Set the width, the style, and the color of the border */
+  margin: 2.5px 0 20px; /* Set the thickness for the margin area of the element */
+  border: 2px solid #1071e5; /* Set the width, the style, and the color for the border of the element */
   padding-top: 5px; /* Set the thickness for the top padding area of the element */
   padding-right: 10px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 10px; /* Set the thickness for the bottom padding area of the element */
@@ -677,16 +677,16 @@ note {
 }
 
 note > ul {
-  margin: 0.5vh 0; /* Set the size of the margin for the element */
+  margin: 0.5vh 0; /* Set the thickness for the margin area of the element */
 }
 
 note > p {
   font-size: 16px; /* Set the font size for the text of the element */
-  margin: 10px 0; /* Set the size of the margin for the element */
+  margin: 10px 0; /* Set the thickness for the margin area of the element */
 }
 
 note > pre {
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
 }
 
 optionalityDegreeO {
@@ -701,9 +701,9 @@ optionalityDegreeO {
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   text-shadow: 2px 2px 5px #3bacd7;
   -webkit-transform: translate(
     -150px,
@@ -727,7 +727,7 @@ optionalityDegreeO {
 }
 
 optionalityDegreeO:before {
-  content: "опционально";
+  content: "optional";
 }
 
 optionalityDegreeR {
@@ -736,16 +736,16 @@ optionalityDegreeR {
   -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #ffffff; /* Set the color for the text of the element */
-  font-size: 14px;
+  font-size: 14px; /* Set the font size for the text of the element */
   font-weight: normal; /* Set the font weight for the text of the element */
   padding-top: 3px; /* Set the thickness for the top padding area of the element */
   padding-right: 4px; /* Set the thickness for the right padding area of the element */
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   -webkit-transform: translate(
     -150px,
     0
@@ -768,12 +768,11 @@ optionalityDegreeR {
 }
 
 optionalityDegreeR:before {
-  content: "обязательно";
+  content: "required";
 }
 
 optionalityDegreeU {
   background-color: #5c7ef7; /* Set the color for the background of the element */
-  border-radius: 5px;
   -webkit-box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   box-shadow: 0 0.5px 8px 0 #0000001a, 0 3px 20px 0 #0000001a;
   color: #ffffff; /* Set the color for the text of the element */
@@ -784,9 +783,14 @@ optionalityDegreeU {
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
+  /* Set the border radius for the corners of the element */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  border-radius: 5px; /* Standard property for border radius */
   -webkit-transform: translate(
     -150px,
     0
@@ -804,17 +808,17 @@ optionalityDegreeU {
 }
 
 optionalityDegreeU:before {
-  content: "неактуально";
+  content: "unactual";
 }
 
 p {
   line-height: 1.7; /* Set the vertical spacing between lines of text */
-  margin: 20px 0px; /* Set the size of the margin for the element */
+  margin: 20px 0px; /* Set the thickness for the margin area of the element */
   font-size: 20px; /* Set the font size for the text of the element */
 }
 
 .center {
-  text-align: center;
+  text-align: center; /* Align the text within the element */
 }
 
 p.center:hover {
@@ -842,7 +846,7 @@ paramType {
   padding-bottom: 3px; /* Set the thickness for the bottom padding area of the element */
   padding-left: 4px; /* Set the thickness for the left padding area of the element */
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   white-space: pre-wrap; /* Preserve whitespace and wrap text */
   /* Set the border radius for the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
@@ -929,7 +933,7 @@ section:hover > ul > li > ul > li > od-u > optionalityDegreeU {
 
 table-container {
   max-width: 100%;
-  display: block;
+  display: block; /* Specify the display behavior of the element */
   overflow: auto; /* Set the visibility of content that exceeds the element's boundaries */
 }
 
@@ -937,9 +941,10 @@ table {
   max-width: 100%;
   width: 100%;
   border-collapse: collapse;
+  -moz-box-sizing: border-box; /* For older versions of Firefox */
   -webkit-box-sizing: inherit; /* For older versions of Chrome and Safari */
   box-sizing: inherit; /* Standard syntax for modern browsers (widely supported) */
-  display: table;
+  display: table; /* Specify the display behavior of the element */
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels */
   position: relative; /* Specify the positioning method for the element */
   table-layout: auto;
@@ -953,7 +958,7 @@ td {
 }
 
 td p {
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   font-size: inherit; /* Set the font size for the text of the element */
   line-height: 1.4; /* Set the vertical spacing between lines of text */
 }
@@ -971,7 +976,7 @@ th {
 
 ul {
   list-style: none;
-  margin-top: 10px; /* Set the size of the top margin */
+  margin-top: 10px; /* Set the size for the top margin of the element */
   /* Use flexbox to align the content inside the element */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
@@ -1017,13 +1022,13 @@ ol {
 }
 
 .text-center {
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
 }
 
 .doc-list {
   margin-bottom: 50px; /* Set the size for the bottom margin of the element */
   position: relative; /* Specify the positioning method for the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   /* Add a transition effect for changes in properties */
   -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
   -o-transition: 0.5s; /* For older versions of Opera */
@@ -1056,9 +1061,9 @@ ol {
   color: #ffffff; /* Set the color for the text of the element */
   display: block; /* Specify the display behavior of the element */
   height: 50%; /* Set the height of the element */
-  margin: 0; /* Set the size of the margin for the element */
+  margin: 0; /* Set the thickness for the margin area of the element */
   max-width: 100%; /* Set the maximum width of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   /* Set the border radius for the corners of the element */
   -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
   -moz-border-radius: 5px; /* For older versions of Firefox */
@@ -1080,8 +1085,8 @@ ol {
   display: block; /* Specify the display behavior of the element */
   font-size: 25px; /* Set the font size for the text of the element */
   height: 50%; /* Set the height of the element */
-  margin: 25px 0; /* Set the thickness of the margin area */
-  text-align: center; /* Align the text in the element */
+  margin: 25px 0; /* Set the thickness for the margin area of the element */
+  text-align: center; /* Align the text within the element */
   text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation */
   padding-top: 25px; /* Set the thickness for the top padding area of the element */
   padding-right: 25px; /* Set the thickness for the right padding area of the element */
@@ -1109,7 +1114,7 @@ ol {
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
   padding-left: 0; /* Set the thickness for the left padding area of the element */
   font-size: 18px; /* Set the font size for the text of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation */
 }
 
@@ -1181,7 +1186,7 @@ ol {
 
 .card-content {
   height: 37vh; /* Set the height of the element */
-  margin: 1px; /* Set the thickness of the margin area */
+  margin: 1px; /* Set the thickness for the margin area of the element */
   z-index: 2; /* Set the stacking order of the element */
   /* Use flexbox to align the content inside the element */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
@@ -1227,7 +1232,7 @@ ol {
   height: 100%; /* Set the height of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
   opacity: 0; /* Set the opacity of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   width: 100%; /* Set the width of the element */
   /* Set the border radius for the corners of the element */
@@ -1258,7 +1263,7 @@ ol {
   color: #008cff; /* Set the color for the text of the element */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   font-size: 14px; /* Set the font size for the text of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   z-index: -1; /* Set the stacking order of the card label */
   /* Apply a border radius to round the corners of the card label */
   -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
@@ -1319,7 +1324,7 @@ ol {
 }
 
 .plan-features {
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   padding-top: 0; /* Set the thickness for the top padding area of the element */
   padding-right: 0; /* Set the thickness for the right padding area of the element */
   padding-bottom: 0; /* Set the thickness for the bottom padding area of the element */
@@ -1356,7 +1361,7 @@ ol {
 @media (max-width: 1250px) {
   #cards {
     height: 100%; /* Set the height of the element */
-    margin: 2.5vh 0; /* Set the thickness of the margin area */
+    margin: 2.5vh 0; /* Set the thickness for the margin area of the element */
     /* Use flexbox to align the content inside the element */
     display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
     display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
@@ -1413,7 +1418,7 @@ ol {
 
 .title {
   width: fit-content; /* Set the width of the element */
-  margin: 2.5vh auto 0; /* Set the thickness of the margin area */
+  margin: 2.5vh auto 0; /* Set the thickness for the margin area of the element */
   line-height: 1.5; /* Set the vertical spacing between lines of text */
   background: -moz-linear-gradient(
     to right,
@@ -1447,7 +1452,7 @@ ol {
 }
 
 h1.title {
-  margin: 5vh auto 0; /* Set the thickness of the margin area */
+  margin: 5vh auto 0; /* Set the thickness for the margin area of the element */
   max-width: 100%; /* Set the maximum width of the element */
 }
 
@@ -1464,7 +1469,7 @@ h1.title {
   background: var(
     --primary-color
   ); /* Set the color for the background of the element */
-  position: fixed; /* Set the position of the element */
+  position: fixed; /* Set the position for the element */
   bottom: 56px; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
   right: 25px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: 45px; /* Set the width of the element */
@@ -1507,7 +1512,7 @@ h1.title {
   border: 0;
   display: block; /* Specify the display behavior of the element */
   height: 30px; /* Set the height of the element */
-  margin: 1em 0 1em auto; /* Set the thickness of the margin area */
+  margin: 1em 0 1em auto; /* Set the thickness for the margin area of the element */
   right: 0; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: 100%; /* Set the width of the element */
 }
@@ -1567,8 +1572,8 @@ h1.title {
   left: 50%; /* Position the element relative to the left edge of its nearest positioned ancestor */
   margin: 0;
   max-width: 100%; /* Set the maximum width of the element */
-  position: absolute; /* Set the position of the element */
-  text-align: center; /* Align the text in the element */
+  position: absolute; /* Set the position for the element */
+  text-align: center; /* Align the text within the element */
   top: 55%; /* Position the element relative to the top edge of its nearest positioned ancestor */
   -webkit-transform: translate(
     -50%,
@@ -1604,8 +1609,8 @@ h1.title {
   left: 50%; /* Position the element relative to the left edge of its nearest positioned ancestor */
   margin: 0;
   max-width: 100%; /* Set the maximum width of the element */
-  position: absolute; /* Set the position of the element */
-  text-align: center; /* Align the text in the element */
+  position: absolute; /* Set the position for the element */
+  text-align: center; /* Align the text within the element */
   top: 52.5%; /* Position the element relative to the top edge of its nearest positioned ancestor */
   -webkit-transform: translate(
     -50%,
@@ -1637,7 +1642,7 @@ logo-img {
 
 #logo {
   max-width: 100%; /* Set the maximum width of the element */
-  width: 420px;
+  width: 420px; /* Set the width of the element */
   height: auto; /* Set the height of the element */
 }
 
@@ -1653,7 +1658,7 @@ logo-img {
 }
 
 #toc {
-  text-align: left; /* Align the text in the element */
+  text-align: left; /* Align the text within the element */
   margin-bottom: 100px;
 }
 
@@ -1673,23 +1678,23 @@ logo-img {
 }
 
 ul#toc {
-  margin: 7.5vh 0 0; /* Set the thickness of the margin area */
+  margin: 7.5vh 0 0; /* Set the thickness for the margin area of the element */
 }
 
 @media screen and (max-width: 1500px) {
   ul#toc {
-    margin: 10vh 0 0; /* Set the thickness of the margin area */
+    margin: 10vh 0 0; /* Set the thickness for the margin area of the element */
   }
 }
 
 menu-container {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 5px; /* Position the element relative to the top edge of its nearest positioned ancestor */
   right: 5px; /* Position the element relative to the right edge of its nearest positioned ancestor */
 }
 
 #menu-container {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 5px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: calc(35px + 1vw); /* Set the width of the element */
   height: 57px; /* Set the height of the element */
@@ -1723,7 +1728,7 @@ menu-container {
   width: 35px; /* Set the width of the element */
   height: 5px; /* Set the height of the element */
   background-color: #318ce7; /* Set the color for the background of the element */
-  margin: 6px 0; /* Set the thickness of the margin area */
+  margin: 6px 0; /* Set the thickness for the margin area of the element */
   /* Set an effect of a transition for the element */
   -webkit-transition: 0.4s; /* For older versions of Chrome and Safari */
   -o-transition: 0.4s; /* For older versions of Opera */
@@ -1737,7 +1742,7 @@ menu-container {
 }
 
 .change .bar2 {
-  opacity: 0; /* Set the opacity for the element */
+  opacity: 0; /* Set the opacity of the element */
 }
 
 .change .bar3 {
@@ -1747,7 +1752,7 @@ menu-container {
 }
 
 .dropdown {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   display: block; /* Specify the display behavior of the element */
   right: 0; /* Position the element relative to the right edge of its nearest positioned ancestor */
   z-index: 2; /* Set the stacking order for the element */
@@ -1755,7 +1760,7 @@ menu-container {
 
 .dropdown-content {
   display: none; /* Specify the display behavior of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 57px; /* Position the element relative to the top edge of its nearest positioned ancestor */
   min-width: 142px; /* Set the minimum width for the element */
   min-height: 384px; /* Set the minimum height for the element */
@@ -1790,7 +1795,7 @@ nav-links a {
 
 nav-links-api-ref {
   display: inline-block; /* Specify the display behavior of the element */
-  margin: 1vh 0; /* Set the thickness of the margin area */
+  margin: 1vh 0; /* Set the thickness for the margin area of the element */
   font-size: 18px; /* Set the font size for the text of the element */
 }
 
@@ -1799,9 +1804,9 @@ nav-links-api-ref a {
 }
 
 nav-links-doc-main-page {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   display: inline-block; /* Specify the display behavior of the element */
-  margin: 1vh 0; /* Set the thickness of the margin area */
+  margin: 1vh 0; /* Set the thickness for the margin area of the element */
   font-size: 18px; /* Set the font size for the text of the element */
   z-index: 1; /* Set the stacking order of the element */
 }
@@ -1811,7 +1816,7 @@ nav-links-doc-main-page a {
 }
 
 #w3c-img {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 10vw; /* Position the element relative to the right edge of its nearest positioned ancestor */
 }
 
@@ -1821,7 +1826,7 @@ nav-links-doc-main-page a {
 }
 
 #w3c-text {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   display: inline-block; /* Specify the display behavior of the element */
   right: calc(
     10vw + 77px
@@ -1865,7 +1870,7 @@ nav-links-doc-main-page a {
 
   section#response-codes,
   footer p {
-    margin: 0;
+    margin: 0; /* Set the thickness for the margin area of the element */
   }
 
   h1,
@@ -1921,7 +1926,7 @@ nav-links-doc-main-page a {
   }
 
   #bmc-button {
-    margin: 5pt auto 0;
+    margin: 5pt auto 0; /* Set the thickness for the margin area of the element */
     text-decoration: none !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -1931,7 +1936,7 @@ nav-links-doc-main-page a {
 
   #bmc-arrow {
     display: block;
-    margin: 5pt auto 0;
+    margin: 5pt auto 0; /* Set the thickness for the margin area of the element */
     font-size: 15pt;
     text-decoration: none !important;
     color: #000000;
@@ -1955,7 +1960,7 @@ nav-links-doc-main-page a {
 }
 
 #switchyContainerAbsolute {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 30px; /* Position the element relative to the top edge of its nearest positioned ancestor */
   right: 0; /* Position the element relative to the right edge of its nearest positioned ancestor */
 }
@@ -1969,7 +1974,7 @@ nav-links-doc-main-page a {
 
 #theme {
   display: block; /* Specify the display behavior of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 7px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 5px; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
@@ -2006,7 +2011,7 @@ sevenpx {
 #switchy .indicator {
   height: 35px; /* Set the height of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
@@ -2030,14 +2035,14 @@ sevenpx {
 }
 
 #editorModeContainerAbsolute {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 70px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 105px; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
 
 #edit-doc {
   display: block; /* Specify the display behavior of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 20px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 80px; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
@@ -2062,7 +2067,7 @@ sevenpx {
 #editor-mode .indicator {
   height: 35px; /* Set the height of the element */
   left: 0; /* Position the element relative to the left edge of its nearest positioned ancestor */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   -webkit-transform: scale(0.9); /* For older versions of Chrome and Safari */
   -ms-transform: scale(0.9); /* For Internet Explorer 10 */
@@ -2099,7 +2104,7 @@ sevenpx {
 }
 
 #speakContainerAbsolute {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 50px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
@@ -2122,7 +2127,7 @@ editor-button ~ speak-button #speakBtn {
   font-size: 14px; /* Set the font size for the text of the element */
   font-weight: 525; /* Set the font weight for the text of the element */
   height: 57px; /* Set the height of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: -45px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: 125px; /* Set the width of the element */
   top: 80px; /* Position the element relative to the top edge of its nearest positioned ancestor */
@@ -2200,7 +2205,7 @@ editor-button ~ speak-button #speakBtn {
 }
 
 #screenshotContainerAbsolute {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 50px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
@@ -2219,7 +2224,7 @@ editor-button ~ speak-button #speakBtn {
   font-size: 14px; /* Set the font size for the text of the element */
   font-weight: 525; /* Set the font weight for the text of the element */
   height: 57px; /* Set the height of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: -45px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: 125px; /* Set the width of the element */
   top: 237px; /* Position the element relative to the top edge of its nearest positioned ancestor */
@@ -2252,7 +2257,7 @@ editor-button ~ speak-button #speakBtn {
 }
 
 #downloadPageAsHTMLContainerAbsolute {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: 50px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
@@ -2271,7 +2276,7 @@ editor-button ~ speak-button #speakBtn {
   font-size: 14px; /* Set the font size for the text of the element */
   font-weight: 525; /* Set the font weight for the text of the element */
   height: 57px; /* Set the height of the element */
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   right: -45px; /* Position the element relative to the right edge of its nearest positioned ancestor */
   width: 125px; /* Set the width of the element */
   top: 314px; /* Position the element relative to the top edge of its nearest positioned ancestor */
@@ -2291,7 +2296,7 @@ editor-button ~ speak-button #speakBtn {
 }
 
 #ripples {
-  position: absolute; /* Set the position of the element */
+  position: absolute; /* Set the position for the element */
   background: #ffffff; /* Set the color for the background of the element */
   -webkit-transform: translate(
     -50%,
@@ -2448,16 +2453,16 @@ editor-button ~ speak-button #speakBtn {
       inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
     --id-screenshot-btn-background: #777777;
     --id-screenshot-btn-active-background: #555555;
-    --id-screenshot-btn-color: #f2f2f2;
-    --id-screenshot-btn-active-color: #e2e2e2;
+    --id-screenshot-btn-color: #f2f2f2; /* Set the color for the text of the element */
+    --id-screenshot-btn-active-color: #e2e2e2; /* Set the color for the text of the element */
     /*
     --id-screenshot-btn-box-shadow: inset 0 8px 60px #0000001a,
       inset 0 8px 8px #0000001a,
       inset 0 -4px 4px #0000001a;*/
     --id-speak-btn-background: #777777;
     --id-speak-btn-active-background: #555555;
-    --id-speak-btn-color: #f2f2f2;
-    --id-speak-btn-active-color: #e2e2e2;
+    --id-speak-btn-color: #f2f2f2; /* Set the color for the text of the element */
+    --id-speak-btn-active-color: #e2e2e2; /* Set the color for the text of the element */
   }
 }
 
@@ -2515,16 +2520,16 @@ editor-button ~ speak-button #speakBtn {
     inset 0 4px 4px #ffffff55, inset 0 -4px 4px #ffffff55;
   --id-screenshot-btn-background: #777777;
   --id-screenshot-btn-active-background: #555555;
-  --id-screenshot-btn-color: #f2f2f2;
-  --id-screenshot-btn-active-color: #e2e2e2;
+  --id-screenshot-btn-color: #f2f2f2; /* Set the color for the text of the element */
+  --id-screenshot-btn-active-color: #e2e2e2; /* Set the color for the text of the element */
   /*
   --id-screenshot-btn-box-shadow: inset 0 8px 60px #0000001a,
     inset 0 8px 8px #0000001a,
     inset 0 -4px 4px #0000001a;*/
   --id-speak-btn-background: #777777;
   --id-speak-btn-active-background: #555555;
-  --id-speak-btn-color: #f2f2f2;
-  --id-speak-btn-active-color: #e2e2e2;
+  --id-speak-btn-color: #f2f2f2; /* Set the color for the text of the element */
+  --id-speak-btn-active-color: #e2e2e2; /* Set the color for the text of the element */
 }
 
 /* variables */
@@ -2534,7 +2539,7 @@ a {
 }
 
 /*a:hover {
-  color: var(--a-hover-color); /* Set the color of the text
+  color: var(--a-hover-color); /* Set the color for the text of the element
 } */
 
 a:visited {
@@ -2612,32 +2617,32 @@ th {
 
 /* class variables */
 .cell-center {
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   vertical-align: middle;
 }
 
 .cell-center-bold {
   font-weight: bold; /* Set the font weight for the text of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   vertical-align: middle;
 }
 
 .cell-center-monospace {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
   font-size: 17px; /* Set the font size for the text of the element */
-  text-align: center; /* Align the text in the element */
+  text-align: center; /* Align the text within the element */
   vertical-align: middle;
 }
 
 .cell-left {
-  text-align: left;
+  text-align: left; /* Align the text within the element */
   vertical-align: middle;
 }
 
 .cell-left-monospace {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace; /* Set the font family for the text of the element */
   font-size: 17px; /* Set the font size for the text of the element */
-  text-align: left; /* Align the text in the element */
+  text-align: left; /* Align the text within the element */
   vertical-align: middle;
 }
 
@@ -2801,7 +2806,7 @@ noscript details {
 }
 
 details:first-of-type {
-  margin-top: 5vh; /* Set the size of the top margin */
+  margin-top: 5vh; /* Set the size for the top margin of the element */
 }
 
 noscript details summary {

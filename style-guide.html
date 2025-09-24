@@ -2,6 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The Style Guide for the Real&Mate documentation."
+    />
+    <meta
+      name="keywords"
+      content="real&mate, web application, documentation, style, document, real estate, business, management, estate"
+    />
   </head>
 
   <body style="display: none">
@@ -22,7 +30,7 @@
 
     <main>
       <!-- prettier-ignore -->
-      <p class=" text-center speak">The Real&Mate formatting options are a mix of HTML and custom reusable web elements. Below are listed all these content formatting options as well as guidelines and best practices to follow when writing for Real&Mate's Documentation.</p>
+      <p class=" text-center speak">The Real&Mate formatting options are a mix of HTML and custom reusable web components. Below are listed all these content formatting options as well as guidelines and best practices to follow when writing for Real&Mate's Documentation.</p>
 
       <details id="toc">
         <summary>Table of Contents</summary>
@@ -216,7 +224,7 @@ To start receiving webhook events in your app, create and register a webhook end
         <section id="details">
           <h3 class="speak">Details</h3>
           <!-- prettier-ignore -->
-          <p>Details are elements that by default only display a title, as the rest of the content is collapsed. It's used for content that can be hidden by default to make documentation shorter and cleaner.</p>
+          <p>Details are components that by default only display a title, as the rest of the content is collapsed. It's used for content that can be hidden by default to make documentation shorter and cleaner.</p>
 
           <details>
             <summary>Title of the Details</summary>
@@ -363,7 +371,7 @@ Click &lt;img alt="Arrow counterclockwise" src="assets/buttons/arrow-countercloc
     </codeblock>
         </section>
 
-        <div class="w3c">
+        <div id="w3c">
           <a
             href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
             target="_blank"
@@ -378,10 +386,7 @@ Click &lt;img alt="Arrow counterclockwise" src="assets/buttons/arrow-countercloc
             rel="noopener"
             id="w3c-img"
           >
-            <img
-              src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-              alt=" W3C"
-            />
+            <img id="w3c-img" />
           </a>
         </div>
       </section>
@@ -389,13 +394,13 @@ Click &lt;img alt="Arrow counterclockwise" src="assets/buttons/arrow-countercloc
 
     <div id="footerContainer"></div>
 
-    <script src="scripts/elements-title-min.js"></script>
+    <script src="scripts/components-title-min.js"></script>
     <script src="scripts/dark-theme-min.js"></script>
     <script src="scripts/editor-mode-min.js"></script>
     <script src="scripts/p-1-line-indent-min.js"></script>
     <script src="scripts/speak-min.js"></script>
     <script src="scripts/copy-min.js"></script>
-    <script src="scripts/elements-min.js"></script>
+    <script src="scripts/components-min.js"></script>
     <script src="scripts/meta-tags-min.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@ document.querySelector("body").appendChild(html2CanvasScript);
 const containerButton = document.getElementById("container-button");
 const dropdown = document.getElementById("dropdown");
 const titleClass = document.querySelectorAll(".title");
+const logoContainer = document.querySelector("logo-img");
 const localReusableItems = document.getElementById("local-reusable-items");
 const a = document.getElementsByTagName("a");
 const button = document.getElementsByTagName("button");
@@ -20,6 +21,9 @@ function screenshot() {
   dropdown.style.display = "none";
   if (localReusableItems != null) {
     localReusableItems.style.display = "none";
+  }
+  if (logoContainer) {
+    logoContainer.style.animation = "none";
   }
   for (let x of titleClass) {
     x.style.background = "none";
@@ -43,13 +47,17 @@ function screenshot() {
   for (let x of noscript) {
     x.style.display = "none";
   }
-  html2canvas(document.body).then((canvas) => {
-    const url = canvas.toDataURL("image/jpg");
-    const a = document.createElement("a");
-    a.setAttribute("download", "screenshot.jpg");
-    a.setAttribute("href", url);
-    a.click();
-  });
+  html2canvas(document.body)
+    .then((canvas) => {
+      const dataURL = canvas.toDataURL("image/jpeg");
+      const link = document.createElement("a");
+      link.setAttribute("download", "screenshot.jpg");
+      link.setAttribute("href", dataURL);
+      link.click();
+    })
+    .catch((error) => {
+      console.error("Error capturing screenshot:", error);
+    });
   containerButton.style.display = null;
   for (let x of titleClass) {
     x.style.background = "linear-gradient(to right, #007fff, #5597ff)";

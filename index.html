@@ -2,19 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The main page of the Real&Mate documentation web application."
+    />
+    <meta
+      name="keywords"
+      content="real&mate, web application, documentation, main, document, real estate, business, management, estate"
+    />
   </head>
 
   <body style="display: none">
     <div id="container">
       <theme-button></theme-button>
-      <div id="header-index">
-        <h1>
-          <span class="title"
-            >Welcome to the Real<span id="amp">&</span>Mate Documentation!</span
-          >
-        </h1>
-        <logo-img></logo-img>
-      </div>
+      <div id="header-index"></div>
     </div>
 
     <main>
@@ -36,7 +37,7 @@
         </div>
       </div>
 
-      <div class="w3c">
+      <div id="w3c">
         <a
           href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2F&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
           target="_blank"
@@ -51,133 +52,16 @@
           rel="noopener"
           id="w3c-img"
         >
-          <img
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="W3C"
-          />
+          <img id="w3c-img" />
         </a>
       </div>
     </main>
 
-    <!-- Footer -->
     <div id="footerContainer"></div>
 
-    <!-- Enable JavaScript -->
-    <noscript>
-      <style>
-        body *:not(noscript, h1, p, details, summary, strong, ol, li, code) {
-          display: none;
-        }
-      </style>
-      <section id="enable-javascript">
-        <h1>Enable JavaScript</h1>
-        <p>
-          Because this document uses web based technologies, it requires
-          interactive browser functionality. This functionality is provided, in
-          part, by JavaScript. You might have to enable JavaScript within the
-          browser in order to ensure that the document displays correctly and
-          its features work as expected.
-        </p>
-        <p>
-          Instructions for enabling JavaScript vary by browser. Select your
-          browser from the list to learn how.
-        </p>
-        <details>
-          <summary>
-            <strong>Chrome</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>Click <strong>Settings</strong>.</li>
-            <li>
-              Click <strong>Privacy and security</strong> in the side menu.
-            </li>
-            <li>Click <strong>Site settings</strong>.</li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Edge</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>Click <strong>Settings</strong>.</li>
-            <li>
-              Choose <strong>Cookies and site permissions</strong> section.
-            </li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>Allowed (recommended)</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Firefox</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Type <code>about:config</code> in the address bar and press
-              <strong>Enter</strong>. A warning page may appear. Click
-              <strong>Accept the Risk and Continue</strong> to go to the
-              <strong>about:config</strong> page.
-            </li>
-            <li>
-              In <strong>Search preference name</strong> field, type
-              <code>javascript.enabled</code>. It should be set to
-              <code>true</code> by default.
-            </li>
-            <li>
-              If <code>javascript.enabled</code> is set to <code>false</code>,
-              click <strong>Toggle</strong> or <strong>Reset</strong> to set it
-              back to <code>true</code>.
-            </li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-        <details>
-          <summary>
-            <strong>Opera</strong>
-          </summary>
-          <ol type="1">
-            <li>
-              Click on the browser menu button in the browser upper right
-              corner.
-            </li>
-            <li>
-              Scroll all the way down and click
-              <strong>Go to full browser settings</strong>.
-            </li>
-            <li>
-              Scroll to the <strong>Privacy and security</strong> section.
-            </li>
-            <li>Click <strong>Site Settings</strong>.</li>
-            <li>
-              Scroll to the <strong>JavaScript</strong> section and click on it.
-            </li>
-            <li>Click <strong>&lt;&gt; Sites can use Javascript</strong>.</li>
-            <li>Refresh this page.</li>
-          </ol>
-        </details>
-      </section>
-    </noscript>
-
-    <!-- Scripts -->
-    <script src="scripts/elements-title-min.js"></script>
+    <script src="scripts/components-title-min.js"></script>
     <script src="scripts/dark-theme-min.js"></script>
-    <script src="scripts/elements-min.js"></script>
+    <script src="scripts/components-min.js"></script>
     <script src="scripts/meta-tags-min.js"></script>
   </body>
 </html>

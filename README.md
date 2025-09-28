@@ -6,11 +6,9 @@
 
 ⭐ Please consider starring it on GitHub &mdash; your support motivates me to continue improving and expanding this work!
 
-## Table of Contents
-
 - [Documentation](#documentation)
-  - [Table of Contents](#table-of-contents)
   - [Real\&Mate](#realmate)
+    - [Interface](#interface)
     - [Features](#features)
     - [How It Works](#how-it-works)
     - [External Services](#external-services)
@@ -35,6 +33,12 @@
 <!--&nbsp;&nbsp;Real&Mate documentation contains an information that describes the product to its users, including what it is, how it operates, and how to use it.-->
 
 &nbsp;&nbsp;**To view the documentation, please visit the <a href="https://primesolar.github.io/docs/" target="_blank">Real&Mate Documentation</a> website.**
+
+<a name="interface"></a>
+
+### Interface
+
+&nbsp;&nbsp;The interface is designed to be user-friendly and visually appealing.
 
 <a name="features"></a>
 
@@ -172,7 +176,7 @@ Every cup of coffee you buy not only fuels my passion but also allows me to dedi
 **Click the image to support my work:**
 
 <a href="https://coff.ee/cocacola">
-    <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
+  <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
 </a>
 
 Thank you for your support! Together, we can create something wonderful! 💖

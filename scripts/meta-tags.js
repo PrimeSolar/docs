@@ -77,15 +77,20 @@ linkAzure.onerror = function () {
   document.body.style.display = "block"; // Show the body even if CSS fails
 };
 
-// Insert <link rel="icon" href="assets/logos/favicon-transparent.jpg">
+// Insert <link rel="icon" href="assets/logos/logo-tab.jpg">
 const linkImage = document.createElement("link");
 linkImage.rel = "icon";
-if (window.location.href.indexOf("/api-ref/") !== -1) {
-  linkImage.href = "../../../assets/logos/favicon-transparent.jpg";
+if (
+  window.location.href.indexOf("mgmt") !== -1 ||
+  window.location.href.indexOf("log") !== -1
+) {
+  linkImage.href = "../../../assets/logos/logo-tab.jpg";
+} else if (window.location.href.indexOf("/api-ref/") !== -1) {
+  linkImage.href = "../../assets/logos/logo-tab.jpg";
 } else if (window.location.href.indexOf("/pages/") !== -1) {
-  linkImage.href = "../assets/logos/favicon-transparent.jpg";
+  linkImage.href = "../assets/logos/logo-tab.jpg";
 } else {
-  linkImage.href = "assets/logos/favicon-transparent.jpg";
+  linkImage.href = "assets/logos/logo-tab.jpg";
 }
 document.querySelector("head").appendChild(linkImage);
 

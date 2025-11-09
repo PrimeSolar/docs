@@ -1,4 +1,4 @@
-/*
+/**
  * Mouse Movement Card Effect Script
  *
  * This script listens for the mouse movement over the "cards"

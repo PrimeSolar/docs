@@ -1,4 +1,4 @@
-/*
+/**
  * Script
  *
  * Copyright © Vladislav Kazantsev
@@ -100,20 +100,20 @@ for (let x of document.getElementsByClassName("speak-inline")) {
 }
 
 for (let x of document.getElementsByClassName("speak")) {
-  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"); // Create speaker button svg element
-  svg.setAttribute("width", "12"); // Set svg width
-  svg.setAttribute("height", "10"); // Set svg height
-  svg.setAttribute("fill", "#0075ff"); // Set svg color
-  svg.setAttribute("viewBox", "8 4 4 10"); // Set svg viewing area
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"); /** Create speaker button svg element. */
+  svg.setAttribute("width", "12"); /** Set svg width. */
+  svg.setAttribute("height", "10"); /** Set svg height. */
+  svg.setAttribute("fill", "#0075ff"); /** Set svg color. */
+  svg.setAttribute("viewBox", "8 4 4 10"); /** Set svg viewing area. */
   svg.setAttribute("class", "speak-inline");
   svg.addEventListener("click", speakInline);
   console.log("Event listener added to SVG");
 
-  const title = document.createElementNS("http://www.w3.org/2000/svg", "title"); // Create title element
-  title.textContent = "Read Out Loud"; // Set title text
-  svg.appendChild(title); // Append title element
+  const title = document.createElementNS("http://www.w3.org/2000/svg", "title"); /** Create title element. */
+  title.textContent = "Read Out Loud"; /** Set title text. */
+  svg.appendChild(title); /** Append title element. */
 
-  const path = document.createElementNS("http://www.w3.org/2000/svg", "path"); // Create path element for svg
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path"); /** Create path element for svg. */
   path.setAttribute(
     "d",
     "M10.717 3.55A.5.5 0 0 1 11 4v8a.5.5 0 0 1-.812.39L7.825 10.5H5.5A.5.5 0 0 1 5 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"

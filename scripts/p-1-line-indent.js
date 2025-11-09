@@ -1,4 +1,4 @@
-/*
+/**
  * Script
  *
  * This script is designed for conditional formatting of web elements.

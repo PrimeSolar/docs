@@ -1,4 +1,4 @@
-/*
+/**
  * The Library of Custom Reusable Web Components
  * This file is the library containing my collection of custom, reusable web components
  * that can be used across different parts of the project. These components go beyond what browsers provide,
@@ -16,14 +16,14 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Terms and Definitions
+/** Terms and Definitions. */
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////a/////////////////////////////////////////////////////////////////////////////////////////////////
 
-// API Terms
+/** API Terms. */
 
-// API
+/** API. */
 const gAPI = document.getElementById("gAPI");
 if (gAPI) {
   gAPI.innerHTML += `
@@ -32,7 +32,7 @@ if (gAPI) {
   `;
 }
 
-// Authorization
+/** Authorization. */
 const gAuthorization = document.getElementById("gAuthorization");
 if (gAuthorization) {
   gAuthorization.innerHTML += `
@@ -41,7 +41,7 @@ if (gAuthorization) {
   `;
 }
 
-// Authentication
+/** Authentication. */
 const gAuthentication = document.getElementById("gAuthentication");
 if (gAuthentication) {
   gAuthentication.innerHTML += `
@@ -50,7 +50,7 @@ if (gAuthentication) {
   `;
 }
 
-// Data Synchronization
+/** Data Synchronization. */
 const gDataSynchronization = document.getElementById("gDataSynchronization");
 if (gDataSynchronization) {
   gDataSynchronization.innerHTML += `
@@ -59,7 +59,7 @@ if (gDataSynchronization) {
   `;
 }
 
-// Endpoint
+/** Endpoint. */
 const gEndpoint = document.getElementById("gEndpoint");
 if (gEndpoint) {
   gEndpoint.innerHTML += `
@@ -68,7 +68,7 @@ if (gEndpoint) {
   `;
 }
 
-// HTTP
+/** HTTP. */
 const gHTTP = document.getElementById("gHTTP");
 if (gHTTP) {
   gHTTP.innerHTML += `
@@ -77,7 +77,7 @@ if (gHTTP) {
   `;
 }
 
-// JSON
+/** JSON. */
 const gJSON = document.getElementById("gJSON");
 if (gJSON) {
   gJSON.innerHTML += `
@@ -86,7 +86,7 @@ if (gJSON) {
   `;
 }
 
-// Metadata
+/** Metadata. */
 const gMetadata = document.getElementById("gMetadata");
 if (gMetadata) {
   gMetadata.innerHTML += `
@@ -95,7 +95,7 @@ if (gMetadata) {
   `;
 }
 
-// OAuth
+/** OAuth. */
 const gOAuth = document.getElementById("gOAuth");
 if (gOAuth) {
   gOAuth.innerHTML += `
@@ -104,7 +104,7 @@ if (gOAuth) {
   `;
 }
 
-// OData
+/** OData. */
 const gOData = document.getElementById("gOData");
 if (gOData) {
   gOData.innerHTML += `
@@ -113,7 +113,7 @@ if (gOData) {
   `;
 }
 
-// Payload
+/** Payload. */
 const gPayload = document.getElementById("gPayload");
 if (gPayload) {
   gPayload.innerHTML += `
@@ -122,7 +122,7 @@ if (gPayload) {
   `;
 }
 
-// Protocol
+/** Protocol. */
 const gProtocol = document.getElementById("gProtocol");
 if (gProtocol) {
   gProtocol.innerHTML += `
@@ -131,7 +131,7 @@ if (gProtocol) {
   `;
 }
 
-// Query
+/** Query. */
 const gQuery = document.getElementById("gQuery");
 if (gQuery) {
   gQuery.innerHTML += `
@@ -140,7 +140,7 @@ if (gQuery) {
   `;
 }
 
-// REST
+/** REST. */
 const gREST = document.getElementById("gREST");
 if (gREST) {
   gREST.innerHTML += `
@@ -152,9 +152,9 @@ if (gREST) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Real Estate Terms
+/** Real Estate Terms. */
 
-// Active Solar System
+/** Active Solar System. */
 const gActiveSolarSystem = document.getElementById("gActiveSolarSystem");
 if (gActiveSolarSystem) {
   gActiveSolarSystem.innerHTML += `
@@ -163,7 +163,7 @@ if (gActiveSolarSystem) {
   `;
 }
 
-// Buyers Agency Fee
+/** Buyers Agency Fee. */
 const gBuyersAgencyFee = document.getElementById("gBuyersAgencyFee");
 if (gBuyersAgencyFee) {
   gBuyersAgencyFee.innerHTML += `
@@ -172,7 +172,7 @@ if (gBuyersAgencyFee) {
   `;
 }
 
-// CMA
+/** CMA. */
 const gCMA = document.getElementById("gCMA");
 if (gCMA) {
   gCMA.innerHTML += `
@@ -181,7 +181,7 @@ if (gCMA) {
   `;
 }
 
-// Deed
+/** Deed. */
 const gDeed = document.getElementById("gDeed");
 if (gDeed) {
   gDeed.innerHTML += `
@@ -190,7 +190,7 @@ if (gDeed) {
   `;
 }
 
-// Earnest Money
+/** Earnest Money. */
 const gEarnestMoney = document.getElementById("gEarnestMoney");
 if (gEarnestMoney) {
   gEarnestMoney.innerHTML += `
@@ -199,7 +199,7 @@ if (gEarnestMoney) {
   `;
 }
 
-// Environmentally Friendly Home Construction
+/** Environmentally Friendly Home Construction. */
 const gEnvironmentallyFriendlyHomeConstruction = document.getElementById(
   "gEnvironmentallyFriendlyHomeConstruction"
 );
@@ -210,7 +210,7 @@ if (gEnvironmentallyFriendlyHomeConstruction) {
   `;
 }
 
-// Infrastructure
+/** Infrastructure. */
 const gInfrastructure = document.getElementById("gInfrastructure");
 if (gInfrastructure) {
   gInfrastructure.innerHTML += `
@@ -219,7 +219,7 @@ if (gInfrastructure) {
   `;
 }
 
-// Installment Contract
+/** Installment Contract. */
 const gInstallmentContract = document.getElementById("gInstallmentContract");
 if (gInstallmentContract) {
   gInstallmentContract.innerHTML += `
@@ -228,7 +228,7 @@ if (gInstallmentContract) {
   `;
 }
 
-// Listing Price
+/** Listing Price. */
 const gListingPrice = document.getElementById("gListingPrice");
 if (gListingPrice) {
   gListingPrice.innerHTML += `
@@ -237,7 +237,7 @@ if (gListingPrice) {
   `;
 }
 
-// Mortgage Banker
+/** Mortgage Banker. */
 const gMortgageBanker = document.getElementById("gMortgageBanker");
 if (gMortgageBanker) {
   gMortgageBanker.innerHTML += `
@@ -246,7 +246,7 @@ if (gMortgageBanker) {
   `;
 }
 
-// Real Estate
+/** Real Estate. */
 const gRealEstate = document.getElementById("gRealEstate");
 if (gRealEstate) {
   gRealEstate.innerHTML += `

@@ -1,4 +1,4 @@
-/*
+/**
  * The Library of Custom Reusable Web Components
  * This file is the library containing my collection of custom, reusable web components
  * that can be used across different parts of the project. These components go beyond what browsers provide,
@@ -16,9 +16,9 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Buttons
+/** Buttons. */
 
-// Dark Theme Button
+/** Dark theme button. */
 class themeButton extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -35,7 +35,7 @@ class themeButton extends HTMLElement {
 }
 customElements.define("theme-button", themeButton);
 
-// Editor Mode Button
+/** Editor mode button. */
 class editorButton extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -52,7 +52,7 @@ class editorButton extends HTMLElement {
 }
 customElements.define("editor-button", editorButton);
 
-// Speak Button
+/** Speak button. */
 class speakButton extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -68,7 +68,7 @@ class speakButton extends HTMLElement {
 }
 customElements.define("speak-button", speakButton);
 
-// Screenshot Button
+/** Screenshot button. */
 class screenshotButton extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -84,7 +84,7 @@ class screenshotButton extends HTMLElement {
 }
 customElements.define("screenshot-button", screenshotButton);
 
-// HTML Button
+/** HTML button. */
 class htmlButton extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -100,7 +100,7 @@ class htmlButton extends HTMLElement {
 }
 customElements.define("html-button", htmlButton);
 
-// Menu Container
+/** Menu container. */
 class menuContainer extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -134,7 +134,7 @@ if (!document.querySelector("#container>theme-button")) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Navigation Links
+/** Navigation links. */
 
 class HomeL extends HTMLElement {
   connectedCallback() {
@@ -179,7 +179,7 @@ customElements.define("nav-links-doc-main-page", NavLinksDocMainPage);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// The Main Page Header with Automatic Greetings
+/** The main page header with automatic greetings. */
 let headerIndex = document.getElementById("header-index");
 if (headerIndex !== null) {
   let timeNow = new Date().getHours();
@@ -200,7 +200,7 @@ if (headerIndex !== null) {
   `;
 }
 
-// Logo
+/** Logo. */
 class logoImg extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `

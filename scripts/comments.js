@@ -1,4 +1,4 @@
-/*
+/**
  * Commentary Display Script
  *
  * This script creates interactive commentary elements for each

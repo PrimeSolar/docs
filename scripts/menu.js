@@ -1,4 +1,4 @@
-/*
+/**
  * The Library of Custom Reusable Web Elements
  * This file is the library containing my collection of custom, reusable web elements
  * that can be used across different parts of the project. These elements go beyond what browsers provide,

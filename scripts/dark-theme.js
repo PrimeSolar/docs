@@ -1,4 +1,4 @@
-/*
+/**
  * Theme Management Script
  *
  * This script handles the theme management of the Real&Mate Documentation web application.
@@ -47,7 +47,7 @@ dexieScript.onload = () => {
 async function setTheme() {
   const themeTable = await db.themeTable.toArray();
   if (themeTable.length > 0) {
-    const theme = themeTable[0].theme; // Get the first theme entry
+    const theme = themeTable[0].theme; /** Get the first theme entry. */
     document.querySelector("html").classList.add(theme);
   }
 }
@@ -88,7 +88,7 @@ function switchyDarkTheme() {
   }
   const currentTheme = htmlElement.classList[0];
   if (currentTheme) {
-    db.themeTable.clear(); // Clear existing themes to avoid duplicates
+    db.themeTable.clear(); /** Clear existing themes to avoid duplicates. */
     db.themeTable.add({ theme: currentTheme });
   } else {
     console.log("Theme is undefined");
@@ -102,13 +102,13 @@ function updateCardThemes(removeClass, addClass) {
   }
 }
 
-/*const test = document.querySelector("theme-button").nextElementSibling.textContent.trim();
+/** const test = document.querySelector("theme-button").nextElementSibling.textContent.trim();
 if ( test !== "Editor Mode") {
   document.querySelector("#theme").style.right = "-27px";
   document.querySelector("#switchyContainerAbsolute").style.right = "0";
 } else {
   console.log("text content is Editor Mode");
-}*/
+} */
 
 function cssHoverEffect() {
   if (

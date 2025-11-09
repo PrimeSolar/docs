@@ -1,4 +1,4 @@
-/*
+/**
  * Script
  *
  * Copyright © Vladislav Kazantsev
@@ -36,30 +36,30 @@ for (let btn of bttn) {
       if (btn.closest("menu-container")) {
         console.log("menu");
         if (xSmall.matches) {
-          // For max-width: 500px
+          /** For max-width: 500px. */
           ripples.style.left = "calc(-89vw + " + x + "px)";
           ripples.style.top = -64 + y + "px";
         } else if (xMedium.matches) {
-          // For min-width: 501px and max-width: 700px
+          /** For min-width: 501px and max-width: 700px. */
           ripples.style.left = "calc(-94.5vw + " + x + "px)";
           ripples.style.top = -55 + y + "px";
         } else if (xLarge.matches) {
-          // For min-width: 701px
+          /** For min-width: 701px. */
           ripples.style.left = "calc(-96vw + " + x + "px)";
           ripples.style.top = -55 + y + "px";
         }
       } else {
         console.log("no-menu");
         if (xSmall.matches) {
-          // For max-width: 500px
+          /** For max-width: 500px. */
           ripples.style.left = "calc(-78.5vw + " + x + "px)";
           ripples.style.top = y + "px";
         } else if (xMedium.matches) {
-          // For min-width: 501px and max-width: 700px
+          /** For min-width: 501px and max-width: 700px. */
           ripples.style.left = "calc(-84.85vw + " + x + "px)";
           ripples.style.top = y + "px";
         } else if (xLarge.matches) {
-          // For min-width: 701px
+          /** For min-width: 701px. */
           ripples.style.left = "calc(-86.55vw + " + x + "px)";
           ripples.style.top = y + "px";
         }

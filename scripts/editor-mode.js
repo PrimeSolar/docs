@@ -1,4 +1,4 @@
-/*
+/**
  * Script
  *
  * Copyright © Vladislav Kazantsev

@@ -18,16 +18,16 @@ root {
 }
 
 :root {
-  --primary-color: #0088ff; /* Set the color for the text of the element. */
-  --secondary-color: #0099ff; /* Set the color for the text of the element. */
-  --text-color: #373737; /* Set the color for the text of the element. */
-  --background-color: #eeeeee; /* Set the color for the text of the element. */
-  --border-color: #bbbbbb; /* Set the color for the text of the element. */
+  --primary-color: #0088ff; /* Set the primary color. */
+  --secondary-color: #0099ff; /* Set the secondary color. */
+  --text-color: #373737; /* Set the color for the text. */
+  --background-color: #eeeeee; /* Set the color for the background. */
+  --border-color: #bbbbbb; /* Set the color for the borders. */
   --font-family: Verdana, sans-serif;
 }
 
 a {
-  text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
   line-height: 150%; /* Set the vertical spacing between lines of text. */
 }
 
@@ -36,8 +36,6 @@ a-comment {
     --primary-color
   ); /* Set the color for the background of the element. */
   border: 2px solid var(--border-color); /* Set the width, the style, and the color of the element border. */
-  -webkit-box-shadow: 0 7px 7px -7px #000000;
-  box-shadow: 0 7px 7px -7px #000000;
   color: #ffffff; /* Set the color for the text of the element. */
   display: none; /* Specify the display behavior of the element. */
   font-size: 11.25px; /* Set the font size for the text of the element. */
@@ -53,7 +51,9 @@ a-comment {
   padding-left: 4px; /* Set the thickness for the left padding area of the element. */
   position: absolute; /* Specify the positioning method for the element. */
   right: -25.5px; /* Position the element relative to the right edge of its nearest positioned ancestor. */
-  text-shadow: 2px 2px 5px var(--secondary-color); /* Apply a blue shadow to the element text. */
+  text-shadow: 2px 2px 5px var(--secondary-color); /* Apply a shadow to the element text. */
+  -webkit-box-shadow: 0 7px 7px -7px #000000;
+  box-shadow: 0 7px 7px -7px #000000;
   -webkit-transform: translate(
     -25px,
     0
@@ -485,7 +485,7 @@ footerLowerMC p {
 
 footer a {
   color: #ffffff; /* Set the color for the text of the element. */
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 footer a:visited {
@@ -562,7 +562,7 @@ footerLowerLC {
 
 footerLowerMC a {
   color: #ffffff; /* Set the color for the text of the element. */
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 footerLowerMC a:visited {
@@ -672,7 +672,7 @@ li:first-of-type {
 
 li > a:hover {
   color: #318ce7; /* Set the color for the text of the element. */
-  text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 /* Notes highlight information by separating it from the regular, main content. */
@@ -846,7 +846,7 @@ indent {
 }
 
 p a {
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 paramType {
@@ -956,13 +956,13 @@ table {
   max-width: 100%;
   width: 100%;
   border-collapse: collapse;
-  -moz-box-sizing: border-box; /* For older versions of Firefox. */
-  -webkit-box-sizing: inherit; /* For older versions of Chrome and Safari. */
-  box-sizing: inherit; /* Standard syntax for modern browsers (widely supported). */
   display: table; /* Specify the display behavior of the element. */
   margin-bottom: 20px; /* Set the bottom margin to 20 pixels. */
   position: relative; /* Specify the positioning method for the element. */
   table-layout: auto;
+  -moz-box-sizing: border-box; /* For older versions of Firefox. */
+  -webkit-box-sizing: inherit; /* For older versions of Chrome and Safari. */
+  box-sizing: inherit; /* Standard syntax for modern browsers (widely supported). */
 }
 
 td {
@@ -1012,7 +1012,7 @@ ul > li > ul {
 }
 
 ul > li > a {
-  text-decoration: none !important; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none !important; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 ol {
@@ -1102,7 +1102,7 @@ ol {
   height: 50%; /* Set the height of the element. */
   margin: 25px 0; /* Set the thickness for the margin area of the element. */
   text-align: center; /* Align the text within the element. */
-  text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
   padding-top: 25px; /* Set the thickness for the top padding area of the element. */
   padding-right: 25px; /* Set the thickness for the right padding area of the element. */
   padding-bottom: 25px; /* Set the thickness for the bottom padding area of the element. */
@@ -1130,7 +1130,7 @@ ol {
   padding-left: 0; /* Set the thickness for the left padding area of the element. */
   font-size: 18px; /* Set the font size for the text of the element. */
   text-align: center; /* Align the text within the element. */
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 .list-link:hover {
@@ -1492,7 +1492,7 @@ h1.title {
   z-index: 1; /* Set the stacking order of the element. */
   opacity: 0; /* Set the opacity of the element. */
   font-size: 16px; /* Set the font size for the text of the element. */
-  text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
   pointer-events: none; /* Control the element's response to pointer events. */
   /* Set an effect of a transition for the element. */
   -webkit-transition: 0.25s; /* For older versions of Chrome and Safari. */
@@ -1799,7 +1799,7 @@ nav-links {
 }
 
 nav-links a {
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 @media (max-width: 430px) {
@@ -1815,7 +1815,7 @@ nav-links-api-ref {
 }
 
 nav-links-api-ref a {
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 nav-links-doc-main-page {
@@ -1827,7 +1827,7 @@ nav-links-doc-main-page {
 }
 
 nav-links-doc-main-page a {
-  text-decoration: underline; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: underline; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 #w3c-img {
@@ -1848,7 +1848,7 @@ nav-links-doc-main-page a {
   ); /* Position the element relative to the right edge of its nearest positioned ancestor. */
   font-size: 14px; /* Set the font size for the text of the element. */
   color: #318ce7; /* Set the color for the text of the element. */
-  text-decoration: none; /* Specify the decoration applied to the text, affecting its visual presentation. */
+  text-decoration: none; /* Specify the decoration applied to the text of the element, affecting its visual presentation. */
 }
 
 @media screen {

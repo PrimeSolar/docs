@@ -2678,26 +2678,10 @@ customElements.define(
   DdVersion
 ); /** Define a custom element dd-version and assign it a class DdVersion. */
 
-const dd =
-  document.getElementsByTagName("dd"); /** Select all elements with tag dd. */
-const dl =
-  document.getElementsByTagName("dl"); /** Select all elements with tag dl. */
-for (let x of dd) {
-  for (let y of dl) {
-    if (x.contains(y) == true) {
-      x.style.marginBottom = "0";
-    }
-  }
-}
-const ul =
-  document.getElementsByTagName("ul"); /** Select all elements with tag ul. */
-for (let x of dd) {
-  for (let w of ul) {
-    if (x.contains(w) == true) {
-      x.style.marginBottom = "0";
-    }
-  }
-}
+document.querySelectorAll("*").forEach((el) => {
+  if (el.tagName.toLowerCase().startsWith("dd-"))
+    el.setAttribute("dd-data", "");
+});
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

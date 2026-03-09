@@ -28,7 +28,7 @@ const gAPI = document.getElementById("gAPI");
 if (gAPI) {
   gAPI.innerHTML += `
   <td>API</td>
-  <td><p>Application Programming Interface. It’s a collection of standardized protocols and tools that enable different technology systems to communicate and interact with one another. It serves as an interface that facilitates the access and delivery of data, allowing applications to request and exchange information seamlessly.</p></td>
+  <td><p>Application Programming Interface. It’s a collection of standardized protocols and tools that enable different technology systems to communicate and exchange data seamlessly. It allows developers to integrate functionality without managing underlying infrastructure, facilitating access and delivery of information across distributed systems.</p></td>
   `;
 }
 
@@ -37,7 +37,7 @@ const gAuthorization = document.getElementById("gAuthorization");
 if (gAuthorization) {
   gAuthorization.innerHTML += `
   <td>Authorization</td>
-  <td><p>Process of specifying access rights/privileges to resources. It identifies what kinds of data a user is allowed to access. To access data through the API, a data requestor supplies an authorization code &mdash; an API key or API token &mdash; and the user’s allowed level of data access is delivered through the API.</p></td>
+  <td><p>The process of specifying access rights to resources based on user identity. When accessing data through an API, a requestor supplies an authorization credential — an API key or token — that determines their allowed data access level delivered through the API.</p></td>
   `;
 }
 
@@ -46,7 +46,7 @@ const gAuthentication = document.getElementById("gAuthentication");
 if (gAuthentication) {
   gAuthentication.innerHTML += `
   <td>Authentication</td>
-  <td><p>The process of verifying a user's identity to ensure that they are who they claim to be. In the context of an API, authentication is essential for determining the legitimacy of a person requesting data, ensuring that only authorized users can access sensitive information.</p></td>
+  <td><p>The process of verifying a user's identity to confirm they are who they claim to be. In API contexts, it ensures only legitimate users access sensitive data by validating credentials before granting authorization.</p></td>
   `;
 }
 
@@ -64,7 +64,7 @@ const gEndpoint = document.getElementById("gEndpoint");
 if (gEndpoint) {
   gEndpoint.innerHTML += `
   <td>Endpoint</td>
-  <td><p>A web address where data can be accessed. The API service has many endpoints where different kinds of data can be accessed.</p></td>
+  <td><p>A specific web address where data can be accessed through an API. Each endpoint corresponds to a different resource, allowing developers to retrieve or manipulate different kinds of data.</p></td>
   `;
 }
 
@@ -73,7 +73,7 @@ const gHTTP = document.getElementById("gHTTP");
 if (gHTTP) {
   gHTTP.innerHTML += `
   <td>HTTP</td>
-  <td><p>The Hypertext Transfer Protocol. It's the set of rules for transferring data between systems on the World Wide Web or within a local network. HTTP defines how messages are formatted and transmitted, as well as how web servers and browsers should respond to various commands. It is the foundation of data communication on the internet, enabling the retrieval of web pages, images, and other resources, and is commonly used in conjunction with HTTPS (HTTP Secure).</p></td>
+  <td><p>The Hypertext Transfer Protocol. It's the set of rules for transferring data between systems on the World Wide Web or within a local network. HTTP defines how messages are formatted and transmitted between web servers and clients. It is the foundation of data communication on the internet, enabling the retrieval of web pages, images, and other resources, and is commonly used in conjunction with HTTPS (HTTP Secure).</p></td>
   `;
 }
 
@@ -82,7 +82,7 @@ const gJSON = document.getElementById("gJSON");
 if (gJSON) {
   gJSON.innerHTML += `
   <td>JSON</td>
-  <td><p>The JavaScript Object Notation. It's a lightweight data-interchange format that is easy for humans to read and write and is easy for machines to parse and generate. Real&Mate’s API can return data to requestors in this format for ease of use.</p></td>
+  <td><p>The JavaScript Object Notation. It's a lightweight data-interchange format that is easy for humans to read and write and is easy for machines to parse and generate. Real&Mate’s API can return data in JSON format, making it simple for developers to integrate and work with.</p></td>
   `;
 }
 
@@ -109,7 +109,7 @@ const gOData = document.getElementById("gOData");
 if (gOData) {
   gOData.innerHTML += `
   <td>OData</td>
-  <td><p>Open Data Protocol. It's an ISO/IEC approved, OASIS standard that defines a set of rules for building and using RESTful APIs.</p></td>
+  <td><p>Open Data Protocol. It's an ISO/IEC approved, OASIS standard that defines best practices for building and using RESTful APIs, enabling consistent data access patterns across systems.</p></td>
   `;
 }
 
@@ -118,7 +118,7 @@ const gPayload = document.getElementById("gPayload");
 if (gPayload) {
   gPayload.innerHTML += `
   <td>Payload</td>
-  <td><p>Actual data transmitted as part of a request or response in an API interaction. The payload contains the relevant information that a client sends to a server or a server returns to a client, typically in a structured format such as JSON or XML.</p></td>
+  <td><p>The actual data transmitted in an API request or response. It contains the relevant information exchanged between client and server, typically formatted as JSON or XML.</p></td>
   `;
 }
 
@@ -127,7 +127,7 @@ const gProtocol = document.getElementById("gProtocol");
 if (gProtocol) {
   gProtocol.innerHTML += `
   <td>Protocol</td>
-  <td><p>A set of rules and conventions that govern the format, transmission, and processing of data exchanged between systems. Protocols ensure that data is communicated accurately and efficiently.</p></td>
+  <td><p>A set of rules that governs the format, transmission, and processing of data exchanged between systems. Protocols ensure that data is communicated accurately and efficiently.</p></td>
   `;
 }
 
@@ -136,7 +136,7 @@ const gQuery = document.getElementById("gQuery");
 if (gQuery) {
   gQuery.innerHTML += `
   <td>Query</td>
-  <td><p>A request made by a user to the API that specifies the type of data needed. It specifies parameters for data retrieval, allowing the API to understand and fulfill user's information requirements effectively.</p></td>
+  <td><p>An API-request made by a user specifying the data needed and any parameters for retrieval. The API processes the request and returns the relevant data based on those specifications.</p></td>
   `;
 }
 
@@ -145,7 +145,7 @@ const gREST = document.getElementById("gREST");
 if (gREST) {
   gREST.innerHTML += `
   <td>REST</td>
-  <td><p>Representational State Transfer. An architectural style for designing networked applications, particularly in the context of distributed hypermedia systems. REST is based on a set of principles and constraints that promote scalability, stateless communication, and the use of standard HTTP methods (such as GET, POST, PUT, DELETE) for interacting with resources. In a RESTful system, resources are identified by URLs, and the state of the application is represented through the transfer of representations (such as JSON or XML) between a client and a server, allowing for a more efficient and flexible interaction model.</p></td>
+  <td><p>Representational State Transfer. An architectural style for building scalable, distributed APIs. It uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources identified by URLs, exchanging data representations (JSON, XML) between client and server in a stateless manner.</p></td>
   `;
 }
 

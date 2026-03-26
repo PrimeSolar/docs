@@ -1,5 +1,24 @@
 /**
- * Script
+ * The Configuration Script
+ *
+ * This script sets up the important HTML structure for the web application.
+ * It dynamically inserts metadata and styles to configure the document's head elements
+ * for optimal SEO, accessibility, and user experience.
+ *
+ * Key Features:
+ * - Sets the default language of the document to English (`lang = "en"`).
+ * - Defines the default text direction as left-to-right (`dir = "ltr"`).
+ * - Inserts viewport settings to ensure responsive design.
+ * - Configures the document title for the web page.
+ * - Includes metadata to enhance SEO.
+ * - Links to the style sheet for styling the application.
+ * - Adds a badge to enhance brand identity.
+ * - Specifies the type attribute for all script elements for better compatibility.
+ *
+ * Any corresponding manual changes in the HTML documents would be overridden at runtime.
+ * The <meta> charset tags are hardcoded because they need to be guaranteed to be within the first 1024 bytes of an HTML document,
+ * as some browsers only look at those bytes before choosing an encoding
+ * (see https://html.spec.whatwg.org/multipage/semantics.html#charset).
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
@@ -35,9 +54,10 @@ if (
 ) {
   document.title =
     title.textContent.replace(/Read Out Loud/g, "").trim() +
-    " | Real&Mate Documentation";
+    " | Real&Mate Documentation | Web Developer Vladislav Kazantsev";
 } else {
-  document.title = "Real&Mate Documentation";
+  document.title =
+    "Real&Mate Documentation | Web Developer Vladislav Kazantsev";
 }
 
 /** Insert <meta name="author" content="Vladislav Kazantsev">. */
@@ -108,6 +128,11 @@ if (
   linkImage.href = "assets/logos/logo-tab.jpg";
 }
 document.querySelector("head").appendChild(linkImage);
+
+/** Insert <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>. */
+const jQuery = document.createElement("script");
+jQuery.src = "https://code.jquery.com/jquery-4.0.0.min.js";
+document.querySelector("body").appendChild(jQuery);
 
 /** Set `type="text/javascript"` for all <script> elements for better compatibility. */
 for (let x of document.querySelectorAll("script")) {

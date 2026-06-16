@@ -106,7 +106,7 @@ const bestPractices = document.getElementsByTagName("best-practices");
 if (bestPractices) {
   for (let x of bestPractices) {
     /** Define the "Best Practices" web component content. */
-    x.innerHTML = `<strong>🙌 Best Practices</strong>` + x.innerHTML;
+    x.insertAdjacentHTML("afterbegin", `<strong>🙌 Best Practices</strong>`);
   }
 }
 

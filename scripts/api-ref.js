@@ -32,6 +32,10 @@ customElements.define(
   DtActivityLogs
 ); /** Define a custom element dt-activity-logs and assign it a class DtActivityLogs. */
 
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 class DdActivityLogs extends HTMLElement {
   /** Declare a class DdActivityLogs that defines a type of logic for a custom element. */
   connectedCallback() {

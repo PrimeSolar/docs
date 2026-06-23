@@ -20,6 +20,10 @@
  */
 
 document.getElementById("cards").onmousemove = (e) => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   for (const card of document.getElementsByClassName("card")) {
     const rect = card.getBoundingClientRect(),
       x = e.clientX - rect.left,

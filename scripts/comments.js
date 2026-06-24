@@ -23,6 +23,10 @@
  */
 
 const createCommentary = document.getElementsByTagName("a-comment");
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 const commentaryTag = "<comment-tag onclick='displayCommentary(this)'/>";
 let zIndex = 0;
 for (let a of createCommentary) {
@@ -42,7 +46,7 @@ function displayCommentary(element) {
     element.nextSibling.style.zIndex = ++zIndex;
   }
   let checkOutElement = element.parentNode.childNodes[0].tagName;
-  if (checkOutElement == "COMMENT-LABEL") {
+  if (checkOutElement === "COMMENT-LABEL") {
     element.nextSibling.style.transform = "translate(-25px, 30px)";
   } else {
   }

@@ -19,7 +19,7 @@
 /** Terms and Definitions. */
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////a/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /** API Terms. */
 
@@ -28,7 +28,20 @@ const gAPI = document.getElementById("gAPI");
 if (gAPI) {
   gAPI.innerHTML += `
   <td>API</td>
-  <td><p>Application Programming Interface. It’s a collection of standardized protocols and tools that enable different technology systems to communicate and exchange data seamlessly. It allows developers to integrate functionality without managing underlying infrastructure, facilitating access and delivery of information across distributed systems.</p></td>
+  <td><p>Application Programming Interface. It's a collection of standardized protocols and tools that enable different technology systems to communicate and exchange data seamlessly. It allows developers to integrate functionality without managing underlying infrastructure, facilitating access and delivery of information across distributed systems.</p></td>
+  `;
+}
+
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
+/** API Gateway. */
+const gAPIGateway = document.getElementById("gAPIGateway");
+if (gAPIGateway) {
+  gAPIGateway.innerHTML += `
+  <td>API Gateway</td>
+  <td><p>A server that acts as an intermediary between clients and backend API services. An API gateway handles request routing, authentication, rate limiting, and response transformation, providing a single entry point for API users while abstracting backend complexity.</p></td>
   `;
 }
 
@@ -77,12 +90,21 @@ if (gHTTP) {
   `;
 }
 
+/** Idempotency. */
+const gIdempotency = document.getElementById("gIdempotency");
+if (gIdempotency) {
+  gIdempotency.innerHTML += `
+  <td>Idempotency</td>
+  <td><p>A property ensuring that making the same API request multiple times produces the same result as making it once. Idempotency is important for reliability, allowing clients to safely retry requests without causing duplicate operations or data inconsistencies.</p></td>
+  `;
+}
+
 /** JSON. */
 const gJSON = document.getElementById("gJSON");
 if (gJSON) {
   gJSON.innerHTML += `
   <td>JSON</td>
-  <td><p>The JavaScript Object Notation. It's a lightweight data-interchange format that is easy for humans to read and write and is easy for machines to parse and generate. Real&Mate’s API can return data in JSON format, making it simple for developers to integrate and work with.</p></td>
+  <td><p>The JavaScript Object Notation. It's a lightweight data-interchange format that is easy for humans to read and write and is easy for machines to parse and generate. Real&Mate's API can return data in JSON format, making it simple for developers to integrate and work with.</p></td>
   `;
 }
 
@@ -113,6 +135,15 @@ if (gOData) {
   `;
 }
 
+/** Pagination. */
+const gPagination = document.getElementById("gPagination");
+if (gPagination) {
+  gPagination.innerHTML += `
+  <td>Pagination</td>
+  <td><p>A technique that divides large datasets into smaller, manageable chunks or pages. Pagination improves API performance and user experience by limiting the amount of data returned per request, allowing clients to retrieve data incrementally.</p></td>
+  `;
+}
+
 /** Payload. */
 const gPayload = document.getElementById("gPayload");
 if (gPayload) {
@@ -140,12 +171,39 @@ if (gQuery) {
   `;
 }
 
+/** Rate Limiting. */
+const gRateLimiting = document.getElementById("gRateLimiting");
+if (gRateLimiting) {
+  gRateLimiting.innerHTML += `
+  <td>Rate Limiting</td>
+  <td><p>A mechanism that controls the number of API requests a client can make within a specified time period. Rate limiting protects server resources, prevents abuse, and ensures fair access for all users by enforcing quotas on request frequency.</p></td>
+  `;
+}
+
 /** REST. */
 const gREST = document.getElementById("gREST");
 if (gREST) {
   gREST.innerHTML += `
   <td>REST</td>
-  <td><p>Representational State Transfer. An architectural style for building scalable, distributed APIs. It uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources identified by URLs, exchanging data representations (JSON, XML) between client and server in a stateless manner.</p></td>
+  <td><p>Representational State Transfer. An architectural style for building scalable, distributed APIs. It uses HTTP methods (primarily GET, POST, PUT, DELETE, and PATCH) to interact with resources identified by URLs, exchanging data representations (JSON, XML, etcetera) between client and server in a stateless manner. REST uses HTTP semantics to ensure reliability: safe methods (GET, HEAD, OPTIONS, TRACE) don't modify server state, while idempotent methods (GET, HEAD, PUT, DELETE, OPTIONS, TRACE) produce consistent results when called repeatedly. POST and PATCH are neither safe nor idempotent, requiring developers to implement additional safeguards for data consistency, ultimately creating robust and trustworthy APIs.</p></td>
+  `;
+}
+
+/** Status Code. */
+const gStatusCode = document.getElementById("gStatusCode");
+if (gStatusCode) {
+  gStatusCode.innerHTML += `
+  <td>Status Code</td>
+  <td><p>A three-digit numerical code returned by an API in response to a request, indicating the outcome of that request. Status codes (such as 200 for success, 404 for not found, 500 for server error) help developers quickly diagnose and handle API responses.</p></td>
+  `;
+}
+
+/** Webhook. */
+const gWebhook = document.getElementById("gWebhook");
+if (gWebhook) {
+  gWebhook.innerHTML += `
+  <td>Webhook</td>
+  <td><p>A user-defined HTTP callback that allows an API to send real-time data to a specified URL when a specific action occurs, enabling event-driven architecture.</p></td>
   `;
 }
 
@@ -168,7 +226,7 @@ const gBuyersAgencyFee = document.getElementById("gBuyersAgencyFee");
 if (gBuyersAgencyFee) {
   gBuyersAgencyFee.innerHTML += `
   <td>Buyers Agency Fee</td>
-  <td><p>The fee or commission paid to a buyer’s agent or brokerage for finding and managing a home purchase for a buyer. Represented as a percentage of the sales price, the fee is paid by the seller at closing and is intended to compensate the buyer’s agent for their expertise, negotiation skills, and assistance throughout the buying process.</p></td>
+  <td><p>The fee or commission paid to a buyer's agent or brokerage for finding and managing a home purchase for a buyer. Represented as a percentage of the sales price, the fee is paid by the seller at closing and is intended to compensate the buyer's agent for their expertise, negotiation skills, and assistance throughout the buying process.</p></td>
   `;
 }
 
@@ -215,7 +273,7 @@ const gInfrastructure = document.getElementById("gInfrastructure");
 if (gInfrastructure) {
   gInfrastructure.innerHTML += `
   <td>Infrastructure</td>
-  <td><p>Organizational structures that are required for society or a business to function.</p></td>
+  <td><p>The foundational systems and structures - both physical and digital - that are important for organizations and society to operate effectively. In API contexts, infrastructure encompasses servers, networks, databases, and security systems that enable reliable data exchange and service delivery.</p></td>
   `;
 }
 

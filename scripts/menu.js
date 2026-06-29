@@ -17,6 +17,10 @@
  */
 
 function menuToggle(x) {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   x.classList.toggle("change");
   document.getElementById("container-button").classList.toggle("show");
 }

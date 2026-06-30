@@ -23,6 +23,10 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const html2CanvasScript = document.createElement("script");
   html2CanvasScript.type = "text/javascript";
   html2CanvasScript.src =
@@ -44,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function screenshot() {
     containerButton.style.display = "none";
     dropdown.style.display = "none";
-    if (localReusableItems != null) {
+    if (localReusableItems !== null) {
       localReusableItems.style.display = "none";
     }
     if (logoContainer) {

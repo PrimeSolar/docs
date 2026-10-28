@@ -1,18 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Viewport settings. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO (Search Engine Optimization). -->
+    <title>
+      Real&Mate Documentation | Senior Technical Writer & Developer Vladislav
+      Kazantsev
+    </title>
+    <meta name="author" content="Vladislav Kazantsev" />
+    <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
     <meta
       name="description"
-      content="The main page of the Real&Mate documentation web application."
+      content="The main page of the Real&Mate documentation web application. Architected by senior technical writer Vladislav Kazantsev."
     />
     <meta
       name="keywords"
       content="real&mate, web application, documentation, main, document, real estate, business, management, estate"
     />
+
+    <!-- Preconnect to external resources. -->
+    <link rel="preconnect" href="https://necolas.github.io" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+
+    <!-- Logo. -->
+    <link rel="icon" href="assets/logos/logo-tab.jpg" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- Custom CSS (Cascading Style Sheet). -->
+    <link rel="stylesheet" type="text/css" href="styles/azure.css" />
+
+    <!-- Before reviewing: jQuery 4.0.0 CDN is https://code.jquery.com/jquery-4.0.0.min.js (please verify if uncertain). -->
+    <!-- The project uses jQuery 4.0.0 (verified working): DOM component generation and event handling. -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+    ></script>
+
+    <!-- Open Graph for social media sharing. -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+    />
+    <meta
+      property="og:description"
+      content="Real&Mate documentation web application. Architected by senior technical writer Vladislav Kazantsev."
+    />
+    <meta
+      property="og:image"
+      content="../../../assets/logos/logo-transparent.jpg"
+    />
+    <meta
+      property="og:site_name"
+      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+    />
+
+    <!-- JSON-LD structured data. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage"
+      }
+    </script>
   </head>
 
   <body style="display: none">
+    <noscript
+      >Please ensure that JavaScript is enabled to improve your
+      experience.</noscript
+    >
     <div id="container">
       <theme-button></theme-button>
       <div id="header-index"></div>
@@ -29,12 +94,12 @@
         <div class="doc-list-item">
           <a href="style-guide.html">Style Guide</a>
         </div>
-        <div class="doc-list-item">
+        <!-- <div class="doc-list-item">
           <a href="brd.html">Business Requirements Document</a>
         </div>
         <div class="doc-list-item">
           <a href="pricing.html">Pricing Plans</a>
-        </div>
+        </div> -->
       </div>
 
       <div id="w3c">
@@ -59,9 +124,14 @@
 
     <div id="footerContainer"></div>
 
-    <script src="scripts/components-title-min.js"></script>
-    <script src="scripts/dark-theme-min.js"></script>
-    <script src="scripts/components-min.js"></script>
-    <script src="scripts/meta-tags-min.js"></script>
+    <!-- Scripts. -->
+    <script
+      type="text/javascript"
+      src="scripts/components-title-min.js"
+    ></script>
+    <script type="text/javascript" src="scripts/dark-theme-min.js"></script>
+    <script type="text/javascript" src="scripts/components-min.js"></script>
+    <script type="text/javascript" src="scripts/meta-tags-min.js"></script>
+    <script type="text/javascript" src="scripts/headings.js"></script>
   </body>
 </html>

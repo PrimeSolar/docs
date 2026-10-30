@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/APIReference">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Viewport settings. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO (Search Engine Optimization). -->
+    <title>
+      GET /realandmate/v1/AgencyService/agencies | Real&Mate Documentation |
+      Senior Technical Writer Vladislav Kazantsev
+    </title>
+    <meta name="author" content="Vladislav Kazantsev" />
+    <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
     <meta
       name="description"
-      content="An API method for retrieving the collection of real estate agency profiles from Real&Mate."
+      content="An API method for retrieving the collection of real estate agency profiles from Real&Mate. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
     />
     <meta
       name="keywords"
       content="real&mate, web application, documentation, api, reference, method, real estate, business, management, agency"
     />
+
+    <!-- Preconnect to external resources. -->
+    <link rel="preconnect" href="https://necolas.github.io" />
+    <link rel="preconnect" href="https://code.jquery.com" />
+
+    <!-- Logo. -->
+    <link rel="icon" href="../../../assets/logos/logo-tab.jpg" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- Custom CSS (Cascading Style Sheet). -->
+    <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
+
+    <!-- Before reviewing: jQuery 4.0.0 CDN is https://code.jquery.com/jquery-4.0.0.min.js (please verify if uncertain). -->
+    <!-- The project uses jQuery 4.0.0 (verified working): DOM component generation and event handling. -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+    ></script>
+
+    <!-- Open Graph for social media sharing. -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="API Reference | Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+    />
+    <meta
+      property="og:description"
+      content="API Reference located in the Real&Mate documentation web application. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
+    />
+    <meta
+      property="og:image"
+      content="../../../assets/logos/logo-transparent.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="The Real&Mate Company Logo" />
+    <meta
+      property="og:site_name"
+      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+    />
+
+    <!-- JSON-LD structured data. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "APIReference",
+        "name": "API",
+        "url": "https://primesolar.github.io/docs/pages/api-ref/agency-mgmt/get-realandmate-v1-agency-service-agencies.html",
+        "potentialAction": {
+          "@type": "Action",
+          "name": "GET /realandmate/v1/AgencyService/agencies",
+          "method": "GET",
+          "actionPlatform": ["DesktopWebPlatform", "MobileWebPlatform"]
+        }
+      }
+    </script>
   </head>
 
   <body style="display: none">
@@ -17,11 +88,13 @@
     <noscript>Enabling JavaScript will enhance your experience on this webpage.</noscript>
     <span id="mainResourceName">Agency Service</span>
     <span id="resourceName">agency collection</span>
-    <span id="capitalizedResourceName">Agency Сollection</span>
+    <span id="capitalizedResourceName">Agency Collection</span>
 
     <header>
       <nav-links-api-ref></nav-links-api-ref>
-      <h1 class="title speak">GET /realandmate/v1/AgencyService/agencies</h1>
+      <h1 class="title speak" itemprop="headline">
+        GET /realandmate/v1/AgencyService/agencies
+      </h1>
     </header>
 
     <main>
@@ -133,9 +206,9 @@
         <h2 class="speak">
           <t-response-example></t-response-example>
         </h2>
-        <h2>
+        <h3>
           <t-http-code-200></t-http-code-200>
-        </h2>
+        </h3>
         <!-- prettier-ignore -->
         <codeblock>
 {
@@ -175,17 +248,47 @@
 
     <div id="footerContainer"></div>
 
-    <script src="../../../scripts/components-title-min.js"></script>
-    <script src="../../../scripts/api-ref-min.js"></script>
-    <script src="../../../scripts/p-1-line-indent-min.js"></script>
-    <script src="../../../scripts/copy-min.js"></script>
-    <script src="../../../scripts/dark-theme-min.js"></script>
-    <script src="../../../scripts/editor-mode-min.js"></script>
-    <script src="../../../scripts/meta-tags-min.js"></script>
-    <script src="../../../scripts/components-min.js"></script>
-    <script src="../../../scripts/menu-min.js"></script>
-    <script src="../../../scripts/speak-min.js"></script>
-    <script src="../../../scripts/screenshot-min.js"></script>
-    <script src="../../../scripts/download-page-as-html-min.js"></script>
+    <!-- Scripts. -->
+    <script
+      type="text/javascript"
+      src="../../../scripts/components-title-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/api-ref-min.js"
+    ></script>
+    <!-- Conditional formatting of web components. -->
+    <script
+      type="text/javascript"
+      src="../../../scripts/p-1-line-indent-min.js"
+    ></script>
+    <script type="text/javascript" src="../../../scripts/copy-min.js"></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/dark-theme-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/editor-mode-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/meta-tags-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/components-min.js"
+    ></script>
+    <script type="text/javascript" src="../../../scripts/menu-min.js"></script>
+    <script type="text/javascript" src="../../../scripts/speak-min.js"></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/screenshot-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../scripts/download-page-as-html-min.js"
+    ></script>
+    <script type="text/javascript" src="../../../scripts/headings.js"></script>
   </body>
 </html>

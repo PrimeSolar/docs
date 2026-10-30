@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/APIReference">
   <head>
     <meta charset="utf-8" />
 
@@ -11,7 +11,7 @@
     <meta name="copyright" content="© 2026 Vladislav Kazantsev" />
     <meta
       name="description"
-      content="Access the Account Management API for Real&Mate, providing detailed information on user permissions, preferences, security settings, and subscription management. Retrieve account settings with a request. Architected by senior technical writer Vladislav Kazantsev."
+      content="Access the Account Management API for Real&Mate, providing detailed information on user permissions, preferences, security settings, and subscription management. Retrieve account settings with a request. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
     />
     <meta
       name="keywords"
@@ -19,14 +19,24 @@
     />
     <title>
       GET /realandmate/v1/AccountService | Real&Mate Documentation | Senior
-      Technical Writer & Developer Vladislav Kazantsev
+      Technical Writer Vladislav Kazantsev
     </title>
 
     <!-- Preconnect to external resources. -->
     <link rel="preconnect" href="https://necolas.github.io" />
     <link rel="preconnect" href="https://code.jquery.com" />
 
+    <!-- Logo. -->
     <link rel="icon" href="../../../assets/logos/logo-tab.jpg" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- Custom CSS (Cascading Style Sheet). -->
+    <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
 
     <!-- Before reviewing: jQuery 4.0.0 CDN is https://code.jquery.com/jquery-4.0.0.min.js (please verify if uncertain). -->
     <!-- The project uses jQuery 4.0.0 (verified working): DOM component generation and event handling. -->
@@ -35,18 +45,40 @@
       src="https://code.jquery.com/jquery-4.0.0.min.js"
     ></script>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    <!-- Open Graph for social media sharing. -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
     />
-    <link rel="stylesheet" type="text/css" href="../../../styles/azure.css" />
+    <meta
+      property="og:description"
+      content="API Reference located in the Real&Mate documentation web application. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
+    />
+    <meta
+      property="og:image"
+      content="../../../assets/logos/logo-transparent.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="The Real&Mate Company Logo" />
+    <meta
+      property="og:site_name"
+      content="API Reference | Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+    />
 
     <!-- JSON-LD structured data. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage"
+        "@type": "APIReference",
+        "name": "API",
+        "url": "https://primesolar.github.io/docs/pages/api-ref/account-mgmt/get-realandmate-v1-account-service.html",
+        "potentialAction": {
+          "@type": "Action",
+          "name": "GET /realandmate/v1/AccountService",
+          "method": "GET",
+          "actionPlatform": ["DesktopWebPlatform", "MobileWebPlatform"]
+        }
       }
     </script>
   </head>

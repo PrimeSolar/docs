@@ -27,7 +27,10 @@
     <link rel="preconnect" href="https://code.jquery.com" />
 
     <!-- Logo. -->
-    <link rel="icon" href="../../../assets/logos/logo-tab.jpg" />
+    <link
+      rel="icon"
+      href="https://primesolar.github.io/docs/assets/logos/logo-tab.jpg"
+    />
 
     <link
       rel="stylesheet"
@@ -57,7 +60,7 @@
     />
     <meta
       property="og:image"
-      content="../../../assets/logos/logo-transparent.jpg"
+      content="https://primesolar.github.io/docs/assets/logos/logo-transparent.jpg"
     />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="The Real&Mate Company Logo" />
@@ -71,24 +74,34 @@
       {
         "@context": "https://schema.org",
         "@type": "APIReference",
-        "name": "API",
+        "name": "Real&Mate Account Management Service API Reference",
+        "description": "Update account management settings with the Real&Mate Account Management Service API. Use the method to modify preferences, security settings, and subscription management options efficiently. Comprehensive documentation with the request schema, response schema, and examples. Architected by senior technical writer Vladislav Kazantsev.",
         "url": "https://primesolar.github.io/docs/pages/api-ref/account-mgmt/patch-realandmate-v1-account-service.html",
+        "author": {
+          "@type": "Person",
+          "name": "Vladislav Kazantsev"
+        },
         "potentialAction": {
           "@type": "Action",
-          "name": "PATCH /realandmate/v1/AccountService",
+          "name": "Update account management settings",
           "method": "PATCH",
+          "target": "https://example.com/realandmate/v1/AccountService",
           "actionPlatform": ["DesktopWebPlatform", "MobileWebPlatform"]
         }
       }
     </script>
   </head>
 
-  <body style="display: none">
+  <body>
     <!--prettier-ignore-->
     <noscript>Kindly enable JavaScript for a better browsing experience.</noscript>
-    <span id="mainResourceName">Account Service</span>
-    <span id="resourceName">account management settings</span>
-    <span id="capitalizedResourceName">Account Management Settings</span>
+    <span id="mainResourceName" aria-hidden="true">Account Service</span>
+    <span id="resourceName" aria-hidden="true"
+      >account management settings</span
+    >
+    <span id="capitalizedResourceName" aria-hidden="true"
+      >Account Management Settings</span
+    >
 
     <header>
       <nav-links-api-ref></nav-links-api-ref>
@@ -102,27 +115,27 @@
       <hr />
       <ul id="toc">
         <li>
-          <a href="#request-body">
+          <a href="#request-body" title="Request Body">
             <t-request-body></t-request-body>
           </a>
         </li>
         <li>
-          <a href="#request-example">
+          <a href="#request-example" title="Request Example">
             <t-request-example></t-request-example>
           </a>
         </li>
         <li>
-          <a href="#response-body">
+          <a href="#response-body" title="Response Body">
             <t-response-body></t-response-body>
           </a>
         </li>
         <li>
-          <a href="#response-example">
+          <a href="#response-example" title="Response Example">
             <t-response-example></t-response-example>
           </a>
         </li>
         <li>
-          <a href="#response-codes">
+          <a href="#response-codes" title="Response Codes">
             <t-response-codes></t-response-codes>
           </a>
         </li>
@@ -257,6 +270,7 @@
         <codeblock>
   PATCH https://example.com/realandmate/v1/AccountService
         </codeblock
+
         ><!-- prettier-ignore -->
         <codeblock>
 {

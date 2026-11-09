@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/APIReference">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
 
@@ -27,7 +27,10 @@
     <link rel="preconnect" href="https://code.jquery.com" />
 
     <!-- Logo. -->
-    <link rel="icon" href="../../../assets/logos/logo-tab.jpg" />
+    <link
+      rel="icon"
+      href="https://primesolar.github.io/docs/assets/logos/logo-tab.jpg"
+    />
 
     <link
       rel="stylesheet"
@@ -48,51 +51,59 @@
     <!-- Open Graph for social media sharing. -->
     <meta property="og:type" content="article" />
     <meta
+      property="og:site_name"
+      content="API Reference | Real&Mate Documentation"
+    />
+    <meta
       property="og:title"
-      content="API Reference | Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+      content="Architected by Senior Technical Writer Vladislav Kazantsev"
     />
     <meta
       property="og:description"
-      content="API Reference located in the Real&Mate documentation web application. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
+      content="Comprehensive API Reference located in the Real&Mate documentation web application."
     />
     <meta
       property="og:image"
-      content="../../../assets/logos/logo-transparent.jpg"
+      content="https://primesolar.github.io/docs/assets/logos/logo-transparent.jpg"
     />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="The Real&Mate Company Logo" />
-    <meta
-      property="og:site_name"
-      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
-    />
 
     <!-- JSON-LD structured data. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "APIReference",
-        "name": "API",
+        "name": "Real&Mate Advertisement Service API Reference",
+        "description": "Retrieve the collection of real estate advertisements through the Real&Mate Advertisement Management API. Access detailed information including identifiers, names, descriptions, and item counts with a request. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev.",
         "url": "https://primesolar.github.io/docs/pages/api-ref/advertisement-mgmt/get-realandmate-v1-advertisement-service-advertisements.html",
+        "author": {
+          "@type": "Person",
+          "name": "Vladislav Kazantsev"
+        },
         "potentialAction": {
           "@type": "Action",
-          "name": "GET /realandmate/v1/AdvertisementService/advertisements",
+          "name": "Get the collection of real estate advertisements",
           "method": "GET",
+          "target": "https://example.com/realandmate/v1/AdvertisementService/advertisements",
           "actionPlatform": ["DesktopWebPlatform", "MobileWebPlatform"]
         }
       }
     </script>
   </head>
 
-  <body style="display: none">
+  <body>
     <!--prettier-ignore-->
     <noscript>Please turn on JavaScript to use all features of this application.</noscript>
-    <span id="mainResourceName">Advertisement Service</span>
-    <span id="resourceName">advertisement collection</span>
-    <span id="capitalizedResourceName">Advertisement Collection</span>
+    <span id="mainResourceName" aria-hidden="true">Advertisement Service</span>
+    <span id="resourceName" aria-hidden="true">advertisement collection</span>
+    <span id="capitalizedResourceName" aria-hidden="true"
+      >Advertisement Collection</span
+    >
 
     <header>
       <nav-links-api-ref></nav-links-api-ref>
-      <h1 class="title speak" itemprop="headline">
+      <h1 class="title speak">
         GET /realandmate/v1/AdvertisementService/advertisements
       </h1>
     </header>
@@ -104,22 +115,22 @@
       <hr />
       <ul id="toc">
         <li>
-          <a href="#request-example">
+          <a href="#request-example" title="Request Example">
             <t-request-example></t-request-example>
           </a>
         </li>
         <li>
-          <a href="#response-body">
+          <a href="#response-body" title="Response Body">
             <t-response-body></t-response-body>
           </a>
         </li>
         <li>
-          <a href="#response-example">
+          <a href="#response-example" title="Response Example">
             <t-response-example></t-response-example>
           </a>
         </li>
         <li>
-          <a href="#response-codes">
+          <a href="#response-codes" title="Response Codes">
             <t-response-codes></t-response-codes>
           </a>
         </li>

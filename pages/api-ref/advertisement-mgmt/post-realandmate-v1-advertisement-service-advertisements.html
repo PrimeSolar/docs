@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/APIReference">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
 
@@ -27,7 +27,10 @@
     <link rel="preconnect" href="https://code.jquery.com" />
 
     <!-- Logo. -->
-    <link rel="icon" href="../../../assets/logos/logo-tab.jpg" />
+    <link
+      rel="icon"
+      href="https://primesolar.github.io/docs/assets/logos/logo-tab.jpg"
+    />
 
     <link
       rel="stylesheet"
@@ -48,51 +51,60 @@
     <!-- Open Graph for social media sharing. -->
     <meta property="og:type" content="article" />
     <meta
+      property="og:site_name"
+      content="API Reference | Real&Mate Documentation"
+    />
+    <meta
       property="og:title"
-      content="API Reference | Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+      content="Architected by Senior Technical Writer Vladislav Kazantsev"
     />
     <meta
       property="og:description"
-      content="API Reference located in the Real&Mate documentation web application. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev."
+      content="Comprehensive API Reference located in the Real&Mate documentation web application."
     />
     <meta
       property="og:image"
-      content="../../../assets/logos/logo-transparent.jpg"
+      content="https://primesolar.github.io/docs/assets/logos/logo-transparent.jpg"
     />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:alt" content="The Real&Mate Company Logo" />
-    <meta
-      property="og:site_name"
-      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
-    />
 
     <!-- JSON-LD structured data. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "APIReference",
-        "name": "API",
+        "name": "Real&Mate Advertisement Service API Reference",
+        "description": "Create a new advertisement using the Real&Mate Advertisement Management API. Submit a request to add an advertisement, including details such as property identifier, title, and creation date. Comprehensive documentation with the response schema and examples. Architected by senior technical writer Vladislav Kazantsev.",
         "url": "https://primesolar.github.io/docs/pages/api-ref/advertisement-mgmt/post-realandmate-v1-advertisement-service-advertisements.html",
+        "author": {
+          "@type": "Person",
+          "name": "Vladislav Kazantsev"
+        },
         "potentialAction": {
           "@type": "Action",
-          "name": "POST /realandmate/v1/AdvertisementService/advertisements",
+          "name": "Create a new advertisement",
           "method": "POST",
+          "target": "https://example.com/realandmate/v1/AdvertisementService/advertisements",
           "actionPlatform": ["DesktopWebPlatform", "MobileWebPlatform"]
         }
       }
     </script>
   </head>
 
-  <body style="display: none">
-    <!--prettier-ignore-->
-    <noscript>For full functionality, ensure JavaScript is enabled in your browser.</noscript>
-    <span id="mainResourceName">Advertisement Service</span>
-    <span id="resourceName">advertisement</span>
-    <span id="capitalizedResourceName">Advertisement</span>
+  <body>
+    <noscript class="short">
+      <p>
+        For full functionality, ensure JavaScript is enabled in your browser.
+      </p>
+    </noscript>
+    <span id="mainResourceName" aria-hidden="true">Advertisement Service</span>
+    <span id="resourceName" aria-hidden="true">advertisement</span>
+    <span id="capitalizedResourceName" aria-hidden="true">Advertisement</span>
 
     <header>
       <nav-links-api-ref></nav-links-api-ref>
-      <h1 class="title speak" itemprop="headline">
+      <h1 class="title speak">
         POST /realandmate/v1/AdvertisementService/advertisements
       </h1>
     </header>
@@ -100,48 +112,23 @@
     <main>
       <p class="center speak">Creates an advertisement.</p>
       <hr />
-      <ul id="toc">
-        <li>
-          <a href="#request-example">
-            <t-request-example></t-request-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-body">
-            <t-response-body></t-response-body>
-          </a>
-        </li>
-        <li>
-          <a href="#response-example">
-            <t-response-example></t-response-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-codes">
-            <t-response-codes></t-response-codes>
-          </a>
-        </li>
-      </ul>
+      <nav id="toc"></nav>
 
       <section id="request-example">
-        <h2 class="speak">
-          <t-request-example></t-request-example>
-        </h2>
-        <!-- prettier-ignore -->
         <codeblock>
-  POST https://example.com/realandmate/v1/AdvertisementService/advertisements
-    </codeblock>
+          <pre>
+POST https://example.com/realandmate/v1/AdvertisementService/advertisements
+</pre
+          >
+        </codeblock>
       </section>
 
       <section id="response-body">
-        <h2 class="speak">
-          <t-response-body></t-response-body>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "id": string,
   "property_id": string,
@@ -149,7 +136,9 @@
   "url": string,
   "date_created": datetime
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
         <dl class="dl-root">
           <dt>
             <dt-id></dt-id>
@@ -185,44 +174,22 @@
       </section>
 
       <section id="response-example">
-        <h2 class="speak">
-          <t-response-example></t-response-example>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "id": "777",
   "url": "https://example.com/realandmate/v1/AdvertisementService/advertisements/777",
   "date_created": "2021-07-07T07:07:07Z"
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
       </section>
 
-      <section id="response-codes">
-        <h2>
-          <t-response-codes></t-response-codes>
-        </h2>
-        <table class="response-codes">
-          <colgroup>
-            <col span="1" />
-            <col span="1" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="sc-200"></tr>
-            <tr id="sc-400"></tr>
-            <tr id="sc-403"></tr>
-          </tbody>
-        </table>
-      </section>
+      <section class="200 400 403 404" id="response-codes"></section>
     </main>
 
     <div id="footerContainer"></div>

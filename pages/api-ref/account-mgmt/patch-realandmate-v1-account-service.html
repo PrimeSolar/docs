@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/APIReference">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
 
@@ -105,48 +105,17 @@
 
     <header>
       <nav-links-api-ref></nav-links-api-ref>
-      <h1 class="title speak" itemprop="headline">
-        PATCH /realandmate/v1/AccountService
-      </h1>
+      <h1 class="title speak">PATCH /realandmate/v1/AccountService</h1>
     </header>
 
     <main>
       <p class="center speak">Updates <resource-name></resource-name>.</p>
       <hr />
-      <ul id="toc">
-        <li>
-          <a href="#request-body" title="Request Body">
-            <t-request-body></t-request-body>
-          </a>
-        </li>
-        <li>
-          <a href="#request-example" title="Request Example">
-            <t-request-example></t-request-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-body" title="Response Body">
-            <t-response-body></t-response-body>
-          </a>
-        </li>
-        <li>
-          <a href="#response-example" title="Response Example">
-            <t-response-example></t-response-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-codes" title="Response Codes">
-            <t-response-codes></t-response-codes>
-          </a>
-        </li>
-      </ul>
+      <nav id="toc"></nav>
 
       <section id="request-body">
-        <h2 class="speak">
-          <t-request-body></t-request-body>
-        </h2>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "preferences": {
     "language_default": string,
@@ -166,7 +135,9 @@
   },
   "activity_logs": boolean
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
 
         <dl class="dl-root">
           <dt>
@@ -263,15 +234,14 @@
       </section>
 
       <section id="request-example">
-        <h2 class="speak">
-          <t-request-example></t-request-example>
-        </h2>
-        <!-- prettier-ignore -->
         <codeblock>
-  PATCH https://example.com/realandmate/v1/AccountService
-        </codeblock
-        ><!-- prettier-ignore -->
+          <pre>
+PATCH https://example.com/realandmate/v1/AccountService
+</pre
+          >
+        </codeblock>
         <codeblock>
+          <pre>
 {
   "preferences": {
     "language_default": "English",
@@ -291,18 +261,17 @@
   },
   "activity_logs": true
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
       </section>
 
       <section id="response-body">
-        <h2 class="speak">
-          <t-response-body></t-response-body>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "preferences": {
     "language_default": string,
@@ -322,7 +291,9 @@
   },
   "activity_logs": boolean
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
 
         <dl class="dl-root">
           <dt>
@@ -419,14 +390,11 @@
       </section>
 
       <section id="response-example">
-        <h2 class="speak">
-          <t-response-example></t-response-example>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "preferences": {
     "language_default": "English",
@@ -446,30 +414,12 @@
   },
   "activity_logs": true
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
       </section>
 
-      <section id="response-codes">
-        <h2>
-          <t-response-codes></t-response-codes>
-        </h2>
-        <table class="response-codes">
-          <colgroup>
-            <col span="1" />
-            <col span="1" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="sc-200"></tr>
-            <tr id="sc-500"></tr>
-          </tbody>
-        </table>
-      </section>
+      <section class="200 404 500" id="response-codes"></section>
     </main>
 
     <div id="footerContainer"></div>

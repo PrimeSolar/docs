@@ -113,48 +113,23 @@
         Returns the collection of real estate advertisements.
       </p>
       <hr />
-      <ul id="toc">
-        <li>
-          <a href="#request-example" title="Request Example">
-            <t-request-example></t-request-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-body" title="Response Body">
-            <t-response-body></t-response-body>
-          </a>
-        </li>
-        <li>
-          <a href="#response-example" title="Response Example">
-            <t-response-example></t-response-example>
-          </a>
-        </li>
-        <li>
-          <a href="#response-codes" title="Response Codes">
-            <t-response-codes></t-response-codes>
-          </a>
-        </li>
-      </ul>
+      <nav id="toc"></nav>
 
       <section id="request-example">
-        <h2 class="speak">
-          <t-request-example></t-request-example>
-        </h2>
-        <!-- prettier-ignore -->
         <codeblock>
-  GET https://example.com/realandmate/v1/AdvertisementService/advertisements
-    </codeblock>
+          <pre>
+GET https://example.com/realandmate/v1/AdvertisementService/advertisements
+</pre
+          >
+        </codeblock>
       </section>
 
       <section id="response-body">
-        <h2 class="speak">
-          <t-response-body></t-response-body>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "id": string,
   "name": string,
@@ -164,7 +139,9 @@
   },
   "items_count": number
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
 
         <dl class="dl-root">
           <dt>
@@ -209,14 +186,11 @@
       </section>
 
       <section id="response-example">
-        <h2 class="speak">
-          <t-response-example></t-response-example>
-        </h2>
         <h3>
           <t-http-code-200></t-http-code-200>
         </h3>
-        <!-- prettier-ignore -->
         <codeblock>
+          <pre>
 {
   "id": "2",
   "name": "Real&Mate Advertisement Collection",
@@ -227,29 +201,12 @@
   },
   "items_count": 7777777
 }
-    </codeblock>
+</pre
+          >
+        </codeblock>
       </section>
 
-      <section id="response-codes">
-        <h2>
-          <t-response-codes></t-response-codes>
-        </h2>
-        <table class="response-codes">
-          <colgroup>
-            <col span="1" />
-            <col span="1" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="sc-200"></tr>
-          </tbody>
-        </table>
-      </section>
+      <section class="200 404" id="response-codes"></section>
     </main>
 
     <div id="footerContainer"></div>

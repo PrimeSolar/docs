@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
 
@@ -27,7 +27,10 @@
     <link rel="preconnect" href="https://code.jquery.com" />
 
     <!-- Logo. -->
-    <link rel="icon" href="assets/logos/logo-tab.jpg" />
+    <link
+      rel="icon"
+      href="https://primesolar.github.io/docs/assets/logos/logo-tab.jpg"
+    />
 
     <link
       rel="stylesheet"
@@ -47,37 +50,44 @@
 
     <!-- Open Graph for social media sharing. -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Real&Mate Documentation" />
     <meta
       property="og:title"
-      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
+      content="Architected by Senior Technical Writer Vladislav Kazantsev"
     />
     <meta
       property="og:description"
-      content="Real&Mate documentation web application. Architected by senior technical writer Vladislav Kazantsev."
+      content="The main page of the Real&Mate documentation web application."
     />
     <meta
       property="og:image"
-      content="../../../assets/logos/logo-transparent.jpg"
+      content="https://primesolar.github.io/docs/assets/logos/logo-transparent.jpg"
     />
-    <meta
-      property="og:site_name"
-      content="Real&Mate Documentation | Senior Technical Writer Vladislav Kazantsev"
-    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="The Real&Mate Company Logo" />
 
     <!-- JSON-LD structured data. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage"
+        "@type": "WebPage",
+        "name": "Real&Mate Documentation",
+        "description": "The main page of the Real&Mate documentation web application. Architected by senior technical writer Vladislav Kazantsev.",
+        "url": "https://primesolar.github.io/docs/",
+        "author": {
+          "@type": "Person",
+          "name": "Vladislav Kazantsev"
+        }
       }
     </script>
   </head>
 
-  <body style="display: none">
-    <noscript
-      >Please ensure that JavaScript is enabled to improve your
-      experience.</noscript
-    >
+  <body>
+    <noscript class="short">
+      <p>
+        Please ensure that JavaScript is enabled to improve your experience.
+      </p>
+    </noscript>
     <div id="container">
       <theme-button></theme-button>
       <div id="header-index"></div>
@@ -86,13 +96,13 @@
     <main>
       <div class="doc-list">
         <div class="doc-list-item">
-          <a href="api-reference.html">API Reference</a>
+          <a href="api-reference">API Reference</a>
         </div>
         <div class="doc-list-item">
-          <a href="glossary.html">Major Glossary</a>
+          <a href="glossary">Major Glossary</a>
         </div>
         <div class="doc-list-item">
-          <a href="style-guide.html">Style Guide</a>
+          <a href="style-guide">Style Guide</a>
         </div>
         <!-- <div class="doc-list-item">
           <a href="brd.html">Business Requirements Document</a>
@@ -102,22 +112,24 @@
         </div> -->
       </div>
 
-      <div id="w3c">
+      <div class="w3c">
         <a
           href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2F&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
           target="_blank"
-          rel="noopener"
-          id="w3c-text"
+          rel="noopener noreferrer"
+          title="W3C Validation Confirmation"
+          class="w3c-text"
         >
           Verified by World Wide Web Consortium:&nbsp;
         </a>
         <a
           href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2F&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
           target="_blank"
-          rel="noopener"
-          id="w3c-img"
+          rel="noopener noreferrer"
+          title="W3C Validation Confirmation"
+          class="w3c-img"
         >
-          <img id="w3c-img" />
+          <img class="w3c-img" />
         </a>
       </div>
     </main>
